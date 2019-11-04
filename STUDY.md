@@ -1,5 +1,7 @@
 # 我学习过的知识
 ## <font face="黑体" color=green size=5>Java</font>
+### 基础
+1. `SimpleDataFormatter`是线程不安全的，`DateTimeFormatter`java8才有的线程安全获取时间格式。
 ### Spring
 1. SpringBoot的@EnableAsync， @Async注解使用及其原理
 1. SpringBoot配置Redis查询缓存。三个注解。开启注解（@EnableCaching），使用注解，清除注解。
@@ -48,7 +50,11 @@
 --- 
 ## Redis
 1. SpringBoot配置redis缓存查询。
-
+---
 ## Gradle
 1. 依赖分析
     * `gradle dependencyInsight --dependency slf4j-api`
+
+## 通识
+1. 代码中不要使用ip，因位ip会改变，最好使用域名。
+1. 代码中不要使用绝对地址，存在安全性问题，此外也会造成数据库存储空间浪费。
