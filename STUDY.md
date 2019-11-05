@@ -4,7 +4,8 @@
 1. `SimpleDataFormatter`是线程不安全的，`DateTimeFormatter`java8才有的线程安全获取时间格式。
 ### Spring
 1. SpringBoot的@EnableAsync， @Async注解使用及其原理
-1. SpringBoot配置Redis查询缓存。三个注解。开启注解（@EnableCaching），使用注解，清除注解。
+1. SpringBoot配置Redis查询缓存。三个注解。开启注解（@EnableCaching），使用注解，清除注解。重点在于key的自定义方式。
+    * [SpringBoot下Redis模糊删的AOP实现](https://docs.qq.com/doc/DSExjdkFka3VEWlR0)
 1. ssl配置，iptable端口转发。
 ![来自PrintWevServer-SpringBoot工程](./端口转发.png)
 1. SpringBoot devtools热加载技术，开发的时候使用，至少html修改后刷新即可。devtools在线上模式自动屏蔽了，即java -jar启动方式。
@@ -12,7 +13,7 @@
 1. Mybatis-plus 通用性接口与jpa一样。
 1. pagehelper，分页插件
 ### logback
-1. logback.xml文件中配置javax.mail发送错误信息邮件
+1. [logback.xml文件中配置javax.mail发送错误信息邮件](https://docs.qq.com/doc/DSFhiWENKWVJwa3B1)
 1. logback-spring.xml,logback-test.xml,logback-dev.xml，日志随环境变量设置，目前仅仅测试于SpringBoot。
 
 ### rexdb
@@ -38,6 +39,8 @@
 ## Go
 ### beego
 1. beego框架入门
+1. goframe新框架了解 https://goframe.org/
+
 ---
 ## MySql
 ### security
@@ -54,7 +57,7 @@
 ## Gradle
 1. 依赖分析
     * `gradle dependencyInsight --dependency slf4j-api`
-
+---
 ## 通识
 1. 代码中不要使用ip，因位ip会改变，最好使用域名。
 1. 代码中不要使用绝对地址，存在安全性问题，此外也会造成数据库存储空间浪费。
