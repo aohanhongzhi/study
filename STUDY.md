@@ -7,6 +7,7 @@
 1. SpringBoot配置Redis查询缓存。三个注解。开启注解（@EnableCaching），使用注解，清除注解。重点在于key的自定义方式。
     * [SpringBoot下Redis模糊删的AOP实现](https://docs.qq.com/doc/DSExjdkFka3VEWlR0)
 1. ssl配置，iptable端口转发。
+1. [非WEB应用使用Spring控制反转与Bean注入](https://docs.qq.com/doc/DSEV2TWtPcGh5QXR3)
 ![来自PrintWevServer-SpringBoot工程](./端口转发.png)
 1. SpringBoot devtools热加载技术，开发的时候使用，至少html修改后刷新即可。devtools在线上模式自动屏蔽了，即java -jar启动方式。
 ### Mybatis
@@ -17,7 +18,7 @@
 1. logback-spring.xml,logback-test.xml,logback-dev.xml，日志随环境变量设置，目前仅仅测试于SpringBoot。
 
 ### rexdb
-1. 一种国产的ORM框架，性能据官网介绍还不错。
+1. 一种国产的ORM框架，性能据官网介绍还不错。高效，简单灵活。
 
 
 ### mail
@@ -26,7 +27,8 @@
 ### security
 1. java JWT掌握， **目前缓存没有配置成功** 。
 
-
+### sparkjava
+1. 一种轻量级，简单化的控制器框架
 
 ---
 ## Python
