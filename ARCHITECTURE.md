@@ -1,7 +1,9 @@
 # ARCHITECTURE
 
 ## Java技术栈
+
 ### 通用中间件
+
 框架名 | 说明 | 官网
 --- | --- | ---
 Lombok | 简化对象封装| [https://github.com/rzwitserloot/lombok](https://github.com/rzwitserloot/lombok)
@@ -13,7 +15,6 @@ Druid | 数据库连接池 | [https://github.com/alibaba/druid](https://github.c
 RabbitMq | 消息队列 | [https://www.rabbitmq.com/](https://www.rabbitmq.com/)
 
 ### 企业级应用开发技术栈
-
 
 技术 | 说明 | 官网
 ----|----|----
@@ -37,6 +38,7 @@ LogStash | 日志收集 | [https://github.com/logstash/logstash-logback-encoder]
 Lombok | 简化对象封装工具 | [https://github.com/rzwitserloot/lombok](https://github.com/rzwitserloot/lombok)
 
 ### 技术栈1
+
 对于一个小型的应用，快速搭建可以使用
 
 应用层次 | 框架名 | 推荐理由
@@ -46,8 +48,8 @@ Lombok | 简化对象封装工具 | [https://github.com/rzwitserloot/lombok](htt
 ORM层| [rexdb](http://db.rex-soft.org/)|高效灵活简单
 关系数据库|[postgresql](https://www.postgresql.org/)|开源自由
 
-
 ## Python
 
 ### flask
-flask 
+
+flask
