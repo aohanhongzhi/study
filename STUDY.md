@@ -62,6 +62,16 @@ ORM层| [rexdb](http://db.rex-soft.org/)|高效灵活简单
 
 ### javafx
 
+### java-di
+
+注入框架
+github: https://github.com/osglworks/java-di
+
+### ActFramework
+1. 官网:http://actframework.org/
+1. [HelloWorld](https://github.com/act-gallery/helloworld)
+1. act有自己的[注入框架](https://github.com/osglworks/java-di)，看起来要比Spring注入更加简单 参考：https://github.com/act-gallery/injection
+
 ---
 
 ## Python
@@ -142,5 +152,3 @@ ORM层| [rexdb](http://db.rex-soft.org/)|高效灵活简单
 
 1. 代码中不要使用ip，因位ip会改变，最好使用域名。
 1. 代码中不要使用绝对地址，存在安全性问题，此外也会造成数据库存储空间浪费。
-
-
