@@ -5,10 +5,16 @@
 ### 基础
 
 1. `SimpleDataFormatter`是线程不安全的，`DateTimeFormatter`java8才有的线程安全获取时间格式。
+    ```java     
+            LocalDateTime now = LocalDateTime.now();
+            //java8才有的线程安全
+            DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMddhhmmssSSS");
+            String nowStr = now.format(dtf);
+    ```
 
 ### Spring
 
-1. SpringBoot的@EnableAsync， @Async注解使用及其原理
+2. SpringBoot的@EnableAsync， @Async注解使用及其原理
 1. SpringBoot配置Redis查询缓存。三个注解。开启注解（@EnableCaching），使用注解，清除注解。重点在于key的自定义方式。
     * [SpringBoot下Redis模糊删除的AOP实现](https://docs.qq.com/doc/DSExjdkFka3VEWlR0)
 1. ssl配置，iptable端口转发。
