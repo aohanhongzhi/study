@@ -10,7 +10,7 @@
 
 1. SpringBoot的@EnableAsync， @Async注解使用及其原理
 1. SpringBoot配置Redis查询缓存。三个注解。开启注解（@EnableCaching），使用注解，清除注解。重点在于key的自定义方式。
-    * [SpringBoot下Redis模糊删的AOP实现](https://docs.qq.com/doc/DSExjdkFka3VEWlR0)
+    * [SpringBoot下Redis模糊删除的AOP实现](https://docs.qq.com/doc/DSExjdkFka3VEWlR0)
 1. ssl配置，iptable端口转发。
 
     ![来自PrintWevServer-SpringBoot工程](./端口转发.png)
@@ -22,7 +22,7 @@
 
 ### Mybatis
 
-1. Mybatis-plus 通用性接口与jpa一样。
+1. Mybatis-plus 通用性接口与jpa一样。[https://mybatis.plus/](https://mybatis.plus/)
 1. pagehelper，分页插件
 
 ### logback
