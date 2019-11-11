@@ -35,6 +35,9 @@
 
 1. [logback.xml文件中配置javax.mail发送错误信息邮件](https://docs.qq.com/doc/DSFhiWENKWVJwa3B1)
 1. logback-spring.xml,logback-test.xml,logback-dev.xml，日志随环境变量设置，目前仅仅测试于SpringBoot。
+### log4j & log4j2
+1. 配置文件名加2与不加2就足以分清版本，所以不可以随便加。
+1. log4j配置方式学习log4j.properties
 
 ### rexdb
 
