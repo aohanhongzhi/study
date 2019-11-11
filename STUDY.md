@@ -5,12 +5,18 @@
 ### 基础
 
 1. `SimpleDataFormatter`是线程不安全的，`DateTimeFormatter`java8才有的线程安全获取时间格式。
+    ```java     
+            LocalDateTime now = LocalDateTime.now();
+            //java8才有的线程安全
+            DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMddhhmmssSSS");
+            String nowStr = now.format(dtf);
+    ```
 
 ### Spring
 
-1. SpringBoot的@EnableAsync， @Async注解使用及其原理
+2. SpringBoot的@EnableAsync， @Async注解使用及其原理
 1. SpringBoot配置Redis查询缓存。三个注解。开启注解（@EnableCaching），使用注解，清除注解。重点在于key的自定义方式。
-    * [SpringBoot下Redis模糊删的AOP实现](https://docs.qq.com/doc/DSExjdkFka3VEWlR0)
+    * [SpringBoot下Redis模糊删除的AOP实现](https://docs.qq.com/doc/DSExjdkFka3VEWlR0)
 1. ssl配置，iptable端口转发。
 
     ![来自PrintWevServer-SpringBoot工程](./端口转发.png)
@@ -22,7 +28,7 @@
 
 ### Mybatis
 
-1. Mybatis-plus 通用性接口与jpa一样。
+1. Mybatis-plus 通用性接口与jpa一样。[https://mybatis.plus/](https://mybatis.plus/)
 1. pagehelper，分页插件
 
 ### logback
@@ -32,8 +38,8 @@
 
 ### rexdb
 
-1. 一种国产的ORM框架，性能据官网介绍还不错。高效，简单灵活。
-1. 支持分页加载
+1. 一种国产的ORM框架，性能据官网介绍还不错。高效，简单灵活。体验之后确实感受与官方网站所介绍一样。有兴趣的可以看下源代码。
+1. 支持分页加载。功能丰富，基本上ORM没有啥问题。简单易学。
 
 ### mail
 
@@ -61,6 +67,11 @@ ORM层| [rexdb](http://db.rex-soft.org/)|高效灵活简单
 1. [心跳检测，SpringBoot中集成Netty的Sever与Client](https://gitee.com/aohanhongzhi/heart-netty)
 
 ### javafx
+1. [java fx doc](https://docs.oracle.com/javase/8/javafx/api/index.html)
+1. [利用JavaFx开发RIA桌面应用-布局说明](https://blog.csdn.net/loongshawn/article/details/52878527)
+1. [JavaFX 教程 （中文）](https://code.makery.ch/zh-cn/library/javafx-tutorial/)
+1. [易佰JavaFX教程](https://www.yiibai.com/javafx/javafx_path.html)
+
 
 
 ### java-di
@@ -141,6 +152,8 @@ SELECT Count(*) FROM schema.table;
 ## Redis
 
 1. SpringBoot配置redis缓存查询。
+1. Redis集群部署（等待实践与理解）
+1. Redis持久化方式(等待理解)
 
 ---
 
@@ -148,14 +161,16 @@ SELECT Count(*) FROM schema.table;
 
 1. 依赖分析
     * `gradle dependencyInsight --dependency slf4j-api`
-
+1. 强制依赖清除
+    * `gradle build --refresh-dependencies`
+<br/>请注意：--refresh 与 -dependencies 不应有空格存在，-dependencies 以参数形式依赖于 --refresh
 ---
 
 ## Groovy
 
 ### 基础联系
 
-1. linux脚本执行
+1. 在linux中以脚本执行  `./shellscript`
 
 ---
 
