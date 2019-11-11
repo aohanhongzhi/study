@@ -103,6 +103,20 @@ github: https://github.com/osglworks/java-di
 ### Peewee
 一个Python的轻量级ORM框架，确实很简易
 1. [将CSV文件导入数据库](https://gitee.com/cctv-eric/peewee-python)
+1. [安装指导](http://docs.peewee-orm.com/en/latest/peewee/installation.html)
+1. [快速开始](https://www.jianshu.com/p/16d1c330810c)
+1. [peewee用法考察](https://www.jianshu.com/p/182ea382b99f)
+1. [指定数据库表的名字](https://www.osgeo.cn/peewee/peewee/models.html#creating-model-tables)
+    ```python   
+    class UserProfile(Model):
+    class Meta:
+        table_name = 'user_profile_tbl'
+    ```
+### Playhouse
+这个库可以很方便的将对象转成dict（json），[它里面的model_to_dict和dict_to_model两个方法](https://www.cnblogs.com/fnng/p/6879779.html)。
+* [官方文档](http://docs.peewee-orm.com/en/latest/)
+* [中文文档](https://www.osgeo.cn/peewee/index.html)
+
 
 ---
 
