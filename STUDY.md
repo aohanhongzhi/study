@@ -62,14 +62,16 @@ ORM层| [rexdb](http://db.rex-soft.org/)|高效灵活简单
 
 ### javafx
 
+
 ### java-di
 
 注入框架
 github: https://github.com/osglworks/java-di
 
 ### ActFramework
+
 1. 官网:http://actframework.org/
-1. [HelloWorld](https://github.com/act-gallery/helloworld)
+1. [HelloWorld练习](https://github.com/act-gallery/helloworld)
 1. act有自己的[注入框架](https://github.com/osglworks/java-di)，看起来要比Spring注入更加简单 参考：https://github.com/act-gallery/injection
 
 ---
@@ -83,6 +85,10 @@ github: https://github.com/osglworks/java-di
 3. yaml配置文件设置
 
 ### django
+
+### Peewee
+一个Python的轻量级ORM框架，确实很简易
+1. [将CSV文件导入数据库](https://gitee.com/cctv-eric/peewee-python)
 
 ---
 
@@ -108,6 +114,16 @@ github: https://github.com/osglworks/java-di
 
 1. 动态密码配置管理
 
+---
+
+## SQL
+
+### 基础操作
+
+1. 查询表总行数
+```sql
+SELECT Count(*) FROM schema.table;
+```
 ---
 
 ## Docker
@@ -137,7 +153,7 @@ github: https://github.com/osglworks/java-di
 
 ## Groovy
 
-### 基础
+### 基础联系
 
 1. linux脚本执行
 
@@ -147,6 +163,10 @@ github: https://github.com/osglworks/java-di
 
 1. hadoop是什么？
 1. hadoop能搞什么？
+
+## Security
+
+1. [Hfish蜜罐](https://hfish.io/):https://gitee.com/lauix/HFish
 
 ## 通识
 
