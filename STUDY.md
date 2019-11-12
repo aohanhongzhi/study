@@ -32,6 +32,30 @@
 1. JDK多线程核心编程
 1. 高并发网络编程
 1. 性能调优实战
+1. 定时器，阿里巴巴建议使用`java.util.concurrent.ScheduledExecutorService` 替换`java.util.Timer`
+
+```java
+public class ScheduledExecutorServiceTest {
+    public static void main(String[] args) {
+        ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
+        executorService.scheduleAtFixedRate(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("run "+ System.currentTimeMillis());
+            }
+        }, 0, 100, TimeUnit.MILLISECONDS);
+        // Timer
+        Timer timer= new Timer();
+               timer.schedule(new TimerTask(){
+                    @Override
+                    public void run() {
+                    }
+               }, new Date(), 1000 * 60);
+    }
+}
+
+
+```
 
 ### Spring
 
@@ -68,12 +92,16 @@
 
 ### rexdb
 
+* 官网: http://db.rex-soft.org/
+* gitee: https://gitee.com/rexsoft/rexdb
+
 1. 一种国产的ORM框架，性能据官网介绍还不错。高效，简单灵活。体验之后确实感受与官方网站所介绍一样。有兴趣的可以看下源代码。
 1. 支持分页加载。功能丰富，基本上ORM没有啥问题。简单易学。
 
 ### mail
 
 1. java mail邮件发送，163邮件配置，ip被封杀查看，telnet 查看ip与port
+1. logback.xml可以直接配置发送ERROR信息。
 
 ### security
 
