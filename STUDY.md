@@ -30,32 +30,53 @@
     ```
 
 1. JDK多线程核心编程
+    * 阿里巴巴建议自己手动新建线程指定核心线程数等参数。
+
+    ```java
+        // 阿里巴巴建议自己手动新建线程池
+        ExecutorService pool;
+        pool = new ThreadPoolExecutor(5, 200,
+                0L, TimeUnit.MILLISECONDS,
+                new LinkedBlockingQueue<Runnable>(1024),Executors.defaultThreadFactory(), new ThreadPoolExecutor.AbortPolicy());
+            pool.execute(new Runnable(){
+                @Override
+                public void run(){
+
+                }
+            })
+        // 下面这种方式虽然简单，但是不够定制化，不推荐
+        ExecutorService exec = Executors.newCachedThreadPool();
+        exec.execute(new Runnbale());
+    ```
+
 1. 高并发网络编程
 1. 性能调优实战
-1. 定时器，阿里巴巴建议使用`java.util.concurrent.ScheduledExecutorService` 替换`java.util.Timer`
+1. 定时器，阿里巴巴建议使用`java.util.concurrent.ScheduledExecutorService` 替换`java.util.Timer` 
 
-```java
-public class ScheduledExecutorServiceTest {
-    public static void main(String[] args) {
-        ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
-        executorService.scheduleAtFixedRate(new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("run "+ System.currentTimeMillis());
-            }
-        }, 0, 100, TimeUnit.MILLISECONDS);
-        // Timer
-        Timer timer= new Timer();
-               timer.schedule(new TimerTask(){
-                    @Override
-                    public void run() {
-                    }
-               }, new Date(), 1000 * 60);
+    ```java
+    public class ScheduledExecutorServiceTest {
+        public static void main(String[] args) {
+            ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
+            executorService.scheduleAtFixedRate(new Runnable() {
+                @Override
+                public void run() {
+                    System.out.println("run "+ System.currentTimeMillis());
+                }
+            }, 0, 100, TimeUnit.MILLISECONDS);
+            // Timer
+            Timer timer= new Timer();
+                timer.schedule(new TimerTask(){
+                        @Override
+                        public void run() {
+                        }
+                }, new Date(), 1000 * 60);
+        }
     }
-}
 
 
-```
+    ```
+
+    * quartz分布式定时器
 
 ### Spring
 
