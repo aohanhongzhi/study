@@ -1,20 +1,41 @@
 # 我学习过的知识
 
-## <font face="黑体" color=green size=5 > Java </font>
+## Java
 
 ### 基础
 
 1. `SimpleDataFormatter`是线程不安全的，`DateTimeFormatter`java8才有的线程安全获取时间格式。
-    ```java     
+
+    ```java
             LocalDateTime now = LocalDateTime.now();
             //java8才有的线程安全
             DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMddhhmmssSSS");
             String nowStr = now.format(dtf);
     ```
 
+1. `org.apache.commons.lang3.StingUtils.isEmpty("String")`判断字符串是否为空
+1. 不同浏览器，编码不一样的解决方案。
+
+    ```java
+    String userAgent = sRequest.getHeader("User-Agent");
+            if(userAgent.contains("Firefox")) {
+                this.filename = new String(reportName.getBytes(), "ISO8859-1");
+            }else if(userAgent.contains("Chrome")) {
+                String name =java.net.URLEncoder.encode(reportName, "UTF-8");
+                name = name.replace("%28","(");
+                name = name.replace("%29",")");
+                this.filename =name;
+            }else {
+                this.filename = java.net.URLEncoder.encode(reportName, "UTF-8");
+    ```
+
+1. JDK多线程核心编程
+1. 高并发网络编程
+1. 性能调优实战
+
 ### Spring
 
-2. SpringBoot的@EnableAsync， @Async注解使用及其原理
+1. SpringBoot的@EnableAsync， @Async注解使用及其原理
 1. SpringBoot配置Redis查询缓存。三个注解。开启注解（@EnableCaching），使用注解，清除注解。重点在于key的自定义方式。
     * [SpringBoot下Redis模糊删除的AOP实现](https://docs.qq.com/doc/DSExjdkFka3VEWlR0)
 1. ssl配置，iptable端口转发。
@@ -26,6 +47,10 @@
 1. [使用SpringBoot构建普通非web的Java应用
 ](https://docs.qq.com/doc/DSHBVQ2pwQUVadFNk)
 
+### MyCat
+
+数据库中间件，多数据源，读写分离
+
 ### Mybatis
 
 1. Mybatis-plus 通用性接口与jpa一样。[https://mybatis.plus/](https://mybatis.plus/)
@@ -35,7 +60,9 @@
 
 1. [logback.xml文件中配置javax.mail发送错误信息邮件](https://docs.qq.com/doc/DSFhiWENKWVJwa3B1)
 1. logback-spring.xml,logback-test.xml,logback-dev.xml，日志随环境变量设置，目前仅仅测试于SpringBoot。
+
 ### log4j & log4j2
+
 1. 配置文件名加2与不加2就足以分清版本，所以不可以随便加。
 1. log4j配置方式学习log4j.properties
 
@@ -70,12 +97,11 @@ ORM层| [rexdb](http://db.rex-soft.org/)|高效灵活简单
 1. [心跳检测，SpringBoot中集成Netty的Sever与Client](https://gitee.com/aohanhongzhi/heart-netty)
 
 ### javafx
+
 1. [java fx doc](https://docs.oracle.com/javase/8/javafx/api/index.html)
 1. [利用JavaFx开发RIA桌面应用-布局说明](https://blog.csdn.net/loongshawn/article/details/52878527)
 1. [JavaFX 教程 （中文）](https://code.makery.ch/zh-cn/library/javafx-tutorial/)
 1. [易佰JavaFX教程](https://www.yiibai.com/javafx/javafx_path.html)
-
-
 
 ### java-di
 
@@ -101,22 +127,42 @@ github: https://github.com/osglworks/java-di
 ### django
 
 ### Peewee
+
 一个Python的轻量级ORM框架，确实很简易
+
 1. [将CSV文件导入数据库](https://gitee.com/cctv-eric/peewee-python)
 1. [安装指导](http://docs.peewee-orm.com/en/latest/peewee/installation.html)
 1. [快速开始](https://www.jianshu.com/p/16d1c330810c)
 1. [peewee用法考察](https://www.jianshu.com/p/182ea382b99f)
 1. [指定数据库表的名字](https://www.osgeo.cn/peewee/peewee/models.html#creating-model-tables)
-    ```python   
+
+    ```python
     class UserProfile(Model):
     class Meta:
         table_name = 'user_profile_tbl'
     ```
-### Playhouse
+
+### awesome-python
+
+1. https://github.com/vinta/awesome-python
+1. http://jobbole.github.io/awesome-python-cn/
+
+### 优秀的库
+
+#### 哪些 Python 库让你相见恨晚？
+
+知乎：https://www.zhihu.com/question/24590883
+
+#### pandas-profiling
+
+一行代码分析数据
+
+#### Playhouse
+
 这个库可以很方便的将对象转成dict（json），[它里面的model_to_dict和dict_to_model两个方法](https://www.cnblogs.com/fnng/p/6879779.html)。
+
 * [官方文档](http://docs.peewee-orm.com/en/latest/)
 * [中文文档](https://www.osgeo.cn/peewee/index.html)
-
 
 ---
 
@@ -134,6 +180,17 @@ github: https://github.com/osglworks/java-di
 
 ## MySql
 
+### 性能调优
+
+1. MySQL的掌握不能只会增删改查
+1. MySQL查询性能分析
+
+### MySQL Group Replication
+
+https://www.jianshu.com/p/2ee012fe003f
+
+1. 是组复制，不是同步复制，但最终是同步的，更确切地说，事务以相同顺序传递给所有组成员，但它们执行并不同步，接受事务被提交之后，每个成员以自己的速度提交。
+
 ### security
 
 1. 防止暴力破解密码
@@ -146,12 +203,14 @@ github: https://github.com/osglworks/java-di
 
 ## SQL
 
-### 基础操作
+### 基础语句
 
 1. 查询表总行数
+
 ```sql
 SELECT Count(*) FROM schema.table;
 ```
+
 ---
 
 ## Docker
@@ -166,11 +225,31 @@ SELECT Count(*) FROM schema.table;
 
 ---
 
+## Kubernetes
+
+---
+
 ## Redis
 
 1. SpringBoot配置redis缓存查询。
 1. Redis集群部署（等待实践与理解）
 1. Redis持久化方式(等待理解)
+
+---
+
+## Nginx
+
+LVS负载均衡
+
+---
+
+## Kafka
+
+分布式消息中间件
+
+---
+
+## RocketMQ
 
 ---
 
@@ -181,6 +260,7 @@ SELECT Count(*) FROM schema.table;
 1. 强制依赖清除
     * `gradle build --refresh-dependencies`
 <br/>请注意：--refresh 与 -dependencies 不应有空格存在，-dependencies 以参数形式依赖于 --refresh
+
 ---
 
 ## Groovy
