@@ -51,7 +51,7 @@
 
 1. 高并发网络编程
 1. 性能调优实战
-1. 定时器，阿里巴巴建议使用`java.util.concurrent.ScheduledExecutorService` 替换`java.util.Timer` 
+1. 定时器，阿里巴巴建议使用`java.util.concurrent.ScheduledExecutorService` 替换`java.util.Timer`
 
     ```java
     public class ScheduledExecutorServiceTest {
@@ -78,8 +78,12 @@
 
     * quartz分布式定时器
 
+1. 异步改同步，线程加锁
+
 ### Spring
 
+1. [Spring Boot要如何学习？](https://www.zhihu.com/question/53729800/answer/311948415)
+1. [SpringBoot中文网](http://springboot.fun/)
 1. SpringBoot的@EnableAsync， @Async注解使用及其原理
 1. SpringBoot配置Redis查询缓存。三个注解。开启注解（@EnableCaching），使用注解，清除注解。重点在于key的自定义方式。
     * [SpringBoot下Redis模糊删除的AOP实现](https://docs.qq.com/doc/DSExjdkFka3VEWlR0)
