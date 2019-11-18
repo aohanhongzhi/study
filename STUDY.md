@@ -5,7 +5,7 @@
 ### jdk
 
 1.  `-verbose:class`
-
+    * 原文:https://www.ibm.com/developerworks/cn/java/j-dyn0429/
     * java直接使用
 
         ```java
@@ -18,6 +18,7 @@
 
 ### 基础
 
+1. [IBM Java社区](https://www.ibm.com/developerworks/cn/java/)
 1. `SimpleDataFormatter`是线程不安全的，`DateTimeFormatter`java8才有的线程安全获取时间格式。
 
     ```java
