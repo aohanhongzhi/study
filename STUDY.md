@@ -2,6 +2,20 @@
 
 ## Java
 
+### jdk
+
+1.  `-verbose:class`
+
+    * java直接使用
+
+        ```java
+        java -verbose:class com.test.Main
+        ```
+
+    * IDE中使用
+    ![](./img/verbose.png)
+
+
 ### 基础
 
 1. `SimpleDataFormatter`是线程不安全的，`DateTimeFormatter`java8才有的线程安全获取时间格式。
