@@ -8,3 +8,4 @@
 
 1. [开源微服务解决方案 Apache ServiceComb](https://www.oschina.net/p/servicecomb)
 1. [Apollo携程开源配置中心](https://github.com/ctripcorp/apollo/wiki/Quick-Start)
+1. [中国优秀的开源软件](https://www.oschina.net/project/top_cn_2019?utm_source=gitee_ad)
