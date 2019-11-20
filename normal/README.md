@@ -108,11 +108,16 @@ gradle引入logback
   </dependencies>
 ```
 
-### rexdb.xml 
+### rexdb.xml
 
 各种数据库的配置，来自于官方
+
 ```
     //    数据库框架
     compile(group: 'org.rex-soft', name: 'rexdb', version: '1.0.4')
     compile(group: 'org.xerial', name: 'sqlite-jdbc', version: '3.27.2.1')
 ```
+
+### ResourceUtil.java
+
+java手动配置文件加载，加载一些不属于框架层次自动加载的文件。
