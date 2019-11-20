@@ -1,5 +1,65 @@
 # ARCHITECTURE
 
+## 企业开发技术
+
+### Docker
+容器化部署，智能运维，几万个节点的部署。
+
+### ELK
+构建统一的日志分析处理平台
+
+### [Apollo](https://github.com/ctripcorp/apollo/wiki)
+Apollo（阿波罗）是携程框架部门研发的 **分布式配置中心** ，能够集中化管理应用不同环境、不同集群的配置，配置修改后能够实时推送到应用端，并且具备规范的权限、流程治理等特性，适用于微服务配置管理场景。
+
+服务端基于Spring Boot和Spring Cloud开发，打包后可以直接运行，不需要额外安装Tomcat等应用容器。
+
+Java客户端不依赖任何框架，能够运行于所有Java运行时环境，同时对Spring/Spring Boot环境也有额外支持。
+
+### 事务管理中间件
+
+#### Seata
+分布式事务中间件
+
+https://www.oschina.net/p/seata
+
+
+### 分布式文件存储
+
+#### FastDFS
+https://gitee.com/fastdfs100/fastdfs
+
+
+### 数据库
+
+#### MySQL
+
+#### postgresql 
+
+#### TiDB
+ 开源分布式 NewSQL 关系型数据库
+
+https://pingcap.com/index.html
+
+#### TBase
+
+https://www.oschina.net/p/tbase
+
+https://github.com/Tencent/TBase
+
+
+ 是腾讯数据平台团队在开源的 PostgreSQL 基础上研发的企业级分布式 HTAP 数据库管理系统：
+
+具备高性能可扩展的分布式事务能力，支持 RC 和 RR 两种隔离级别；
+
+通过安全、管理、审计三权分立体系，提供全方位的数据安全保证机制；
+
+支持高性能分区表，可使得数据检索效率成倍提升；
+
+SQL 方面兼容 2003 标准、PostgreSQL 语法和常用 Oracle 函数&数据类型、窗口函数等；
+
+提供大小商户数据分离、冷热数据分离等高效的数据治理能力
+
+---
 ## Java技术栈
 
 ### 通用中间件
@@ -13,6 +73,8 @@ MongoDb | NoSql数据库 | [https://www.mongodb.com/](https://www.mongodb.com/)
 Docker | 应用容器引擎 | [https://www.docker.com/](https://www.docker.com/)
 Druid | 数据库连接池 | [https://github.com/alibaba/druid](https://github.com/alibaba/druid)
 RabbitMq | 消息队列 | [https://www.rabbitmq.com/](https://www.rabbitmq.com/)
+
+---
 
 ### 企业级应用开发技术栈
 
@@ -37,6 +99,16 @@ JWT | JWT登录支持 | [https://github.com/jwtk/jjwt](https://github.com/jwtk/j
 LogStash | 日志收集 | [https://github.com/logstash/logstash-logback-encoder](https://github.com/logstash/logstash-logback-encoder)
 Lombok | 简化对象封装工具 | [https://github.com/rzwitserloot/lombok](https://github.com/rzwitserloot/lombok)
 
+---
+
+### SpringCloud家族
+框架 | 说明 | 官网
+----|----|----
+SpringBoot | JavaBean容器| [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot)
+Spring Vault | 数据库动态密码管理，敏感配置信息管理 | https://spring.io/projects/spring-vault
+
+---
+
 ### 技术栈1
 
 对于一个小型的应用，快速搭建可以使用
@@ -47,6 +119,8 @@ Lombok | 简化对象封装工具 | [https://github.com/rzwitserloot/lombok](htt
 服务层| [Spring-context](https://mvnrepository.com/artifact/org.springframework/spring-context)|控制翻转，Bean注入
 ORM层| [rexdb](http://db.rex-soft.org/)|高效灵活简单
 关系数据库|[postgresql](https://www.postgresql.org/)|开源自由
+
+---
 
 ## Python
 
