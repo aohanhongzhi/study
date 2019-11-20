@@ -39,7 +39,7 @@
 1. 各种开源框架的二次开发与封装
 1. 代码开发规范
 1. 代码检查和日编译
-1. Maven规范和治理，也就是项目构建工具的管理，不限于maven，还有gradle等
+1. 模块化，分层，Maven规范和治理，也就是项目构建工具的管理，不限于maven，还有gradle等
 1. 各种定制的中间件
 1. 数据表的设计
 1. 数据逻辑库的拆分 
@@ -65,8 +65,20 @@
 
 非常优秀的服务发信与注册中间件。由于其CP实现形式，被一大批生态软件采用。
 
-#### SpringCloud 
-AP实现
+#### SpringCloud Eureka
+AP实现，采用Peer2Peer对等通信方式，去中心化的方式，无Master/Slaver区分，每一个Peer都是对等的。
+
+Eureka作为服务发现与注册中心，即使整个Eureka集群宕机，消费者还是可以通过自己之前的缓存获取注册表的！也就是每一个消费者并不是简单的获取自己想要的信息，而是所有信息。这也就解释了服务端的负载均衡与、Eureka端的负载均衡。因为都是有完整的注册表的，所以知道怎么负载均衡！
+
+ **总结**
+
+    Zookeeper基于CP，不保证高可用性，如果ZooKeeper正在进行Master选举，或者Zookeeper集群中超过半数以上的机器不可用，那么将无法获得数据。Eureka基于AP，能保证高可用性，即使所有机器都出现故障，也能获取本地缓存的数据。
+
+    作为注册中心，其实配置是不经常变动的，只有应用发布和机器出现故障时才会变动。对于不经常变动的配置来说，CP是不合适的，而AP在遇到问题时可以用牺牲一致性来保证高可用性，即使返回旧数据，缓存数据。
+
+    因为Dubbo推荐ZooKeeper，因此国内大量的服务都用ZooKeeper来实现服务发现，但是从分布式理论上来看，Eureka更适合用作注册中心的。
+
+    ——《Docker微服务架构实战》
 
 
 ### 日志
@@ -171,6 +183,7 @@ RabbitMq | 消息队列 | [https://www.rabbitmq.com/](https://www.rabbitmq.com/)
 ----|----|----
 Spring Boot | 容器+MVC框架 | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot)
 Spring Security | 认证和授权框架 | [https://spring.io/projects/spring-security](https://spring.io/projects/spring-security)
+Shiro |授权与认证 |
 MyBatis | ORM框架  | [http://www.mybatis.org/mybatis-3/zh/index.html](http://www.mybatis.org/mybatis-3/zh/index.html)
 MyBatis-plus | ORM框架增强  | [https://mybatis.plus/](https://mybatis.plus/)
 MyBatisGenerator | 数据层代码生成 | [http://www.mybatis.org/generator/index.html](http://www.mybatis.org/generator/index.html)
