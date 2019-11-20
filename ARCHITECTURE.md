@@ -80,6 +80,14 @@ Eureka作为服务发现与注册中心，即使整个Eureka集群宕机，消�
 
     ——《Docker微服务架构实战》
 
+#### Consul
+
+分布式协同工具，Spring cloud Consul
+
+https://spring.io/projects/spring-cloud-consul
+
+
+
 
 ### 日志
 
