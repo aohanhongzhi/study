@@ -52,18 +52,43 @@
 
 ## 企业开发技术
 
-### Docker
+### 容器
+
+#### Docker
 容器化部署，智能运维，几万个节点的部署。
 
-### ELK
+### 服务注册与发现
+
+分布式系统中有一个非常著名的CAP定理，C表示数据一致性，A表示服务可用性，P表示服务对网络分区故障的容错性。这三个特性在任何分布式系统中都不能同时满足，最多只能满足两个。本质上ZooKeeper是一个CP实现，而Eureka是一个AP实现。
+
+#### ZooKeeper
+
+非常优秀的服务发信与注册中间件。由于其CP实现形式，被一大批生态软件采用。
+
+#### SpringCloud 
+AP实现
+
+
+### 日志
+
+#### ELK
+
 构建统一的日志分析处理平台
 
-### [Apollo](https://github.com/ctripcorp/apollo/wiki)
+#### log-pilot
+
+### 配置
+
+#### [Apollo](https://github.com/ctripcorp/apollo/wiki)
 Apollo（阿波罗）是携程框架部门研发的 **分布式配置中心** ，能够集中化管理应用不同环境、不同集群的配置，配置修改后能够实时推送到应用端，并且具备规范的权限、流程治理等特性，适用于微服务配置管理场景。
 
 服务端基于Spring Boot和Spring Cloud开发，打包后可以直接运行，不需要额外安装Tomcat等应用容器。
 
 Java客户端不依赖任何框架，能够运行于所有Java运行时环境，同时对Spring/Spring Boot环境也有额外支持。
+
+#### Spring Cloud Config
+
+
 
 ### 事务管理中间件
 
@@ -83,7 +108,7 @@ https://gitee.com/fastdfs100/fastdfs
 
 #### MySQL
 
-#### postgresql 
+#### Postgresql 
 
 #### TiDB
  开源分布式 NewSQL 关系型数据库
@@ -108,6 +133,20 @@ https://github.com/Tencent/TBase
 SQL 方面兼容 2003 标准、PostgreSQL 语法和常用 Oracle 函数&数据类型、窗口函数等；
 
 提供大小商户数据分离、冷热数据分离等高效的数据治理能力
+
+### 网关API
+
+#### OpenResty 
+
+基于Nginx与Lua的高性能网关，性能稳定，API丰富。
+
+#### Zuul
+
+SpringCloud家族，性能不输Nginx。Zuul的核心是一系列的Filter。
+
+#### Nginx
+
+单线程高性能网关
 
 ---
 ## Java技术栈
@@ -152,10 +191,19 @@ Lombok | 简化对象封装工具 | [https://github.com/rzwitserloot/lombok](htt
 ---
 
 ### SpringCloud家族
+
+Spring家族官网：https://spring.io/
+
+SpringCloud官网：https://spring.io/projects/spring-cloud
+
+据了解SpringCloud官网提供了80多种中间件集成的starter。
+
 框架 | 说明 | 官网
 ----|----|----
 SpringBoot | JavaBean容器| [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot)
 Spring Vault | 数据库动态密码管理，敏感配置信息管理 | https://spring.io/projects/spring-vault
+spring-boot-starter-jersey |Restful Web服务，类似SpringMVC |https://blog.csdn.net/github_38395241/article/details/70265379
+
 
 ---
 
