@@ -5,6 +5,7 @@
 ### jdk
 
 1.  `-verbose:class`
+    * jvm加载类的研究
     * 原文:https://www.ibm.com/developerworks/cn/java/j-dyn0429/
     * java直接使用
 
@@ -15,10 +16,16 @@
     * IDE中使用
     ![](./img/verbose.png)
 
+1. 常用jvm调优
+    ```
+        /usr/local/eric/jdk1.8.0_211/bin/java -XX:MaxMetaspaceSize=256m -XX:+HeapDumpOnOutOfMemoryError -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant -cp /home/eric/.gradle/wrapper/dists/gradle-5.2.1-bin/9lc4nzslqh3ep7ml2tp68fk8s/gradle-5.2.1/lib/gradle-launcher-5.2.1.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 5.2.1
+    ```
+    * `-XX:+HeapDumpOnOutOfMemoryError` 内存泄露的时候导出虚拟机的快照,可以保存后导出来看看那个怎么泄露的。工具jprofiler jvisualvm
 
 ### 基础
 
 1. [IBM Java社区](https://www.ibm.com/developerworks/cn/java/)
+1. [Java高级进阶](https://github.com/doocs/advanced-java)
 1. `SimpleDataFormatter`是线程不安全的，`DateTimeFormatter`java8才有的线程安全获取时间格式。
 
     ```java
