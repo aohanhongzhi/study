@@ -97,16 +97,29 @@ https://spring.io/projects/spring-cloud-consul
 
 #### log-pilot
 
-### 配置
+### 配置中心
+在功能架构上，一个优秀的配置中心应该包括以下功能点。
 
-#### [Apollo](https://github.com/ctripcorp/apollo/wiki)
-Apollo（阿波罗）是携程框架部门研发的 **分布式配置中心** ，能够集中化管理应用不同环境、不同集群的配置，配置修改后能够实时推送到应用端，并且具备规范的权限、流程治理等特性，适用于微服务配置管理场景。
+* 高可用
+* 高容错
+* 提供管理界面
+* 多维度配置
+* 灰度配置
+* 权限/审计/审查
+* 低侵入式接入
+* 易维护
+* 安全
+
+
+#### Apollo (推荐)
+[Apollo](https://github.com/ctripcorp/apollo/wiki)（阿波罗）是携程框架部门研发的 **分布式配置中心** ，能够集中化管理应用不同环境、不同集群的配置，配置修改后能够实时推送到应用端，并且具备规范的权限、流程治理等特性，适用于微服务配置管理场景。
 
 服务端基于Spring Boot和Spring Cloud开发，打包后可以直接运行，不需要额外安装Tomcat等应用容器。
 
 Java客户端不依赖任何框架，能够运行于所有Java运行时环境，同时对Spring/Spring Boot环境也有额外支持。
 
-#### Spring Cloud Config
+#### Spring Cloud Config + Git (小型系统推荐)
+没有管理界面
 
 
 
