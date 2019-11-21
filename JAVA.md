@@ -2,6 +2,22 @@
 
 由于Java基础知识比较多，代码编写套路多，因此独立成一个md文件。
 
+## github&gitee
+
+1. [SSM基础框架](https://github.com/aohanhongzhi/ssm-basic)
+    * lombok
+    * 参数验证
+    * 拦截器
+    * DTO
+    * log4j2
+1. [sparkjava+spring+rexdb](https://github.com/aohanhongzhi/SparkDemo)
+1. [国产数据库ORM框架-rexdb](https://gitee.com/framework-collection/rexdb)
+1. [Java核心研究](https://gitee.com/aohanhongzhi/ByteCode)
+1. [Spring Framework](https://gitee.com/aohanhongzhi/spring-framework)
+1. SpringBoot框架
+    * 全局异常处理
+    * 多数据源->读写分离实战
+    * logback-> 邮箱，多环境配置
 ## 编码基础
 
 ### lombok
