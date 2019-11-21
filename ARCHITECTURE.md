@@ -208,7 +208,8 @@ RabbitMq | 消息队列 | [https://www.rabbitmq.com/](https://www.rabbitmq.com/)
 
 技术 | 说明 | 官网
 ----|----|----
-Spring Boot | 容器+MVC框架 | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot)
+Spring Boot | JavaBean容器 | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot)
+SpringWeb | MVC框架 |  
 Spring Security | 认证和授权框架 | [https://spring.io/projects/spring-security](https://spring.io/projects/spring-security)
 Shiro |授权与认证 |
 MyBatis | ORM框架  | [http://www.mybatis.org/mybatis-3/zh/index.html](http://www.mybatis.org/mybatis-3/zh/index.html)
@@ -249,7 +250,7 @@ spring-boot-starter-jersey |Restful Web服务，类似SpringMVC |https://blog.cs
 
 ### 技术栈1
 
-对于一个小型的应用，快速搭建可以使用
+对于一个小型的应用，快速搭建可以使用。[sparkjava+spring+rexdb](https://github.com/aohanhongzhi/SparkDemo)
 
 应用层次 | 框架名 | 推荐理由
 --- | --- | ---
