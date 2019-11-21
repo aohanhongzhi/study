@@ -25,6 +25,7 @@
 1. [国产数据库ORM框架——rexdb](https://gitee.com/framework-collection/rexdb)
 1. [Java核心研究](https://gitee.com/aohanhongzhi/ByteCode)
 1. [Spring Framework](https://gitee.com/aohanhongzhi/spring-framework)
+1. Dubbox
 
 ## 编码基础
 

@@ -175,7 +175,7 @@ SQL 方面兼容 2003 标准、PostgreSQL 语法和常用 Oracle 函数&数据�
 
 #### Zuul
 
-SpringCloud家族，性能不输Nginx。Zuul的核心是一系列的Filter。
+SpringCloud家族，智能网关。性能不输Nginx。Zuul的核心是一系列的Filter。
 
 #### Nginx
 
@@ -242,6 +242,8 @@ Lombok | 简化对象封装工具 | [https://github.com/rzwitserloot/lombok](htt
 
 ### SpringCloud家族
 
+基于Restful的微服务框架
+
 Spring家族官网：https://spring.io/
 
 SpringCloud官网：https://spring.io/projects/spring-cloud
@@ -253,6 +255,11 @@ SpringCloud官网：https://spring.io/projects/spring-cloud
 SpringBoot | JavaBean容器| [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot)
 Spring Vault | 数据库动态密码管理，敏感配置信息管理 | https://spring.io/projects/spring-vault
 spring-boot-starter-jersey |Restful Web服务，类似SpringMVC |https://blog.csdn.net/github_38395241/article/details/70265379
+
+
+### Dubbox + ZooKeeper
+基于RPC的微服务框架
+
 
 
 ---
