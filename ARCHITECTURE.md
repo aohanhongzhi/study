@@ -187,6 +187,15 @@ SpringCloud家族，性能不输Nginx。Zuul的核心是一系列的Filter。
 
 #### 阿里巴巴规范插件
 
+### 项目构建工具
+
+#### Gradle
+
+#### Maven
+
+1. 生成doc文档 `mvn javadoc:javadoc`
+
+
 ---
 ## Java技术栈
 
