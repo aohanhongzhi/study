@@ -5,19 +5,27 @@
 ## github&gitee
 
 1. [SSM基础框架](https://github.com/aohanhongzhi/ssm-basic)
+    * maven
     * lombok
     * 参数验证
     * 拦截器
     * DTO
     * log4j2
+    * druid
+    * Mybatis
+1. [SpringBoot框架](https://gitee.com/framework-collection/SpringBoot-Basic)
+    * gradle
+    * 全局异常处理
+    * 多数据源->读写分离实战
+    * DTO
+    * logback-> 邮箱，多环境配置
+    * druid
+    * Mybatis
 1. [sparkjava+spring+rexdb](https://github.com/aohanhongzhi/SparkDemo)
 1. [国产数据库ORM框架-rexdb](https://gitee.com/framework-collection/rexdb)
 1. [Java核心研究](https://gitee.com/aohanhongzhi/ByteCode)
 1. [Spring Framework](https://gitee.com/aohanhongzhi/spring-framework)
-1. SpringBoot框架
-    * 全局异常处理
-    * 多数据源->读写分离实战
-    * logback-> 邮箱，多环境配置
+
 ## 编码基础
 
 ### lombok
