@@ -1,5 +1,18 @@
 # Plan
 
+## 重要计划
+
+1. Spring 源码学习与掌握
+1. SpringBoot 源码学习与掌握
+1. SpringMVC 源码学习与掌握
+1. MyBatis 源码学习与掌握
+1. Netty 源码学习与掌握
+1. rexdb 源码学习与掌握
+1. mysql-connector 源码学习与掌握
+1. flask 源码学习与掌握
+
+## 安排计划
+
 1. [ditty](https://gitee.com/dingnate/ditty)是基于netty、fastjson实现的一款极致简约web restful框架.
 
 1. [开源分布式 NewSQL 关系型数据库 TiDB](https://gitee.com/pingcap/tidb)
