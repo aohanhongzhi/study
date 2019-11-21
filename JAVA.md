@@ -2,6 +2,20 @@
 
 由于Java基础知识比较多，代码编写套路多，因此独立成一个md文件。
 
+## 编码基础
+
+### lombok
+
+1. @Accessors(chain = true) 链式
+    ```java
+		// Bean上加注解
+		@Accessors(chain = true)
+	
+		// bean 中的链式风格
+		new User().setUserName(name).setPassword(password);
+	```
+
+
 ## 设计模式
 设计模式是编码的一种前人总结的经验，并不是Java独有的。之所以放在Java里面，是因为后期可能多半使用Java语言来实现。毕竟这个设计模式的具体应用还是与语言有很大的关系的。
 
