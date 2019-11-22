@@ -26,3 +26,5 @@
 1. [中国优秀的开源软件](https://www.oschina.net/project/top_cn_2019?utm_source=gitee_ad)
 1. OpenResty 基于Nginx与Lua的高性能网关，性能稳定，API丰富。
 1. flask微服务开发探索
+1. MySQL主从部署，数据一致性实战！
+1. Redis一主二从三哨兵实战

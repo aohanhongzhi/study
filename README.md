@@ -18,6 +18,6 @@
 * [计划](PLAN.md)
 * [工具](TOOL.md)
 * [前端模板框架](ADMIN.md)
-* [面试](Interview.md)
+* [面试](INTERVIEW.md)
 * [常用配置文件](./normal/README.md)
 * [Java](./JAVA.md)
