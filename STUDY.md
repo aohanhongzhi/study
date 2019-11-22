@@ -101,6 +101,11 @@
     * quartz分布式定时器
 
 1. 异步改同步，线程加锁
+1. 各种Map
+    1. HashMap
+    1. ConcurrentHashMap
+    1. LinkedHashMap
+    1. TreeMap
 
 ### Spring
 
