@@ -295,6 +295,15 @@ SELECT Count(*) FROM schema.table;
 
 ## Docker
 
+### 基础使用
+
+1. -m 参数可以用来调整dockerdocker容器内存限制。
+    ```
+    docker run -m 512m
+    ```
+1. -d 后台运行
+1. docker stats 查看容器使用CPU 内存使用等信息
+
 ### cluster
 
 1. swam集群搭建配置与容器部署
