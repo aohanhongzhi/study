@@ -21,6 +21,7 @@
     * logback-> 邮箱，多环境配置
     * druid
     * Mybatis
+    * SpringSecurity，连接数据库查询，授权认证
 1. [sparkjava+spring+rexdb](https://github.com/aohanhongzhi/SparkDemo)
 1. [国产数据库ORM框架——rexdb](https://gitee.com/framework-collection/rexdb)
 1. [Java核心研究](https://gitee.com/aohanhongzhi/ByteCode)
