@@ -101,6 +101,11 @@
     * quartz分布式定时器
 
 1. 异步改同步，线程加锁
+1. 如果大概知道HashMap的大小，应该创建的时候就应该指定大小。
+
+    ```java
+        new HashMap<String,RSAKey>(2);
+    ```
 
 ### Spring
 
