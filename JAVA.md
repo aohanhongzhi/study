@@ -26,6 +26,12 @@
 1. [Java核心研究](https://gitee.com/aohanhongzhi/ByteCode)
 1. [Spring Framework](https://gitee.com/aohanhongzhi/spring-framework)
 1. Dubbox
+## JVM
+
+### Java常用命令
+
+* javap -v  反编译出更加详细的字节码加载等过程
+* javap -c  反编译出字节码
 
 ## 编码基础
 
@@ -39,7 +45,40 @@
 		// bean 中的链式风格
 		new User().setUserName(name).setPassword(password);
 	```
+### 接口与匿名内部类
 
+这个程序里里面有一段代码
+```java
+    LinkFilter filter = new LinkFilter() {
+            public boolean accept(String url) {
+                if (url.startsWith("http://www.baidu.com/"))
+                    return true;
+                else
+                    return false;
+            }
+        };
+```
+
+LinkFilter是一个接口
+```java
+public interface LinkFilter {
+    public boolean accept(String url);
+}
+```
+
+接口不能实例化，上面算什么操作？匿名？
+> 反编译，结果就是匿名内部类
+
+![](./img/匿名内部类.png)
+
+> 更加详细的反编译 
+
+* javap -v
+* javap -d
+
+上面可以反编译出字节码，能从jvm层级理解java原理。
+
+![](./img/方法和里面的值都出来了.png)
 
 ## 设计模式
 设计模式是编码的一种前人总结的经验，并不是Java独有的。之所以放在Java里面，是因为后期可能多半使用Java语言来实现。毕竟这个设计模式的具体应用还是与语言有很大的关系的。
