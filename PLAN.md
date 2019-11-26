@@ -28,3 +28,4 @@
 1. flask微服务开发探索
 1. MySQL主从部署，数据一致性实战！
 1. Redis一主二从三哨兵实战
+1. [istio调研-下一代Service Mesh](https://istio.io/zh/)

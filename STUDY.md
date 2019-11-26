@@ -101,11 +101,18 @@
     * quartz分布式定时器
 
 1. 异步改同步，线程加锁
+
 1. 如果大概知道HashMap的大小，应该创建的时候就应该指定大小。
 
     ```java
         new HashMap<String,RSAKey>(2);
     ```
+
+1. 各种Map
+    1. HashMap
+    1. ConcurrentHashMap
+    1. LinkedHashMap
+    1. TreeMap
 
 ### Spring
 
@@ -294,6 +301,15 @@ SELECT Count(*) FROM schema.table;
 ---
 
 ## Docker
+
+### 基础使用
+
+1. -m 参数可以用来调整dockerdocker容器内存限制。
+    ```
+    docker run -m 512m
+    ```
+1. -d 后台运行
+1. docker stats 查看容器使用CPU 内存使用等信息
 
 ### cluster
 
