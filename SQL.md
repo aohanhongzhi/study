@@ -3,10 +3,27 @@
 ##　框架
 
 ### Mybatis
+1. ResultMap与ResultType
+  * ResultType 直接指定包.类
+    ```java
+       resultType="hxy.cupb.entity.RoleEntity"
+    ```
+  * ResultMap 需要自己指定，更加灵活，适用于数据库字段与实体无法自动转换的情况。例如：
+    ```xml
+        <!--    &lt;!&ndash; 可根据自己的需求，是否要使用 &ndash;&gt;-->
+        <resultMap type="UserEntity" id="UserEntity">
+            <id column="id" property="id" jdbcType="INTEGER"/>
+            <result column="username" property="userName" jdbcType="VARCHAR"/>
+            <result column="password" property="passWord" jdbcType="VARCHAR"/>
+        </resultMap>
 
+      使用
+       resultMap="UserEntity"
+    ```
 1. 连表查询　，不设外键的查询方法
 
 ```xml
+    <!-- 注意resultMap与resultType  -->
     <select id="getUserRolesByUid" parameterType="Integer" resultMap="UserEntity">
         select *
         from role_table r ,user_role_table ur
