@@ -1,5 +1,23 @@
 # 我学习过的知识
 
+## 语言
+1. Java
+    * Spring
+    * SpringBoot
+    * SpringCloud
+    * MyBatis
+    * RexDB
+    * Shiro
+2. Python
+    * flask
+    * peewee
+3. Go
+    * beego
+4. Kotlin
+    * koti
+5. JavaScript
+    * nodejs
+
 ## Java
 
 ### jdk
