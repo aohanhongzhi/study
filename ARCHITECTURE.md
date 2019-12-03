@@ -270,10 +270,14 @@ SpringBoot | JavaBean容器| [https://spring.io/projects/spring-boot](https://sp
 Spring Vault | 数据库动态密码管理，敏感配置信息管理 | https://spring.io/projects/spring-vault
 spring-boot-starter-jersey |Restful Web服务，类似SpringMVC |https://blog.csdn.net/github_38395241/article/details/70265379
 
+---
 
 ### Dubbox + ZooKeeper
 基于RPC的微服务框架
 
+---
+### Micronaut新一代的微服务框架
+https://micronaut.io/
 
 
 ---
