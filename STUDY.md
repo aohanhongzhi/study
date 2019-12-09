@@ -9,7 +9,7 @@
     * RexDB
     * Shiro
 2. Python
-    * flask
+    * flaskv
     * peewee
 3. Go
     * beego
