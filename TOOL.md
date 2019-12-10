@@ -33,3 +33,6 @@
    * 支持Atom、PyCharm、Sublime、VS Code、Vim、IntelliJ，更多语言正在扩展中。
    * 安装软件还是很大的294MB，说明确实有点东西，但是下载很慢。此外vsc可以直接在扩展找到安装。pycharm没有找到。
    ![](./img/kite.png)
+
+
+1.  zip -q -r -e ssh.zip .ssh/
