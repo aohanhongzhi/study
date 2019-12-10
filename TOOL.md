@@ -23,3 +23,13 @@
 1. 按住Ctrl，然后鼠标再点击方法名是快速找到该方法被使用的地方。可以来回点。由使用的地方同样方法点击就回到了方法新建地方。
 1. Ctrl + Alt + O 快速去掉无用的import
 1. 删除当前行 Ctrl + Y
+
+### Pycharm
+
+#### 插件
+1. Kite - 代码补全神器
+   * 下载地址：https://kite.com/download/
+   * 支持Windows、Mac、Linux
+   * 支持Atom、PyCharm、Sublime、VS Code、Vim、IntelliJ，更多语言正在扩展中。
+   * 安装软件还是很大的294MB，说明确实有点东西，但是下载很慢。此外vsc可以直接在扩展找到安装。pycharm没有找到。
+   ![](./img/kite.png)
