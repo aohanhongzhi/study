@@ -92,7 +92,11 @@ Eureka作为服务发现与注册中心，即使整个Eureka集群宕机，消�
 
 https://spring.io/projects/spring-cloud-consul
 
+#### Nacos
 
+https://nacos.io/zh-cn/
+
+一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。说白了就是相当于eureka+Apollo，这个是阿里巴巴开源的，使用的公司还是很多的。
 
 
 ### 日志
@@ -292,6 +296,15 @@ spring-boot-starter-jersey |Restful Web服务，类似SpringMVC |https://blog.cs
 ### Micronaut新一代的微服务框架
 https://micronaut.io/
 
+* Grails团队新宠；
+* 可以用 Java、Groovy 和 Kotlin 编写的基于微服务的应用程序；
+* 相比Spring Boot已经比较全面；
+* 性能较优，编码方式与Spring Boot比较类似；
+* 启动时间和内存消耗方面比其他框架更高效；
+* 多语言；
+* 依赖注入；
+* 内置多种云本地功能；
+* 很新，刚发布1.0.0
 
 ---
 
