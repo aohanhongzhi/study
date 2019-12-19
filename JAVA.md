@@ -2,6 +2,16 @@
 
 由于Java基础知识比较多，代码编写套路多，因此独立成一个md文件。
 
+## 数据结构
+
+### HashMap
+
+事实上这也是JDK8为什么要对HashMap进行链条冲突优化：当entry数量不少于64时，如果冲突链表长度达到8，就会将其转成红黑树。因为链表长度越长，性能会越来越差。
+
+### 接口
+
+java8之后interface可以允许有实现方法。
+
 ## github&gitee
 
 1. [SSM基础框架](https://github.com/aohanhongzhi/ssm-basic)

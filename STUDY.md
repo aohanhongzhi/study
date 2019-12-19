@@ -73,7 +73,7 @@
     * 阿里巴巴建议自己手动新建线程指定核心线程数等参数。
 
     ```java
-        // 阿里巴巴建议自己手动新建线程池
+        // 阿里巴巴建议自己手动新建线程池，一定要指定最大线程数
         ExecutorService pool;
         pool = new ThreadPoolExecutor(5, 200,
                 0L, TimeUnit.MILLISECONDS,
@@ -84,7 +84,7 @@
 
                 }
             })
-        // 下面这种方式虽然简单，但是不够定制化，不推荐
+        // 下面这种方式虽然简单，但是不够定制化，不推荐。原因是因为最大线程数指定为Integer.MAX_VALUE（可以视为无限大），会造成OOM
         ExecutorService exec = Executors.newCachedThreadPool();
         exec.execute(new Runnbale());
     ```
@@ -347,8 +347,12 @@ SELECT Count(*) FROM schema.table;
 
 1. SpringBoot配置redis缓存查询。
 1. Redis集群部署（等待实践与理解）
-1. Redis持久化方式(等待理解)
-
+1. Redis持久化方式(两种持久化方式)
+    * 快照
+    * Append of file
+1. 一主二从三哨兵
+> Sentinel（哨兵）可以监听集群中的服务器，并在主服务器进入下线状态时，自动从从服务器中选举处新的主服务器。
+5. 分片是将数据划分为多个部分的方法，可以将数据存储到多台机器里面，这种方法在解决某些问题时可以获得线性级别的性能提升。
 ---
 
 ## Nginx
