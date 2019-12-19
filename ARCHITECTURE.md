@@ -92,7 +92,11 @@ Eureka作为服务发现与注册中心，即使整个Eureka集群宕机，消�
 
 https://spring.io/projects/spring-cloud-consul
 
+#### Nacos
 
+https://nacos.io/zh-cn/
+
+一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。说白了就是相当于eureka+Apollo，这个是阿里巴巴开源的，使用的公司还是很多的。
 
 
 ### 日志
@@ -195,6 +199,19 @@ SpringCloud家族，智能网关。性能不输Nginx。Zuul的核心是一系列
 
 单线程高性能网关
 
+#### HAProxy
+
+HAProxy是一个免费的负载均衡软件，可以运行于大部分主流的Linux操作系统上。
+
+HAProxy提供了L4(TCP)和L7(HTTP)两种负载均衡能力，具备丰富的功能。HAProxy的社区非常活跃，版本更新快速（最新稳定版1.7.2于2017/01/13推出）。最关键的是，HAProxy具备媲美商用负载均衡器的性能和稳定性。
+
+因为HAProxy的上述优点，它当前不仅仅是免费负载均衡软件的首选，更几乎成为了唯一选择。
+
+作者：kelgon
+链接：https://www.jianshu.com/p/c9f6d55288c0
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
 ### 代码审查
 
 #### sonarqube
@@ -279,6 +296,15 @@ spring-boot-starter-jersey |Restful Web服务，类似SpringMVC |https://blog.cs
 ### Micronaut新一代的微服务框架
 https://micronaut.io/
 
+* Grails团队新宠；
+* 可以用 Java、Groovy 和 Kotlin 编写的基于微服务的应用程序；
+* 相比Spring Boot已经比较全面；
+* 性能较优，编码方式与Spring Boot比较类似；
+* 启动时间和内存消耗方面比其他框架更高效；
+* 多语言；
+* 依赖注入；
+* 内置多种云本地功能；
+* 很新，刚发布1.0.0
 
 ---
 
