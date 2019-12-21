@@ -3,7 +3,7 @@
 ##　框架
 
 ### Mybatis
-1. ResultMap与ResultType
+1. ResultMap与ResultType。建议mybatis的xml文件配置下ResultMap，这样会更方便。
   * ResultType 直接指定包.类
     ```java
        resultType="hxy.cupb.entity.RoleEntity"
@@ -17,10 +17,10 @@
             <result column="password" property="passWord" jdbcType="VARCHAR"/>
         </resultMap>
 
-      使用
-       resultMap="UserEntity"
+        <!-- 使用 -->
+        resultMap="UserEntity"
     ```
-1. 连表查询　，不设外键的查询方法
+2. 连表查询，不设外键的查询方法。等值连接。
 
 ```xml
     <!-- 注意resultMap与resultType  -->
@@ -50,3 +50,50 @@ CREATE TABLE `springboot`.`user_role_table` (
   PRIMARY KEY (`id`));
 
 ```
+3. 存在就更新，不存在就插入
+
+```xml
+<!-- TODO 存在就跟新，不存在就新建 -->
+<insert id="saveAndFlush" parameterType="com.ctcc.misas.entity.BugInfoCollectionEntity">
+insert into misas.ct_buginfo(task_id,findbugs_bug_info,fortify_bug_info,codepecker_bug_info,merge_bug_info,engine_done)
+values(#{taskId},#{findbugsBugInfo},#{fortifyBugInfo},#{codepeckerBugInfo},#{mergeBugInfo},#{engineDone}) ON DUPLICATE KEY UPDATE
+      <if test="codepeckerBugInfo!=null">
+      codepecker_bug_info =VALUES(codepecker_bug_info),
+      </if>
+      <if test="findbugsBugInfo!=null">
+      findbugs_bug_info =VALUES(findbugs_bug_info),
+      </if>
+      <if test="fortifyBugInfo!=null">
+      fortify_bug_info =VALUES(fortify_bug_info),
+      </if>
+      task_id = VALUES(task_id);
+</insert>
+```
+
+4. 插入后返回自增主键
+
+    1. 在Mybatis Mapper文件中添加属性 “useGeneratedKeys”和“keyProperty”，其中 keyProperty 是 Java 对象的属性名，而不是表格的字段名。
+
+```xml
+<insert id="insert" parameterType="Spares"    useGeneratedKeys="true" keyProperty="id">
+    insert into system(name) values(#{name})
+</insert> 
+```
+
+​			2.Mybatis 执行完插入语句后，自动将自增长值赋值给对象 systemBean 的属性id。因此，可通过 systemBean 对应的 getter 方法获取！
+
+```java
+int count = systemService.insert(systemBean);
+int id = systemBean.getId(); //获取到的即为新插入记录的ID 
+```
+
+> 1.Mybatis Mapper 文件中，“useGeneratedKeys” 和 “keyProperty” 必须添加，而且 keyProperty 一定得和 java 对象的属性名称一致，而不是表格的字段名。
+
+5. 是
+
+
+
+### RexDB
+
+1. rexdb是通过下划线与Java对象中的驼峰式命名相呼应的，没有使用配置文件来一一对应映射。
+2. 
