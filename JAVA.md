@@ -94,6 +94,48 @@ public interface LinkFilter {
 ## 设计模式
 设计模式是编码的一种前人总结的经验，并不是Java独有的。之所以放在Java里面，是因为后期可能多半使用Java语言来实现。毕竟这个设计模式的具体应用还是与语言有很大的关系的。
 
+### 单例模式
+单例模式有多种写法，饿汉式，饱汉式，静态内部类等。
+
+#### 双重加锁的饿汉式
+下面写法需要注意两个地方，一个是`volatile`关键字（防止指令重排，因为JVM会优化），一个是`synchronized (Singleton.class)`加锁。
+```java
+public class Singleton { 
+    private volatile static Singleton uniqueInstance; 
+    private Singleton() { } 
+    public static Singleton getUniqueInstance() { 
+        //先判断对象是否已经实例过，没有实例化过才进入加锁代码
+         if (uniqueInstance == null) { 
+             //类对象加锁 
+             synchronized (Singleton.class) { 
+                 if (uniqueInstance == null) { uniqueInstance = new Singleton(); 
+                 } 
+            } 
+        } 
+    return uniqueInstance; 
+    } 
+}
+```
+另外，需要注意 uniqueInstance 采用 volatile 关键字修饰也是很有必要。
+
+uniqueInstance 采用 volatile 关键字修饰也是很有必要的， uniqueInstance = new Singleton(); 这段代码其实是分为三步执行：
+
+为 uniqueInstance 分配内存空间
+初始化 uniqueInstance
+将 uniqueInstance 指向分配的内存地址
+但是由于 JVM 具有指令重排的特性，执行顺序有可能变成 1->3->2。指令重排在单线程环境下不会出现问题，但是在多线程环境下会导致一个线程获得还没有初始化的实例。例如，线程 T1 执行了 1 和 3，此时 T2 调用 getUniqueInstance() 后发现 uniqueInstance 不为空，因此返回 uniqueInstance，但此时 uniqueInstance 还未被初始化。
+
+使用 volatile 可以禁止 JVM 的指令重排，保证在多线程环境下也能正常运行。
+
+
+来源: JavaGuide
+文章作者: SnailClimb
+
+文章链接: https://javaguide.cn/2019/12/09/java/java%E5%A4%9A%E7%BA%BF%E7%A8%8B/Java%20%E5%B9%B6%E5%8F%91%E8%BF%9B%E9%98%B6%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/#toc-heading-3
+
+本文章著作权归作者所有，任何形式的转载都请注明出处。
+
+
 ### 工厂模式
 
 直接上代码
