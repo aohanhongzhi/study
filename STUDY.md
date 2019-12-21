@@ -88,6 +88,8 @@
         ExecutorService exec = Executors.newCachedThreadPool();
         exec.execute(new Runnbale());
     ```
+    线程池工作原理
+    ![](./img/图解线程池实现原理.png)
 
 1. 高并发网络编程
 1. 性能调优实战

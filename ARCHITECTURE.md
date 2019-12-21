@@ -79,11 +79,11 @@ Eureka作为服务发现与注册中心，即使整个Eureka集群宕机，消�
  **总结**
 
     Zookeeper基于CP，不保证高可用性，如果ZooKeeper正在进行Master选举，或者Zookeeper集群中超过半数以上的机器不可用，那么将无法获得数据。Eureka基于AP，能保证高可用性，即使所有机器都出现故障，也能获取本地缓存的数据。
-
+    
     作为注册中心，其实配置是不经常变动的，只有应用发布和机器出现故障时才会变动。对于不经常变动的配置来说，CP是不合适的，而AP在遇到问题时可以用牺牲一致性来保证高可用性，即使返回旧数据，缓存数据。
-
+    
     因为Dubbo推荐ZooKeeper，因此国内大量的服务都用ZooKeeper来实现服务发现，但是从分布式理论上来看，Eureka更适合用作注册中心的。
-
+    
     ——《Docker微服务架构实战》
 
 #### Consul
@@ -226,7 +226,6 @@ HAProxy提供了L4(TCP)和L7(HTTP)两种负载均衡能力，具备丰富的功�
 
 1. 生成doc文档 `mvn javadoc:javadoc`
 
-
 ---
 ## Java技术栈
 
@@ -268,7 +267,7 @@ OSS | 对象存储 | [https://github.com/aliyun/aliyun-oss-java-sdk](https://git
 JWT | JWT登录支持 | [https://github.com/jwtk/jjwt](https://github.com/jwtk/jjwt)
 LogStash | 日志收集 | [https://github.com/logstash/logstash-logback-encoder](https://github.com/logstash/logstash-logback-encoder)
 Lombok | 简化对象封装工具 | [https://github.com/rzwitserloot/lombok](https://github.com/rzwitserloot/lombok)
-
+rsa-encrypt|Spring Boot 接口请求参数自动加解密 |https://gitee.com/catch_wind/rsa-encrypt-body-spring-boot
 ---
 
 ### SpringCloud家族
