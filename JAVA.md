@@ -12,7 +12,19 @@ volatile关键字的主要作用就是保证变量的可见性然后还有一个
 
 ### HashMap
 
-事实上这也是JDK8为什么要对HashMap进行链条冲突优化：当entry数量不少于64时，如果冲突链表长度达到8，就会将其转成红黑树。因为链表长度越长，性能会越来越差。
+事实上这也是JDK8为什么要对HashMap进行链条冲突优化：当entry数量不少于64时，如果冲突链表长度达到8，就会将其转成红黑树。因为链表长度越长，性能会越来越差。HashMap最大是2的30次方(1073741824)，最小为1，即使取了负数也会内部变成1.
+
+Hashtable不建议在新代码中使用，不需要线程安全的场合可以用HashMap替换，需要线程安全的场合可以用ConcurrentHashMap替换。
+
+> 线程安全 :arrow_forward: ConcurrentHashMap
+>
+> 线程不安全​ :arrow_forward: HashMap
+
+
+
+### Vector
+
+线程安全的数组，ArrayList与LinkList都是线程不安全的。
 
 ### 接口
 
