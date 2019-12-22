@@ -12,13 +12,43 @@ volatile关键字的主要作用就是保证变量的可见性然后还有一个
 
 ### HashMap
 
-事实上这也是JDK8为什么要对HashMap进行链条冲突优化：当entry数量不少于64时，如果冲突链表长度达到8，就会将其转成红黑树。因为链表长度越长，性能会越来越差。HashMap最大是2的30次方(1073741824)，最小为1，即使取了负数也会内部变成1.
+事实上这也是JDK8为什么要对HashMap进行链条冲突优化：当entry数量不少于64时，如果冲突链表长度达到8，就会将其转成红黑树。因为链表长度越长，性能会越来越差。HashMap最大capacity是2的30次方(1073741824)，最小为1，即使取了负数也会内部变成1.
+
+HashMap有下面几个重要的属性：
+
+1. 长度 length 或者大小 size ，缺省是16
+2. 负载因子 loadFactor ，缺省是 0.75
+3. 阈值 threshold = length * loadFactor   12= 16*0.75  也就是超过了12就会扩容，并不是达到16，用完了才扩容。
+4.  扩容是变成原来的两倍，也就是左移1位。
+5. HashMap的最大容量是2的30次方
 
 Hashtable不建议在新代码中使用，不需要线程安全的场合可以用HashMap替换，需要线程安全的场合可以用ConcurrentHashMap替换。
 
 > 线程安全 :arrow_forward: ConcurrentHashMap
 >
 > 线程不安全​ :arrow_forward: HashMap
+
+
+
+我们自定义HashMap初始容量大小时，构造函数并非直接把我们定义的数值当做HashMap容量大小，而是把该数值当做参数调用方法tableSizeFor，然后把返回值作为HashMap的初始容量大小：
+
+```java
+static final int tableSizeFor(int cap) {    
+    int n = -1 >>> Integer.numberOfLeadingZeros(cap - 1);    
+    return n < 0 ? 1 : (n >= 1073741824 ? 1073741824 : n + 1);
+}
+```
+
+该方法会返回一个大于等于当前参数的2的倍数，因此HashMap中的table数组的容量大小总是2的倍数。
+
+所以初始化大小的时候可以使用左移符号，例如  1<<10 也就是1024，1<<11 也就是2048。
+
+```java
+// the initial size is about 2048 
+new HashMap(1<<11); 
+```
+
+
 
 
 
