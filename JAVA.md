@@ -48,9 +48,15 @@ static final int tableSizeFor(int cap) {
 new HashMap(1<<11); 
 ```
 
+参考：[Java 8系列之重新认识HashMap](https://zhuanlan.zhihu.com/p/21673805)
 
+[Java HashMap的扩容](https://www.cnblogs.com/KingIceMou/p/6976574.html)
 
+[HashMap的最大容量为什么是2的30次方？](https://blog.csdn.net/qq_33666602/article/details/80139620)
 
+[java移位运算符：<<（左移）、>>（带符号右移）和>>>（无符号右移）。](https://www.cnblogs.com/blog-cq/p/5793529.html)
+
+[初步了解红黑树](https://blog.csdn.net/v_july_v/article/details/6105630)
 
 ### Vector
 
