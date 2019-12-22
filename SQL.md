@@ -97,3 +97,9 @@ int id = systemBean.getId(); //获取到的即为新插入记录的ID
 
 1. rexdb是通过下划线与Java对象中的驼峰式命名相呼应的，没有使用配置文件来一一对应映射。
 2. 
+
+### Mongo
+
+**mango的中文名是“芒果”，它是一个极速分布式ORM框架。目前已有十多个大型线上项目在使用mango，在某一支付系统中，更是利用mango，承载了每秒12万的支付下单请求。**
+
+官网：http://mango.jfaster.org/
