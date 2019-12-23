@@ -141,7 +141,7 @@
 1. [SpringBoot中文网](http://springboot.fun/)
 1. SpringBoot的@EnableAsync， @Async注解使用及其原理
 1. SpringBoot配置Redis查询缓存。三个注解。开启注解（@EnableCaching），使用注解，清除注解。重点在于key的自定义方式。
-    
+   
     * [SpringBoot下Redis模糊删除的AOP实现](https://docs.qq.com/doc/DSExjdkFka3VEWlR0)
 1. ssl配置，iptable端口转发。
 
@@ -322,24 +322,39 @@ SELECT Count(*) FROM schema.table;
 
 ---
 
-## Docker
+## 虚拟容器
 
-### 基础使用
+### docker
+
+#### 基础使用
 
 1. -m 参数可以用来调整dockerdocker容器内存限制。
+    
     ```
     docker run -m 512m
     ```
 1. -d 后台运行
 1. docker stats 查看容器使用CPU 内存使用等信息
 
-### cluster
+#### cluster
 
 1. swam集群搭建配置与容器部署
 
-### registry
+#### registry
 
 1. 阿里云docker仓库使用，本地推送镜像到云上，服务器拉取阿里云docker镜像部署
+
+### Podman
+
+Podman、Skopeo和Buildah下一代容器新架构强势出击！
+
+官网：https://podman.io/
+
+https://zhuanlan.zhihu.com/p/77373246
+
+https://www.jianshu.com/p/56d66837d618
+
+
 
 ---
 
@@ -368,6 +383,8 @@ LVS负载均衡
 ## Kafka
 
 分布式消息中间件
+
+高吞吐
 
 ---
 

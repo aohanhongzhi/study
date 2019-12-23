@@ -21,12 +21,69 @@ HashMap有下面几个重要的属性：
 3. 阈值 threshold = length * loadFactor   12= 16*0.75  也就是超过了12就会扩容，并不是达到16，用完了才扩容。
 4.  扩容是变成原来的两倍，也就是左移1位。
 5. HashMap的最大容量是2的30次方
+6. HashMap是的key是不能重复的，如果有相同的key，最后一个key对应的value会把前一个相同的value覆盖掉。不是抛出异常
 
 Hashtable不建议在新代码中使用，不需要线程安全的场合可以用HashMap替换，需要线程安全的场合可以用ConcurrentHashMap替换。
 
 > 线程安全 :arrow_forward: ConcurrentHashMap
 >
 > 线程不安全​ :arrow_forward: HashMap
+
+
+
+HashMap最小处理逻辑单元Node 是一个静态内部类。可以看出来是一个链表结点。这也合理解释了底层使用红黑树。
+
+```java
+    static class Node<K,V> implements Map.Entry<K,V> {
+        final int hash;
+        final K key;
+        V value;
+        Node<K,V> next;
+
+        Node(int hash, K key, V value, Node<K,V> next) {
+            this.hash = hash;
+            this.key = key;
+            this.value = value;
+            this.next = next;
+        }
+
+        public final K getKey()        { return key; }
+        public final V getValue()      { return value; }
+        public final String toString() { return key + "=" + value; }
+
+        public final int hashCode() {
+            return Objects.hashCode(key) ^ Objects.hashCode(value);
+        }
+
+        // 下面可以看出来会覆盖原来的值。并且返回原来的值。
+        public final V setValue(V newValue) {
+            V oldValue = value;
+            value = newValue;
+            return oldValue;
+        }
+
+        public final boolean equals(Object o) {
+            if (o == this)
+                return true;
+            if (o instanceof Map.Entry) {
+                Map.Entry<?,?> e = (Map.Entry<?,?>)o;
+                if (Objects.equals(key, e.getKey()) &&
+                    Objects.equals(value, e.getValue()))
+                    return true;
+            }
+            return false;
+        }
+    }
+```
+
+上面代码可以看出来，新值会直接覆盖原值。
+
+```java
+     hashMap.put("key",1);
+     // 返回旧值，可以从源代码中分析出来
+     Integer key = hashMap.put("key", 11);
+     System.out.println(key);
+```
 
 
 
