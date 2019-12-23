@@ -25,9 +25,9 @@ HashMap有下面几个重要的属性：
 
 Hashtable不建议在新代码中使用，不需要线程安全的场合可以用HashMap替换，需要线程安全的场合可以用ConcurrentHashMap替换。
 
-> 线程安全 :arrow_forward: ConcurrentHashMap
+> 线程安全（多线程操作情况下） :arrow_forward: ConcurrentHashMap
 >
-> 线程不安全​ :arrow_forward: HashMap
+> 线程不安全（单线程操作情况下）​ :arrow_forward: HashMap
 
 
 
