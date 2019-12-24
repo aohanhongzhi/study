@@ -345,3 +345,12 @@ uniqueInstance 采用 volatile 关键字修饰也是很有必要的， uniqueIns
 ```
 
 父类是不可以直接实例化的，但是子类正常，可以实例化。实例化之后直接调用父类的`getDataSource()`即可。 因为这个方法会去`createDataSource()`，而子类重写了这个方法。虽然感觉有点混乱，但是逻辑上还是很清晰的。
+
+
+
+## 常用库
+
+### guava
+
+[总结一下guava常用并发库的用法](https://www.jianshu.com/p/b94a57bd5eb9)
+

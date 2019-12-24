@@ -329,7 +329,7 @@ SELECT Count(*) FROM schema.table;
 #### 基础使用
 
 1. -m 参数可以用来调整dockerdocker容器内存限制。
-    
+   
     ```
     docker run -m 512m
     ```
@@ -364,6 +364,12 @@ https://www.jianshu.com/p/56d66837d618
 
 ## Redis
 
+1. redis的五种数据结构
+    1. String 就是简单的键值对
+    1. Hash就是多个String，即多个键值对
+    1. List
+    1. Set
+    1. SortSet
 1. SpringBoot配置redis缓存查询。
 1. Redis集群部署（等待实践与理解）
 1. Redis持久化方式(两种持久化方式)
