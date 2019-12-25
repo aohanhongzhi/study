@@ -3,6 +3,10 @@
 由于Java基础知识比较多，代码编写套路多，因此独立成一个md文件。
 ## 基础知识
 
+### 程序入口
+
+java除了main方法之外还有其他的程序入口。Java agent，premain，agentmain等。
+
 ###  volatile 
 
 volatile关键字的主要作用就是保证变量的可见性然后还有一个作用是防止指令重排序。
