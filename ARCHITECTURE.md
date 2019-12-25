@@ -113,6 +113,10 @@ https://www.wgstart.com/
 
 https://gitee.com/wanghouhou/wgcloud
 
+### 运维
+
+http://ansible.com.cn/docs/intro.html
+
 #### log-pilot
 
 ### 配置中心
