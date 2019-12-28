@@ -151,7 +151,7 @@
 
 1. [使用SpringBoot构建普通非web的Java应用
 ](https://docs.qq.com/doc/DSHBVQ2pwQUVadFNk)
-
+1. (SpringBoot的java全知识栈项目)[https://github.com/longxiaonan/java-sea]
 ### MyCat
 
 数据库中间件，多数据源，读写分离
