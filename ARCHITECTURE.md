@@ -25,7 +25,7 @@
 
 ##### 链式微服务设计模式
 
-##### 分之微服务设计模式
+##### 分支微服务设计模式
 
 #### 技术架构
 
@@ -40,7 +40,7 @@
 1. 代码开发规范,GitFlow
 1. 代码检查和日编译
 1. 模块化，分层，Maven规范和治理，也就是项目构建工具的管理，不限于maven，还有gradle等
-1. 各种定制的中间件d
+1. 各种定制的中间件
 1. 数据表的设计
 1. 数据逻辑库的拆分 
 
@@ -69,12 +69,12 @@
 
 #### ZooKeeper
 
-非常优秀的服务发信与注册中间件。由于其CP实现形式，被一大批生态软件采用。
+非常优秀的服务发现与注册中间件。由于其CP实现形式，被一大批生态软件采用。
 
 #### SpringCloud Eureka
 AP实现，采用Peer2Peer对等通信方式，去中心化的方式，无Master/Slaver区分，每一个Peer都是对等的。
 
-Eureka作为服务发现与注册中心，即使整个Eureka集群宕机，消费者还是可以通过自己之前的缓存获取注册表的！也就是每一个消费者并不是简单的获取自己想要的信息，而是所有信息。这也就解释了服务端的负载均衡与、Eureka端的负载均衡。因为都是有完整的注册表的，所以知道怎么负载均衡！
+Eureka作为服务发现与注册中心，即使整个Eureka集群宕机，消费者还是可以通过自己之前的缓存获取注册表的！也就是每一个消费者并不是简单的获取自己想要的信息，而是所有信息。这也就解释了服务端的负载均衡与Eureka端的负载均衡。因为都是有完整的注册表的（缓存，即使Eureka宕机，也是可以的），所以知道怎么负载均衡！
 
  **总结**
 
@@ -96,16 +96,18 @@ https://spring.io/projects/spring-cloud-consul
 
 https://nacos.io/zh-cn/
 
-一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。说白了就是相当于eureka+Apollo，这个是阿里巴巴开源的，使用的公司还是很多的。
+一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。说白了就是相当于eureka+Apollo，这个是阿里巴巴开源的，使用的公司还是很多的（国内居多，因为有幺蛾子表示Eureka2.+胎死腹中，存在闭源风险。然而这种下一版本停止的太多了）。
 
 
 ### 日志
 
 #### ELK
 
-构建统一的日志分析处理平台
+构建统一的日志分析处理平台。可以做很多的事。数据分析等
 
 #### log-pilot
+
+#### Splunk
 
 ### 配置中心
 在功能架构上，一个优秀的配置中心应该包括以下功能点。
@@ -135,7 +137,11 @@ Java客户端不依赖任何框架，能够运行于所有Java运行时环境，
 
 #### RabbitMQ
 
+集群部署并不是很好，处理消息在万级别
+
 #### kafka
+
+高吞吐，累积多
 
 #### RocketMQ
 
@@ -159,10 +165,18 @@ https://gitee.com/fastdfs100/fastdfs
 
 #### MySQL
 
+目前8.+，性能是5.7的两倍，而且增加了很多新特性。MySQL有很多的版本，如果集群部署的话，可以考虑使用cluster版本。可以参考mycat中间件。
+
+#### MariaDB
+
+mysql被Oracle收购之后，原班人马基于MySQL开源分之，开发了新的完全兼容MySQL的分支。一旦MySQL闭源。可以用MariaDB来替代。
+
 #### Postgresql 
 
+优秀的开源数据库
+
 #### TiDB
- 开源分布式 NewSQL 关系型数据库
+ 开源分布式 NewSQL 关系型数据库（兼容MySQL协议）
 
 https://pingcap.com/index.html
 
@@ -216,15 +230,21 @@ HAProxy提供了L4(TCP)和L7(HTTP)两种负载均衡能力，具备丰富的功�
 
 #### sonarqube
 
+可以使用这个做代码审查，做到bugfree。代码质量会影响后期的运行，内存溢出等等。
+
 #### 阿里巴巴规范插件
 
 ### 项目构建工具
 
 #### Gradle
 
+地表最强的项目构建工具
+
 #### Maven
 
 1. 生成doc文档 `mvn javadoc:javadoc`
+
+#### Buildr
 
 ---
 ## Java技术栈
@@ -283,7 +303,7 @@ SpringCloud官网：https://spring.io/projects/spring-cloud
 框架 | 说明 | 官网
 ----|----|----
 SpringBoot | JavaBean容器| [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot)
-Spring Vault | 数据库动态密码管理，敏感配置信息管理 | https://spring.io/projects/spring-vault
+Spring Vault | 数据库动态密码管理，敏感配置信息管理，需要安装vault。 | https://spring.io/projects/spring-vault
 spring-boot-starter-jersey |Restful Web服务，类似SpringMVC |https://blog.csdn.net/github_38395241/article/details/70265379
 
 ---

@@ -358,3 +358,40 @@ uniqueInstance 采用 volatile 关键字修饰也是很有必要的， uniqueIns
 
 [总结一下guava常用并发库的用法](https://www.jianshu.com/p/b94a57bd5eb9)
 
+
+
+## 编码风格
+
+
+
+1. Java的特点就是面向对象，因此应该全面使用对象概念。即从参数输入到输出到数据库等全过程阶段都应该是对象。参数输入使用如下方式。
+
+```java
+@GetMapping("/callback/detection_result")
+public DetectionResultResponse detection_result(DetectionResultRequest request){
+    DetectionResultResponse resultResponse= new DetectionResultResponse();
+
+    detectFileUploadService.detectFileUpload(request);
+
+    return resultResponse;
+}
+```
+
+上面的`DetectionResultRequest`是封装的对象，也是前端传过来的参数集合。由于是对象操作，后期添加参数的时候改动也是最方便的，最简单的。
+
+```java
+package com.ctcc.misas.analysis_platform.request;
+
+import lombok.Data;
+
+@Data
+public class DetectionResultRequest extends CommonRequest {
+
+    private Integer taskId;
+}
+```
+
+2. 对象之间信息拷贝
+
+![](./img/copyproperties.png)
+
