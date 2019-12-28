@@ -109,7 +109,9 @@ static final int tableSizeFor(int cap) {
 new HashMap(1<<11); 
 ```
 
-参考：[Java 8系列之重新认识HashMap](https://zhuanlan.zhihu.com/p/21673805)
+参考：
+
+[Java 8系列之重新认识HashMap](https://zhuanlan.zhihu.com/p/21673805)
 
 [Java HashMap的扩容](https://www.cnblogs.com/KingIceMou/p/6976574.html)
 
@@ -153,6 +155,8 @@ java8之后interface可以允许有实现方法。
 1. [Spring Framework](https://gitee.com/aohanhongzhi/spring-framework)
 1. Dubbox
 ## JVM
+
+需要掌握常用JVM调优技巧。
 
 ### Java常用命令
 

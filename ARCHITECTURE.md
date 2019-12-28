@@ -105,6 +105,18 @@ https://nacos.io/zh-cn/
 
 构建统一的日志分析处理平台。可以做很多的事。数据分析等
 
+### 监控
+
+#### WGCLOUD
+
+https://www.wgstart.com/
+
+https://gitee.com/wanghouhou/wgcloud
+
+### 运维
+
+http://ansible.com.cn/docs/intro.html
+
 #### log-pilot
 
 #### Splunk
