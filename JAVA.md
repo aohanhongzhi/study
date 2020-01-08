@@ -175,6 +175,7 @@ java8之后interface可以允许有实现方法。
 		// bean 中的链式风格
 		new User().setUserName(name).setPassword(password);
 	```
+    可能会导致ExceptionInInitializerError这种异常，程序无法启动等
 ### 接口与匿名内部类
 
 这个程序里里面有一段代码
