@@ -121,6 +121,12 @@ http://ansible.com.cn/docs/intro.html
 
 #### Splunk
 
+#### Zabbix
+
+用的应该也比较多
+
+<https://www.zabbix.org.cn/>
+
 ### 配置中心
 在功能架构上，一个优秀的配置中心应该包括以下功能点。
 
