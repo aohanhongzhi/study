@@ -28,4 +28,4 @@
 1. Redis一主二从三哨兵实战
 1. [istio调研-下一代Service Mesh](https://istio.io/zh/)
 1. https://github.com/Snailclimb/programmer-advancement
-1. 
+1. [HikariCP数据库连接池源码](https://github.com/brettwooldridge/HikariCP)
