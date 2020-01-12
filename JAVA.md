@@ -129,6 +129,9 @@ new HashMap(1<<11);
 
 java8之后interface可以允许有实现方法。
 
+### FastList
+https://blog.csdn.net/user_regist/article/details/80659970
+
 ## github&gitee
 
 1. [SSM基础框架](https://github.com/aohanhongzhi/ssm-basic)
