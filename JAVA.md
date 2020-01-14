@@ -129,6 +129,12 @@ new HashMap(1<<11);
 
 java8之后interface可以允许有实现方法。
 
+### FastList
+
+https://blog.csdn.net/user_regist/article/details/80659970
+
+https://blog.csdn.net/JYTXIOABAI/article/details/83827127
+
 ## github&gitee
 
 1. [SSM基础框架](https://github.com/aohanhongzhi/ssm-basic)
@@ -175,6 +181,7 @@ java8之后interface可以允许有实现方法。
 		// bean 中的链式风格
 		new User().setUserName(name).setPassword(password);
 	```
+    可能会导致ExceptionInInitializerError这种异常，程序无法启动等
 ### 接口与匿名内部类
 
 这个程序里里面有一段代码
@@ -362,7 +369,12 @@ uniqueInstance 采用 volatile 关键字修饰也是很有必要的， uniqueIns
 
 [总结一下guava常用并发库的用法](https://www.jianshu.com/p/b94a57bd5eb9)
 
+### json库
 
+#### fastjson
+国内比较优秀的，性能更好。但是更加推荐使用jackson
+#### jackson
+SpringBoot默认的json中间件，更加规范
 
 ## 编码风格
 

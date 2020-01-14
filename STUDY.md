@@ -358,8 +358,16 @@ https://www.jianshu.com/p/2ee012fe003f
 ```sql
 SELECT Count(*) FROM schema.table;
 ```
+1. 查询mysql版本
+```sql
+	select version();
+```
 
+
+2. 
 ---
+
+
 
 ## 虚拟容器
 
