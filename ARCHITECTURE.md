@@ -127,6 +127,8 @@ http://ansible.com.cn/docs/intro.html
 
 <https://www.zabbix.org.cn/>
 
+参考：<https://www.cnblogs.com/clsn/p/7885990.html>
+
 ### 配置中心
 在功能架构上，一个优秀的配置中心应该包括以下功能点。
 
@@ -162,6 +164,8 @@ Java客户端不依赖任何框架，能够运行于所有Java运行时环境，
 高吞吐，累积多
 
 #### RocketMQ
+
+
 
 
 
@@ -277,6 +281,7 @@ JWT | JWT登录支持 | [https://github.com/jwtk/jjwt](https://github.com/jwtk/j
 MongoDb | NoSql数据库 | [https://www.mongodb.com/](https://www.mongodb.com/)
 Docker | 应用容器引擎 | [https://www.docker.com/](https://www.docker.com/)
 Druid | 数据库连接池 | [https://github.com/alibaba/druid](https://github.com/alibaba/druid)
+HikariCP|SpringBoot2.+默认数据库连接池，性能非常优秀 | https://github.com/brettwooldridge/HikariCP
 RabbitMq | 消息队列 | [https://www.rabbitmq.com/](https://www.rabbitmq.com/)
 
 ---

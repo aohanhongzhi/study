@@ -52,6 +52,45 @@
             DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMddhhmmssSSS");
             String nowStr = now.format(dtf);
     ```
+    hh是12小时制 ("yyyy:MM:dd,hh:mm:ss") ，HH是24小时制 ("yyyy:MM:dd,HH:mm:ss") 
+    ```java
+    package com.ctcc.misas.util;
+    import lombok.extern.slf4j.Slf4j;
+    import java.time.Instant;
+    import java.time.LocalDateTime;
+    import java.time.ZoneId;
+    import java.time.format.DateTimeFormatter;
+    import java.util.TimeZone;
+
+    /**
+    * @author eric
+    * @description:
+    * @date 1/14/20 5:27 PM
+        */
+        @Slf4j
+        public class DateTimeTest {
+        public static void main(String[] args) {
+        // createTime是Date类型，从数据库取出来的
+        //        Instant instant = createTime.toInstant();
+            Instant instant = Instant.now();
+            // 下面取得都是上海的值
+            ZoneId zoneId = ZoneId.systemDefault();
+            zoneId = TimeZone.getTimeZone("GMT+8:00").toZoneId();
+
+            LocalDateTime localDateTime = LocalDateTime.ofInstant(instant, zoneId);
+            //java8才有的线程安全
+            DateTimeFormatter dtf12 = DateTimeFormatter.ISO_LOCAL_DATE_TIME.ofPattern("yyyy/MM/dd hh:mm:ss").withZone(zoneId);
+        //        HH:mm:ss 大写是24小时
+            DateTimeFormatter dtf24 = DateTimeFormatter.ISO_LOCAL_DATE_TIME.ofPattern("yyyy/MM/dd HH:mm:ss").withZone(zoneId);
+            String nowStr = localDateTime.format(dtf12);
+            String nowStr24 = localDateTime.format(dtf24);
+            log.info("{}\n{}", nowStr, nowStr24);
+        }
+    }
+
+    ```
+    DateTime.Now.ToString ("yyyy:MM:dd,hh:mm:ss") 12小时制转成24小时制
+
 
 1. `org.apache.commons.lang3.StingUtils.isEmpty("String")`判断字符串是否为空
 1. 不同浏览器，编码不一样的解决方案。
