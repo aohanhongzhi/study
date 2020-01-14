@@ -127,6 +127,8 @@ http://ansible.com.cn/docs/intro.html
 
 <https://www.zabbix.org.cn/>
 
+参考：<https://www.cnblogs.com/clsn/p/7885990.html>
+
 ### 配置中心
 在功能架构上，一个优秀的配置中心应该包括以下功能点。
 
@@ -162,6 +164,8 @@ Java客户端不依赖任何框架，能够运行于所有Java运行时环境，
 高吞吐，累积多
 
 #### RocketMQ
+
+
 
 
 
