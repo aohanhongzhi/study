@@ -339,6 +339,14 @@ Ribbon|负载均衡，大多数 组件都默认集成了|
 HyStrix|熔断降级|
 Sleuth|信息收集，将信息发送给Zipkin|
 
+##### 专业应用
+组件 | 说明 | 官网
+---|---|---
+SpringCloudRabbitMQ|RabbitMQ客户端 |
+SpringCloudRedis| Redis客户端|
+SpringCloudMongoDB| MongoDB客户端|
+
+
 SpringCloud Config不建议使用，可以使用携程的Apollo替代。
 
 
