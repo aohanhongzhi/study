@@ -315,7 +315,32 @@ rsa-encrypt|Spring Boot 接口请求参数自动加解密 |https://gitee.com/cat
 
 ### SpringCloud家族
 
-基于Restful的微服务框架
+基于Restful的微服务框架。
+
+##### 主角应用
+
+主角应用一般是自己作为server独立存在。
+
+组件 | 说明 | 官网
+---|---|---
+Eureka|服务注册与发现中心 | 
+Admin|应用监控|
+Zuul|网关|
+Zipkin| 链路数据分析组件，Sleuth收集信息 |
+
+##### 配角应用
+
+配角应用一般是集成在其他组件里面，不能独立成为一个Server。
+
+组件 | 说明 | 官网
+---|---|---
+Feign|服务之间的调用|
+Ribbon|负载均衡，大多数 组件都默认集成了|
+HyStrix|熔断降级|
+Sleuth|信息收集，将信息发送给Zipkin|
+
+SpringCloud Config不建议使用，可以使用携程的Apollo替代。
+
 
 Spring家族官网：https://spring.io/
 
