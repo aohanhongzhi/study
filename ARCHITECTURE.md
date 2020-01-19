@@ -105,6 +105,11 @@ https://nacos.io/zh-cn/
 
 构建统一的日志分析处理平台。可以做很多的事。数据分析等
 
+#### 链路分析 minbox-logging
+
+https://gitee.com/minbox-projects/minbox-logging
+
+
 ### 监控
 
 #### WGCLOUD
