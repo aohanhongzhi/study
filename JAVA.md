@@ -127,7 +127,7 @@ new HashMap(1<<11);
 
 ### 接口
 
-java8之后interface可以允许有实现方法。
+java8之后interface可以允许有实现方法。接口一般不能实例化，有一种编程思想叫，面向接口编程，是为了解耦。典型就是SSM框架或者Spring框架中就是这种思想。但是实例化还是由implement的类来实例化的，只不过类型是接口类型。也就是相当于子类具体实现，但是成为父类的类型。
 
 ### FastList
 
@@ -161,6 +161,7 @@ https://blog.csdn.net/JYTXIOABAI/article/details/83827127
 1. [Java核心研究](https://gitee.com/aohanhongzhi/ByteCode)
 1. [Spring Framework](https://gitee.com/aohanhongzhi/spring-framework)
 1. Dubbox
+1. blade framework
 ## JVM
 
 需要掌握常用JVM调优技巧。

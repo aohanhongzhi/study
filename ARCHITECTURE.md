@@ -88,9 +88,11 @@ Eureka作为服务发现与注册中心，即使整个Eureka集群宕机，消�
 
 #### Consul
 
-分布式协同工具，Spring cloud Consul
+分布式协同工具，Spring cloud Consul。Consul是一个服务网格（微服务间的 TCP/IP，负责服务之间的网络调用、限流、熔断和监控）解决方案，它是一个一个分布式的，高度可用的系统，而且开发使用都很简便。它提供了一个功能齐全的控制平面，主要特点是：服务发现、健康检查、键值存储、安全服务通信、多数据中心。
 
 https://spring.io/projects/spring-cloud-consul
+
+<https://www.jianshu.com/p/7d20dc58c9fc>
 
 #### Nacos
 
@@ -361,11 +363,15 @@ SpringCloud官网：https://spring.io/projects/spring-cloud
 
 据了解SpringCloud官网提供了80多种中间件集成的starter。
 
+##### 等待研究的中间件
+
 框架 | 说明 | 官网
 ----|----|----
 SpringBoot | JavaBean容器| [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot)
 Spring Vault | 数据库动态密码管理，敏感配置信息管理，需要安装vault。 | https://spring.io/projects/spring-vault
+Vault |动态密码Server |https://www.hashicorp.com/products/vault/
 spring-boot-starter-jersey |Restful Web服务，类似SpringMVC |https://blog.csdn.net/github_38395241/article/details/70265379
+ Consul | |https://spring.io/projects/spring-cloud-consul
 
 ---
 
