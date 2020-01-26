@@ -14,9 +14,13 @@
 
 服务层的注解，目的就是为了注册bean，一般来说service多半是使用其方法，而不是其Field，所以这个注入的是单例。
 
+### Import
+
+直接注入一个bean。
+
 ### MapperScan
 
-mapper所在包的bean注入方式。可以不需要@Mapper注解了
+mapper所在包的bean注入方式。与Import一样，就是个数不限。mapper包下下面的java文件可以不需要@Mapper注解了
 
 ```
 @MapperScan("hxy.print.server.mapper")
