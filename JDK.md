@@ -30,7 +30,20 @@ null异常检测并且抛出
 java.lang.ClassLoader.getResource(String name)
 ```
 
+栗子：下面方式就可以读取resource文件夹下面的内容。
+
+```java
+         String fileName = "mq.json";
+		ClassLoader classLoader = 当前类名.class.getClassLoader();
+         URL url = classLoader.getResource(fileName);
+         String path = url.getPath();
+         File file = new File(path);
+```
+
+
+
 #### systemClassLoader
+
 ```java
 	ClassLoader.getSystemClassLoader()
 ```

@@ -367,6 +367,36 @@ uniqueInstance 采用 volatile 关键字修饰也是很有必要的， uniqueIns
 
 ## 常用库
 
+
+
+### Commons-io
+
+```groovy
+    compile 'commons-io:commons-io:2.4'
+```
+
+使用commons-io的FileUtils直接读取文件转成String！简单方便快捷。
+
+```java
+        try {
+            // 从类加载器来读取数据
+            URL url = JsonResourceUtils.class.getResource(filename);
+            String path = url.getPath();
+            File file = new File(path);
+            if (file.exists()) {
+                String content = FileUtils.readFileToString(file, "UTF-8");
+                json = JSON.parseObject(content);
+            } else {
+                logger.info("file not exist!");
+            }
+
+        } catch (Exception e) {
+            logger.error("readFileToString{}" , e.getMessage(),e);
+        }
+```
+
+
+
 ### guava
 
 [总结一下guava常用并发库的用法](https://www.jianshu.com/p/b94a57bd5eb9)
