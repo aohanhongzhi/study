@@ -17,12 +17,13 @@ alias tT='ssh ubuntu@129.28.19.203'
 alias tA='ssh root@119.23.236.94'
 alias tHu='ssh ubuntu@119.23.236.94'
 alias mp='mvn clean package -Dmaven.test.skip=true'
-alias gc='git clone'
-alias gitp='git push'
 alias ks='kill -s 9'
 alias pg='ps -ef | grep'
+alias gc='git clone'
+alias gitp='git push'
 alias gits="git status"
 alias gitc='git commit -m '
+alias gita='git add '
 
 #java envirenment
 export JAVA_HOME=/usr/local/eric/jdk-11.0.5
