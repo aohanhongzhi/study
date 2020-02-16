@@ -278,7 +278,21 @@ HAProxy提供了L4(TCP)和L7(HTTP)两种负载均衡能力，具备丰富的功�
 ---
 ## Java技术栈
 
-### 通用中间件
+### ORM中间件
+
+框架名 | 说明 | 官网
+--- | --- | ---
+mybatis |半自动化的ORM，灵活性更高 | 
+mybatis-plus| mybatis的增强，全自动化。既有hibernate，jpa的自动化又有mybatis的灵活性 |https://mybatis.plus/
+rexdb| 手写sql，https://gitee.com/rexsoft/rexdb |http://db.rex-soft.org/
+hibernate | 全自动化 |
+jpa|SpringBoot常用的，个人体验不是很好 |
+anima|blade框架作者杰作，无需sql | https://github.com/biezhi/anima
+
+个人推荐使用mybatis-plus比较好，既可以使用注解，也可以使用xml文件配置，还可以直接继承BaseMapper接口。灵活也不失自动化。
+
+
+### 常用中间件
 
 框架名 | 说明 | 官网
 --- | --- | ---
@@ -406,6 +420,15 @@ ORM层| [rexdb](http://db.rex-soft.org/)|高效灵活简单
 关系数据库|[postgresql](https://www.postgresql.org/)|开源自由
 
 ---
+
+### 技术栈2
+
+
+应用层次 | 框架名 | 推荐理由
+--- | --- | ---
+前端与服务|[balde](http://sparkjava.com/)| 与SpringBoot类似的路由方式与控制翻转和依赖注入
+ORM | [blade-anima](https://github.com/biezhi/anima)| 无需手写sql，直接方法操作数据库
+
 
 ## Python
 
