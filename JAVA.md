@@ -121,6 +121,25 @@ new HashMap(1<<11);
 
 [初步了解红黑树](https://blog.csdn.net/v_july_v/article/details/6105630)
 
+### Stream
+
+将list转成map。并且遍历map。
+
+```java
+// 将list转成map        
+Map<Integer, String> map = list.stream().collect(
+                Collectors.toMap(Student::getAge, Student::getName, (key1, key2) -> key1)
+        );
+// map遍历        
+map.forEach((key, value) -> {
+            System.out.println("key: " + key + "    value: " + value);
+        });
+
+```
+
+
+
+
 ### Vector
 
 线程安全的数组，ArrayList与LinkList都是线程不安全的。
