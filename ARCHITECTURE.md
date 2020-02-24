@@ -63,6 +63,12 @@
 #### Docker
 容器化部署，智能运维，几万个节点的部署。
 
+#### Rancher
+
+容器编排工具
+
+<https://www.rancher.cn/>
+
 ### 服务注册与发现
 
 分布式系统中有一个非常著名的CAP定理，C表示数据一致性，A表示服务可用性，P表示服务对网络分区故障的容错性。这三个特性在任何分布式系统中都不能同时满足，最多只能满足两个。本质上ZooKeeper是一个CP实现，而Eureka是一个AP实现。
@@ -298,11 +304,13 @@ anima|blade框架作者杰作，无需sql | https://github.com/biezhi/anima
 --- | --- | ---
 Lombok | 简化对象封装| [https://github.com/rzwitserloot/lombok](https://github.com/rzwitserloot/lombok)
 Redis|缓存| [https://redis.io/](https://redis.io/)
+Caffeine|本地缓存，应用内存| <http://www.mydlq.club/article/56/> 
 JWT | JWT登录支持 | [https://github.com/jwtk/jjwt](https://github.com/jwtk/jjwt)
 MongoDb | NoSql数据库 | [https://www.mongodb.com/](https://www.mongodb.com/)
 Docker | 应用容器引擎 | [https://www.docker.com/](https://www.docker.com/)
 Druid | 数据库连接池 | [https://github.com/alibaba/druid](https://github.com/alibaba/druid)
 HikariCP|SpringBoot2.+默认数据库连接池，性能非常优秀 | https://github.com/brettwooldridge/HikariCP
+oh-my-email|Java 邮件发送库了，支持抄送、附件、模板 | <https://github.com/biezhi/oh-my-email> 
 RabbitMq | 消息队列 | [https://www.rabbitmq.com/](https://www.rabbitmq.com/)
 
 ---
