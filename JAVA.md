@@ -23,8 +23,21 @@ HashMap有下面几个重要的属性：
 1. 长度 length 或者大小 size ，缺省是16
 2. 负载因子 loadFactor ，缺省是 0.75
 3. 阈值 threshold = length * loadFactor   12= 16*0.75  也就是超过了12就会扩容，并不是达到16，用完了才扩容。
-4.  扩容是变成原来的两倍，也就是左移1位。
+4. 扩容是变成原来的两倍，也就是左移1位。
 5. HashMap的最大容量是2的30次方
+   1. ```java 
+        // 最大容量（必须是2的幂且小于2的30次方，传入容量过大将被这个值替换）
+        static final int MAXIMUM_CAPACITY = 1 << 30;```
+        ```
+    2. 为什么是30？而不是31？
+    
+    答： 首先：JAVA规定了该static final 类型的静态变量为int类型，至于为什么不是byte、long等类型，原因是由于考虑到HashMap的性能问题而作的折中处理！
+
+    由于int类型限制了该变量的长度为4个字节共32个二进制位，按理说可以向左移动31位即2的31次幂。但是事实上由于二进制数字中最高的一位也就是最左边的一位是符号位，用来表示正负之分（0为正，1为负），所以只能向左移动30位，而不能移动到处在最高位的符号位！
+    补充：按照我自己的理解选择30估计是出于性能折中处理，因为int的最大值是2的31次方减1.也就是1<<31-1
+    3. [HashMap的最大容量为什么是2的30次方(1左移30)?](https://blog.csdn.net/sayWhat_sayHello/article/details/83120324)
+    4. [HashMap 容量和最大索引取值表](https://blog.csdn.net/feleon/article/details/92721045)
+
 6. HashMap是的key是不能重复的，如果有相同的key，最后一个key对应的value会把前一个相同的value覆盖掉。不是抛出异常
 
 Hashtable不建议在新代码中使用，不需要线程安全的场合可以用HashMap替换，需要线程安全的场合可以用ConcurrentHashMap替换。
