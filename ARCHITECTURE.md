@@ -298,6 +298,9 @@ J2Cache | Java 两级缓存框架，可以让应用支持两级缓存框架 ehca
 kisso | java 基于 Cookie 的 SSO 中间件 kisso |<https://gitee.com/baomidou/kisso>
 jpa|SpringBoot常用的，个人体验不是很好 |
 anima|blade框架作者杰作，无需sql | https://github.com/biezhi/anima
+BeetlSQL|全功能DAO工具， 同时具有Hibernate 优点 & Mybatis优点功能，适用于承认以SQL为中心，同时又需求工具能自动能生成大量常用的SQL的应用。 <https://gitee.com/xiandafu/beetlsql> | <http://ibeetl.com/> 
+
+
 
 个人推荐使用mybatis-plus比较好，既可以使用注解，也可以使用xml文件配置，还可以直接继承BaseMapper接口。灵活也不失自动化。
 
