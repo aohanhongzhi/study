@@ -126,6 +126,12 @@ https://www.wgstart.com/
 
 https://gitee.com/wanghouhou/wgcloud
 
+#### 夜莺
+
+Nightingale是一套衍生自Open-Falcon的互联网监控解决方案，融入了滴滴的最佳实践，由于改动太大，优化太多，产品上已经无法与Open-Falcon平滑兼容，故而单开一个项目。
+
+<http://n9e.didiyun.com/>
+
 ### 运维
 
 http://ansible.com.cn/docs/intro.html
@@ -450,3 +456,11 @@ ORM | [blade-anima](https://github.com/biezhi/anima)| 无需手写sql，直接�
 ### flask
 
 flask
+
+中文文档：
+
+<http://docs.jinkan.org/docs/flask/>
+
+英文文档：
+
+<https://flask.palletsprojects.com/>

@@ -30,7 +30,7 @@ HashMap有下面几个重要的属性：
         static final int MAXIMUM_CAPACITY = 1 << 30;```
         ```
     2. 为什么是30？而不是31？
-    
+   
     答： 首先：JAVA规定了该static final 类型的静态变量为int类型，至于为什么不是byte、long等类型，原因是由于考虑到HashMap的性能问题而作的折中处理！
 
     由于int类型限制了该变量的长度为4个字节共32个二进制位，按理说可以向左移动31位即2的31次幂。但是事实上由于二进制数字中最高的一位也就是最左边的一位是符号位，用来表示正负之分（0为正，1为负），所以只能向左移动30位，而不能移动到处在最高位的符号位！
@@ -147,6 +147,12 @@ Map<Integer, String> map = list.stream().collect(
 map.forEach((key, value) -> {
             System.out.println("key: " + key + "    value: " + value);
         });
+
+
+List<CtUserDefineDefectSet> ctUserDefineDefectSets = ctUserDefineDefectSetMapper.selectList(queryWrapper);
+
+Map<Integer, CtUserDefineDefectSet> collect = ctUserDefineDefectSets.stream().collect(Collectors.toMap(CtUserDefineDefectSet::getSecondGradeId, ctUserDefineDefectSet -> ctUserDefineDefectSet, (key1, key2) -> key1));
+
 
 ```
 
