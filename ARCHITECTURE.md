@@ -464,3 +464,16 @@ flask
 英文文档：
 
 <https://flask.palletsprojects.com/>
+
+
+
+
+
+## 优秀的github总结
+
+1. [java核心知识库](https://github.com/crossoverJie/JCSprout)
+2. [Java学习+面试指南](https://github.com/Snailclimb/JavaGuide)
+3. [Spring Boot 教程、技术栈示例代码](https://github.com/ityouknow/spring-boot-examples)
+4. [秒杀系统设计与实现](https://github.com/qiurunze123/miaosha)
+5. [大数据入门指南](https://github.com/heibaiying/BigData-Notes)
+6. 
