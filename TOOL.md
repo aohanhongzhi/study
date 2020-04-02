@@ -1,13 +1,21 @@
 # Tool
 
-1. [arthas](https://gitee.com/arthas/arthas) 阿里巴巴出品的虚拟机查看工具
+1. [arthas](https://gitee.com/arthas/arthas) 阿里巴巴出品的虚拟机查看工具，可以用来查看线上的入参与返回值
+
+1. [dumpclass](https://github.com/hengyunabc/dumpclass)Dump classes from running JVM process.Edit Manage topics
+
 1. [Rancher](https://www.rancher.cn/)是一个为DevOps团队提供的完整的Kubernetes与容器管理解决方案。它解决了多Kubernetes集群管理、操作和安全的难题，同时为DevOps团队提供了运行容器化工作负载的管理工具。
-1. [visualvm](https://visualvm.github.io/
-) java虚拟机程序运行情况
+
+1. [visualvm](https://visualvm.github.io/) java虚拟机程序运行情况
+
 1. [Graal VisualVM](https://visualvm.github.io/graal.html)
+
 1. 图床，可以免费存储图片
+
 1. [Sourcetrail——代码结构流程分析软件，可以分析多种语言](https://github.com/CoatiSoftware/Sourcetrail/releases)
+
 1. [Typora](https://typora.io/) 是一个非常好用的markdown编辑器，不需要使用者掌握markdown的语法，可以直接像编写word一样写出同样的文档。此外还有很多功能，例如导出PDF，HTML等各种文件。
+
 1. Byteman 动态字节码工具，可以无渗透修改线上运行的代码
 
 
