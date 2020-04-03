@@ -1,5 +1,11 @@
 # Interview
 
+### 常见面试题目
+
+[一个学渣的阿里之路](https://crossoverjie.top/2018/06/21/personal/Interview-experience/)
+
+写博客很重要，是自己研究深度的一种展示。
+
 ## javaer
 
 作为面试官，我只能根据候选人的回答来决定面试结果。不过，与人方便自己方便，我整理了一些面试中常考察的几个方向。
