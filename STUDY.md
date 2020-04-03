@@ -52,6 +52,16 @@
             DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMddhhmmssSSS");
             String nowStr = now.format(dtf);
     ```
+    从long unix时间戳格式化
+    ```java
+            Long startTime = Long.parseLong(ctEngineTask.getStartTime());
+            Date date = new Date(startTime);
+            Instant instant = date.toInstant();
+            LocalDateTime ldt = instant.atOffset(ZoneOffset.UTC).toLocalDateTime();
+            DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy--MM--dd HH:mm:ss");
+            String nowStr = ldt.format(dtf);
+
+    ```
     hh是12小时制 ("yyyy:MM:dd,hh:mm:ss") ，HH是24小时制 ("yyyy:MM:dd,HH:mm:ss") 
     ```java
     package com.ctcc.misas.util;
