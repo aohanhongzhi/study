@@ -214,7 +214,7 @@ mysql被Oracle收购之后，原班人马基于MySQL开源分之，开发了新�
 
 #### Postgresql 
 
-优秀的开源数据库
+优秀的开源数据库，据说这个数据更加现代化，比mysql更好。
 
 #### TiDB
  开源分布式 NewSQL 关系型数据库（兼容MySQL协议）
