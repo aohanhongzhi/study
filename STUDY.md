@@ -137,6 +137,15 @@
         ExecutorService exec = Executors.newCachedThreadPool();
         exec.execute(new Runnbale());
     ```
+    下面是定时器的写法
+    ```java
+
+            ScheduledExecutorService scheduledExecutorService = new ScheduledThreadPoolExecutor(1, Executors.defaultThreadFactory());
+            scheduledExecutorService.scheduleAtFixedRate(() -> {
+                EdsLoginService.isLoginStatus();
+            }, 10, 10, TimeUnit.MINUTES);
+
+    ```
     线程池工作原理
     ![](./img/图解线程池实现原理.png)
 
