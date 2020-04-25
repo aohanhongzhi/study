@@ -1,5 +1,22 @@
+依赖引入
+
+```groovy
+    compile group: 'ch.qos.logback', name: 'logback-core', version: '1.2.3'
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+
+    annotationProcessor 'org.projectlombok:lombok:1.18.10'
+    compileOnly 'org.projectlombok:lombok:1.18.10'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.10'
+    testCompileOnly 'org.projectlombok:lombok:1.18.10'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.26'
+```
+
+
+
 显示文件行数，点击可以跳转。
+
 需要在application.properties中配置
+
 ```
 # log config
 logging.config=classpath:logback.xml

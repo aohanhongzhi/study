@@ -7,5 +7,8 @@
 5. https://github.com/longxiaonan/java-sea
 6. [系统重构与迁移指南](https://github.com/phodal/migration)
 7. <https://github.com/trending/java?since=daily>
-8. 
+8. <https://github.com/biezhi/java-bible>
+9. [IOC容器设计](<https://github.com/biezhi/java-bible/blob/master/ioc/3.myioc.md>)
+10. [awesome-Java](<https://github.com/jobbole/awesome-java-cn>)
+11. 
 

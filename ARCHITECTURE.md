@@ -62,6 +62,12 @@
 
 #### Docker
 容器化部署，智能运维，几万个节点的部署。
+https://yeasy.gitbooks.io/docker_practice/
+#### Rancher
+
+容器编排工具
+
+<https://www.rancher.cn/>
 
 ### 服务注册与发现
 
@@ -119,6 +125,12 @@ https://gitee.com/minbox-projects/minbox-logging
 https://www.wgstart.com/
 
 https://gitee.com/wanghouhou/wgcloud
+
+#### 夜莺
+
+Nightingale是一套衍生自Open-Falcon的互联网监控解决方案，融入了滴滴的最佳实践，由于改动太大，优化太多，产品上已经无法与Open-Falcon平滑兼容，故而单开一个项目。
+
+<http://n9e.didiyun.com/>
 
 ### 运维
 
@@ -202,7 +214,7 @@ mysql被Oracle收购之后，原班人马基于MySQL开源分之，开发了新�
 
 #### Postgresql 
 
-优秀的开源数据库
+优秀的开源数据库，据说这个数据更加现代化，比mysql更好。
 
 #### TiDB
  开源分布式 NewSQL 关系型数据库（兼容MySQL协议）
@@ -278,19 +290,42 @@ HAProxy提供了L4(TCP)和L7(HTTP)两种负载均衡能力，具备丰富的功�
 ---
 ## Java技术栈
 
-### 通用中间件
+### ORM中间件
+
+框架名 | 说明 | 官网
+--- | --- | ---
+mybatis |半自动化的ORM，灵活性更高 | 
+mybatis-plus| mybatis的增强，全自动化。既有hibernate，jpa的自动化又有mybatis的灵活性 |https://mybatis.plus/
+rexdb| 手写sql，https://gitee.com/rexsoft/rexdb |http://db.rex-soft.org/
+hibernate | 全自动化 |
+J2Cache | Java 两级缓存框架，可以让应用支持两级缓存框架 ehcache(Caffeine) + redis 。避免完全使用独立缓存系统所带来的网络IO开销问题 |<https://gitee.com/ld/J2Cache>
+验证码 | 基于 SpringBoot Google Kaptcha 验证码 快速启动器 |<https://gitee.com/baomidou/kaptcha-spring-boot-starter>
+加密运行jar包 | Spring Boot JAR 安全加密运行工具，同时支持的原生JAR。 基于对JAR包内资源的加密以及拓展ClassLoader来构建的一套程序加密启动，动态解密运行的方案，避免源码泄露或反编译。 |<https://gitee.com/core-lib/xjar>
+kisso | java 基于 Cookie 的 SSO 中间件 kisso |<https://gitee.com/baomidou/kisso>
+jpa|SpringBoot常用的，个人体验不是很好 |
+anima|blade框架作者杰作，无需sql | https://github.com/biezhi/anima
+BeetlSQL|全功能DAO工具， 同时具有Hibernate 优点 & Mybatis优点功能，适用于承认以SQL为中心，同时又需求工具能自动能生成大量常用的SQL的应用。 <https://gitee.com/xiandafu/beetlsql> | <http://ibeetl.com/> 
+
+
+
+个人推荐使用mybatis-plus比较好，既可以使用注解，也可以使用xml文件配置，还可以直接继承BaseMapper接口。灵活也不失自动化。
+
+
+### 常用中间件
 
 框架名 | 说明 | 官网
 --- | --- | ---
 Lombok | 简化对象封装| [https://github.com/rzwitserloot/lombok](https://github.com/rzwitserloot/lombok)
 Redis|缓存| [https://redis.io/](https://redis.io/)
+Caffeine|本地缓存，应用内存| <http://www.mydlq.club/article/56/> 
 JWT | JWT登录支持 | [https://github.com/jwtk/jjwt](https://github.com/jwtk/jjwt)
 MongoDb | NoSql数据库 | [https://www.mongodb.com/](https://www.mongodb.com/)
 Docker | 应用容器引擎 | [https://www.docker.com/](https://www.docker.com/)
 Druid | 数据库连接池 | [https://github.com/alibaba/druid](https://github.com/alibaba/druid)
 HikariCP|SpringBoot2.+默认数据库连接池，性能非常优秀 | https://github.com/brettwooldridge/HikariCP
+oh-my-email|Java 邮件发送库了，支持抄送、附件、模板 | <https://github.com/biezhi/oh-my-email> 
 RabbitMq | 消息队列 | [https://www.rabbitmq.com/](https://www.rabbitmq.com/)
-
+sso |java 基于 Cookie 的 SSO 中间件 kisso | [https://gitee.com/baomidou/kisso](https://gitee.com/baomidou/kisso)
 ---
 
 ### 企业级应用开发技术栈
@@ -318,6 +353,7 @@ JWT | JWT登录支持 | [https://github.com/jwtk/jjwt](https://github.com/jwtk/j
 LogStash | 日志收集 | [https://github.com/logstash/logstash-logback-encoder](https://github.com/logstash/logstash-logback-encoder)
 Lombok | 简化对象封装工具 | [https://github.com/rzwitserloot/lombok](https://github.com/rzwitserloot/lombok)
 rsa-encrypt|Spring Boot 接口请求参数自动加解密 |https://gitee.com/catch_wind/rsa-encrypt-body-spring-boot
+easy-excel|阿里巴巴excel处理工具 | https://alibaba-easyexcel.github.io/
 ---
 
 ### SpringCloud家族
@@ -407,8 +443,38 @@ ORM层| [rexdb](http://db.rex-soft.org/)|高效灵活简单
 
 ---
 
+### 技术栈2
+
+
+应用层次 | 框架名 | 推荐理由
+--- | --- | ---
+前端与服务|[balde](http://sparkjava.com/)| 与SpringBoot类似的路由方式与控制翻转和依赖注入
+ORM | [blade-anima](https://github.com/biezhi/anima)| 无需手写sql，直接方法操作数据库
+
+
 ## Python
 
 ### flask
 
 flask
+
+中文文档：
+
+<http://docs.jinkan.org/docs/flask/>
+
+英文文档：
+
+<https://flask.palletsprojects.com/>
+
+
+
+
+
+## 优秀的github总结
+
+1. [java核心知识库](https://github.com/crossoverJie/JCSprout)
+2. [Java学习+面试指南](https://github.com/Snailclimb/JavaGuide)
+3. [Spring Boot 教程、技术栈示例代码](https://github.com/ityouknow/spring-boot-examples)
+4. [秒杀系统设计与实现](https://github.com/qiurunze123/miaosha)
+5. [大数据入门指南](https://github.com/heibaiying/BigData-Notes)
+6. 

@@ -52,6 +52,16 @@
             DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMddhhmmssSSS");
             String nowStr = now.format(dtf);
     ```
+    从long unix时间戳格式化
+    ```java
+            Long startTime = Long.parseLong(ctEngineTask.getStartTime());
+            Date date = new Date(startTime);
+            Instant instant = date.toInstant();
+            LocalDateTime ldt = instant.atOffset(ZoneOffset.UTC).toLocalDateTime();
+            DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy--MM--dd HH:mm:ss");
+            String nowStr = ldt.format(dtf);
+
+    ```
     hh是12小时制 ("yyyy:MM:dd,hh:mm:ss") ，HH是24小时制 ("yyyy:MM:dd,HH:mm:ss") 
     ```java
     package com.ctcc.misas.util;
@@ -126,6 +136,15 @@
         // 下面这种方式虽然简单，但是不够定制化，不推荐。原因是因为最大线程数指定为Integer.MAX_VALUE（可以视为无限大），会造成OOM
         ExecutorService exec = Executors.newCachedThreadPool();
         exec.execute(new Runnbale());
+    ```
+    下面是定时器的写法
+    ```java
+
+            ScheduledExecutorService scheduledExecutorService = new ScheduledThreadPoolExecutor(1, Executors.defaultThreadFactory());
+            scheduledExecutorService.scheduleAtFixedRate(() -> {
+                EdsLoginService.isLoginStatus();
+            }, 10, 10, TimeUnit.MINUTES);
+
     ```
     线程池工作原理
     ![](./img/图解线程池实现原理.png)

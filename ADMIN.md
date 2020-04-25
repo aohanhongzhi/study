@@ -4,6 +4,11 @@
 
 1. [各类大屏展示模板](https://gitee.com/lvyeyou/DaShuJuZhiDaPingZhanShi)
 
-1. [RUO-YI](https://gitee.com/y_project/RuoYi)
-
 1. [EL-ADMIN](https://gitee.com/elunez/eladmin)
+2. [各类大屏展示模板](https://gitee.com/lvyeyou/DaShuJuZhiDaPingZhanShi)
+3. [RUO-YI 基于SpringBoot前后端的分离的响应式管理系统](http://ruoyi.vip/)
+   
+   1. gitee <https://gitee.com/y_project/RuoYi>
+4. [基于SpringBoot2.0的后台权限管理系统界面简洁美观敏捷开发系统架构](https://gitee.com/JeeHuangBingGui/jeeSpringCloud)
+5. [基于SpringBoot 2 的管理后台系统](https://gitee.com/xiandafu/springboot-plus)
+6. [go语言开发的admin](<https://www.go-admin.cn/>)
