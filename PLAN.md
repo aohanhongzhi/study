@@ -32,3 +32,8 @@
 1. [插桩技术在Java安全中的应用简述](http://rui0.cn/archives/1063)
 1. [Docker — 从入门到实践](https://yeasy.gitbooks.io/docker_practice/content/)
 1. [bootshiro项目的shiro研究](https://gitee.com/tomsun28/bootshiro)
+1. [SpringBoot 整合 MyCat 实现读写分离](https://docs.qq.com/doc/DSERTSWFSWlpYbFFk):https://www.cnblogs.com/muycode/p/12603037.html
+    * https://muycode.cn/article/mycat20200312.html
+    * https://blog.csdn.net/zyx7653296/article/details/88555718
+1. [SpringBoot整合Quartz实现定时任务](https://www.jianshu.com/p/a99b80021be6)
+   1. https://www.cnblogs.com/interdrp/p/3511302.html
