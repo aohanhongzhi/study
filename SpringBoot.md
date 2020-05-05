@@ -45,3 +45,11 @@ mapper所在包的bean注入方式。与Import一样，就是个数不限。mapp
 1. [基于Spring Boot-Shiro-Vue的权限管理](https://github.com/Heeexy/SpringBoot-Shiro-Vue)
 2. 
 
+
+## SpringCloud
+
+### SpringSecurity
+
+#### git源代码
+1. https://github.com/hansonwang99/Spring-Boot-In-Action/tree/master/springbt_security_jwt
+1. https://github.com/zhshuixian/learn-spring-boot-2/tree/master/06-security-token
