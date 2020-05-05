@@ -62,7 +62,7 @@
 
 #### Docker
 容器化部署，智能运维，几万个节点的部署。
-
+https://yeasy.gitbooks.io/docker_practice/
 #### Rancher
 
 容器编排工具
@@ -353,6 +353,7 @@ JWT | JWT登录支持 | [https://github.com/jwtk/jjwt](https://github.com/jwtk/j
 LogStash | 日志收集 | [https://github.com/logstash/logstash-logback-encoder](https://github.com/logstash/logstash-logback-encoder)
 Lombok | 简化对象封装工具 | [https://github.com/rzwitserloot/lombok](https://github.com/rzwitserloot/lombok)
 rsa-encrypt|Spring Boot 接口请求参数自动加解密 |https://gitee.com/catch_wind/rsa-encrypt-body-spring-boot
+easy-excel|阿里巴巴excel处理工具 | https://alibaba-easyexcel.github.io/
 ---
 
 ### SpringCloud家族
