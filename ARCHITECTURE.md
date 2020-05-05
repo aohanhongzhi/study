@@ -354,6 +354,7 @@ LogStash | 日志收集 | [https://github.com/logstash/logstash-logback-encoder]
 Lombok | 简化对象封装工具 | [https://github.com/rzwitserloot/lombok](https://github.com/rzwitserloot/lombok)
 rsa-encrypt|Spring Boot 接口请求参数自动加解密 |https://gitee.com/catch_wind/rsa-encrypt-body-spring-boot
 easy-excel|阿里巴巴excel处理工具 | https://alibaba-easyexcel.github.io/
+captcha|行为验证码|https://gitee.com/anji-plus/captcha 
 ---
 
 ### SpringCloud家族
