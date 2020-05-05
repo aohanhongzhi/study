@@ -32,3 +32,6 @@
 1. [插桩技术在Java安全中的应用简述](http://rui0.cn/archives/1063)
 1. [Docker — 从入门到实践](https://yeasy.gitbooks.io/docker_practice/content/)
 1. [bootshiro项目的shiro研究](https://gitee.com/tomsun28/bootshiro)
+1. [专注于稳定、性能和分布式事务的MySQL数据库中间件](https://gitee.com/wangbin579/cetus)
+1. [beetlsql](https://gitee.com/xiandafu/beetlsql)
+1. [Porter](https://gitee.com/sxfad/porter)
