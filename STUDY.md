@@ -212,7 +212,7 @@
 1. [SpringBoot的java全知识栈项目](https://github.com/longxiaonan/java-sea)
 ### MyCat
 
-数据库中间件，多数据源，读写分离
+数据库中间件，多数据源，读写分离。主备切换。
 
 ### Mybatis
 
