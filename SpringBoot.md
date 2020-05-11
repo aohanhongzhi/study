@@ -1,5 +1,20 @@
 # SpringBoot
 
+## 启动程序
+1. 环境变量配置
+    * logback-prod.xml
+    * application-prod.yml
+1. 启动命令
+
+    * 正常情况下启动命令
+    ```shell
+            java -jar  print-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod
+    ```
+    * 如果上面启动方式失效，则可以尝试下面的方式，将程序的参数前置。
+    ```shell
+            java -jar -Dspring.profiles.active=prod print-0.0.1-SNAPSHOT.jar
+    ```
+
 ## 常用注解
 
 ### Controller
