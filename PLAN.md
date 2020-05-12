@@ -40,3 +40,4 @@
     * https://blog.csdn.net/zyx7653296/article/details/88555718
 1. [SpringBoot整合Quartz实现定时任务](https://www.jianshu.com/p/a99b80021be6)
    1. https://www.cnblogs.com/interdrp/p/3511302.html
+1. [理解这9大内置过滤器，才算是精通Shiro](https://mp.weixin.qq.com/s/WxrygMbahkkZkpP0wpFH5w)
