@@ -3,6 +3,8 @@
 由于Java基础知识比较多，代码编写套路多，因此独立成一个md文件。
 ## 基础知识
 
+[你写的Java对象究竟占多少内存？](https://mp.weixin.qq.com/s/RJrfOO4ruSrBzU7V5LDI9g)
+
 ### 程序入口
 
 java除了main方法之外还有其他的程序入口。Java agent，premain，agentmain等。
