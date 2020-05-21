@@ -54,6 +54,41 @@
     ```
     从long unix时间戳格式化
     ```java
+
+    package hxy.bytecode.date.time;
+
+    import java.time.Instant;
+    import java.time.LocalDateTime;
+    import java.time.OffsetDateTime;
+    import java.time.ZoneId;
+    import java.time.ZoneOffset;
+    import java.time.format.DateTimeFormatter;
+    import java.util.Date;
+
+    public class UnixTimeTest {
+        public static void main(String[] args) {
+
+            Date date = new Date(System.currentTimeMillis());
+            Instant instant = date.toInstant();
+            ZoneId zoneId = ZoneId.systemDefault();
+             //    zoneId = TimeZone.getTimeZone("GMT+8:00").toZoneId();
+            OffsetDateTime odt = OffsetDateTime.now(zoneId);
+            ZoneOffset zoneOffset = odt.getOffset();
+            LocalDateTime ldt = instant.atOffset(zoneOffset).toLocalDateTime();
+    //        准确显示本地时间 2020-05-21 20:14:48  HH 大写是24小时制 hh 小写是12小时制
+            DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").withZone(zoneId);
+            String startTimeStr = ldt.format(dtf);
+            System.out.println(startTimeStr);
+
+        }
+    }
+
+    ```
+
+下面这个经过测试，时间使用的UTC，所以是格林尼治时间，如果想要显示本地时间参靠上面
+
+
+    ```java
             Long startTime = Long.parseLong(ctEngineTask.getStartTime());
             Date date = new Date(startTime);
             Instant instant = date.toInstant();
@@ -62,41 +97,45 @@
             String nowStr = ldt.format(dtf);
 
     ```
+
     hh是12小时制 ("yyyy:MM:dd,hh:mm:ss") ，HH是24小时制 ("yyyy:MM:dd,HH:mm:ss") 
+
+
     ```java
-    package com.ctcc.misas.util;
-    import lombok.extern.slf4j.Slf4j;
-    import java.time.Instant;
-    import java.time.LocalDateTime;
-    import java.time.ZoneId;
-    import java.time.format.DateTimeFormatter;
-    import java.util.TimeZone;
 
-    /**
-    * @author eric
-    * @description:
-    * @date 1/14/20 5:27 PM
-        */
-        @Slf4j
-        public class DateTimeTest {
-        public static void main(String[] args) {
-        // createTime是Date类型，从数据库取出来的
-        //        Instant instant = createTime.toInstant();
-            Instant instant = Instant.now();
-            // 下面取得都是上海的值
-            ZoneId zoneId = ZoneId.systemDefault();
-            zoneId = TimeZone.getTimeZone("GMT+8:00").toZoneId();
+            package com.ctcc.misas.util;
+            import lombok.extern.slf4j.Slf4j;
+            import java.time.Instant;
+            import java.time.LocalDateTime;
+            import java.time.ZoneId;
+            import java.time.format.DateTimeFormatter;
+            import java.util.TimeZone;
 
-            LocalDateTime localDateTime = LocalDateTime.ofInstant(instant, zoneId);
-            //java8才有的线程安全
-            DateTimeFormatter dtf12 = DateTimeFormatter.ISO_LOCAL_DATE_TIME.ofPattern("yyyy/MM/dd hh:mm:ss").withZone(zoneId);
-        //        HH:mm:ss 大写是24小时
-            DateTimeFormatter dtf24 = DateTimeFormatter.ISO_LOCAL_DATE_TIME.ofPattern("yyyy/MM/dd HH:mm:ss").withZone(zoneId);
-            String nowStr = localDateTime.format(dtf12);
-            String nowStr24 = localDateTime.format(dtf24);
-            log.info("{}\n{}", nowStr, nowStr24);
-        }
-    }
+            /**
+            * @author eric
+            * @description:
+            * @date 1/14/20 5:27 PM
+                */
+                @Slf4j
+            public class DateTimeTest {
+                    public static void main(String[] args) {
+                    // createTime是Date类型，从数据库取出来的
+                    //        Instant instant = createTime.toInstant();
+                        Instant instant = Instant.now();
+                        // 下面取得都是上海的值
+                        ZoneId zoneId = ZoneId.systemDefault();
+                        zoneId = TimeZone.getTimeZone("GMT+8:00").toZoneId();
+
+                        LocalDateTime localDateTime = LocalDateTime.ofInstant(instant, zoneId);
+                        //java8才有的线程安全
+                        DateTimeFormatter dtf12 = DateTimeFormatter.ISO_LOCAL_DATE_TIME.ofPattern("yyyy/MM/dd hh:mm:ss").withZone(zoneId);
+                    //        HH:mm:ss 大写是24小时
+                        DateTimeFormatter dtf24 = DateTimeFormatter.ISO_LOCAL_DATE_TIME.ofPattern("yyyy/MM/dd HH:mm:ss").withZone(zoneId);
+                        String nowStr = localDateTime.format(dtf12);
+                        String nowStr24 = localDateTime.format(dtf24);
+                        log.info("{}\n{}", nowStr, nowStr24);
+                    }
+            }
 
     ```
     DateTime.Now.ToString ("yyyy:MM:dd,hh:mm:ss") 12小时制转成24小时制
