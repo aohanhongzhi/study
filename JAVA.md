@@ -219,7 +219,8 @@ https://blog.csdn.net/JYTXIOABAI/article/details/83827127
 1. [Java核心研究](https://gitee.com/aohanhongzhi/ByteCode)
 1. [Spring Framework](https://gitee.com/aohanhongzhi/spring-framework)
 1. Dubbox
-1. blade framework
+1. [blade framework](https://lets-blade.com/)
+1. [javalin](https://javalin.io/):https://github.com/aohanhongzhi/JavalinDemo
 ## JVM
 
 需要掌握常用JVM调优技巧。
