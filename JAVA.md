@@ -221,6 +221,7 @@ https://blog.csdn.net/JYTXIOABAI/article/details/83827127
 1. Dubbox
 1. [blade framework](https://lets-blade.com/)
 1. [javalin](https://javalin.io/):https://github.com/aohanhongzhi/JavalinDemo
+1. [jfast](https://gitee.com/zhuimengshaonian/jfast)
 ## JVM
 
 需要掌握常用JVM调优技巧。
