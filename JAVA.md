@@ -467,6 +467,17 @@ uniqueInstance 采用 volatile 关键字修饰也是很有必要的， uniqueIns
 #### jackson
 SpringBoot默认的json中间件，更加规范
 
+
+### 网络客户端
+
+#### okhttps
+> 官网：http://okhttps.ejlchina.com/
+
+强大轻量 且 前后端通用的 HTTP 客户端
+
+
+
+
 ## 编码风格
 
 
