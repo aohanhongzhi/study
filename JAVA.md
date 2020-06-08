@@ -472,6 +472,7 @@ SpringBoot默认的json中间件，更加规范
 
 #### okhttps
 > 官网：http://okhttps.ejlchina.com/
+> gitee：https://gitee.com/ejlchina-zhxu/okhttps/
 
 强大轻量 且 前后端通用的 HTTP 客户端
 
