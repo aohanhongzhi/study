@@ -320,6 +320,10 @@ github: https://github.com/osglworks/java-di
 1. [HelloWorld练习](https://github.com/act-gallery/helloworld)
 1. act有自己的[注入框架](https://github.com/osglworks/java-di)，看起来要比Spring注入更加简单 参考：https://github.com/act-gallery/injection
 
+
+
+### 其他
+https://gitee.com/lin-mt/effective-java-third-edition
 ---
 
 ## Python
