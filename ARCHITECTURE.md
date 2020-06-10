@@ -204,6 +204,13 @@ https://gitee.com/fastdfs100/fastdfs
 
 ### 数据库
 
+#### 数据库相关中间件
+
+##### 分布式MySQL工具集Vitess
+> 官网 https://vitess.io/
+
+outube出品的开源分布式MySQL工具集Vitess，自动分片存储MySQL数据表，将单个SQL查询改写为分布式发送到多个MySQL Server上，支持行缓存（比MySQL本身缓存效率高），支持复制容错，已用于Youtube生产环境
+
 #### MySQL
 
 目前8.+，性能是5.7的两倍，而且增加了很多新特性。MySQL有很多的版本，如果集群部署的话，可以考虑使用cluster版本。可以参考mycat中间件。
