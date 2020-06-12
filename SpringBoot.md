@@ -75,9 +75,57 @@ mapper所在包的bean注入方式。与Import一样，就是个数不限。mapp
 https://gitee.com/ishuibo/rsa-encrypt-body-spring-boot
 https://mp.weixin.qq.com/s/Y2zv8Afd6yZGGdLiA7lUJw
 
+### 数据库相关
+
+#### 读写分离
+
+> https://gitee.com/mirrors/spring-boot-mybatis-rw
+
+spring-boot-mybatis-rw 基于mybatis，springboot开箱即用的读写分离插件 Quick Start 介绍 此插件由以下2部分组成
+
+#### 多数据源
+
+https://gitee.com/zhaoqg/spring-boot-mybatis
+
 
 ## 源码学习
 ### slf4j-spring-boot-starter
 > gitee  https://gitee.com/xsxgit/slf4j-spring-boot-starter
 
 切面技术实现注解搞定日志记录。可以用来二次开发操作日志等记录。
+
+### xxl-job-spring-boot-starter
+
+> gitee https://gitee.com/centy/xxl-job-spring-boot-starter
+
+本项目将xxl-job-core包简单封装成spring boot starter，方便通过Spring Boot方式开发xxl-job的executor
+
+
+### spring-boot-mybatis-sample
+> https://gitee.com/smarti/spring-boot-mybatis-sample
+
+SpringBoot和Mybatis整合，并同时用JPA和Mybatis分别连接2个数据库(oracle/mysql等任意组合)
+
+### scm-springboot
+
+> https://gitee.com/zhys513/scm-springboot
+
+基于spring boot的统一注解缓存，支持mencached、redis、ehcache的缓存无缝切换。支持单个缓存设置过期时间，灵活的key设置规则，采用fastjson序列化与反序列化，以json串存于缓存之中。根据命名空间管理缓存集。
+
+### printparam-spring-boot-starter
+
+> https://gitee.com/sjlian/printparam-spring-boot-starter
+
+自动在日志中打印输入输出参数，快捷方便，无需任何配置项，依赖少，开箱即用。
+
+### 若干 starter集合
+
+https://gitee.com/saizz/stater-module
+
+### trace-log-spring-boot-starter
+
+https://gitee.com/ddfeiyu/trace-log-spring-boot-starter
+
+
+一个简单易用的java分布式链路跟踪日志组件 一.系统介绍 1、无入侵的分布式日志系统，基于elk搜集日志，采用Skywalking设置链路ID，方便查询关联日志 2、基于elasticsearch作为查询引擎 3、高吞吐，查询效率高 4、支持redis实时日志、es历史日志查询
+
