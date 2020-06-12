@@ -74,3 +74,10 @@ mapper所在包的bean注入方式。与Import一样，就是个数不限。mapp
 ### RSA接口自动加解密
 https://gitee.com/ishuibo/rsa-encrypt-body-spring-boot
 https://mp.weixin.qq.com/s/Y2zv8Afd6yZGGdLiA7lUJw
+
+
+## 源码学习
+### slf4j-spring-boot-starter
+> gitee  https://gitee.com/xsxgit/slf4j-spring-boot-starter
+
+切面技术实现注解搞定日志记录。可以用来二次开发操作日志等记录。
