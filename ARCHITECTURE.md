@@ -333,6 +333,7 @@ HikariCP|SpringBoot2.+默认数据库连接池，性能非常优秀 | https://gi
 oh-my-email|Java 邮件发送库了，支持抄送、附件、模板 | <https://github.com/biezhi/oh-my-email> 
 RabbitMq | 消息队列 | [https://www.rabbitmq.com/](https://www.rabbitmq.com/)
 sso |java 基于 Cookie 的 SSO 中间件 kisso | [https://gitee.com/baomidou/kisso](https://gitee.com/baomidou/kisso)
+okhttps| 基于okhttp封装 | https://gitee.com/ejlchina-zhxu/okhttps
 ---
 
 ### 企业级应用开发技术栈
@@ -362,6 +363,11 @@ Lombok | 简化对象封装工具 | [https://github.com/rzwitserloot/lombok](htt
 rsa-encrypt|Spring Boot 接口请求参数自动加解密 |https://gitee.com/catch_wind/rsa-encrypt-body-spring-boot
 easy-excel|阿里巴巴excel处理工具 | https://alibaba-easyexcel.github.io/
 captcha|行为验证码|https://gitee.com/anji-plus/captcha 
+SpringBoot Google Kaptcha | 简单快速集成 Google Kaptcha验证码 | https://gitee.com/baomidou/kaptcha-spring-boot-starter
+
+
+
+
 ---
 
 ### SpringCloud家族
