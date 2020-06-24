@@ -41,3 +41,4 @@
 1. [SpringBoot整合Quartz实现定时任务](https://www.jianshu.com/p/a99b80021be6)
    1. https://www.cnblogs.com/interdrp/p/3511302.html
 1. [理解这9大内置过滤器，才算是精通Shiro](https://mp.weixin.qq.com/s/WxrygMbahkkZkpP0wpFH5w)
+1. [京东开源的线程调度框架](https://gitee.com/jd-platform-opensource/asyncTool)
