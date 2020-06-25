@@ -84,3 +84,16 @@ java.lang.ClassLoader.getResource(String name)
 ```java
  	getClass().getClassLoader()
 ```
+
+### jvm参数
+
+'-Djava.security.egd=file:/dev/./urandom'   －  SecureRandom在java各种组件中使用广泛，可以加快随机数产生过程；建议添加
+
+'-Dspring.profiles.active=prod'   －执行springboot项目使用配置 application-prod.yml；可选
+
+'-Dfile.encoding=utf-8'  - 如果有下载文件代码，不加此句容易出现中文乱码；可选
+
+'-Duser.timezone=GMT+08'  - Java获取时间与系统时间相差8小时的解决方法；可选
+————————————————
+版权声明：本文为CSDN博主「星梦天河」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/mxskymx/java/article/details/99713480
