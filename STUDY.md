@@ -5,14 +5,22 @@
     * Spring
     * SpringBoot
     * SpringCloud
-    * MyBatis
+    * MyBatis-plus
     * RexDB
     * Shiro
+    * BeetSQL
+    * anima
+    * okhttps
 2. Python
     * flaskv
     * peewee
+    * pony-orm
+    * fastapi
+    * sqlAlchemy
 3. Go
+    * go-frame
     * beego
+    * 
 4. Kotlin
     * koti
 5. JavaScript
