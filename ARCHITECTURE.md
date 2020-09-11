@@ -481,6 +481,11 @@ flask
 <https://flask.palletsprojects.com/>
 
 
+### FastAPI
+
+官网 https://fastapi.tiangolo.com/zh
+
+非常优秀的框架，采用携程性能可以与Go比肩
 
 
 
