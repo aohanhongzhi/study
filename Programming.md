@@ -52,6 +52,9 @@
 1. 一定要基于接口编程，例如文件操作，可以写FileService。后面有可能会使用MongoDBServiceImpl来实现这个FileService接口，有可能使用FastDFSService实现这个FileService接口。就是一个接口可能会有多个实现的方式。而且可能初期使用MongoDBServiceImpl后期可能会切换到FastDFS，所以面向接口编程，可以很好地切换实现的方式，不然改代码都是哪里使用到了就需要修改哪里。
 
 
+## Controller层
+
+1. 这一层主要负责与前端交互，作为一个优秀的web框架，应该考虑用对象接收参数（json反序列化成对象）并且用对象返回结果（对象序列化成json）。也就是序列化在这里是一个优秀web框架的基本特征，否则使用起来非常麻烦。
 
 # 学习资料
 

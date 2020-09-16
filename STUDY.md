@@ -20,7 +20,9 @@
 3. Go
     * go-frame
     * beego
-    * 
+    * gin
+    * gorm
+    * xorm
 4. Kotlin
     * koti
 5. JavaScript
@@ -302,7 +304,7 @@
 --- | --- | ---
 前端交互|[Sparkjava](http://sparkjava.com/)| 更加简单的url-方法
 服务层| [Spring-context](https://mvnrepository.com/artifact/org.springframework/spring-context)|控制翻转，Bean注入
-ORM层| [rexdb](http://db.rex-soft.org/)|高效灵活简单
+ORM层| [rexdb](http://db.rex-soft.org/)|高效灵活简单，适合不需要注入的框架
 关系数据库|[postgresql](https://www.postgresql.org/)|开源自由
 
 ### Netty

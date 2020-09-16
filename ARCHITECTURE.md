@@ -259,7 +259,15 @@ SpringCloud家族，智能网关。性能不输Nginx。Zuul的核心是一系列
 
 #### Nginx
 
-单线程高性能网关
+单线程高性能网关。nignx可以在一次访问请求状态为500的时候，直接访问另一台服务器。做到热迁，参考 https://blog.csdn.net/wy0123/article/details/88551915
+
+
+
+#### tengine
+
+http://tengine.taobao.org/
+
+
 
 #### HAProxy
 
@@ -286,7 +294,7 @@ HAProxy提供了L4(TCP)和L7(HTTP)两种负载均衡能力，具备丰富的功�
 
 #### Gradle
 
-地表最强的项目构建工具
+地表最强的项目构建工具，不接受任何反驳
 
 #### Maven
 
@@ -306,7 +314,7 @@ mybatis-plus| mybatis的增强，全自动化。既有hibernate，jpa的自动�
 rexdb| 手写sql，https://gitee.com/rexsoft/rexdb |http://db.rex-soft.org/
 hibernate | 全自动化 |
 J2Cache | Java 两级缓存框架，可以让应用支持两级缓存框架 ehcache(Caffeine) + redis 。避免完全使用独立缓存系统所带来的网络IO开销问题 |<https://gitee.com/ld/J2Cache>
-验证码 | 基于 SpringBoot Google Kaptcha 验证码 快速启动器 |<https://gitee.com/baomidou/kaptcha-spring-boot-starter>
+
 加密运行jar包 | Spring Boot JAR 安全加密运行工具，同时支持的原生JAR。 基于对JAR包内资源的加密以及拓展ClassLoader来构建的一套程序加密启动，动态解密运行的方案，避免源码泄露或反编译。 |<https://gitee.com/core-lib/xjar>
 kisso | java 基于 Cookie 的 SSO 中间件 kisso |<https://gitee.com/baomidou/kisso>
 jpa|SpringBoot常用的，个人体验不是很好 |
@@ -334,6 +342,7 @@ oh-my-email|Java 邮件发送库了，支持抄送、附件、模板 | <https://
 RabbitMq | 消息队列 | [https://www.rabbitmq.com/](https://www.rabbitmq.com/)
 sso |java 基于 Cookie 的 SSO 中间件 kisso | [https://gitee.com/baomidou/kisso](https://gitee.com/baomidou/kisso)
 okhttps| 基于okhttp封装 | https://gitee.com/ejlchina-zhxu/okhttps
+验证码 | 基于 SpringBoot Google Kaptcha 验证码 快速启动器 |<https://gitee.com/baomidou/kaptcha-spring-boot-starter>
 ---
 
 ### 企业级应用开发技术栈
@@ -421,7 +430,7 @@ SpringBoot | JavaBean容器| [https://spring.io/projects/spring-boot](https://sp
 Spring Vault | 数据库动态密码管理，敏感配置信息管理，需要安装vault。 | https://spring.io/projects/spring-vault
 Vault |动态密码Server |https://www.hashicorp.com/products/vault/
 spring-boot-starter-jersey |Restful Web服务，类似SpringMVC |https://blog.csdn.net/github_38395241/article/details/70265379
- Consul | |https://spring.io/projects/spring-cloud-consul
+Consul | |https://spring.io/projects/spring-cloud-consul
 
 ---
 

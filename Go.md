@@ -11,6 +11,10 @@ Eureka作为微服务的注册中心，使用的是http通信，意味着跨语�
 
 ### gin
 
+练手项目 
+* https://github.com/olongfen/gorm-gin-admin
+* https://github.com/olongfen/user_admin
+
 ### goframe
 
 ### go-kit

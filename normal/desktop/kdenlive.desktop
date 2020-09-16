@@ -1,0 +1,12 @@
+[Desktop Entry]
+Categories=Utility;Development;IDE;
+Comment=IDE
+Exec=/opt/eric/kdenlive-20.08.0-x86_64.appimage
+Icon=/opt/eric/kdenlive-logo.png
+Keywords=kdenlive;
+Name=kdenlive
+Terminal=false
+Type=Application
+X-Deepin-AppID=kdenlive
+X-Deepin-CreatedBy=com.deepin.dde.daemon.Launcher
+X-Deepin-Vendor=user-custom

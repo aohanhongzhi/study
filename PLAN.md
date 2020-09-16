@@ -10,7 +10,9 @@
 1. rexdb 源码学习与掌握
 1. mysql-connector 源码学习与掌握
 1. flask 源码学习与掌握
+1. fastapi 源码学习与掌握
 1. Dubbox 源码学习与掌握
+1. jackson 源码学习与掌握，自定义枚举的序列化与反序列化器
 
 ## 安排计划
 

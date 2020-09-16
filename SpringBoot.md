@@ -1,5 +1,5 @@
-# SpringBoot
-
+SpringBoot
+===
 ## 启动程序
 1. 环境变量配置
     * logback-prod.xml
@@ -89,6 +89,10 @@ https://gitee.com/zhaoqg/spring-boot-mybatis
 
 
 ## 源码学习
+
+### jackson
+> github https://github.com/FasterXML/jackson-databind/
+
 ### slf4j-spring-boot-starter
 > gitee  https://gitee.com/xsxgit/slf4j-spring-boot-starter
 
