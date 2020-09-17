@@ -15,6 +15,9 @@ Python
 
 > https://vibora.io/
 
+#### sanic
+https://sanic.readthedocs.io/en/latest/
+
 ####  moltenframework
 
 > https://moltenframework.com/
