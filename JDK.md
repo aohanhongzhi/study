@@ -40,6 +40,14 @@ java.lang.ClassLoader.getResource(String name)
          File file = new File(path);
 ```
 
+读取resource/文件夹里面的配置文件
+
+```java
+
+    ClassLoader classLoader =  Thread.currentThread().getContextClassLoader();
+    System.out.println(classLoader);
+	InputStream is = classLoader.getResourceAsStream("rexdb.xml");
+```
 
 
 #### systemClassLoader
