@@ -604,11 +604,12 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 1. 自定义时间等序列化机制，可以不用在每个date上面添加注解
 1. 参数校验注解
 1. [okhttps](http://okhttps.ejlchina.com/),优秀的网络客户端，基于okhttp封装的，使用更加简单方便。而且不基于注解那一套。
-1. logf设置模板
-1. 导入包的*设置99
 1. lombok
+1. mybatis-plus的逻辑删除
 
 
 ### 使用方面
 
 1. IDEA的restful插件
+2. logf设置模板
+3. 导入包的*设置99
