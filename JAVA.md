@@ -222,7 +222,9 @@ https://blog.csdn.net/JYTXIOABAI/article/details/83827127
 1. [Java核心研究](https://gitee.com/aohanhongzhi/ByteCode)
 1. [Spring Framework](https://gitee.com/aohanhongzhi/spring-framework)
 1. Dubbox
-1. blade framework
+1. [blade framework](https://lets-blade.com/)
+1. [javalin](https://javalin.io/):https://github.com/aohanhongzhi/JavalinDemo
+1. [jfast](https://gitee.com/zhuimengshaonian/jfast)
 ## JVM
 
 需要掌握常用JVM调优技巧。
@@ -429,6 +431,7 @@ uniqueInstance 采用 volatile 关键字修饰也是很有必要的， uniqueIns
 ## 常用库
 
 
+### okio
 
 ### Commons-io
 
@@ -469,6 +472,18 @@ uniqueInstance 采用 volatile 关键字修饰也是很有必要的， uniqueIns
 #### jackson
 SpringBoot默认的json中间件，更加规范
 
+
+### 网络客户端
+
+#### okhttps
+> 官网：http://okhttps.ejlchina.com/
+> gitee：https://gitee.com/ejlchina-zhxu/okhttps/
+
+强大轻量 且 前后端通用的 HTTP 客户端
+
+
+
+
 ## 编码风格
 
 
@@ -504,3 +519,100 @@ public class DetectionResultRequest extends CommonRequest {
 
 ![](./img/copyproperties.png)
 
+
+## Java技术栈开发的技术点
+
+### 代码方面
+
+1. 获取环境变量，判断当前环境变量，应对本地调试或者其他需求。例如本地调试不需要SpringSecurity拦截所有请求。那么对于本地调试可以放掉所有请求。
+
+```java
+import org.springframework.context.EnvironmentAware;
+import org.springframework.core.env.Environment;
+import org.springframework.stereotype.Component;
+
+/**
+ * @author eric
+ * 获取工程yaml文件配置的后缀，用于判断当前采用的是哪个环境变量，用于
+ * 判断当前环境变量下，SpringSecurity是否放开所有的工程信息
+ */
+@Component
+public class EnvironmentUtils implements EnvironmentAware {
+
+    private Environment environment;
+
+    @Override
+    public void setEnvironment(Environment environment) {
+        this.environment = environment;
+    }
+
+    public String getActiveProfile() {
+        if (environment.getActiveProfiles().length > 0) {
+            String profile = environment.getActiveProfiles()[0];
+            return profile;
+        }
+        return environment.getDefaultProfiles()[0];
+    }
+}
+
+```
+使用
+
+```java
+
+@Configuration
+@EnableWebSecurity
+@EnableGlobalMethodSecurity(prePostEnabled = true)
+public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
+    @Autowired
+    private EnvironmentUtils environmentUtils;
+
+    @Override
+    public void configure(HttpSecurity httpSecurity) throws Exception {
+
+        String activeProfile = environmentUtils.getActiveProfile();
+
+        if ("dev".equals(activeProfile)) {
+
+            httpSecurity.authorizeRequests().anyRequest().permitAll().and().csrf().disable();
+
+        } else {
+
+            String[] antPatterns = {"/api/v1/admin/login", "/erp_files/*", "/index.html", "/", "index"};
+
+            // 配置 CSRF 关闭,允许跨域访问
+            httpSecurity.csrf().disable();
+            // 指定错误未授权访问的处理类
+            httpSecurity.exceptionHandling().authenticationEntryPoint(errorAuthenticationEntryPoint);
+            // 关闭 Session
+            httpSecurity.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+            // 允许 登录 注册的 api 的无授权访问，其他需要授权访问
+            httpSecurity.authorizeRequests()
+                    .antMatchers(antPatterns)
+                    .permitAll().anyRequest().authenticated();
+            // 添加拦截器
+            httpSecurity.addFilterBefore(tokenFilter, UsernamePasswordAuthenticationFilter.class);
+            // 禁用缓存
+            httpSecurity.headers().cacheControl();
+        }
+
+    }
+}
+
+
+
+```
+
+1. 程序中枚举的正确使用以及自定义的枚举序列化和反序列化机制
+1. 自定义时间等序列化机制，可以不用在每个date上面添加注解
+1. 参数校验注解
+1. [okhttps](http://okhttps.ejlchina.com/),优秀的网络客户端，基于okhttp封装的，使用更加简单方便。而且不基于注解那一套。
+1. lombok
+1. mybatis-plus的逻辑删除
+
+
+### 使用方面
+
+1. IDEA的restful插件
+2. logf设置模板
+3. 导入包的*设置99

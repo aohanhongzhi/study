@@ -5,14 +5,24 @@
     * Spring
     * SpringBoot
     * SpringCloud
-    * MyBatis
+    * MyBatis-plus
     * RexDB
     * Shiro
+    * BeetSQL
+    * anima
+    * okhttps
 2. Python
     * flaskv
     * peewee
+    * pony-orm
+    * fastapi
+    * sqlAlchemy
 3. Go
+    * go-frame
     * beego
+    * gin
+    * gorm
+    * xorm
 4. Kotlin
     * koti
 5. JavaScript
@@ -294,7 +304,7 @@
 --- | --- | ---
 前端交互|[Sparkjava](http://sparkjava.com/)| 更加简单的url-方法
 服务层| [Spring-context](https://mvnrepository.com/artifact/org.springframework/spring-context)|控制翻转，Bean注入
-ORM层| [rexdb](http://db.rex-soft.org/)|高效灵活简单
+ORM层| [rexdb](http://db.rex-soft.org/)|高效灵活简单，适合不需要注入的框架
 关系数据库|[postgresql](https://www.postgresql.org/)|开源自由
 
 ### Netty
@@ -320,6 +330,10 @@ github: https://github.com/osglworks/java-di
 1. [HelloWorld练习](https://github.com/act-gallery/helloworld)
 1. act有自己的[注入框架](https://github.com/osglworks/java-di)，看起来要比Spring注入更加简单 参考：https://github.com/act-gallery/injection
 
+
+
+### 其他
+https://gitee.com/lin-mt/effective-java-third-edition
 ---
 
 ## Python

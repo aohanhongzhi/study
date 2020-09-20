@@ -53,7 +53,7 @@ CREATE TABLE `springboot`.`user_role_table` (
 3. 存在就更新，不存在就插入
 
 ```xml
-<!-- TODO 存在就跟新，不存在就新建 -->
+<!-- 存在就跟新，不存在就新建 -->
 <insert id="saveAndFlush" parameterType="com.ctcc.misas.entity.BugInfoCollectionEntity">
 insert into misas.ct_buginfo(task_id,findbugs_bug_info,fortify_bug_info,codepecker_bug_info,merge_bug_info,engine_done)
 values(#{taskId},#{findbugsBugInfo},#{fortifyBugInfo},#{codepeckerBugInfo},#{mergeBugInfo},#{engineDone}) ON DUPLICATE KEY UPDATE
@@ -92,11 +92,19 @@ int id = systemBean.getId(); //获取到的即为新插入记录的ID
 5. 是
 
 
+### Mybatis-plus
+
+参考[mybatis-plus](mybatis-plus.md)
 
 ### RexDB
 
 1. rexdb是通过下划线与Java对象中的驼峰式命名相呼应的，没有使用配置文件来一一对应映射。
 2. 
+
+
+### beetsql
+
+官网：http://ibeetl.com/
 
 ### Mongo
 

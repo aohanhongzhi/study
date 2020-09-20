@@ -204,6 +204,13 @@ https://gitee.com/fastdfs100/fastdfs
 
 ### 数据库
 
+#### 数据库相关中间件
+
+##### 分布式MySQL工具集Vitess
+> 官网 https://vitess.io/
+
+outube出品的开源分布式MySQL工具集Vitess，自动分片存储MySQL数据表，将单个SQL查询改写为分布式发送到多个MySQL Server上，支持行缓存（比MySQL本身缓存效率高），支持复制容错，已用于Youtube生产环境
+
 #### MySQL
 
 目前8.+，性能是5.7的两倍，而且增加了很多新特性。MySQL有很多的版本，如果集群部署的话，可以考虑使用cluster版本。可以参考mycat中间件。
@@ -252,7 +259,15 @@ SpringCloud家族，智能网关。性能不输Nginx。Zuul的核心是一系列
 
 #### Nginx
 
-单线程高性能网关
+单线程高性能网关。nignx可以在一次访问请求状态为500的时候，直接访问另一台服务器。做到热迁，参考 https://blog.csdn.net/wy0123/article/details/88551915
+
+
+
+#### tengine
+
+http://tengine.taobao.org/
+
+
 
 #### HAProxy
 
@@ -279,7 +294,7 @@ HAProxy提供了L4(TCP)和L7(HTTP)两种负载均衡能力，具备丰富的功�
 
 #### Gradle
 
-地表最强的项目构建工具
+地表最强的项目构建工具，不接受任何反驳
 
 #### Maven
 
@@ -299,7 +314,7 @@ mybatis-plus| mybatis的增强，全自动化。既有hibernate，jpa的自动�
 rexdb| 手写sql，https://gitee.com/rexsoft/rexdb |http://db.rex-soft.org/
 hibernate | 全自动化 |
 J2Cache | Java 两级缓存框架，可以让应用支持两级缓存框架 ehcache(Caffeine) + redis 。避免完全使用独立缓存系统所带来的网络IO开销问题 |<https://gitee.com/ld/J2Cache>
-验证码 | 基于 SpringBoot Google Kaptcha 验证码 快速启动器 |<https://gitee.com/baomidou/kaptcha-spring-boot-starter>
+
 加密运行jar包 | Spring Boot JAR 安全加密运行工具，同时支持的原生JAR。 基于对JAR包内资源的加密以及拓展ClassLoader来构建的一套程序加密启动，动态解密运行的方案，避免源码泄露或反编译。 |<https://gitee.com/core-lib/xjar>
 kisso | java 基于 Cookie 的 SSO 中间件 kisso |<https://gitee.com/baomidou/kisso>
 jpa|SpringBoot常用的，个人体验不是很好 |
@@ -326,6 +341,8 @@ HikariCP|SpringBoot2.+默认数据库连接池，性能非常优秀 | https://gi
 oh-my-email|Java 邮件发送库了，支持抄送、附件、模板 | <https://github.com/biezhi/oh-my-email> 
 RabbitMq | 消息队列 | [https://www.rabbitmq.com/](https://www.rabbitmq.com/)
 sso |java 基于 Cookie 的 SSO 中间件 kisso | [https://gitee.com/baomidou/kisso](https://gitee.com/baomidou/kisso)
+okhttps| 基于okhttp封装 | https://gitee.com/ejlchina-zhxu/okhttps
+验证码 | 基于 SpringBoot Google Kaptcha 验证码 快速启动器 |<https://gitee.com/baomidou/kaptcha-spring-boot-starter>
 ---
 
 ### 企业级应用开发技术栈
@@ -355,6 +372,11 @@ Lombok | 简化对象封装工具 | [https://github.com/rzwitserloot/lombok](htt
 rsa-encrypt|Spring Boot 接口请求参数自动加解密 |https://gitee.com/catch_wind/rsa-encrypt-body-spring-boot
 easy-excel|阿里巴巴excel处理工具 | https://alibaba-easyexcel.github.io/
 captcha|行为验证码|https://gitee.com/anji-plus/captcha 
+SpringBoot Google Kaptcha | 简单快速集成 Google Kaptcha验证码 | https://gitee.com/baomidou/kaptcha-spring-boot-starter
+
+
+
+
 ---
 
 ### SpringCloud家族
@@ -408,7 +430,7 @@ SpringBoot | JavaBean容器| [https://spring.io/projects/spring-boot](https://sp
 Spring Vault | 数据库动态密码管理，敏感配置信息管理，需要安装vault。 | https://spring.io/projects/spring-vault
 Vault |动态密码Server |https://www.hashicorp.com/products/vault/
 spring-boot-starter-jersey |Restful Web服务，类似SpringMVC |https://blog.csdn.net/github_38395241/article/details/70265379
- Consul | |https://spring.io/projects/spring-cloud-consul
+Consul | |https://spring.io/projects/spring-cloud-consul
 
 ---
 
@@ -468,6 +490,11 @@ flask
 <https://flask.palletsprojects.com/>
 
 
+### FastAPI
+
+官网 https://fastapi.tiangolo.com/zh
+
+非常优秀的框架，采用携程性能可以与Go比肩
 
 
 

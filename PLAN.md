@@ -10,7 +10,9 @@
 1. rexdb 源码学习与掌握
 1. mysql-connector 源码学习与掌握
 1. flask 源码学习与掌握
+1. fastapi 源码学习与掌握
 1. Dubbox 源码学习与掌握
+1. jackson 源码学习与掌握，自定义枚举的序列化与反序列化器
 
 ## 安排计划
 
@@ -41,3 +43,4 @@
 1. [SpringBoot整合Quartz实现定时任务](https://www.jianshu.com/p/a99b80021be6)
    1. https://www.cnblogs.com/interdrp/p/3511302.html
 1. [理解这9大内置过滤器，才算是精通Shiro](https://mp.weixin.qq.com/s/WxrygMbahkkZkpP0wpFH5w)
+1. [京东开源的线程调度框架](https://gitee.com/jd-platform-opensource/asyncTool)

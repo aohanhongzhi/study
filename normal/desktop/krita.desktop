@@ -1,0 +1,12 @@
+[Desktop Entry]
+Categories=Utility;Development;IDE;
+Comment=IDE
+Exec=/opt/eric/krita-4.3.0-x86_64.appimage
+Icon=/opt/eric/krita.png
+Keywords=Krita;
+Name=Krita
+Terminal=false
+Type=Application
+X-Deepin-AppID=Krita
+X-Deepin-CreatedBy=com.deepin.dde.daemon.Launcher
+X-Deepin-Vendor=user-custom

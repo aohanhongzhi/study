@@ -68,3 +68,23 @@ IService的基本使用
 mybatis-plus的功能很丰富,可以参考官网.
 
 逻辑删除(取消用户具有delete数据的权限),攻击SQL阻断器,多数据源,分布式事务等等.
+
+## 使用
+
+1. 分页加载
+
+```java
+    @Override
+    public BaseResponseVO listErpManager(BasePageParam basePageParam) {
+        Long pageSize = basePageParam.getPageSize();
+        Long cuurent = basePageParam.getPageNum() * pageSize;
+        IPage<ManagerModel> managerModelIPage = new Page(cuurent, pageSize);
+        managerModelIPage = managerMapper.selectPage(managerModelIPage, null);
+        return BaseResponseVO.success(managerModelIPage);
+    }
+
+```
+
+手写sql也会支持分院的
+
+![](./img/sql分页.png)

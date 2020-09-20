@@ -1,0 +1,10 @@
+#!/usr/bin/evn xdg-open
+[Desktop Entry]
+Type=Application
+Name=Postman
+Comment=Access the Internet
+Icon=/usr/local/eric/Postman/app/postman.svg
+Exec=/usr/local/eric/Postman/app/Postman
+Terminal=false
+Categories=Network;WebBrowser;
+
