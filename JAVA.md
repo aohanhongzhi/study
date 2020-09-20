@@ -176,8 +176,11 @@ Map<Integer, CtUserDefineDefectSet> collect = ctUserDefineDefectSets.stream().co
 
 ```
 
+List转Set
 
-
+```java
+   Set<String> collect = teamAppModelList.stream().map(dto -> dto.getAppId()).collect(Collectors.toSet());
+```
 
 ### Vector
 
