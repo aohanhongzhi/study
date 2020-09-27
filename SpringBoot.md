@@ -15,6 +15,28 @@ SpringBoot
             java -jar -Dspring.profiles.active=prod print-0.0.1-SNAPSHOT.jar
     ```
 
+
+## 常用操作
+
+### 获取yaml配置信息
+
+```java
+    import org.springframework.core.env.Environment;
+
+
+	@Autowired
+	private Environment env;
+
+
+    String redisHost = env.getProperty("spring.redis.host");
+    String redisDatabase = env.getProperty("spring.redis.database");
+    String password = env.getProperty("spring.redis.password");
+    String port = env.getProperty("spring.redis.port");
+```
+
+
+
+
 ## 常用注解
 
 ### Controller
