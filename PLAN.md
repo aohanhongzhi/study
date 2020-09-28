@@ -46,3 +46,4 @@
 1. [京东开源的线程调度框架](https://gitee.com/jd-platform-opensource/asyncTool)
 1. [shardingsphere](https://shardingsphere.apache.org/index_zh.html)
 1. [elasticjob](https://shardingsphere.apache.org/elasticjob/index_zh.html)
+1. [AutoLoadCache](https://gitee.com/qiujiayu/AutoLoadCache)
