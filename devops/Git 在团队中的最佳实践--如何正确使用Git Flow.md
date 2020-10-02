@@ -198,4 +198,24 @@ SourceTree
 这么好的工具请问多少钱呢？ 免费!!!
 
 ![](./o_source-tree-git-flow-init.png)
+
 ![](./o_sourcetree-hero-mac-log.png)
+
+
+
+
+
+### 综上所述
+
+制定以下规范
+
+
+
+1. 对于一个项目首先确定几个必须的分支.master,dev,beta,release等四个必须的分支.
+2. 所有人基于dev分支开发,从dev分支获取最新代码,然后从dev分支切换出自己的feature分支,并且按照至少一天两次提交代码.feature功能开发完成之后,申请pull request到dev分支.等待管理员审核.
+3. 对于dev分支需要发布的新功能,从dev分支merge到beta分支,并且用Jenkins部署在测试服务器上.
+4. 代码测试完成后需要发布的时候,将beta分支代码merge到release分支,触发Jenkins完成发布.
+5. dev分支可以继续开发新功能,不影响release分支的代码.
+6. 线上生产发生bug,需要紧急修复的,从release分支切换出hotfix分支(这时候可能dev分支又开发了新功能前后端未必协调完成,所以不可以直接发布),进行修复,之后将代码同时merge到dev和release分支.
+7. 下次发布之前将release代码merge到master分支,并且打上tag存档
+
