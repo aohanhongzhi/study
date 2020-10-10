@@ -1,4 +1,11 @@
 # ALGORITHM
+
+
+1. https://github.com/TheAlgorithms/Python
+1. https://github.com/TheAlgorithms/Java
+1. https://github.com/TheAlgorithms/Go
+1. https://github.com/yuanguangxin/LeetCode
+
 ### 一致性Hash算法
 在数据库分库分表的时候，使用hash取模的方式分表，那么后期数据迁移的时候，可能需要重新hash迁移数据，这时候就很麻烦了，如果使用一致性Hash算法就可以避免这个问题。
 
