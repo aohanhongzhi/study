@@ -377,8 +377,7 @@ rsa-encrypt|Spring Boot 接口请求参数自动加解密 |https://gitee.com/cat
 easy-excel|阿里巴巴excel处理工具 | https://alibaba-easyexcel.github.io/
 captcha|行为验证码|https://gitee.com/anji-plus/captcha 
 SpringBoot Google Kaptcha | 简单快速集成 Google Kaptcha验证码 | https://gitee.com/baomidou/kaptcha-spring-boot-starter
-
-
+Discovery| 全链路灰度路由 ,灰度发布 | https://gitee.com/nepxion/Discovery
 
 
 ---
