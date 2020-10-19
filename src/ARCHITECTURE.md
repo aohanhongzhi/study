@@ -378,7 +378,7 @@ easy-excel|阿里巴巴excel处理工具 | https://alibaba-easyexcel.github.io/
 captcha|行为验证码|https://gitee.com/anji-plus/captcha 
 SpringBoot Google Kaptcha | 简单快速集成 Google Kaptcha验证码 | https://gitee.com/baomidou/kaptcha-spring-boot-starter
 Discovery| 全链路灰度路由 ,灰度发布 | https://gitee.com/nepxion/Discovery
-
+Sentinel | 面向分布式服务架构的高可用流量防护组件 | https://github.com/alibaba/Sentinel
 
 ---
 
