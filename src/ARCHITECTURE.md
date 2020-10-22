@@ -285,6 +285,12 @@ HAProxy提供了L4(TCP)和L7(HTTP)两种负载均衡能力，具备丰富的功�
 来源：简书
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
+### 分布式技术栈
+
+#### Sentinel
+
+Sentinel是阿里巴巴开源的限流器熔断器，并且带有可视化操作界面。功能比较简单使用,但是满足特定场景还是需要定制化开发.非高并发的项目,可能达不到系统负载的限额,那么这种流量防护并没有什么实际意义.
+
 ### 代码审查
 
 #### sonarqube
@@ -433,8 +439,8 @@ SpringBoot | JavaBean容器| [https://spring.io/projects/spring-boot](https://sp
 Spring Vault | 数据库动态密码管理，敏感配置信息管理，需要安装vault。 | https://spring.io/projects/spring-vault
 Vault |动态密码Server |https://www.hashicorp.com/products/vault/
 spring-boot-starter-jersey |Restful Web服务，类似SpringMVC |https://blog.csdn.net/github_38395241/article/details/70265379
-Consul | |https://spring.io/projects/spring-cloud-consul
-
+Consul | 注册中心,建议放弃使用,受美国法律限制|https://spring.io/projects/spring-cloud-consul
+Nacos | | 
 ---
 
 ### Dubbox + ZooKeeper
