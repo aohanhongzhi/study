@@ -260,6 +260,14 @@ SQL 方面兼容 2003 标准、PostgreSQL 语法和常用 Oracle 函数&数据�
 
 SpringCloud家族，智能网关。性能不输Nginx。Zuul的核心是一系列的Filter。
 
+#### Kong
+
+
+##### 插件
+
+https://gitee.com/raoxy/kong-plugins-canary
+
+
 #### Nginx
 
 单线程高性能网关。nignx可以在一次访问请求状态为500的时候，直接访问另一台服务器。做到热迁，参考 https://blog.csdn.net/wy0123/article/details/88551915
