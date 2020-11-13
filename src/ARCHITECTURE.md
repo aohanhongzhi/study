@@ -340,14 +340,14 @@ BeetlSQL|全功能DAO工具， 同时具有Hibernate 优点 & Mybatis优点功�
 
 
 
-个人推荐使用mybatis-plus比较好，既可以使用注解，也可以使用xml文件配置，还可以直接继承BaseMapper接口。灵活也不失自动化。
+个人推荐使用mybatis-plus比较好，既可以使用注解，也可以使用xml文件配置，还可以直接继承BaseMapper接口。Service实现ServiceImpl等类，Model也可以直接操作。灵活也不失自动化。
 
 
 ### 常用中间件
 
 框架名 | 说明 | 官网
 --- | --- | ---
-Lombok | 简化对象封装| [https://github.com/rzwitserloot/lombok](https://github.com/rzwitserloot/lombok)
+Lombok | 简化对象封装（打包可以排除）| [https://github.com/rzwitserloot/lombok](https://github.com/rzwitserloot/lombok)
 Redis|缓存| [https://redis.io/](https://redis.io/)
 Caffeine|本地缓存，应用内存| <http://www.mydlq.club/article/56/> 
 JWT | JWT登录支持 | [https://github.com/jwtk/jjwt](https://github.com/jwtk/jjwt)
@@ -447,7 +447,7 @@ SpringBoot | JavaBean容器| [https://spring.io/projects/spring-boot](https://sp
 Spring Vault | 数据库动态密码管理，敏感配置信息管理，需要安装vault。 | https://spring.io/projects/spring-vault
 Vault |动态密码Server |https://www.hashicorp.com/products/vault/
 spring-boot-starter-jersey |Restful Web服务，类似SpringMVC |https://blog.csdn.net/github_38395241/article/details/70265379
-Consul | 注册中心,建议放弃使用,受美国法律限制|https://spring.io/projects/spring-cloud-consul
+Consul | 注册中心,建议放弃使用,企业版受美国法律限制|https://spring.io/projects/spring-cloud-consul
 Nacos | | 
 ---
 
@@ -511,7 +511,7 @@ flask
 
 官网 https://fastapi.tiangolo.com/zh
 
-非常优秀的框架，采用携程性能可以与Go比肩
+非常优秀的框架，采用携程性能可以与Go比肩。实际使用的时候，发现集成peewee的时候发现这个与controller接口的时候有问题，不能使用同一个类对象来处理参数反序列化和数据库存储。所以很麻烦。
 
 
 
