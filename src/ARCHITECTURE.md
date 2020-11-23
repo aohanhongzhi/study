@@ -105,7 +105,9 @@ https://spring.io/projects/spring-cloud-consul
 https://nacos.io/zh-cn/
 
 一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。说白了就是相当于eureka+Apollo，这个是阿里巴巴开源的，使用的公司还是很多的（国内居多，因为有幺蛾子表示Eureka2.+胎死腹中，存在闭源风险。然而这种下一版本停止的太多了）。
-
+登录首页
+http://localhost:8848/nacos/index.html#/login
+默认的用户名和密码都是nacos
 
 ### 日志
 
