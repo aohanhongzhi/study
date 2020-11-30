@@ -10,9 +10,11 @@
 1. rexdb 源码学习与掌握
 1. mysql-connector 源码学习与掌握
 1. flask 源码学习与掌握
-1. fastapi 源码学习与掌握
+1. fastapi 源码学习与掌握 [放弃这个框架很一般，在处理前端接口与后端模型的时候非常麻烦]
 1. Dubbox 源码学习与掌握
 1. jackson 源码学习与掌握，自定义枚举的序列化与反序列化器
+1. okhttps
+1. forest
 
 ## 安排计划
 

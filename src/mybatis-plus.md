@@ -85,6 +85,6 @@ mybatis-plus的功能很丰富,可以参考官网.
 
 ```
 
-手写sql也会支持分院的
+手写sql也会支持分页的
 
 ![](./img/sqlPage.png)
