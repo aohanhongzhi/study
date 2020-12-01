@@ -105,7 +105,9 @@ https://spring.io/projects/spring-cloud-consul
 https://nacos.io/zh-cn/
 
 一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。说白了就是相当于eureka+Apollo，这个是阿里巴巴开源的，使用的公司还是很多的（国内居多，因为有幺蛾子表示Eureka2.+胎死腹中，存在闭源风险。然而这种下一版本停止的太多了）。
-
+登录首页
+http://localhost:8848/nacos/index.html#/login
+默认的用户名和密码都是nacos
 
 ### 日志
 
@@ -117,6 +119,9 @@ https://nacos.io/zh-cn/
 
 https://gitee.com/minbox-projects/minbox-logging
 
+### tlog
+
+tlog | 轻量级的分布式日志标记追踪神器 | http://bryan31.gitee.io/tlog-website/
 
 ### 监控
 
@@ -257,6 +262,14 @@ SQL 方面兼容 2003 标准、PostgreSQL 语法和常用 Oracle 函数&数据�
 
 SpringCloud家族，智能网关。性能不输Nginx。Zuul的核心是一系列的Filter。
 
+#### Kong
+
+
+##### 插件
+
+https://gitee.com/raoxy/kong-plugins-canary
+
+
 #### Nginx
 
 单线程高性能网关。nignx可以在一次访问请求状态为500的时候，直接访问另一台服务器。做到热迁，参考 https://blog.csdn.net/wy0123/article/details/88551915
@@ -281,6 +294,12 @@ HAProxy提供了L4(TCP)和L7(HTTP)两种负载均衡能力，具备丰富的功�
 链接：https://www.jianshu.com/p/c9f6d55288c0
 来源：简书
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+### 分布式技术栈
+
+#### Sentinel
+
+Sentinel是阿里巴巴开源的限流器熔断器，并且带有可视化操作界面。功能比较简单使用,但是满足特定场景还是需要定制化开发.非高并发的项目,可能达不到系统负载的限额,那么这种流量防护并没有什么实际意义.
 
 ### 代码审查
 
@@ -323,14 +342,14 @@ BeetlSQL|全功能DAO工具， 同时具有Hibernate 优点 & Mybatis优点功�
 
 
 
-个人推荐使用mybatis-plus比较好，既可以使用注解，也可以使用xml文件配置，还可以直接继承BaseMapper接口。灵活也不失自动化。
+个人推荐使用mybatis-plus比较好，既可以使用注解，也可以使用xml文件配置，还可以直接继承BaseMapper接口。Service实现ServiceImpl等类，Model也可以直接操作。灵活也不失自动化。
 
 
 ### 常用中间件
 
 框架名 | 说明 | 官网
 --- | --- | ---
-Lombok | 简化对象封装| [https://github.com/rzwitserloot/lombok](https://github.com/rzwitserloot/lombok)
+Lombok | 简化对象封装（打包可以排除）| [https://github.com/rzwitserloot/lombok](https://github.com/rzwitserloot/lombok)
 Redis|缓存| [https://redis.io/](https://redis.io/)
 Caffeine|本地缓存，应用内存| <http://www.mydlq.club/article/56/> 
 JWT | JWT登录支持 | [https://github.com/jwtk/jjwt](https://github.com/jwtk/jjwt)
@@ -343,6 +362,7 @@ RabbitMq | 消息队列 | [https://www.rabbitmq.com/](https://www.rabbitmq.com/)
 sso |java 基于 Cookie 的 SSO 中间件 kisso | [https://gitee.com/baomidou/kisso](https://gitee.com/baomidou/kisso)
 okhttps| 基于okhttp封装 | https://gitee.com/ejlchina-zhxu/okhttps
 验证码 | 基于 SpringBoot Google Kaptcha 验证码 快速启动器 |<https://gitee.com/baomidou/kaptcha-spring-boot-starter>
+tlog | 轻量级的分布式日志标记追踪神器 | http://bryan31.gitee.io/tlog-website/
 ---
 
 ### 企业级应用开发技术栈
@@ -373,9 +393,8 @@ rsa-encrypt|Spring Boot 接口请求参数自动加解密 |https://gitee.com/cat
 easy-excel|阿里巴巴excel处理工具 | https://alibaba-easyexcel.github.io/
 captcha|行为验证码|https://gitee.com/anji-plus/captcha 
 SpringBoot Google Kaptcha | 简单快速集成 Google Kaptcha验证码 | https://gitee.com/baomidou/kaptcha-spring-boot-starter
-
-
-
+Discovery| 全链路灰度路由 ,灰度发布 | https://gitee.com/nepxion/Discovery
+Sentinel | 面向分布式服务架构的高可用流量防护组件 | https://github.com/alibaba/Sentinel
 
 ---
 
@@ -430,8 +449,8 @@ SpringBoot | JavaBean容器| [https://spring.io/projects/spring-boot](https://sp
 Spring Vault | 数据库动态密码管理，敏感配置信息管理，需要安装vault。 | https://spring.io/projects/spring-vault
 Vault |动态密码Server |https://www.hashicorp.com/products/vault/
 spring-boot-starter-jersey |Restful Web服务，类似SpringMVC |https://blog.csdn.net/github_38395241/article/details/70265379
-Consul | |https://spring.io/projects/spring-cloud-consul
-
+Consul | 注册中心,建议放弃使用,企业版受美国法律限制|https://spring.io/projects/spring-cloud-consul
+Nacos | | 
 ---
 
 ### Dubbox + ZooKeeper
@@ -494,7 +513,7 @@ flask
 
 官网 https://fastapi.tiangolo.com/zh
 
-非常优秀的框架，采用携程性能可以与Go比肩
+非常优秀的框架，采用携程性能可以与Go比肩。实际使用的时候，发现集成peewee的时候发现这个与controller接口的时候有问题，不能使用同一个类对象来处理参数反序列化和数据库存储。所以很麻烦。
 
 
 

@@ -1,6 +1,9 @@
 # Java
 
 由于Java基础知识比较多，代码编写套路多，因此独立成一个md文件。
+
+1. https://github.com/zhonghuasheng/Tutorial
+
 ## 基础知识
 
 [你写的Java对象究竟占多少内存？](https://mp.weixin.qq.com/s/RJrfOO4ruSrBzU7V5LDI9g)
@@ -481,6 +484,14 @@ SpringBoot默认的json中间件，更加规范
 
 强大轻量 且 前后端通用的 HTTP 客户端
 
+
+### 重试框架
+
+#### SpringRetry
+
+#### retrieval
+
+https://gitee.com/spjich/retrieval
 
 
 

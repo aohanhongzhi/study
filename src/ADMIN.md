@@ -23,3 +23,5 @@
    * https://github.com/olongfen/gorm-gin-admin
    * https://github.com/olongfen/user_admin
 1. [pig4cloud](https://pig4cloud.com/) 适合搭建数据管理中台,统一管理. 里面有一个cron图形化选择器
+1. [基于Gin + Vue + Element UI前后端分离的工单系统](https://github.com/lanyulei/ferry)
+1. [Go语言开发的gin-vue-admin](https://github.com/flipped-aurora/gin-vue-admin)

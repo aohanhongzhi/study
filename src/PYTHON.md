@@ -34,6 +34,14 @@ https://sanic.readthedocs.io/en/latest/
 
 一个Python的轻量级ORM框架，确实很简易
 
+#### orator
+
+一个Python的轻量级ORM框架，确实很简易
+
+https://github.com/sdispater/orator
+
+
+
 ### 日志
 
 ##### loguru
