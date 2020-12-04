@@ -32,6 +32,10 @@ https://sanic.readthedocs.io/en/latest/
 
 #### Peewee
 
+https://github.com/coleifer/peewee
+
+http://docs.peewee-orm.com/en/latest/
+
 一个Python的轻量级ORM框架，确实很简易
 
 #### orator

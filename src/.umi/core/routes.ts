@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import { ApplyPluginsType } from '/home/eric/Project/dumi/node_modules/@umijs/runtime';
+import { ApplyPluginsType } from '/home/eric/.npm/_npx/8349/lib/node_modules/dumi/node_modules/@umijs/runtime';
 import * as umiExports from './umiExports';
 import { plugin } from './plugin';
 
@@ -8,8 +8,8 @@ export function getRoutes() {
   const routes = [
   {
     "path": "/",
-    "component": (props) => require('react').createElement(require('../../../node_modules/@umijs/preset-dumi/lib/themes/default/layout.js').default, {
-      ...{"menus":{"*":{"*":[{"path":"/","title":"知识图谱","meta":{}},{"path":"/admin","title":"TEMPLATE","meta":{}},{"path":"/algorithm","title":"ALGORITHM","meta":{}},{"path":"/architecture","title":"ARCHITECTURE","meta":{}},{"path":"/awesomeblog","title":"AWESOMEBLOG","meta":{}},{"path":"/deepin","title":"Deepin","meta":{}},{"title":"Devops","path":"/devops","meta":{},"children":[{"path":"/devops/git 在团队中的最佳实践--如何正确使用git flow","title":"Git 在团队中的最佳实践--如何正确使用Git Flow","meta":{}},{"path":"/devops/电脑卡顿解决办法","title":"查看后台常驻进程","meta":{}}]},{"path":"/docker","title":"Docker","meta":{}},{"path":"/explore","title":"EXPLORE","meta":{}},{"path":"/go","title":"Go","meta":{}},{"path":"/interview","title":"Interview","meta":{}},{"path":"/java","title":"Java","meta":{}},{"path":"/jdk","title":"JDK","meta":{}},{"path":"/kotlin","title":"Kotlin","meta":{}},{"path":"/linux","title":"LINUX","meta":{}},{"path":"/mybatis-plus","title":"mybatis-plus学习","meta":{}},{"path":"/mysql","title":"Mysql","meta":{}},{"title":"Normal","path":"/normal","meta":{},"children":[{"path":"/normal","title":"常用配置文件","meta":{}},{"path":"/normal/bashrc","title":"Bashrc","meta":{}},{"path":"/normal/logback","title":"Logback","meta":{}},{"path":"/normal/快捷键","title":"idea快捷键","meta":{}}]},{"path":"/plan","title":"Plan","meta":{}},{"path":"/program","title":"编程技巧","meta":{}},{"path":"/programming","title":"为往圣继绝学","meta":{}},{"path":"/python","title":"Python","meta":{}},{"title":"Security","path":"/security","meta":{},"children":[{"path":"/security/rsa","title":"带你彻底理解RSA算法原理","meta":{}}]},{"path":"/spring-boot","title":"SpringBoot","meta":{}},{"path":"/sql","title":"SQL","meta":{}},{"path":"/study","title":"我学习过的知识","meta":{}},{"path":"/study_new_languge","title":"如何快速掌握一门新的语言","meta":{}},{"path":"/tool","title":"Tool","meta":{}},{"path":"/vue","title":"Vue","meta":{}},{"path":"/代码管理","title":"代码版本控制","meta":{}}]}},"locales":[],"navs":{},"title":"dumi","mode":"doc"},
+    "component": (props) => require('react').createElement(require('../../../../../.npm/_npx/8349/lib/node_modules/dumi/node_modules/@umijs/preset-dumi/lib/themes/default/layout.js').default, {
+      ...{"menus":{"*":{"*":[{"path":"/","title":"知识图谱","meta":{}},{"path":"/admin","title":"TEMPLATE","meta":{}},{"path":"/algorithm","title":"ALGORITHM","meta":{}},{"path":"/architecture","title":"ARCHITECTURE","meta":{}},{"path":"/awesomeblog","title":"AWESOMEBLOG","meta":{}},{"path":"/deepin","title":"Deepin","meta":{}},{"title":"Devops","path":"/devops","meta":{},"children":[{"path":"/devops/git 在团队中的最佳实践--如何正确使用git flow","title":"Git 在团队中的最佳实践--如何正确使用Git Flow","meta":{}},{"path":"/devops/电脑卡顿解决办法","title":"查看后台常驻进程","meta":{}}]},{"path":"/docker","title":"Docker","meta":{}},{"path":"/explore","title":"EXPLORE","meta":{}},{"path":"/go","title":"Go","meta":{}},{"path":"/interview","title":"Interview","meta":{}},{"path":"/java","title":"Java","meta":{}},{"path":"/jdk","title":"JDK","meta":{}},{"path":"/kotlin","title":"Kotlin","meta":{}},{"path":"/linux","title":"LINUX","meta":{}},{"path":"/mybatis-plus","title":"mybatis-plus学习","meta":{}},{"path":"/mysql","title":"Mysql","meta":{}},{"title":"Normal","path":"/normal","meta":{},"children":[{"path":"/normal","title":"常用配置文件","meta":{}},{"path":"/normal/bashrc","title":"Bashrc","meta":{}},{"path":"/normal/logback","title":"Logback","meta":{}},{"path":"/normal/快捷键","title":"idea快捷键","meta":{}}]},{"path":"/plan","title":"Plan","meta":{}},{"path":"/program","title":"编程技巧","meta":{}},{"path":"/programming","title":"为往圣继绝学","meta":{}},{"path":"/python","title":"常用框架","meta":{}},{"title":"Security","path":"/security","meta":{},"children":[{"path":"/security/rsa","title":"带你彻底理解RSA算法原理","meta":{}}]},{"path":"/spring-boot","title":"SpringBoot","meta":{}},{"path":"/sql","title":"SQL","meta":{}},{"path":"/study","title":"我学习过的知识","meta":{}},{"path":"/study_new_languge","title":"如何快速掌握一门新的语言","meta":{}},{"path":"/tool","title":"Tool","meta":{}},{"path":"/vue","title":"Vue","meta":{}},{"path":"/代码管理","title":"代码版本控制","meta":{}}]}},"locales":[],"navs":{},"title":"dumi","mode":"doc"},
       ...props,
     }),
     "routes": [
@@ -19,7 +19,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/ADMIN.md",
-          "updatedTime": 1600933977000,
+          "updatedTime": 1602318656000,
           "slugs": [
             {
               "depth": 1,
@@ -37,7 +37,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/ALGORITHM.md",
-          "updatedTime": 1602158856555,
+          "updatedTime": 1602318656000,
           "slugs": [
             {
               "depth": 1,
@@ -80,7 +80,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/ARCHITECTURE.md",
-          "updatedTime": 1600221303000,
+          "updatedTime": 1603088708000,
           "slugs": [
             {
               "depth": 1,
@@ -201,6 +201,11 @@ export function getRoutes() {
               "depth": 4,
               "value": "链路分析 minbox-logging",
               "heading": "链路分析-minbox-logging"
+            },
+            {
+              "depth": 3,
+              "value": "tlog",
+              "heading": "tlog"
             },
             {
               "depth": 3,
@@ -493,7 +498,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/AWESOMEBLOG.md",
-          "updatedTime": 1600220562000,
+          "updatedTime": 1602159523000,
           "slugs": [],
           "title": "AWESOMEBLOG"
         },
@@ -505,7 +510,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/DEEPIN.md",
-          "updatedTime": 1599792786000,
+          "updatedTime": 1602159523000,
           "slugs": [
             {
               "depth": 1,
@@ -523,7 +528,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/DOCKER.md",
-          "updatedTime": 1602158991367,
+          "updatedTime": 1602159523000,
           "slugs": [
             {
               "depth": 1,
@@ -551,7 +556,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/EXPLORE.md",
-          "updatedTime": 1599792786000,
+          "updatedTime": 1602159523000,
           "slugs": [
             {
               "depth": 1,
@@ -569,7 +574,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/Go.md",
-          "updatedTime": 1600221413000,
+          "updatedTime": 1602159523000,
           "slugs": [
             {
               "depth": 1,
@@ -622,7 +627,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/INTERVIEW.md",
-          "updatedTime": 1599792786000,
+          "updatedTime": 1602159523000,
           "slugs": [
             {
               "depth": 1,
@@ -670,7 +675,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/JAVA.md",
-          "updatedTime": 1602158668299,
+          "updatedTime": 1602463665000,
           "slugs": [
             {
               "depth": 1,
@@ -848,7 +853,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/JDK.md",
-          "updatedTime": 1600310463000,
+          "updatedTime": 1602159523000,
           "slugs": [
             {
               "depth": 1,
@@ -916,7 +921,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/KOTLIN.md",
-          "updatedTime": 1599792786000,
+          "updatedTime": 1602159523000,
           "slugs": [
             {
               "depth": 1,
@@ -939,7 +944,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/LINUX.md",
-          "updatedTime": 1599792786000,
+          "updatedTime": 1602159523000,
           "slugs": [
             {
               "depth": 1,
@@ -972,7 +977,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/MYSQL.md",
-          "updatedTime": 1599792786000,
+          "updatedTime": 1602318725000,
           "slugs": [
             {
               "depth": 1,
@@ -1000,7 +1005,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/PLAN.md",
-          "updatedTime": 1601279218000,
+          "updatedTime": 1602159523000,
           "slugs": [
             {
               "depth": 1,
@@ -1028,13 +1033,8 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/PYTHON.md",
-          "updatedTime": 1600308783000,
+          "updatedTime": 1602463665000,
           "slugs": [
-            {
-              "depth": 1,
-              "value": "Python",
-              "heading": "python"
-            },
             {
               "depth": 2,
               "value": "常用框架",
@@ -1081,6 +1081,11 @@ export function getRoutes() {
               "heading": "peewee"
             },
             {
+              "depth": 4,
+              "value": "orator",
+              "heading": "orator"
+            },
+            {
               "depth": 3,
               "value": "日志",
               "heading": "日志"
@@ -1098,37 +1103,12 @@ export function getRoutes() {
             {
               "depth": 2,
               "value": "Python",
-              "heading": "python-1"
-            },
-            {
-              "depth": 3,
-              "value": "awesome-python",
-              "heading": "awesome-python"
-            },
-            {
-              "depth": 3,
-              "value": "优秀的库",
-              "heading": "优秀的库"
-            },
-            {
-              "depth": 4,
-              "value": "哪些 Python 库让你相见恨晚？",
-              "heading": "哪些-python-库让你相见恨晚？"
-            },
-            {
-              "depth": 4,
-              "value": "pandas-profiling",
-              "heading": "pandas-profiling"
-            },
-            {
-              "depth": 4,
-              "value": "Playhouse",
-              "heading": "playhouse"
+              "heading": "python"
             }
           ],
-          "title": "Python"
+          "title": "常用框架"
         },
-        "title": "Python"
+        "title": "常用框架"
       },
       {
         "path": "/program",
@@ -1136,7 +1116,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/Program.md",
-          "updatedTime": 1599792786000,
+          "updatedTime": 1602159523000,
           "slugs": [
             {
               "depth": 1,
@@ -1164,7 +1144,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/Programming.md",
-          "updatedTime": 1600221662000,
+          "updatedTime": 1602159523000,
           "slugs": [
             {
               "depth": 1,
@@ -1237,7 +1217,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/README.md",
-          "updatedTime": 1599792786000,
+          "updatedTime": 1602159523000,
           "slugs": [
             {
               "depth": 1,
@@ -1255,7 +1235,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/SECURITY.md",
-          "updatedTime": 1599792786000,
+          "updatedTime": 1602159523000,
           "slugs": [
             {
               "depth": 1,
@@ -1278,7 +1258,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/SQL.md",
-          "updatedTime": 1600221749000,
+          "updatedTime": 1602159523000,
           "slugs": [
             {
               "depth": 1,
@@ -1321,7 +1301,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/STUDY.md",
-          "updatedTime": 1602159216412,
+          "updatedTime": 1602159523000,
           "slugs": [
             {
               "depth": 1,
@@ -1344,6 +1324,181 @@ export function getRoutes() {
               "heading": "jdk"
             },
             {
+              "depth": 3,
+              "value": "基础",
+              "heading": "基础"
+            },
+            {
+              "depth": 3,
+              "value": "Spring",
+              "heading": "spring"
+            },
+            {
+              "depth": 3,
+              "value": "MyCat",
+              "heading": "mycat"
+            },
+            {
+              "depth": 3,
+              "value": "Mybatis",
+              "heading": "mybatis"
+            },
+            {
+              "depth": 3,
+              "value": "logback",
+              "heading": "logback"
+            },
+            {
+              "depth": 3,
+              "value": "log4j & log4j2",
+              "heading": "log4j--log4j2"
+            },
+            {
+              "depth": 3,
+              "value": "rexdb",
+              "heading": "rexdb"
+            },
+            {
+              "depth": 3,
+              "value": "mail",
+              "heading": "mail"
+            },
+            {
+              "depth": 3,
+              "value": "security",
+              "heading": "security"
+            },
+            {
+              "depth": 3,
+              "value": "sparkjava",
+              "heading": "sparkjava"
+            },
+            {
+              "depth": 3,
+              "value": "Netty",
+              "heading": "netty"
+            },
+            {
+              "depth": 3,
+              "value": "javafx",
+              "heading": "javafx"
+            },
+            {
+              "depth": 3,
+              "value": "java-di",
+              "heading": "java-di"
+            },
+            {
+              "depth": 3,
+              "value": "ActFramework",
+              "heading": "actframework"
+            },
+            {
+              "depth": 3,
+              "value": "其他",
+              "heading": "其他"
+            },
+            {
+              "depth": 2,
+              "value": "https://gitee.com/lin-mt/effective-java-third-edition",
+              "heading": "httpsgiteecomlin-mteffective-java-third-edition"
+            },
+            {
+              "depth": 2,
+              "value": "Python",
+              "heading": "python"
+            },
+            {
+              "depth": 3,
+              "value": "flask",
+              "heading": "flask"
+            },
+            {
+              "depth": 3,
+              "value": "django",
+              "heading": "django"
+            },
+            {
+              "depth": 3,
+              "value": "Peewee",
+              "heading": "peewee"
+            },
+            {
+              "depth": 3,
+              "value": "awesome-python",
+              "heading": "awesome-python"
+            },
+            {
+              "depth": 3,
+              "value": "优秀的库",
+              "heading": "优秀的库"
+            },
+            {
+              "depth": 4,
+              "value": "哪些 Python 库让你相见恨晚？",
+              "heading": "哪些-python-库让你相见恨晚？"
+            },
+            {
+              "depth": 4,
+              "value": "pandas-profiling",
+              "heading": "pandas-profiling"
+            },
+            {
+              "depth": 4,
+              "value": "Playhouse",
+              "heading": "playhouse"
+            },
+            {
+              "depth": 2,
+              "value": "Go",
+              "heading": "go"
+            },
+            {
+              "depth": 3,
+              "value": "beego",
+              "heading": "beego"
+            },
+            {
+              "depth": 3,
+              "value": "goframe",
+              "heading": "goframe"
+            },
+            {
+              "depth": 2,
+              "value": "MySql",
+              "heading": "mysql"
+            },
+            {
+              "depth": 3,
+              "value": "性能调优",
+              "heading": "性能调优"
+            },
+            {
+              "depth": 3,
+              "value": "MySQL Group Replication",
+              "heading": "mysql-group-replication"
+            },
+            {
+              "depth": 3,
+              "value": "security",
+              "heading": "security-1"
+            },
+            {
+              "depth": 3,
+              "value": "vault",
+              "heading": "vault"
+            },
+            {
+              "depth": 2,
+              "value": "SQL",
+              "heading": "sql"
+            },
+            {
+              "depth": 3,
+              "value": "基础语句",
+              "heading": "基础语句"
+            },
+            {
               "depth": 2,
               "value": "虚拟容器",
               "heading": "虚拟容器"
@@ -1357,6 +1512,81 @@ export function getRoutes() {
               "depth": 4,
               "value": "基础使用",
               "heading": "基础使用"
+            },
+            {
+              "depth": 4,
+              "value": "cluster",
+              "heading": "cluster"
+            },
+            {
+              "depth": 4,
+              "value": "registry",
+              "heading": "registry"
+            },
+            {
+              "depth": 3,
+              "value": "Podman",
+              "heading": "podman"
+            },
+            {
+              "depth": 2,
+              "value": "Kubernetes",
+              "heading": "kubernetes"
+            },
+            {
+              "depth": 2,
+              "value": "Redis",
+              "heading": "redis"
+            },
+            {
+              "depth": 2,
+              "value": "Nginx",
+              "heading": "nginx"
+            },
+            {
+              "depth": 2,
+              "value": "Kafka",
+              "heading": "kafka"
+            },
+            {
+              "depth": 2,
+              "value": "RocketMQ",
+              "heading": "rocketmq"
+            },
+            {
+              "depth": 2,
+              "value": "Gradle",
+              "heading": "gradle"
+            },
+            {
+              "depth": 2,
+              "value": "Groovy",
+              "heading": "groovy"
+            },
+            {
+              "depth": 3,
+              "value": "基础联系",
+              "heading": "基础联系"
+            },
+            {
+              "depth": 2,
+              "value": "Hadoop",
+              "heading": "hadoop"
+            },
+            {
+              "depth": 2,
+              "value": "Security",
+              "heading": "security-2"
+            },
+            {
+              "depth": 2,
+              "value": "通识",
+              "heading": "通识"
+            },
+            {
+              "depth": 2,
+              "value": "经验",
+              "heading": "经验"
             }
           ],
           "title": "我学习过的知识"
@@ -1369,7 +1599,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/STUDY_NEW_LANGUGE.md",
-          "updatedTime": 1600219675000,
+          "updatedTime": 1602159523000,
           "slugs": [
             {
               "depth": 1,
@@ -1437,7 +1667,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/SpringBoot.md",
-          "updatedTime": 1601189008000,
+          "updatedTime": 1602159523000,
           "slugs": [
             {
               "depth": 1,
@@ -1600,7 +1830,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/TOOL.md",
-          "updatedTime": 1602157897000,
+          "updatedTime": 1602159523000,
           "slugs": [
             {
               "depth": 1,
@@ -1643,7 +1873,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/VUE.md",
-          "updatedTime": 1602157994000,
+          "updatedTime": 1602159523000,
           "slugs": [
             {
               "depth": 1,
@@ -1661,7 +1891,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/mybatis-plus.md",
-          "updatedTime": 1602158888479,
+          "updatedTime": 1602159523000,
           "slugs": [
             {
               "depth": 1,
@@ -1739,7 +1969,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/代码管理.md",
-          "updatedTime": 1602157897000,
+          "updatedTime": 1602159523000,
           "slugs": [
             {
               "depth": 1,
@@ -1777,7 +2007,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/devops/Git 在团队中的最佳实践--如何正确使用Git Flow.md",
-          "updatedTime": 1602157897000,
+          "updatedTime": 1603167710865,
           "slugs": [
             {
               "depth": 1,
@@ -1899,7 +2129,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/devops/电脑卡顿解决办法.md",
-          "updatedTime": 1599792786000,
+          "updatedTime": 1602159523000,
           "slugs": [
             {
               "depth": 1,
@@ -1921,7 +2151,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/normal/README.md",
-          "updatedTime": 1599792786000,
+          "updatedTime": 1602159523000,
           "slugs": [
             {
               "depth": 1,
@@ -1968,7 +2198,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/normal/bashrc.md",
-          "updatedTime": 1599792786000,
+          "updatedTime": 1602159523000,
           "slugs": [],
           "title": "Bashrc",
           "group": {
@@ -1984,7 +2214,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/normal/logback.md",
-          "updatedTime": 1599792786000,
+          "updatedTime": 1602159523000,
           "slugs": [],
           "title": "Logback",
           "group": {
@@ -2000,7 +2230,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/normal/快捷键.md",
-          "updatedTime": 1599792786000,
+          "updatedTime": 1602159523000,
           "slugs": [
             {
               "depth": 2,
@@ -2022,7 +2252,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/security/RSA.md",
-          "updatedTime": 1599792786000,
+          "updatedTime": 1602159523000,
           "slugs": [
             {
               "depth": 1,
