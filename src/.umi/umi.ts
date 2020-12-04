@@ -4,8 +4,8 @@ import '@@/core/devScripts';
 import { plugin } from './core/plugin';
 import './core/pluginRegister';
 import { createHistory } from './core/history';
-import { ApplyPluginsType } from '/home/eric/Project/dumi/node_modules/@umijs/runtime';
-import { renderClient } from '/home/eric/Project/dumi/node_modules/@umijs/renderer-react/dist/index.js';
+import { ApplyPluginsType } from '/home/eric/.npm/_npx/8349/lib/node_modules/dumi/node_modules/@umijs/runtime';
+import { renderClient } from '/home/eric/.npm/_npx/8349/lib/node_modules/dumi/node_modules/@umijs/renderer-react/dist/index.js';
 import { getRoutes } from './core/routes';
 
 
@@ -37,7 +37,7 @@ export default clientRender();
 
 
     window.g_umi = {
-      version: '3.2.22',
+      version: '3.2.24',
     };
   
 
