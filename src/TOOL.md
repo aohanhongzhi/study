@@ -37,10 +37,15 @@
 1. Ctrl + Alt + O  > 快速去掉无用的import
 1. Ctrl + Y > 删除当前行 
 
+#### 插件
+1. codota https://www.codota.com/
+2. TabNine https://www.tabnine.com/
+
+
 ### Pycharm
 
 #### 插件
-1. Kite - 代码补全神器
+1. Kite - 代码补全神器(推荐使用codota&TabNine)
    * 下载地址：https://kite.com/download/
    * 支持Windows、Mac、Linux
    * 支持Atom、PyCharm、Sublime、VS Code、Vim、IntelliJ，更多语言正在扩展中。

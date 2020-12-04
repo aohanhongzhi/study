@@ -40,6 +40,8 @@ http://docs.peewee-orm.com/en/latest/
 
 #### orator
 
+一个Python的轻量级ORM框架，确实很简易
+
 https://github.com/sdispater/orator
 
 

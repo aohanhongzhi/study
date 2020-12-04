@@ -485,6 +485,14 @@ SpringBoot默认的json中间件，更加规范
 强大轻量 且 前后端通用的 HTTP 客户端
 
 
+### 重试框架
+
+#### SpringRetry
+
+#### retrieval
+
+https://gitee.com/spjich/retrieval
+
 
 
 ## 编码风格
