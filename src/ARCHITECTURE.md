@@ -494,6 +494,23 @@ ORM层| [rexdb](http://db.rex-soft.org/)|高效灵活简单
 ORM | [blade-anima](https://github.com/biezhi/anima)| 无需手写sql，直接方法操作数据库
 
 
+
+### JODD
+
+感觉还挺完善的，但是看起来比blade复杂啊。blade更像SpringBoot。
+
+https://jodd.org/
+
+
+
+### javalin
+
+https://javalin.io/
+
+A simple web framework for Java and Kotlin
+
+
+
 ## Python
 
 ### flask
