@@ -123,6 +123,13 @@ https://gitee.com/minbox-projects/minbox-logging
 
 tlog | 轻量级的分布式日志标记追踪神器 | http://bryan31.gitee.io/tlog-website/
 
+
+### sofa-tracer
+
+SOFATracer 是一个用于分布式系统调用跟踪的组件，通过统一的 traceId 将调用链路中的各种网络调用情况以日志的方式记录下来，以达到透视化网络调用的目的。这些日志可用于故障的快速发现，服务治理等。
+
+https://gitee.com/sofastack/sofa-tracer
+
 ### 监控
 
 #### WGCLOUD
@@ -176,6 +183,12 @@ Java客户端不依赖任何框架，能够运行于所有Java运行时环境，
 
 #### Spring Cloud Config + Git (小型系统推荐)
 没有管理界面
+
+#### 其他的配置中心
+
+https://gitee.com/sxfad/config-keeper
+https://gitee.com/xuxueli0323/xxl-conf
+
 
 ### 消息中间件
 
