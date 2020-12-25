@@ -224,6 +224,13 @@ https://gitee.com/fastdfs100/fastdfs
 
 #### 数据库相关中间件
 
+##### id生成器 
+
+https://gitee.com/didiopensource/tinyid
+     
+不建议使用uuid这种无序的来生成id，会导致数据库的索引重排序，浪费数据库的性能。
+  
+
 ##### 分布式MySQL工具集Vitess
 > 官网 https://vitess.io/
 
