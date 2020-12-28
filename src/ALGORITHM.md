@@ -1,5 +1,8 @@
 # ALGORITHM
 
+## 强烈推荐的算法
+
+1. https://labuladong.gitbook.io/
 
 1. https://github.com/TheAlgorithms/Python
 1. https://github.com/TheAlgorithms/Java
