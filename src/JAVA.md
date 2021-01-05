@@ -27,6 +27,22 @@ HashMap有下面几个重要的属性：
 
 1. 长度 length 或者大小 size ，缺省是16
 
+1. Return index for hash code has
+    ```
+    static int indexFor(int h,int length){
+        // 本质上就是取余，取得数组的下标
+        return h & (length - 1);
+    }
+    ```
+    上面的length必然是2的倍数，否则下面的解释不通。
+
+    ```
+      15          0000 1111
+      hashCode    1011 0101
+    ```
+
+    前面的变化对于取余后的数都没有变化，只有后面4位决定了取余后的值(0-15)，后面4位就是取余的一种最快方式，但是仅限特定的取余数。
+
 2. 负载因子 loadFactor ，缺省是 0.75
 
 3. 阈值 threshold = length * loadFactor   12= 16*0.75  也就是超过了12就会扩容，并不是达到16，用完了才扩容。
