@@ -1,10 +1,21 @@
 # Interview
 
+
+编程语言，至少熟悉一门编程语言，了解编程语言的特性及基层原理，投简历不必特别在意语言。
+
+线程是共享内存的。进程之间没必要加锁了。
+
+熟悉了linux常用命令,grep sed.cut,head,xargs,awk
+ 
+
 ### 常见面试题目
 
 [一个学渣的阿里之路](https://crossoverjie.top/2018/06/21/personal/Interview-experience/)
 
 写博客很重要，是自己研究深度的一种展示。
+
+
+
 
 ## javaer
 
@@ -23,6 +34,7 @@
 * 通读一些底层代码，作为加分项
 
 * 一切的一切，把上述技能嵌入到你做过的项目里
+
 
 ## mysql
 
