@@ -10,5 +10,5 @@
 8. <https://github.com/biezhi/java-bible>
 9. [IOC容器设计](https://github.com/biezhi/java-bible/blob/master/ioc/3.myioc.md)
 10. [awesome-Java](https://github.com/jobbole/awesome-java-cn)
-11. 
+11. [狂神学习](https://www.kuangstudy.com/course)
 
