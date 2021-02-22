@@ -123,6 +123,11 @@ https://gitee.com/minbox-projects/minbox-logging
 
 tlog | 轻量级的分布式日志标记追踪神器 | http://bryan31.gitee.io/tlog-website/
 
+### plumelog
+
+https://gitee.com/frankchenlong/plumelog
+
+一个java分布式日志系统，支持百亿级别，日志从搜集到查询，不用去文件中翻阅日志方便快捷，支持查询一个调用链的日志，支持链路追踪，查看调用链耗时情况，在分布式系统中也可以查询关联日志，能够帮助快速定位问题，简单易用，没有代码入侵，查询界面友好，高效，方便，只要你是java系统，不要做任何项目改造，接入直接使用，日志不落本地磁盘，无需关心日志占用应用服务器磁盘问题
 
 ### sofa-tracer
 
