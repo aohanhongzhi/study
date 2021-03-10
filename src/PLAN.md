@@ -14,7 +14,7 @@
 1. Dubbox 源码学习与掌握
 1. jackson 源码学习与掌握，自定义枚举的序列化与反序列化器
 1. okhttps
-1. forest
+1. forest https://gitee.com/dt_flys/forest
 
 ## 安排计划
 
@@ -27,8 +27,8 @@
 1. [Apollo携程开源配置中心](https://github.com/ctripcorp/apollo/wiki/Quick-Start)
 1. [中国优秀的开源软件](https://www.oschina.net/project/top_cn_2019?utm_source=gitee_ad)
 1. OpenResty 基于Nginx与Lua的高性能网关，性能稳定，API丰富。
-1. flask微服务开发探索
-1. MySQL主从部署，数据一致性实战！
+1. ~ flask微服务开发探索 ~ 没必要，不建议折腾了。
+1. MySQL主从部署，数据一致性实战！一般这种强一致性走主库，弱的走从库。 BASE。 
 1. Redis一主二从三哨兵实战
 1. [istio调研-下一代Service Mesh](https://istio.io/zh/)
 1. https://github.com/Snailclimb/programmer-advancement

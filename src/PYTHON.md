@@ -9,7 +9,7 @@ Python
 
 > https://fastapi.tiangolo.com/zh/
 
-有基于对象的反序列化参数接收，和序列化的json返回给前端
+有基于对象的反序列化参数接收，和序列化的json返回给前端。不建议折腾，在序列化方面处理不是很好，用起来很麻烦。
 
 #### vibora
 

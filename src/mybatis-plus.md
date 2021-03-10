@@ -6,6 +6,9 @@ mybatis-plus学习
 ### 码云
 [https://gitee.com/baomidou/mybatis-plus](https://gitee.com/baomidou/mybatis-plus)
 
+### 我写的公众号文章
+
+https://mp.weixin.qq.com/s/ci4taJx0nOu3rLp8dwHUng
 
 ## 基本配置,导入依赖
 ### SpringBoot下:
@@ -88,3 +91,5 @@ mybatis-plus的功能很丰富,可以参考官网.
 手写sql也会支持分页的
 
 ![](./img/sqlPage.png)
+
+
