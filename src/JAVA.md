@@ -8,6 +8,12 @@
 
 [你写的Java对象究竟占多少内存？](https://mp.weixin.qq.com/s/RJrfOO4ruSrBzU7V5LDI9g)
 
+1. 元注解
+
+[元注解@Retention确定注解的周期](https://blog.csdn.net/u010002184/article/details/79166478) 
+
+典型的作用就是有些注解其实编译之后或者运行的时候已经去掉了。例如lombok等注解一般编译之后就没有了。swagger注解一般运行期可能就没有了，所以并不影响代码性能。
+
 ### 程序入口
 
 java除了main方法之外还有其他的程序入口。Java agent，premain，agentmain等。
