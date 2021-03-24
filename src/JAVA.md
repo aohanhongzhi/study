@@ -23,6 +23,7 @@ java除了main方法之外还有其他的程序入口。Java agent，premain，a
 volatile关键字的主要作用就是保证变量的可见性然后还有一个作用是防止指令重排序。
 
 把变量声明为volatile，这就指示 JVM，这个变量是不稳定的，每次使用它都到主存中进行读取。
+
 ## 数据结构
 
 ### HashMap

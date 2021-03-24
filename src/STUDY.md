@@ -240,7 +240,7 @@
     ```java
         new HashMap<String,RSAKey>(2);
     ```
-
+1.  百分比展示 String.format("%.2f%s", finalAuditRate, "%")
 1. 各种Map
     1. HashMap
     1. ConcurrentHashMap
