@@ -3,6 +3,8 @@
 
 ## 系统
 
+1. [【操作系统】进程间通信的6种方式](https://blog.csdn.net/Steven_L_/article/details/106032320)
+
 ### top
 
 ```
