@@ -168,6 +168,8 @@ static final int tableSizeFor(int cap) {
 new HashMap(1<<11); 
 ```
 
+9. [hashMap数据统计应用](https://blog.csdn.net/u010938610/article/details/82622144) 
+
 参考：
 
 [Java 8系列之重新认识HashMap](https://zhuanlan.zhihu.com/p/21673805)
