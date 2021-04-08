@@ -7,4 +7,16 @@ Vue
 
 
 ## 技巧
-1. [本地调试线上代码](https://tech.youzan.com/zan-proxy/)
+1. [本地调试线上代码](https://tech.youzan.chttps://ant-design.gitee.io/index-cnom/zan-proxy/)
+
+
+React
+===
+
+### UI
+
+https://ant-design.gitee.io/index-cn
+
+### 网络请求库
+
+https://github.com/umijs/umi-request/blob/master/README_zh-CN.md
