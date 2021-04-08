@@ -358,13 +358,12 @@ mybatis-plus| mybatis的增强，全自动化。既有hibernate，jpa的自动�
 rexdb| 手写sql，https://gitee.com/rexsoft/rexdb |http://db.rex-soft.org/
 hibernate | 全自动化 |
 J2Cache | Java 两级缓存框架，可以让应用支持两级缓存框架 ehcache(Caffeine) + redis 。避免完全使用独立缓存系统所带来的网络IO开销问题 |<https://gitee.com/ld/J2Cache>
-
 加密运行jar包 | Spring Boot JAR 安全加密运行工具，同时支持的原生JAR。 基于对JAR包内资源的加密以及拓展ClassLoader来构建的一套程序加密启动，动态解密运行的方案，避免源码泄露或反编译。 |<https://gitee.com/core-lib/xjar>
 kisso | java 基于 Cookie 的 SSO 中间件 kisso |<https://gitee.com/baomidou/kisso>
 jpa|SpringBoot常用的，个人体验不是很好 |
 anima|blade框架作者杰作，无需sql | https://github.com/biezhi/anima
 BeetlSQL|全功能DAO工具， 同时具有Hibernate 优点 & Mybatis优点功能，适用于承认以SQL为中心，同时又需求工具能自动能生成大量常用的SQL的应用。 <https://gitee.com/xiandafu/beetlsql> | <http://ibeetl.com/> 
-
+memory | 超轻量级 Java 持久化工具 | https://gitee.com/bitprince/memory
 
 
 个人推荐使用mybatis-plus比较好，既可以使用注解，也可以使用xml文件配置，还可以直接继承BaseMapper接口。Service实现ServiceImpl等类，Model也可以直接操作。灵活也不失自动化。
