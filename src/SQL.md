@@ -1,6 +1,6 @@
 # SQL
 
-##　框架
+## 框架
 
 ### Mybatis
 1. ResultMap与ResultType。建议mybatis的xml文件配置下ResultMap，这样会更方便。
