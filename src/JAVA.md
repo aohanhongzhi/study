@@ -652,3 +652,8 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 1. IDEA的restful插件
 2. logf设置模板
 3. 导入包的*设置99
+
+
+### java8新特性
+
+1. [JAVA8 StringJoiner，String.join和StringBuffer 拼接字符串](https://blog.csdn.net/shuaiyuanshuai/article/details/80680559)
