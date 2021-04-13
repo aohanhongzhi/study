@@ -13,7 +13,7 @@ https://mp.weixin.qq.com/s/ci4taJx0nOu3rLp8dwHUng
 ## 基本配置,导入依赖
 ### SpringBoot下:
 ```groovy
-compile 'com.baomidou:mybatis-plus-boot-starter:3.3.0'
+compile 'com.baomidou:mybatis-plus-boot-starter:3.4.2'
 runtimeOnly 'mysql:mysql-connector-java:8.0.16'
 ```
 
