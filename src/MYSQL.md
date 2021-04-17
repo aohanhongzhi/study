@@ -1,5 +1,18 @@
 Mysql
 ===
+mysql的三个重点关注范围
+
+## 索引
+
+聚簇索引和非聚簇索引在不同引擎下的表现方式。
+
+https://blog.csdn.net/qq_38829280/article/details/115087764
+
+
+## 锁
+
+## 事务
+
 
 1. [数据库教程](https://github.com/dunwu/db-tutorial):[https://github.com/dunwu/db-tutorial](https://github.com/dunwu/db-tutorial)
 1. 多个应用实例操作同一张表的时候需要加锁吗？
@@ -14,3 +27,5 @@ Mysql
 ### 调试
 
 [利用Zipkin追踪Mysql数据库调用链](https://segmentfault.com/a/1190000014751181)
+
+
