@@ -493,6 +493,15 @@ uniqueInstance 采用 volatile 关键字修饰也是很有必要的， uniqueIns
 
 [总结一下guava常用并发库的用法](https://www.jianshu.com/p/b94a57bd5eb9)
 
+
+#### 限速器的使用，控制速率
+
+使用很简单
+https://ifeve.com/guava-ratelimiter/
+
+
+
+
 ### json库
 
 #### fastjson
