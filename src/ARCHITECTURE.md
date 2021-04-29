@@ -364,7 +364,7 @@ jpa|SpringBoot常用的，个人体验不是很好 |
 anima|blade框架作者杰作，无需sql | https://github.com/biezhi/anima
 BeetlSQL|全功能DAO工具， 同时具有Hibernate 优点 & Mybatis优点功能，适用于承认以SQL为中心，同时又需求工具能自动能生成大量常用的SQL的应用。 <https://gitee.com/xiandafu/beetlsql> | <http://ibeetl.com/> 
 memory | 超轻量级 Java 持久化工具 | https://gitee.com/bitprince/memory
-
+weed3 | | https://gitee.com/noear/weed3 
 
 个人推荐使用mybatis-plus比较好，既可以使用注解，也可以使用xml文件配置，还可以直接继承BaseMapper接口。Service实现ServiceImpl等类，Model也可以直接操作。灵活也不失自动化。
 
@@ -543,10 +543,6 @@ https://javalin.io/
 A simple web framework for Java and Kotlin
 
 
-
-###  weed3 ORM框架
-
-https://gitee.com/noear/weed3 
 
 
 ## Python
