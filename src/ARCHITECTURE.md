@@ -419,7 +419,7 @@ captcha|行为验证码|https://gitee.com/anji-plus/captcha
 SpringBoot Google Kaptcha | 简单快速集成 Google Kaptcha验证码 | https://gitee.com/baomidou/kaptcha-spring-boot-starter
 Discovery| 全链路灰度路由 ,灰度发布 | https://gitee.com/nepxion/Discovery
 Sentinel | 面向分布式服务架构的高可用流量防护组件 | https://github.com/alibaba/Sentinel
-
+Rate Limiter | google的限速器 | https://docs.qq.com/doc/DSElXRFZsVUdCbWZB
 ---
 
 ### SpringCloud家族
@@ -474,11 +474,15 @@ Spring Vault | 数据库动态密码管理，敏感配置信息管理，需要�
 Vault |动态密码Server |https://www.hashicorp.com/products/vault/
 spring-boot-starter-jersey |Restful Web服务，类似SpringMVC |https://blog.csdn.net/github_38395241/article/details/70265379
 Consul | 注册中心,建议放弃使用,企业版受美国法律限制|https://spring.io/projects/spring-cloud-consul
-Nacos | | 
+Nacos | 阿里开源的注册中心 | https://nacos.io/
 ---
 
 ### Dubbox + ZooKeeper
-基于RPC的微服务框架
+
+基于RPC的微服务框架，适合大型企业的开发。
+1. 接口需要做鉴权
+2. 服务面向接口 Service和ServiceImpl不能写在同一个包里面。因为Service的包api是作为服务依赖被业务方使用。所以是分离的。
+3. 
 
 ---
 ### Micronaut新一代的微服务框架
@@ -514,10 +518,15 @@ ORM层| [rexdb](http://db.rex-soft.org/)|高效灵活简单
 
 应用层次 | 框架名 | 推荐理由
 --- | --- | ---
-前端与服务|[balde](http://sparkjava.com/)| 与SpringBoot类似的路由方式与控制翻转和依赖注入
+前端与服务|[balde](https://github.com/lets-blade/blade)| 与SpringBoot类似的路由方式与控制翻转和依赖注入
 ORM | [blade-anima](https://github.com/biezhi/anima)| 无需手写sql，直接方法操作数据库
 
 
+### Solon
+
+感觉和[Blade](https://github.com/lets-blade/blade)一个水平，相对来说比较完善。
+
+https://gitee.com/noear/solon
 
 ### JODD
 
@@ -533,6 +542,7 @@ https://javalin.io/
 
 A simple web framework for Java and Kotlin
 
+### 
 
 
 ## Python
@@ -554,7 +564,7 @@ flask
 
 官网 https://fastapi.tiangolo.com/zh
 
-非常优秀的框架，采用携程性能可以与Go比肩。实际使用的时候，发现集成peewee的时候发现这个与controller接口的时候有问题，不能使用同一个类对象来处理参数反序列化和数据库存储。所以很麻烦。
+非常优秀的框架，采用携程性能可以与Go比肩。实际使用的时候，发现集成peewee的时候发现这个与controller接口的时候有问题，不能使用同一个类对象来处理参数反序列化和数据库存储。所以很麻烦。 **不建议使用**
 
 
 
