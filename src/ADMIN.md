@@ -26,3 +26,4 @@
 1. [基于Gin + Vue + Element UI前后端分离的工单系统](https://github.com/lanyulei/ferry)
 1. [Go语言开发的gin-vue-admin](https://github.com/flipped-aurora/gin-vue-admin)
 1. [Gitee上热门的后台管理框架相关项目](https://gitee.com/gitee-community/weekly-collection/blob/master/%E7%B2%BE%E9%80%89%E9%9B%86%E7%AC%AC14%E6%9C%9F.md?utm_source=gitee-explore)
+1. [Spring boot整合elastic search 7.9.1实现全文检索](https://gitee.com/shenzhanwang/Spring-elastic_search)
