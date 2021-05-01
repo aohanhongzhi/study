@@ -26,6 +26,10 @@ volatile关键字的主要作用就是保证变量的可见性然后还有一个
 
 ## 数据结构
 
+### Object
+
+[重写hashcode和equals方法](https://blog.csdn.net/u012557538/article/details/89861552)
+
 ### HashMap
 
 事实上这也是JDK8为什么要对HashMap进行链条冲突优化：当entry数量不少于64时，如果冲突链表长度达到8，就会将其转成红黑树。因为链表长度越长，性能会越来越差。HashMap最大capacity是2的30次方(1073741824)，最小为1，即使取了负数也会内部变成1.
