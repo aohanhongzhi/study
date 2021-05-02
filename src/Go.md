@@ -1,5 +1,9 @@
 # Go
 
+[【腾讯文档】go语言基础学习](https://docs.qq.com/doc/DSHZTaGZsTWpCVnN0)
+
+
+### Eureka
 Eureka作为微服务的注册中心，使用的是http通信，意味着跨语言的特性。那么Go可以实现一个eureka client即可注册到eureka里。
 
 1. https://github.com/xuanbo/eureka-client
