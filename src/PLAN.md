@@ -15,6 +15,7 @@
 1. jackson 源码学习与掌握，自定义枚举的序列化与反序列化器
 1. okhttps
 1. forest https://gitee.com/dt_flys/forest
+1. kakfa消息
 
 ## 安排计划
 
