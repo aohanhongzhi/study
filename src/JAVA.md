@@ -70,7 +70,7 @@ HashMap有下面几个重要的属性：
     答： 首先：JAVA规定了该static final 类型的静态变量为int类型，至于为什么不是byte、long等类型，原因是由于考虑到HashMap的性能问题而作的折中处理！
 
     由于int类型限制了该变量的长度为4个字节共32个二进制位，按理说可以向左移动31位即2的31次幂。但是事实上由于二进制数字中最高的一位也就是最左边的一位是符号位，用来表示正负之分（0为正，1为负），所以只能向左移动30位，而不能移动到处在最高位的符号位！
-    补充：按照我自己的理解选择30估计是出于性能折中处理，因为int的最大值是2的31次方减1.也就是1<<31-1
+    补充：按照我自己的理解选择30估计是出于性能折中处理，因为int的最大值是2的31次方减1.也就是1<<31-1，最小负数就是负的2的31次方。
     3. [HashMap的最大容量为什么是2的30次方(1左移30)?](https://blog.csdn.net/sayWhat_sayHello/article/details/83120324)
     4. [HashMap 容量和最大索引取值表](https://blog.csdn.net/feleon/article/details/92721045)
 
@@ -185,6 +185,17 @@ new HashMap(1<<11);
 [java移位运算符：<<（左移）、>>（带符号右移）和>>>（无符号右移）。](https://www.cnblogs.com/blog-cq/p/5793529.html)
 
 [初步了解红黑树](https://blog.csdn.net/v_july_v/article/details/6105630)
+### List
+
+ArrayList和LinkedList的增加需要看情况而定。最好还是熟悉源代码，从源代码中来了解原因。
+
+#### ArrayList
+
+查询的情况下，ArrayList还是占优势。
+
+#### LinkedList
+
+遍历的时候不要使用for循环去get，建议用iterator来遍历下。
 
 ### Stream
 
