@@ -36,7 +36,24 @@ volatile关键字的主要作用就是保证变量的可见性然后还有一个
 
 HashMap有下面几个重要的属性：
 
-1. 长度 length 或者大小 size ，缺省是16
+> [HashMap中capacity、loadFactor、threshold、size等概念的解释](https://blog.csdn.net/fan2012huan/article/details/51087722)
+
+1. capacity就是指HashMap中桶的数量，实际上就是数组长度。缺省值为16。
+
+    ```
+        /**
+        * The default initial capacity - MUST be a power of two.
+        */
+        static final int DEFAULT_INITIAL_CAPACITY = 1 << 4; // aka 16
+    ```
+
+    > 这只是一个概念，HashMap中没有这个成员变量，有相关的局部变量。
+     
+    在resize()方法中有old Capacity概念。
+
+    ```
+         int oldCap = (oldTab == null) ? 0 : oldTab.length;
+    ```
 
 1. Return index for hash code has
     ```
@@ -148,8 +165,8 @@ HashMap最小处理逻辑单元Node 是一个静态内部类。可以看出来�
 ```java
      hashMap.put("key",1);
      // 返回旧值，可以从源代码中分析出来
-     Integer key = hashMap.put("key", 11);
-     System.out.println(key);
+     Integer value = hashMap.put("key", 11);
+     System.out.println(value);
 ```
 
 
@@ -185,6 +202,14 @@ new HashMap(1<<11);
 [java移位运算符：<<（左移）、>>（带符号右移）和>>>（无符号右移）。](https://www.cnblogs.com/blog-cq/p/5793529.html)
 
 [初步了解红黑树](https://blog.csdn.net/v_july_v/article/details/6105630)
+
+### LinkedHashMap
+
+1. [自定义LRUSet解决OOM问题](https://www.jianshu.com/p/d7c3185dcb5f)
+
+1. 为啥
+
+
 ### List
 
 ArrayList和LinkedList的增加需要看情况而定。最好还是熟悉源代码，从源代码中来了解原因。
