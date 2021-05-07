@@ -218,9 +218,16 @@ ArrayList和LinkedList的增加需要看情况而定。最好还是熟悉源代�
 
 查询的情况下，ArrayList还是占优势。
 
+[Java ConcurrentModificationException异常原因和解决方法](https://docs.qq.com/doc/DSFhQdkhLeFZyQlhh)
+
 #### LinkedList
 
 遍历的时候不要使用for循环去get，建议用iterator来遍历下。
+
+
+#### CopyOnWriteArrayList
+
+#### 
 
 ### Stream
 
