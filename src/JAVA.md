@@ -256,10 +256,95 @@ List转Set
 ```java
    Set<String> collect = teamAppModelList.stream().map(dto -> dto.getAppId()).collect(Collectors.toSet());
 ```
+#### 统计符合条件的
+
+
+#### List去重
+
+java 8 stream、lambda表达式对list操作分组、过滤、求和、最值、排序、去重
+
+1.分组
+
+通过groupingBy分组指定字段
+
+list.stream().collect(Collectors.groupingBy(User::getSex));
+
+2.过滤
+
+通过filter方法过滤某些条件
+
+list.stream().filter(a -> !a.getJobNumber().equals("201901")).collect(Collectors.toList());
+
+3.求和
+
+基本类型:先mapToInt，然后调用sum方法
+
+List.stream().mapToInt(User::getAge).sum();
+
+大数类型:reduce调用BigDecimal::add方法
+
+List.stream().map(User::getFamilyMemberQuantity).reduce(BigDecimal.ZERO, BigDecimal::add);
+
+4.最值
+
+最大值
+
+List.stream().map(User::getEntryDate).max(Date::compareTo).get();
+
+最小值
+
+List.stream().map(User::getEntryDate).min(Date::compareTo).get();
+
+5.排序
+
+list.stream().sorted((o1, o2)->o1.getItem().getValue().
+
+compareTo(o2.getItem().getValue())).
+
+collect(Collectors.toList());
+
+sort()
+
+单字段排序，根据id排序list.sort(Comparator.comparing(Obj::getItem));
+
+多字段排序，根据id，年龄排序list.sort(Comparator.comparing(Obj::getItem).thenComparing(Obj::getItem));
+
+6.去重
+
+通过distinct方法
+
+List.stream().distinct().collect(Collectors.toList());
+
+对属性
+
+重写方法
+
+7.获取list某个字段组装新list
+
+List.stream().map(a -> a.getId()).collect(Collectors.toList());
+————————————————
+版权声明：本文为CSDN博主「长尾裙」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/weixin_36040777/article/details/112884759
+
 
 ### Vector
 
 线程安全的数组，ArrayList与LinkList都是线程不安全的。
+
+### JUC 
+
+#### CountDownLatch
+
+https://www.jianshu.com/p/e233bb37d2e6
+
+https://www.jianshu.com/p/7c7a5df5bda6?ref=myread
+
+
+#### CyclicBarrier
+
+
+
+
 
 ### 接口
 
