@@ -61,8 +61,10 @@
 ### 容器
 
 #### Docker
+
 容器化部署，智能运维，几万个节点的部署。
 https://yeasy.gitbooks.io/docker_practice/
+
 #### Rancher
 
 容器编排工具
@@ -78,6 +80,7 @@ https://yeasy.gitbooks.io/docker_practice/
 非常优秀的服务发现与注册中间件。由于其CP实现形式，被一大批生态软件采用。
 
 #### SpringCloud Eureka
+
 AP实现，采用Peer2Peer对等通信方式，去中心化的方式，无Master/Slaver区分，每一个Peer都是对等的。
 
 Eureka作为服务发现与注册中心，即使整个Eureka集群宕机，消费者还是可以通过自己之前的缓存获取注册表的！也就是每一个消费者并不是简单的获取自己想要的信息，而是所有信息。这也就解释了服务端的负载均衡与Eureka端的负载均衡。因为都是有完整的注册表的（缓存，即使Eureka宕机，也是可以的），所以知道怎么负载均衡！
@@ -387,6 +390,8 @@ sso |java 基于 Cookie 的 SSO 中间件 kisso | [https://gitee.com/baomidou/ki
 okhttps| 基于okhttp封装 | https://gitee.com/ejlchina-zhxu/okhttps
 验证码 | 基于 SpringBoot Google Kaptcha 验证码 快速启动器 |<https://gitee.com/baomidou/kaptcha-spring-boot-starter>
 tlog | 轻量级的分布式日志标记追踪神器 | http://bryan31.gitee.io/tlog-website/
+mzt-biz-log |一个注解，搞定 SpringBoot 操作日志 | https://github.com/mouzt/mzt-biz-log
+
 ---
 
 ### 企业级应用开发技术栈
