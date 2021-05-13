@@ -256,6 +256,15 @@ List转Set
 ```java
    Set<String> collect = teamAppModelList.stream().map(dto -> dto.getAppId()).collect(Collectors.toSet());
 ```
+#### 收集某个元素
+```
+new ContentVideoCoverDTO()
+               
+List<ContentVideoCoverDTO> contentVideoCoverDTOS = contentVideoCoverFuture.get();
+               
+List<Long> videoCoverPicIds = contentVideoCoverDTOS.stream().map(ContentVideoCoverDTO::getContentId).collect(Collectors.toList());
+
+```
 #### 统计符合条件的
 
 
