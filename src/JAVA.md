@@ -265,6 +265,14 @@ List<ContentVideoCoverDTO> contentVideoCoverDTOS = contentVideoCoverFuture.get()
 List<Long> videoCoverPicIds = contentVideoCoverDTOS.stream().map(ContentVideoCoverDTO::getContentId).collect(Collectors.toList());
 
 ```
+filter之后再次map，把int值转成long
+```
+          List<Long> addTagIds = subStatusCodes.stream()
+                    .filter(tagId -> tagId != null && !finalExistTag.contains(tagId.longValue()))
+                    .map(Integer::longValue)
+                    .collect(Collectors.toList());
+```
+
 #### 统计符合条件的
 
 
