@@ -220,6 +220,9 @@ ArrayList和LinkedList的增加需要看情况而定。最好还是熟悉源代�
 
 [Java ConcurrentModificationException异常原因和解决方法](https://docs.qq.com/doc/DSFhQdkhLeFZyQlhh)
 
+[ArrayList为什么会出现并发问题以及相应的解决办法](https://blog.csdn.net/seujava_er/article/details/89963639)
+
+
 #### LinkedList
 
 遍历的时候不要使用for循环去get，建议用iterator来遍历下。
