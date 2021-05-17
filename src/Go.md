@@ -1,5 +1,7 @@
 # Go
 
+阿里的一个面试官觉得Go的GC太弱了。
+
 [【腾讯文档】go语言基础学习](https://docs.qq.com/doc/DSHZTaGZsTWpCVnN0)
 
 
