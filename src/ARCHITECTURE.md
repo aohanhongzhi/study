@@ -434,6 +434,7 @@ Sentinel | 面向分布式服务架构的高可用流量防护组件 | https://g
 Rate Limiter | google的限速器 | https://docs.qq.com/doc/DSElXRFZsVUdCbWZB
 tinyid | 分布式id生成器 |https://gitee.com/didiopensource/tinyid
 shardingsphere | 分布式数据库解决方案 | https://shardingsphere.apache.org/index_zh.html
+Koala （Golang）| 通用频率控制规则引擎系统 | https://github.com/heiyeluren/koala
 ---
 
 ### SpringCloud家族
