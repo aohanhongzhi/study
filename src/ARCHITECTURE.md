@@ -375,6 +375,7 @@ anima|blade框架作者杰作，无需sql | https://github.com/biezhi/anima
 BeetlSQL|全功能DAO工具， 同时具有Hibernate 优点 & Mybatis优点功能，适用于承认以SQL为中心，同时又需求工具能自动能生成大量常用的SQL的应用。 <https://gitee.com/xiandafu/beetlsql> | <http://ibeetl.com/> 
 memory | 超轻量级 Java 持久化工具 | https://gitee.com/bitprince/memory
 weed3 | | https://gitee.com/noear/weed3 
+liteBatch | 一个超轻量级，高性能的快速批插工具，可以和mybatis，hibernate任何orm框架结合使用| https://gitee.com/bryan31/liteBatch
 
 个人推荐使用mybatis-plus比较好，既可以使用注解，也可以使用xml文件配置，还可以直接继承BaseMapper接口。Service实现ServiceImpl等类，Model也可以直接操作。灵活也不失自动化。
 
@@ -441,6 +442,8 @@ shardingsphere | 分布式数据库解决方案 | https://shardingsphere.apache.
 Koala （Golang）| 通用频率控制规则引擎系统 | https://github.com/heiyeluren/koala
 asyncTool | 多线程排列组合框架 | https://gitee.com/jd-platform-opensource/asyncTool
 liteFlow | 轻量，快速，稳定，可编排的组件式流程引擎 | https://gitee.com/dromara/liteFlow
+ 
+
 ---
 
 ### SpringCloud家族
