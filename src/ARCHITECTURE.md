@@ -397,9 +397,12 @@ sso |java 基于 Cookie 的 SSO 中间件 kisso | [https://gitee.com/baomidou/ki
 okhttps| 基于okhttp封装 | https://gitee.com/ejlchina-zhxu/okhttps
 验证码 | 基于 SpringBoot Google Kaptcha 验证码 快速启动器 |<https://gitee.com/baomidou/kaptcha-spring-boot-starter>
 tlog | 轻量级的分布式日志标记追踪神器 | http://bryan31.gitee.io/tlog-website/
+aspect-log | 能给你的每条日志打上自定义业务标签，方便进行日志的分析和寻错| https://gitee.com/bryan31/aspect-log
 mzt-biz-log |一个注解，搞定 SpringBoot 操作日志 | https://github.com/mouzt/mzt-biz-log
 redisson|redisson分布式锁实现 | https://github.com/redisson/redisson/
 joda-time | 时间处理 | https://www.joda.org/joda-time/
+hotkey | 毫秒级探测热点数据，毫秒级推送至服务器集群内存，大幅降低热key对数据层查询压力 |https://gitee.com/jd-platform-opensource/hotkey
+
 ---
 
 ### 企业级应用开发技术栈
