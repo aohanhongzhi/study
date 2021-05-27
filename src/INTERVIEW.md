@@ -24,7 +24,7 @@
 [一个学渣的阿里之路](https://crossoverjie.top/2018/06/21/personal/Interview-experience/)
 [中国WEB开发者](https://gitee.com/ironman1987/chinese-developer-roadmap)
 写博客很重要，是自己研究深度的一种展示。
-
+[中华石杉--互联网Java进阶面试训练营](https://gitee.com/shishan100/Java-Interview-Advanced)
 
 
 
