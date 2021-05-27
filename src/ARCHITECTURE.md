@@ -439,6 +439,7 @@ Rate Limiter | google的限速器 | https://docs.qq.com/doc/DSElXRFZsVUdCbWZB
 tinyid | 分布式id生成器 |https://gitee.com/didiopensource/tinyid
 shardingsphere | 分布式数据库解决方案 | https://shardingsphere.apache.org/index_zh.html
 Koala （Golang）| 通用频率控制规则引擎系统 | https://github.com/heiyeluren/koala
+asyncTool | 多线程排列组合框架 | https://gitee.com/jd-platform-opensource/asyncTool
 liteFlow | 轻量，快速，稳定，可编排的组件式流程引擎 | https://gitee.com/dromara/liteFlow
 ---
 
