@@ -27,6 +27,10 @@ Eureka作为微服务的注册中心，使用的是http通信，意味着跨语�
 
 ### beego
 
-### GORM
+### gorm
+
+https://gorm.io/
+
 非常优秀的数据库操作框架，基本上够用了。
+
 ### XORM

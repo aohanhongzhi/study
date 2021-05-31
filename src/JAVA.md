@@ -24,6 +24,9 @@ volatile关键字的主要作用就是保证变量的可见性然后还有一个
 
 把变量声明为volatile，这就指示 JVM，这个变量是不稳定的，每次使用它都到主存中进行读取。
 
+能不能保证一致性？为啥不能？
+
+
 ## 数据结构
 
 ### Object
@@ -209,10 +212,12 @@ new HashMap(1<<11);
 
 1. 为啥
 
+### ConcurrentHashMap
+
 
 ### List
 
-ArrayList和LinkedList的增加需要看情况而定。最好还是熟悉源代码，从源代码中来了解原因。
+ArrayList和LinkedList的增加需要看情况而定。最好还是熟悉源代码，从源代码中来了解原因。前者需要扩容，后者新建对象。所以两者都会有自己的耗时。
 
 #### ArrayList
 
@@ -408,6 +413,12 @@ https://blog.csdn.net/JYTXIOABAI/article/details/83827127
 ## JVM
 
 需要掌握常用JVM调优技巧。
+
+### 逃逸分析
+
+[【腾讯文档】JVM之逃逸分析](https://docs.qq.com/doc/DSE1VVHhUcURyaVVk) 
+
+> 逃逸分析对锁是有一个优化的，可以将锁消除，提高代码运行的效率。
 
 ### Java常用命令
 
