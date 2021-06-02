@@ -403,7 +403,7 @@ mzt-biz-log |一个注解，搞定 SpringBoot 操作日志 | https://github.com/
 redisson|redisson分布式锁实现 | https://github.com/redisson/redisson/
 joda-time | 时间处理 | https://www.joda.org/joda-time/
 hotkey | 毫秒级探测热点数据，毫秒级推送至服务器集群内存，大幅降低热key对数据层查询压力 |https://gitee.com/jd-platform-opensource/hotkey
-
+sureness | 面向REST API的高性能认证鉴权框架，致力于管理保护API安全 | https://gitee.com/dromara/sureness
 ---
 
 ### 企业级应用开发技术栈
@@ -507,6 +507,15 @@ Nacos | 阿里开源的注册中心 | https://nacos.io/
 1. 接口需要做鉴权
 2. 服务面向接口 Service和ServiceImpl不能写在同一个包里面。因为Service的包api是作为服务依赖被业务方使用。所以是分离的。
 3. 
+
+
+### RPC 框架
+
+#### koalas-rpc
+
+漂亮团内部的一个大佬 张玉龙(zhangyulong04)的个人自研框架。有空可以好好研究下。
+
+https://gitee.com/dromara/koalas-rpc
 
 ---
 ### Micronaut新一代的微服务框架
