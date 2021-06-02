@@ -290,6 +290,12 @@ SQL 方面兼容 2003 标准、PostgreSQL 语法和常用 Oracle 函数&数据�
 
 SpringCloud家族，智能网关。性能不输Nginx。Zuul的核心是一系列的Filter。
 
+###  Soul
+
+https://gitee.com/dromara/soul
+
+JAVA语言中高性能，可插拔，响应式API网关
+
 #### Kong
 
 
@@ -404,6 +410,7 @@ redisson|redisson分布式锁实现 | https://github.com/redisson/redisson/
 joda-time | 时间处理 | https://www.joda.org/joda-time/
 hotkey | 毫秒级探测热点数据，毫秒级推送至服务器集群内存，大幅降低热key对数据层查询压力 |https://gitee.com/jd-platform-opensource/hotkey
 sureness | 面向REST API的高性能认证鉴权框架，致力于管理保护API安全 | https://gitee.com/dromara/sureness
+sa-token | 可能是史上功能最全的Java权限认证框架 | https://gitee.com/dromara/sa-token
 ---
 
 ### 企业级应用开发技术栈
