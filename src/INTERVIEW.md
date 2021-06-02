@@ -1,5 +1,11 @@
 # Interview
 
+## 简历
+
+https://github.com/hua1995116/react-resume-site
+https://resume.mdedit.online/editor/#/
+
+
 ## 面试前做准备
 
 1. 了解应是公司及岗位信息
