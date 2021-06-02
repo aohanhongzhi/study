@@ -5,6 +5,9 @@
 [【腾讯文档】go语言基础学习](https://docs.qq.com/doc/DSHZTaGZsTWpCVnN0)
 
 
+rosedb 是一个高性能、快速、内嵌的 k-v 数据库，支持多种数据结构，包含 String、List、Hash、Set、Sorted Set，接口名称风格和 Redis 类似。
+https://github.com/roseduan/rosedb
+
 ### Eureka
 Eureka作为微服务的注册中心，使用的是http通信，意味着跨语言的特性。那么Go可以实现一个eureka client即可注册到eureka里。
 
