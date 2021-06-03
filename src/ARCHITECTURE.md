@@ -402,6 +402,7 @@ oh-my-email|Java 邮件发送库了，支持抄送、附件、模板 | <https://
 RabbitMq | 消息队列 | [https://www.rabbitmq.com/](https://www.rabbitmq.com/)
 sso |java 基于 Cookie 的 SSO 中间件 kisso | [https://gitee.com/baomidou/kisso](https://gitee.com/baomidou/kisso)
 okhttps| 基于okhttp封装 | https://gitee.com/ejlchina-zhxu/okhttps
+forest|  更轻量、更简单实用的HTTP客户端框架 | https://gitee.com/dromara/forest
 验证码 | 基于 SpringBoot Google Kaptcha 验证码 快速启动器 |<https://gitee.com/baomidou/kaptcha-spring-boot-starter>
 tlog | 轻量级的分布式日志标记追踪神器 | http://bryan31.gitee.io/tlog-website/
 aspect-log | 能给你的每条日志打上自定义业务标签，方便进行日志的分析和寻错| https://gitee.com/bryan31/aspect-log
