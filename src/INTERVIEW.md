@@ -53,10 +53,7 @@ https://resume.mdedit.online/editor/#/
 * 一切的一切，把上述技能嵌入到你做过的项目里
 
 
-## mysql
 
-1. 索引啥时候会失效？索引原理至少弄明白。
-1. Spring的事务注解啥时候会失效
 
 ## 我的简历内容
 
@@ -116,3 +113,21 @@ https://resume.mdedit.online/editor/#/
 1. 团队氛围很重要
 1. 成长方式
 1. 岗位角色定位，是骨干挑大梁，还是拧螺丝
+
+
+
+# 面试常问知识点
+
+我个人觉得看视频可能更有记忆
+
+## mysql
+
+1. [腾讯文档】史上最全的数据库面试题，不看后悔篇](https://docs.qq.com/doc/DSFhRcEJzUXpIZGlZ)
+1. 索引啥时候会失效？索引原理至少弄明白。
+1. Spring的事务注解啥时候会失效
+
+
+## Redis
+
+1. redis的分布式锁的实现，redlock
+1. [如何保证Redis与数据库的数据一致性，看这一篇就够了](https://blog.csdn.net/gly1256288307/article/details/88739612)
