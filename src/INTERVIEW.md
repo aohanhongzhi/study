@@ -129,6 +129,10 @@ https://resume.mdedit.online/editor/#/
 
 ## Redis
 
+### 缓存穿透，击穿，雪崩
+
+https://zhuanlan.zhihu.com/p/346651831
+
 ### 分布式锁
 
 1. [redis的分布式锁的实现工程](https://gitee.com/eric-tutorial/wig-demo)
