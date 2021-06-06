@@ -129,5 +129,11 @@ https://resume.mdedit.online/editor/#/
 
 ## Redis
 
-1. redis的分布式锁的实现，redlock
+### 分布式锁
+
+1. [redis的分布式锁的实现工程](https://gitee.com/eric-tutorial/wig-demo)
+1. redisson
+1. redlock
+
+### 缓存一致性
 1. [如何保证Redis与数据库的数据一致性，看这一篇就够了](https://blog.csdn.net/gly1256288307/article/details/88739612)
