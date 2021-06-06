@@ -129,6 +129,11 @@ https://resume.mdedit.online/editor/#/
 
 ## Redis
 
+### 底层数据结构
+
+https://zhuanlan.zhihu.com/p/193141635
+
+
 ### 缓存穿透，击穿，雪崩
 
 https://zhuanlan.zhihu.com/p/346651831
