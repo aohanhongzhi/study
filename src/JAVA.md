@@ -239,6 +239,10 @@ ArrayList和LinkedList的增加需要看情况而定。最好还是熟悉源代�
 
 ### Stream
 
+
+[list多字段比较去重](https://blog.csdn.net/qq_30667039/article/details/102386480)
+
+
 将list转成map。并且遍历map。
 
 ```java
