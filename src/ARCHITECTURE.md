@@ -536,6 +536,7 @@ Vault |动态密码Server |https://www.hashicorp.com/products/vault/
 spring-boot-starter-jersey |Restful Web服务，类似SpringMVC |https://blog.csdn.net/github_38395241/article/details/70265379
 Consul | 注册中心,建议放弃使用,企业版受美国法律限制|https://spring.io/projects/spring-cloud-consul
 Nacos | 阿里开源的注册中心 | https://nacos.io/
+ smart-framework | 基础原理学习 | https://gitee.com/huangyong/smart-framework
 ---
 
 ### Dubbox + ZooKeeper
@@ -556,6 +557,7 @@ https://gitee.com/dromara/koalas-rpc
 
 ---
 ### Micronaut新一代的微服务框架
+
 https://micronaut.io/
 
 * Grails团队新宠；
