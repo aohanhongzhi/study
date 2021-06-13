@@ -1,6 +1,6 @@
 # SQL
 
-##　框架
+## 框架
 
 ### Mybatis
 1. ResultMap与ResultType。建议mybatis的xml文件配置下ResultMap，这样会更方便。
@@ -89,7 +89,7 @@ int id = systemBean.getId(); //获取到的即为新插入记录的ID
 
 > 1.Mybatis Mapper 文件中，“useGeneratedKeys” 和 “keyProperty” 必须添加，而且 keyProperty 一定得和 java 对象的属性名称一致，而不是表格的字段名。
 
-5. 是
+5. 
 
 
 ### Mybatis-plus

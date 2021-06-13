@@ -58,11 +58,39 @@
 
 ## 企业开发技术
 
+### 关于RPC和HTTP的选型区别。
+
+一般来说小型企业，比较适合使用http的，大型企业适合RPC的。协议上RPC可能更加高效一点，但是http比较适合哪种信息孤岛的现象，就像电信集团有很多子公司，大家各自为政，但是又得互相融合。这时候就比较适合使用http通信了。就不需要有统一的注册中心来注册RPC的服务。
+
+### 网络通信协议
+
+#### smart-socket
+
+https://gitee.com/smartboot/smart-socket
+
+### web容器
+
+#### Tomcat
+
+#### Undertow
+
+#### Netty
+
+
+#### Jetty
+
+
+#### smart-http
+
+https://gitee.com/smartboot/smart-http
+
 ### 容器
 
 #### Docker
+
 容器化部署，智能运维，几万个节点的部署。
 https://yeasy.gitbooks.io/docker_practice/
+
 #### Rancher
 
 容器编排工具
@@ -78,6 +106,7 @@ https://yeasy.gitbooks.io/docker_practice/
 非常优秀的服务发现与注册中间件。由于其CP实现形式，被一大批生态软件采用。
 
 #### SpringCloud Eureka
+
 AP实现，采用Peer2Peer对等通信方式，去中心化的方式，无Master/Slaver区分，每一个Peer都是对等的。
 
 Eureka作为服务发现与注册中心，即使整个Eureka集群宕机，消费者还是可以通过自己之前的缓存获取注册表的！也就是每一个消费者并不是简单的获取自己想要的信息，而是所有信息。这也就解释了服务端的负载均衡与Eureka端的负载均衡。因为都是有完整的注册表的（缓存，即使Eureka宕机，也是可以的），所以知道怎么负载均衡！
@@ -121,8 +150,15 @@ https://gitee.com/minbox-projects/minbox-logging
 
 ### tlog
 
+https://gitee.com/dromara/TLog
+
 tlog | 轻量级的分布式日志标记追踪神器 | http://bryan31.gitee.io/tlog-website/
 
+### plumelog
+
+https://gitee.com/frankchenlong/plumelog
+
+一个java分布式日志系统，支持百亿级别，日志从搜集到查询，不用去文件中翻阅日志方便快捷，支持查询一个调用链的日志，支持链路追踪，查看调用链耗时情况，在分布式系统中也可以查询关联日志，能够帮助快速定位问题，简单易用，没有代码入侵，查询界面友好，高效，方便，只要你是java系统，不要做任何项目改造，接入直接使用，日志不落本地磁盘，无需关心日志占用应用服务器磁盘问题
 
 ### sofa-tracer
 
@@ -229,6 +265,13 @@ https://gitee.com/fastdfs100/fastdfs
 
 #### 数据库相关中间件
 
+##### id生成器 
+
+https://gitee.com/didiopensource/tinyid
+     
+不建议使用uuid这种无序的来生成id，会导致数据库的索引重排序，浪费数据库的性能。
+  
+
 ##### 分布式MySQL工具集Vitess
 > 官网 https://vitess.io/
 
@@ -280,6 +323,12 @@ SQL 方面兼容 2003 标准、PostgreSQL 语法和常用 Oracle 函数&数据�
 
 SpringCloud家族，智能网关。性能不输Nginx。Zuul的核心是一系列的Filter。
 
+###  Soul
+
+https://gitee.com/dromara/soul
+
+JAVA语言中高性能，可插拔，响应式API网关
+
 #### Kong
 
 
@@ -319,6 +368,13 @@ HAProxy提供了L4(TCP)和L7(HTTP)两种负载均衡能力，具备丰富的功�
 
 Sentinel是阿里巴巴开源的限流器熔断器，并且带有可视化操作界面。功能比较简单使用,但是满足特定场景还是需要定制化开发.非高并发的项目,可能达不到系统负载的限额,那么这种流量防护并没有什么实际意义.
 
+
+#### 分布式锁
+
+https://blog.csdn.net/qq_42046105/article/details/111350721
+
+
+
 ### 代码审查
 
 #### sonarqube
@@ -351,14 +407,14 @@ mybatis-plus| mybatis的增强，全自动化。既有hibernate，jpa的自动�
 rexdb| 手写sql，https://gitee.com/rexsoft/rexdb |http://db.rex-soft.org/
 hibernate | 全自动化 |
 J2Cache | Java 两级缓存框架，可以让应用支持两级缓存框架 ehcache(Caffeine) + redis 。避免完全使用独立缓存系统所带来的网络IO开销问题 |<https://gitee.com/ld/J2Cache>
-
 加密运行jar包 | Spring Boot JAR 安全加密运行工具，同时支持的原生JAR。 基于对JAR包内资源的加密以及拓展ClassLoader来构建的一套程序加密启动，动态解密运行的方案，避免源码泄露或反编译。 |<https://gitee.com/core-lib/xjar>
 kisso | java 基于 Cookie 的 SSO 中间件 kisso |<https://gitee.com/baomidou/kisso>
 jpa|SpringBoot常用的，个人体验不是很好 |
 anima|blade框架作者杰作，无需sql | https://github.com/biezhi/anima
 BeetlSQL|全功能DAO工具， 同时具有Hibernate 优点 & Mybatis优点功能，适用于承认以SQL为中心，同时又需求工具能自动能生成大量常用的SQL的应用。 <https://gitee.com/xiandafu/beetlsql> | <http://ibeetl.com/> 
-
-
+memory | 超轻量级 Java 持久化工具 | https://gitee.com/bitprince/memory
+weed3 | | https://gitee.com/noear/weed3 
+liteBatch | 一个超轻量级，高性能的快速批插工具，可以和mybatis，hibernate任何orm框架结合使用| https://gitee.com/bryan31/liteBatch
 
 个人推荐使用mybatis-plus比较好，既可以使用注解，也可以使用xml文件配置，还可以直接继承BaseMapper接口。Service实现ServiceImpl等类，Model也可以直接操作。灵活也不失自动化。
 
@@ -379,8 +435,17 @@ oh-my-email|Java 邮件发送库了，支持抄送、附件、模板 | <https://
 RabbitMq | 消息队列 | [https://www.rabbitmq.com/](https://www.rabbitmq.com/)
 sso |java 基于 Cookie 的 SSO 中间件 kisso | [https://gitee.com/baomidou/kisso](https://gitee.com/baomidou/kisso)
 okhttps| 基于okhttp封装 | https://gitee.com/ejlchina-zhxu/okhttps
+forest|  更轻量、更简单实用的HTTP客户端框架 | https://gitee.com/dromara/forest
 验证码 | 基于 SpringBoot Google Kaptcha 验证码 快速启动器 |<https://gitee.com/baomidou/kaptcha-spring-boot-starter>
 tlog | 轻量级的分布式日志标记追踪神器 | http://bryan31.gitee.io/tlog-website/
+aspect-log | 能给你的每条日志打上自定义业务标签，方便进行日志的分析和寻错| https://gitee.com/bryan31/aspect-log
+mzt-biz-log |一个注解，搞定 SpringBoot 操作日志 | https://github.com/mouzt/mzt-biz-log
+redisson|redisson分布式锁实现 | https://github.com/redisson/redisson/
+joda-time | 时间处理 | https://www.joda.org/joda-time/
+hotkey | 毫秒级探测热点数据，毫秒级推送至服务器集群内存，大幅降低热key对数据层查询压力 |https://gitee.com/jd-platform-opensource/hotkey
+sureness | 面向REST API的高性能认证鉴权框架，致力于管理保护API安全 | https://gitee.com/dromara/sureness
+sa-token | 可能是史上功能最全的Java权限认证框架 | https://gitee.com/dromara/sa-token
+ image-combiner| 一个专门用于Java服务端图片合成的工具 | https://gitee.com/dromara/image-combiner
 ---
 
 ### 企业级应用开发技术栈
@@ -413,6 +478,13 @@ captcha|行为验证码|https://gitee.com/anji-plus/captcha
 SpringBoot Google Kaptcha | 简单快速集成 Google Kaptcha验证码 | https://gitee.com/baomidou/kaptcha-spring-boot-starter
 Discovery| 全链路灰度路由 ,灰度发布 | https://gitee.com/nepxion/Discovery
 Sentinel | 面向分布式服务架构的高可用流量防护组件 | https://github.com/alibaba/Sentinel
+Rate Limiter | google的限速器 | https://docs.qq.com/doc/DSElXRFZsVUdCbWZB
+tinyid | 分布式id生成器 |https://gitee.com/didiopensource/tinyid
+shardingsphere | 分布式数据库解决方案 | https://shardingsphere.apache.org/index_zh.html
+Koala （Golang）| 通用频率控制规则引擎系统 | https://github.com/heiyeluren/koala
+asyncTool | 多线程排列组合框架 | https://gitee.com/jd-platform-opensource/asyncTool
+liteFlow | 轻量，快速，稳定，可编排的组件式流程引擎 | https://gitee.com/dromara/liteFlow
+ 
 
 ---
 
@@ -468,14 +540,29 @@ Spring Vault | 数据库动态密码管理，敏感配置信息管理，需要�
 Vault |动态密码Server |https://www.hashicorp.com/products/vault/
 spring-boot-starter-jersey |Restful Web服务，类似SpringMVC |https://blog.csdn.net/github_38395241/article/details/70265379
 Consul | 注册中心,建议放弃使用,企业版受美国法律限制|https://spring.io/projects/spring-cloud-consul
-Nacos | | 
+Nacos | 阿里开源的注册中心 | https://nacos.io/
+ smart-framework | 基础原理学习 | https://gitee.com/huangyong/smart-framework
 ---
 
 ### Dubbox + ZooKeeper
-基于RPC的微服务框架
+
+基于RPC的微服务框架，适合大型企业的开发。
+1. 接口需要做鉴权
+2. 服务面向接口 Service和ServiceImpl不能写在同一个包里面。因为Service的包api是作为服务依赖被业务方使用。所以是分离的。
+3. 
+
+
+### RPC 框架
+
+#### koalas-rpc
+
+漂亮团内部的一个大佬 张玉龙(zhangyulong04)的个人自研框架。有空可以好好研究下。
+
+https://gitee.com/dromara/koalas-rpc
 
 ---
 ### Micronaut新一代的微服务框架
+
 https://micronaut.io/
 
 * Grails团队新宠；
@@ -508,10 +595,15 @@ ORM层| [rexdb](http://db.rex-soft.org/)|高效灵活简单
 
 应用层次 | 框架名 | 推荐理由
 --- | --- | ---
-前端与服务|[balde](http://sparkjava.com/)| 与SpringBoot类似的路由方式与控制翻转和依赖注入
+前端与服务|[balde](https://github.com/lets-blade/blade)| 与SpringBoot类似的路由方式与控制翻转和依赖注入
 ORM | [blade-anima](https://github.com/biezhi/anima)| 无需手写sql，直接方法操作数据库
 
 
+### Solon
+
+感觉和[Blade](https://github.com/lets-blade/blade)一个水平，相对来说比较完善。
+
+https://gitee.com/noear/solon
 
 ### JODD
 
@@ -526,6 +618,7 @@ https://jodd.org/
 https://javalin.io/
 
 A simple web framework for Java and Kotlin
+
 
 
 
@@ -548,7 +641,7 @@ flask
 
 官网 https://fastapi.tiangolo.com/zh
 
-非常优秀的框架，采用携程性能可以与Go比肩。实际使用的时候，发现集成peewee的时候发现这个与controller接口的时候有问题，不能使用同一个类对象来处理参数反序列化和数据库存储。所以很麻烦。
+非常优秀的框架，采用携程性能可以与Go比肩。实际使用的时候，发现集成peewee的时候发现这个与controller接口的时候有问题，不能使用同一个类对象来处理参数反序列化和数据库存储。所以很麻烦。 **不建议使用**
 
 
 
@@ -559,4 +652,4 @@ flask
 3. [Spring Boot 教程、技术栈示例代码](https://github.com/ityouknow/spring-boot-examples)
 4. [秒杀系统设计与实现](https://github.com/qiurunze123/miaosha)
 5. [大数据入门指南](https://github.com/heibaiying/BigData-Notes)
-6. 
+6. [programmer-advancement](https://github.com/Snailclimb/programmer-advancement)

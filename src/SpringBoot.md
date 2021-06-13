@@ -1,5 +1,20 @@
 SpringBoot
 ===
+## 两个常见原理
+
+面试经常问到的知识点
+
+### 循环依赖的解决
+
+https://zhuanlan.zhihu.com/p/346711149
+
+### SpringBoot AutoConfiguration
+
+https://www.jianshu.com/p/1ed18eebb299
+
+
+
+
 ## 启动程序
 1. 环境变量配置
     * logback-prod.xml
@@ -113,6 +128,8 @@ https://gitee.com/zhaoqg/spring-boot-mybatis
 
 
 ## 源码学习
+### springboot-guide
+https://github.com/Snailclimb/springboot-guide
 
 ### jackson
 > github https://github.com/FasterXML/jackson-databind/

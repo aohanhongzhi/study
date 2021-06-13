@@ -1,5 +1,10 @@
 JDK
 ===
+面试重点
+
+1. [Java8内存模型—永久代(PermGen)和元空间(Metaspace)](https://www.cnblogs.com/paddix/p/5309550.html)
+1. [只要重写了equals方法，就必须重写hashCode](https://www.jianshu.com/p/da2c0129c270)
+
 ## jdk的基础类
 
 ### java.util.Properties

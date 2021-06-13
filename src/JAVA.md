@@ -8,6 +8,12 @@
 
 [你写的Java对象究竟占多少内存？](https://mp.weixin.qq.com/s/RJrfOO4ruSrBzU7V5LDI9g)
 
+1. 元注解
+
+[元注解@Retention确定注解的周期](https://blog.csdn.net/u010002184/article/details/79166478) 
+
+典型的作用就是有些注解其实编译之后或者运行的时候已经去掉了。例如lombok等注解一般编译之后就没有了。swagger注解一般运行期可能就没有了，所以并不影响代码性能。
+
 ### 程序入口
 
 java除了main方法之外还有其他的程序入口。Java agent，premain，agentmain等。
@@ -17,7 +23,15 @@ java除了main方法之外还有其他的程序入口。Java agent，premain，a
 volatile关键字的主要作用就是保证变量的可见性然后还有一个作用是防止指令重排序。
 
 把变量声明为volatile，这就指示 JVM，这个变量是不稳定的，每次使用它都到主存中进行读取。
+
+能不能保证一致性？为啥不能？
+
+
 ## 数据结构
+
+### Object
+
+[重写hashcode和equals方法](https://blog.csdn.net/u012557538/article/details/89861552)
 
 ### HashMap
 
@@ -25,7 +39,40 @@ volatile关键字的主要作用就是保证变量的可见性然后还有一个
 
 HashMap有下面几个重要的属性：
 
-1. 长度 length 或者大小 size ，缺省是16
+> [HashMap中capacity、loadFactor、threshold、size等概念的解释](https://blog.csdn.net/fan2012huan/article/details/51087722)
+
+1. capacity就是指HashMap中桶的数量，实际上就是数组长度。缺省值为16。
+
+    ```
+        /**
+        * The default initial capacity - MUST be a power of two.
+        */
+        static final int DEFAULT_INITIAL_CAPACITY = 1 << 4; // aka 16
+    ```
+
+    > 这只是一个概念，HashMap中没有这个成员变量，有相关的局部变量。
+     
+    在resize()方法中有old Capacity概念。
+
+    ```
+         int oldCap = (oldTab == null) ? 0 : oldTab.length;
+    ```
+
+1. Return index for hash code has
+    ```
+    static int indexFor(int h,int length){
+        // 本质上就是取余，取得数组的下标
+        return h & (length - 1);
+    }
+    ```
+    上面的length必然是2的倍数，否则下面的解释不通。
+
+    ```
+      15          0000 1111
+      hashCode    1011 0101
+    ```
+
+    前面的变化对于取余后的数都没有变化，只有后面4位决定了取余后的值(0-15)，后面4位就是取余的一种最快方式，但是仅限特定的取余数。
 
 2. 负载因子 loadFactor ，缺省是 0.75
 
@@ -43,7 +90,7 @@ HashMap有下面几个重要的属性：
     答： 首先：JAVA规定了该static final 类型的静态变量为int类型，至于为什么不是byte、long等类型，原因是由于考虑到HashMap的性能问题而作的折中处理！
 
     由于int类型限制了该变量的长度为4个字节共32个二进制位，按理说可以向左移动31位即2的31次幂。但是事实上由于二进制数字中最高的一位也就是最左边的一位是符号位，用来表示正负之分（0为正，1为负），所以只能向左移动30位，而不能移动到处在最高位的符号位！
-    补充：按照我自己的理解选择30估计是出于性能折中处理，因为int的最大值是2的31次方减1.也就是1<<31-1
+    补充：按照我自己的理解选择30估计是出于性能折中处理，因为int的最大值是2的31次方减1.也就是1<<31-1，最小负数就是负的2的31次方。
     3. [HashMap的最大容量为什么是2的30次方(1左移30)?](https://blog.csdn.net/sayWhat_sayHello/article/details/83120324)
     4. [HashMap 容量和最大索引取值表](https://blog.csdn.net/feleon/article/details/92721045)
 
@@ -121,8 +168,8 @@ HashMap最小处理逻辑单元Node 是一个静态内部类。可以看出来�
 ```java
      hashMap.put("key",1);
      // 返回旧值，可以从源代码中分析出来
-     Integer key = hashMap.put("key", 11);
-     System.out.println(key);
+     Integer value = hashMap.put("key", 11);
+     System.out.println(value);
 ```
 
 
@@ -145,6 +192,8 @@ static final int tableSizeFor(int cap) {
 new HashMap(1<<11); 
 ```
 
+9. [hashMap数据统计应用](https://blog.csdn.net/u010938610/article/details/82622144) 
+
 参考：
 
 [Java 8系列之重新认识HashMap](https://zhuanlan.zhihu.com/p/21673805)
@@ -157,7 +206,42 @@ new HashMap(1<<11);
 
 [初步了解红黑树](https://blog.csdn.net/v_july_v/article/details/6105630)
 
+### LinkedHashMap
+
+1. [自定义LRUSet解决OOM问题](https://www.jianshu.com/p/d7c3185dcb5f)
+
+1. 为啥
+
+### ConcurrentHashMap
+
+
+### List
+
+ArrayList和LinkedList的增加需要看情况而定。最好还是熟悉源代码，从源代码中来了解原因。前者需要扩容，后者新建对象。所以两者都会有自己的耗时。
+
+#### ArrayList
+
+查询的情况下，ArrayList还是占优势。
+
+[Java ConcurrentModificationException异常原因和解决方法](https://docs.qq.com/doc/DSFhQdkhLeFZyQlhh)
+
+[ArrayList为什么会出现并发问题以及相应的解决办法](https://blog.csdn.net/seujava_er/article/details/89963639)
+
+
+#### LinkedList
+
+遍历的时候不要使用for循环去get，建议用iterator来遍历下。
+
+
+#### CopyOnWriteArrayList
+
+#### 
+
 ### Stream
+
+
+[list多字段比较去重](https://blog.csdn.net/qq_30667039/article/details/102386480)
+
 
 将list转成map。并且遍历map。
 
@@ -184,10 +268,112 @@ List转Set
 ```java
    Set<String> collect = teamAppModelList.stream().map(dto -> dto.getAppId()).collect(Collectors.toSet());
 ```
+#### 收集某个元素
+```
+new ContentVideoCoverDTO()
+               
+List<ContentVideoCoverDTO> contentVideoCoverDTOS = contentVideoCoverFuture.get();
+               
+List<Long> videoCoverPicIds = contentVideoCoverDTOS.stream().map(ContentVideoCoverDTO::getContentId).collect(Collectors.toList());
+
+```
+filter之后再次map，把int值转成long
+```
+          List<Long> addTagIds = subStatusCodes.stream()
+                    .filter(tagId -> tagId != null && !finalExistTag.contains(tagId.longValue()))
+                    .map(Integer::longValue)
+                    .collect(Collectors.toList());
+```
+
+#### 统计符合条件的
+
+
+#### List去重
+
+java 8 stream、lambda表达式对list操作分组、过滤、求和、最值、排序、去重
+
+1.分组
+
+通过groupingBy分组指定字段
+
+list.stream().collect(Collectors.groupingBy(User::getSex));
+
+2.过滤
+
+通过filter方法过滤某些条件
+
+list.stream().filter(a -> !a.getJobNumber().equals("201901")).collect(Collectors.toList());
+
+3.求和
+
+基本类型:先mapToInt，然后调用sum方法
+
+List.stream().mapToInt(User::getAge).sum();
+
+大数类型:reduce调用BigDecimal::add方法
+
+List.stream().map(User::getFamilyMemberQuantity).reduce(BigDecimal.ZERO, BigDecimal::add);
+
+4.最值
+
+最大值
+
+List.stream().map(User::getEntryDate).max(Date::compareTo).get();
+
+最小值
+
+List.stream().map(User::getEntryDate).min(Date::compareTo).get();
+
+5.排序
+
+list.stream().sorted((o1, o2)->o1.getItem().getValue().
+
+compareTo(o2.getItem().getValue())).
+
+collect(Collectors.toList());
+
+sort()
+
+单字段排序，根据id排序list.sort(Comparator.comparing(Obj::getItem));
+
+多字段排序，根据id，年龄排序list.sort(Comparator.comparing(Obj::getItem).thenComparing(Obj::getItem));
+
+6.去重
+
+通过distinct方法
+
+List.stream().distinct().collect(Collectors.toList());
+
+对属性
+
+重写方法
+
+7.获取list某个字段组装新list
+
+List.stream().map(a -> a.getId()).collect(Collectors.toList());
+————————————————
+版权声明：本文为CSDN博主「长尾裙」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/weixin_36040777/article/details/112884759
+
 
 ### Vector
 
 线程安全的数组，ArrayList与LinkList都是线程不安全的。
+
+### JUC 
+
+#### CountDownLatch
+
+https://www.jianshu.com/p/e233bb37d2e6
+
+https://www.jianshu.com/p/7c7a5df5bda6?ref=myread
+
+
+#### CyclicBarrier
+
+
+
+
 
 ### 接口
 
@@ -231,6 +417,12 @@ https://blog.csdn.net/JYTXIOABAI/article/details/83827127
 ## JVM
 
 需要掌握常用JVM调优技巧。
+
+### 逃逸分析
+
+[【腾讯文档】JVM之逃逸分析](https://docs.qq.com/doc/DSE1VVHhUcURyaVVk) 
+
+> 逃逸分析对锁是有一个优化的，可以将锁消除，提高代码运行的效率。
 
 ### Java常用命令
 
@@ -468,6 +660,15 @@ uniqueInstance 采用 volatile 关键字修饰也是很有必要的， uniqueIns
 
 [总结一下guava常用并发库的用法](https://www.jianshu.com/p/b94a57bd5eb9)
 
+
+#### 限速器的使用，控制速率
+
+使用很简单
+https://ifeve.com/guava-ratelimiter/
+
+
+
+
 ### json库
 
 #### fastjson
@@ -627,3 +828,8 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 1. IDEA的restful插件
 2. logf设置模板
 3. 导入包的*设置99
+
+
+### java8新特性
+
+1. [JAVA8 StringJoiner，String.join和StringBuffer 拼接字符串](https://blog.csdn.net/shuaiyuanshuai/article/details/80680559)

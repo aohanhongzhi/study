@@ -1,6 +1,8 @@
 # 我学习过的知识
 
 ## 语言
+
+
 1. Java
     * Spring
     * SpringBoot
@@ -8,9 +10,11 @@
     * MyBatis-plus
     * RexDB
     * Shiro
+    * SpringSecurity
     * BeetSQL
     * anima
     * okhttps
+    * tlog
 2. Python
     * flask
     * peewee
@@ -26,7 +30,8 @@
 4. Kotlin
     * koti
 5. JavaScript
-    * nodejs
+    * koajs
+    * eggjs
 
 ## Java
 
@@ -151,7 +156,7 @@
     DateTime.Now.ToString ("yyyy:MM:dd,hh:mm:ss") 12小时制转成24小时制
 
 
-1. `org.apache.commons.lang3.StingUtils.isEmpty("String")`判断字符串是否为空
+1. `org.apache.commons.lang3.StingUtils.isEmpty("String")`判断字符串是否为空，这种可能会无法处理特殊情况下的"null"
 1. 不同浏览器，编码不一样的解决方案。
 
     ```java
@@ -235,7 +240,7 @@
     ```java
         new HashMap<String,RSAKey>(2);
     ```
-
+1.  百分比展示 String.format("%.2f%s", finalAuditRate, "%")
 1. 各种Map
     1. HashMap
     1. ConcurrentHashMap
@@ -259,14 +264,16 @@
 1. [使用SpringBoot构建普通非web的Java应用
 ](https://docs.qq.com/doc/DSHBVQ2pwQUVadFNk)
 1. [SpringBoot的java全知识栈项目](https://github.com/longxiaonan/java-sea)
+
+
 ### MyCat
 
-数据库中间件，多数据源，读写分离。主备切换。
+数据库中间件，多数据源，读写分离。主备切换，分库分表。
 
 ### Mybatis
 
 1. Mybatis-plus 通用性接口与jpa一样。[https://mybatis.plus/](https://mybatis.plus/)
-1. pagehelper，分页插件
+1. pagehelper，分页插件，mybatis-plus自带有分页功能，可能会冲突。
 
 ### logback
 
@@ -311,6 +318,7 @@ ORM层| [rexdb](http://db.rex-soft.org/)|高效灵活简单，适合不需要注
 
 1. 高性能的非阻塞网络框架
 1. [心跳检测，SpringBoot中集成Netty的Sever与Client](https://gitee.com/aohanhongzhi/heart-netty)
+1. RPC框架底层一般用这种东西。
 
 ### javafx
 
