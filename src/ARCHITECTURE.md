@@ -150,6 +150,11 @@ http://ansible.com.cn/docs/intro.html
 
 #### log-pilot
 
+
+#### taillog
+
+http://www.taillog.cn/
+
 #### Splunk
 
 #### Zabbix
