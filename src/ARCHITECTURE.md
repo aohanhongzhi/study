@@ -281,6 +281,10 @@ outube出品的开源分布式MySQL工具集Vitess，自动分片存储MySQL数�
 
 目前8.+，性能是5.7的两倍，而且增加了很多新特性。MySQL有很多的版本，如果集群部署的话，可以考虑使用cluster版本。可以参考mycat中间件。
 
+
+阿里巴巴 MySQL binlog 增量订阅&消费组件
+https://github.com/alibaba/canal
+
 #### MariaDB
 
 mysql被Oracle收购之后，原班人马基于MySQL开源分之，开发了新的完全兼容MySQL的分支。一旦MySQL闭源。可以用MariaDB来替代。
@@ -318,12 +322,18 @@ SQL 方面兼容 2003 标准、PostgreSQL 语法和常用 Oracle 函数&数据�
 
 #### Redis
 
+Redis-shake是一个用于在两个redis之间同步数据的工具，满足用户非常灵活的同步、迁移需求。
+https://github.com/alibaba/RedisShake
 
 #### Tair
 
 https://github.com/alibaba/tair
 
 > 美团基于Tair开发了Cellar。
+
+#### MongoDB
+
+https://github.com/alibaba/MongoShake
 
 
 ### 网关API
@@ -497,7 +507,8 @@ shardingsphere | 分布式数据库解决方案 | https://shardingsphere.apache.
 Koala （Golang）| 通用频率控制规则引擎系统 | https://github.com/heiyeluren/koala
 asyncTool | 多线程排列组合框架 | https://gitee.com/jd-platform-opensource/asyncTool
 liteFlow | 轻量，快速，稳定，可编排的组件式流程引擎 | https://gitee.com/dromara/liteFlow
- 
+Spring-Retry | | 
+easy-retry| 一种存储介质可扩展的持久化重试方案  | https://github.com/alibaba/easy-retry
 
 ---
 
