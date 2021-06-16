@@ -11,8 +11,9 @@ https://blog.csdn.net/qq_38829280/article/details/115087764
 
 ## 锁
 
-## 事务
+全局锁，表锁，行锁
 
+## 事务
 
 1. [数据库教程](https://github.com/dunwu/db-tutorial):[https://github.com/dunwu/db-tutorial](https://github.com/dunwu/db-tutorial)
 1. 多个应用实例操作同一张表的时候需要加锁吗？
@@ -20,6 +21,8 @@ https://blog.csdn.net/qq_38829280/article/details/115087764
 1. 如果设置为NOT NULL 那么必须设置默认值
 1. [mysql删除操作其实是假删除](https://zhuanlan.zhihu.com/p/66336976)
 1. [InnoDB怎么解决幻读的？](https://blog.csdn.net/qq_33330687/article/details/89004462)
+
+
 ### 高可用
 1. [MySQL 同步复制及高可用方案总结](https://segmentfault.com/a/1190000022313462)
 
@@ -29,3 +32,7 @@ https://blog.csdn.net/qq_38829280/article/details/115087764
 [利用Zipkin追踪Mysql数据库调用链](https://segmentfault.com/a/1190000014751181)
 
 
+
+## 拓展
+
+Mysql满足不了的时候可能会用Doris，hive啥的。
