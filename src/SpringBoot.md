@@ -13,7 +13,14 @@ https://zhuanlan.zhihu.com/p/346711149
 https://www.jianshu.com/p/1ed18eebb299
 
 
+### 事务
 
+Spring的事务就是ThreadLocal里面装了Connection，数据库连接池。
+
+> https://blog.csdn.net/qq_34337272/article/details/80394121 
+
+#### 什么是事务？
+指作为单个逻辑工作单元执行的一系列操作，要么完全地执行，要么完全地不执行。 简单的说，事务就是并发控制的单位，是用户定义的一个操作序列。
 
 ## 启动程序
 1. 环境变量配置

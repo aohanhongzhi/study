@@ -427,6 +427,10 @@ https://blog.csdn.net/JYTXIOABAI/article/details/83827127
 
 需要掌握常用JVM调优技巧。
 
+### Java的锁
+
+锁与JVM规范没啥关系，所以每个JDK版本可能都不一样。
+
 ### 逃逸分析
 
 [【腾讯文档】JVM之逃逸分析](https://docs.qq.com/doc/DSE1VVHhUcURyaVVk) 
