@@ -39,6 +39,8 @@ https://sanic.readthedocs.io/en/latest/
 
 #### django
 
+https://www.djangoproject.com/
+
 #### Peewee
 
 https://github.com/coleifer/peewee

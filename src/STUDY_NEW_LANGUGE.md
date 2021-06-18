@@ -1,7 +1,6 @@
 如何快速掌握一门新的语言
 ===
 
-
 1. 基础数据结构
     * 动态数组型: 例如java中的ArrayList，Python中的列表，Go语言中的切片
     * 键值对型：Java中的HashMap，Python中的字典，Go语言中的Map
