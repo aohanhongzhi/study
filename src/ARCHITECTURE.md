@@ -516,6 +516,7 @@ SpringBoot Google Kaptcha | 简单快速集成 Google Kaptcha验证码 | https:/
 Discovery| 全链路灰度路由 ,灰度发布 | https://gitee.com/nepxion/Discovery
 Sentinel | 面向分布式服务架构的高可用流量防护组件 | https://github.com/alibaba/Sentinel
 Rate Limiter | google的限速器 | https://docs.qq.com/doc/DSElXRFZsVUdCbWZB
+ ratelimiter-spring-boot-starter | 注解封装版本  | https://gitee.com/kailing/ratelimiter-spring-boot-starter
 tinyid | 分布式id生成器 |https://gitee.com/didiopensource/tinyid
 shardingsphere | 分布式数据库解决方案 | https://shardingsphere.apache.org/index_zh.html
 Koala （Golang）| 通用频率控制规则引擎系统 | https://github.com/heiyeluren/koala
