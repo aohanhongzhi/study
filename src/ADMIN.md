@@ -28,3 +28,4 @@
 1. [Gitee上热门的后台管理框架相关项目](https://gitee.com/gitee-community/weekly-collection/blob/master/%E7%B2%BE%E9%80%89%E9%9B%86%E7%AC%AC14%E6%9C%9F.md?utm_source=gitee-explore)
 1. [Spring boot整合elastic search 7.9.1实现全文检索](https://gitee.com/shenzhanwang/Spring-elastic_search)
 1. [有flask,SpringBoot，layui，ant多种版本和样式的管理后台](http://pearadmin.com/)
+1. [Pear-Admin-Fast](https://gitee.com/pear-admin/Pear-Admin-Fast)
