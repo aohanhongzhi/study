@@ -110,3 +110,13 @@ java.lang.ClassLoader.getResource(String name)
 ————————————————
 版权声明：本文为CSDN博主「星梦天河」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
 原文链接：https://blog.csdn.net/mxskymx/java/article/details/99713480
+
+
+### 缓存行对齐
+
+高并发技巧
+
+这个就解释了为啥需要知道基础类型的对应字节是多少，常见的就好了。因为需要缓存行对齐啊。
+
+https://blog.csdn.net/mofeizhi/article/details/106816026
+https://blog.csdn.net/weixin_45702700/article/details/114188435
