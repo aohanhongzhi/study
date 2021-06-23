@@ -133,6 +133,8 @@ https://resume.mdedit.online/editor/#/
 
 ## Redis
 
+https://www.jianshu.com/p/de78aead9d9b
+
 ### 底层数据结构
 
 https://zhuanlan.zhihu.com/p/193141635
