@@ -240,7 +240,30 @@ ArrayList和LinkedList的增加需要看情况而定。最好还是熟悉源代�
 ### Stream
 
 
-[list多字段比较去重](https://blog.csdn.net/qq_30667039/article/details/102386480)
+[list多个字段进行去重以及过滤](https://blog.csdn.net/qq_30667039/article/details/102386480)
+
+```java
+public static void main(String[] args) {
+    us u=fa.fa(1);
+    us u2=fa.fa(1);
+    us u3=fa.fa(1);
+    List<us> list=new ArrayList<>();
+    u.setAge(10);
+    u.setName("张三");
+    list.add(u);
+    u2.setAge(13);
+    u2.setName("李四");
+    list.add(u2);
+    u3.setAge(13);
+    u3.setName("李四");
+    list.add(u3);
+    List<us> usList=list.stream().collect(Collectors.collectingAndThen(Collectors.toCollection(()->new TreeSet<>(Comparator.comparing(s->s.getName()+";"+s.getAge()))),ArrayList::new));
+    usList.forEach(userList->{
+    System.out.println(userList.getName()+userList.getAge());
+    });
+}
+
+```
 
 
 将list转成map。并且遍历map。
