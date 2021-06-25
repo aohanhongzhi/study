@@ -410,6 +410,10 @@ Sentinel是阿里巴巴开源的限流器熔断器，并且带有可视化操作
 
 https://blog.csdn.net/qq_42046105/article/details/111350721
 
+#### 如何设计一个分布式锁
+
+https://blog.csdn.net/s751167520/article/details/107399410
+https://www.cnblogs.com/caijindou/p/13226539.html
 
 
 ### 代码审查
