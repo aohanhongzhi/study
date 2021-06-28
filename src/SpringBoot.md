@@ -26,6 +26,7 @@ Spring的事务就是ThreadLocal里面装了Connection，数据库连接池。
 ### 多线程中事务的处理
 
 1. [解决多线程批量插入中的事物一致性问题](https://blog.csdn.net/weixin_42324471/article/details/106279460)
+1. [Java 多线程事务回滚 ——多线程插入数据库时事务控制](https://blog.csdn.net/shehuinidaye/article/details/89385200)
 
 ## 启动程序
 1. 环境变量配置
