@@ -486,7 +486,7 @@ joda-time | 时间处理 | https://www.joda.org/joda-time/
 hotkey | 毫秒级探测热点数据，毫秒级推送至服务器集群内存，大幅降低热key对数据层查询压力 |https://gitee.com/jd-platform-opensource/hotkey
 sureness | 面向REST API的高性能认证鉴权框架，致力于管理保护API安全 | https://gitee.com/dromara/sureness
 sa-token | 可能是史上功能最全的Java权限认证框架 | https://gitee.com/dromara/sa-token
- image-combiner| 一个专门用于Java服务端图片合成的工具 | https://gitee.com/dromara/image-combiner
+image-combiner| 一个专门用于Java服务端图片合成的工具 | https://gitee.com/dromara/image-combiner
 ---
 
 ### 企业级应用开发技术栈
@@ -584,7 +584,8 @@ Vault |动态密码Server |https://www.hashicorp.com/products/vault/
 spring-boot-starter-jersey |Restful Web服务，类似SpringMVC |https://blog.csdn.net/github_38395241/article/details/70265379
 Consul | 注册中心,建议放弃使用,企业版受美国法律限制|https://spring.io/projects/spring-cloud-consul
 Nacos | 阿里开源的注册中心 | https://nacos.io/
- smart-framework | 基础原理学习 | https://gitee.com/huangyong/smart-framework
+smart-framework | 基础原理学习 | https://gitee.com/huangyong/smart-framework
+Takin | 全链路压测 | https://github.com/shulieTech/Takin
 ---
 
 ### Dubbox + ZooKeeper
