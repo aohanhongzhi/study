@@ -13,6 +13,9 @@ https://blog.csdn.net/qq_38829280/article/details/115087764
 
 全局锁，表锁，行锁
 
+https://gitee.com/kailing/mysql-tx-lock-tests
+
+
 ## 事务
 
 1. [数据库教程](https://github.com/dunwu/db-tutorial):[https://github.com/dunwu/db-tutorial](https://github.com/dunwu/db-tutorial)
