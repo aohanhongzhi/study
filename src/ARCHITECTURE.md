@@ -325,6 +325,8 @@ SQL 方面兼容 2003 标准、PostgreSQL 语法和常用 Oracle 函数&数据�
 Redis-shake是一个用于在两个redis之间同步数据的工具，满足用户非常灵活的同步、迁移需求。
 https://github.com/alibaba/RedisShake
 
+[卧槽！牛皮了，他居然把大厂常问的Redis面试题的答案都写下来了！](https://www.jianshu.com/p/de78aead9d9b)
+
 #### Tair
 
 https://github.com/alibaba/tair
