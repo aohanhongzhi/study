@@ -62,6 +62,22 @@
 
 一般来说小型企业，比较适合使用http的，大型企业适合RPC的。协议上RPC可能更加高效一点，但是http比较适合哪种信息孤岛的现象，就像电信集团有很多子公司，大家各自为政，但是又得互相融合。这时候就比较适合使用http通信了。就不需要有统一的注册中心来注册RPC的服务。
 
+
+
+### 框架
+
+
+
+#### zebra
+
+Zebra 是国信证券的微服务框架，是国信证券在微服务架构和 CNCF 上的实践，让有相同目标方向的尽量少走弯路
+
+https://gitee.com/gszebra/zebra
+
+![架构图](https://gitee.com/gszebra/picture/raw/master/zebra/architecture.png)
+
+
+
 ### 网络通信协议
 
 #### smart-socket
@@ -270,7 +286,7 @@ https://gitee.com/fastdfs100/fastdfs
 https://gitee.com/didiopensource/tinyid
      
 不建议使用uuid这种无序的来生成id，会导致数据库的索引重排序，浪费数据库的性能。
-  
+
 
 ##### 分布式MySQL工具集Vitess
 > 官网 https://vitess.io/
