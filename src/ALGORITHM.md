@@ -59,3 +59,6 @@ https://zhuanlan.zhihu.com/p/91254104
 例如 [1,2,3,4,5] 平衡点就是4.两边的值最近。
 
 > 解决提示: 暴力解开，然后再次优化即可。
+
+
+1. [Java - - 判断表达式中的括号是否正确配对](https://blog.csdn.net/u011033906/article/details/53856692)
