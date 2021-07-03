@@ -26,6 +26,10 @@ volatile关键字的主要作用就是保证变量的可见性然后还有一个
 
 能不能保证一致性？为啥不能？
 
+### synchronized
+
+https://www.cnblogs.com/three-fighter/p/14396208.html
+
 
 ## 数据结构
 
