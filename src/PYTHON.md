@@ -30,6 +30,8 @@ https://pywebio.readthedocs.io/zh_CN/latest/
 
 https://sanic.readthedocs.io/en/latest/
 
+https://sanicframework.org/zh/guide/
+
 https://www.jianshu.com/p/636833c71c2a
 
 ####  moltenframework
