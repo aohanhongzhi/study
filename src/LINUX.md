@@ -25,3 +25,15 @@ top -pid $pid
 
 ### 常用命令
 1.  zip -q -r -e ssh.zip .ssh/
+
+
+
+## 优秀的命令工具
+
+### curlie 
+
+非常推荐，解析看起来更加优雅
+
+https://curlie.io/
+
+https://github.com/rs/curlie
