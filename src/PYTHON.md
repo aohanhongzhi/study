@@ -34,6 +34,11 @@ https://sanicframework.org/zh/guide/
 
 https://www.jianshu.com/p/636833c71c2a
 
+参考demo
+
+https://gitee.com/eric-tutorial/sanic_demo
+
+
 ####  moltenframework
 
 > https://moltenframework.com/
