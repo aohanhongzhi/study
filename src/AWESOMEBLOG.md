@@ -13,3 +13,4 @@
 11. [狂神学习](https://www.kuangstudy.com/course)
 12. [JAVACORE](https://turnon.gitee.io/javacore/) https://github.com/dunwu/javacore
 13. [系统设计github13万star](https://github.com/donnemartin/system-design-primer)
+14. [计算机类相关书籍整理](https://github.com/iCSToCS/CSBook)
