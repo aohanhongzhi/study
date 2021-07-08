@@ -34,6 +34,10 @@ https://sanicframework.org/zh/guide/
 
 https://www.jianshu.com/p/636833c71c2a
 
+基于sanic搭建微服务体系。
+主要采用sanic + 服务注册 consul + fabio
+https://www.jianshu.com/p/c3e34228f4fa
+
 参考demo
 
 https://gitee.com/eric-tutorial/sanic_demo
