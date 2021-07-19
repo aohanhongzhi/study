@@ -505,6 +505,7 @@ hotkey | 毫秒级探测热点数据，毫秒级推送至服务器集群内存�
 sureness | 面向REST API的高性能认证鉴权框架，致力于管理保护API安全 | https://gitee.com/dromara/sureness
 sa-token | 可能是史上功能最全的Java权限认证框架 | https://gitee.com/dromara/sa-token
 image-combiner| 一个专门用于Java服务端图片合成的工具 | https://gitee.com/dromara/image-combiner
+zip4j | 压缩文件处理 | https://github.com/srikanth-lingala/zip4j
 ---
 
 ### 企业级应用开发技术栈
