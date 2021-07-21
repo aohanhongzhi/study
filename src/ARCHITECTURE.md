@@ -238,6 +238,8 @@ http://www.taillog.cn/
 
 Java客户端不依赖任何框架，能够运行于所有Java运行时环境，同时对Spring/Spring Boot环境也有额外支持。
 
+> 在日常编码中，可以使用配置中心来弄一个Boolean变量作为新旧功能的开关。一旦上线的功能有问题，可以修改下配置及时解决服务问题。
+
 #### Spring Cloud Config + Git (小型系统推荐)
 没有管理界面
 
