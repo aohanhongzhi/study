@@ -3,6 +3,20 @@ Python
 
 ## 常用框架
 
+### 网络请求
+
+#### requests
+
+https://docs.python-requests.org/zh_CN/latest/
+
+#### httpx 
+
+https://www.python-httpx.org/
+
+#### aiohttp
+
+https://docs.aiohttp.org/en/stable/
+
 ### web框架
 
 #### fastapi
