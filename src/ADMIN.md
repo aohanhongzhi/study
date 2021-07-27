@@ -30,4 +30,5 @@
 1. [有flask,SpringBoot，layui，ant多种版本和样式的管理后台](http://pearadmin.com/)
 1. [Pear-Admin-Fast](https://gitee.com/pear-admin/Pear-Admin-Fast)
 1. [vue-vben-admin](https://github.com/anncwb/vue-vben-admin)
+1. [vben-admin-thin-next精简版](https://github.com/anncwb/vben-admin-thin-next)
 1. [vue-okay-admin](https://gitee.com/ejlchina-zhxu/vue-okay-admin)
