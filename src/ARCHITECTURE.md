@@ -563,7 +563,7 @@ easy-retry| 一种存储介质可扩展的持久化重试方案  | https://githu
 组件 | 说明 | 官网
 ---|---|---
 Eureka|服务注册与发现中心 | 
-Admin|应用监控|
+Admin|应用监控| https://github.com/codecentric/spring-boot-admin
 Zuul|网关|
 Zipkin| 链路数据分析组件，Sleuth收集信息 |
 
