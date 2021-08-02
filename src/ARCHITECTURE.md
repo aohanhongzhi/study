@@ -295,6 +295,7 @@ https://gitee.com/didiopensource/tinyid
 
 
 ##### 分布式MySQL工具集Vitess
+
 > 官网 https://vitess.io/
 
 outube出品的开源分布式MySQL工具集Vitess，自动分片存储MySQL数据表，将单个SQL查询改写为分布式发送到多个MySQL Server上，支持行缓存（比MySQL本身缓存效率高），支持复制容错，已用于Youtube生产环境
@@ -438,6 +439,14 @@ https://blog.csdn.net/qq_42046105/article/details/111350721
 
 https://blog.csdn.net/s751167520/article/details/107399410
 https://www.cnblogs.com/caijindou/p/13226539.html
+
+
+### 批处理
+
+#### SpringBatch
+
+https://blog.csdn.net/topdeveloperr/article/details/84337956
+
 
 
 ### 代码审查
