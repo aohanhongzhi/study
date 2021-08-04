@@ -29,6 +29,12 @@ https://gitee.com/heyui/heyui
 https://gitee.com/zdhxiong/mdui
 
 
-### 网络请求库
+## 网络请求库
+
+网络请求封装的思考，如果response拦截器能区分请求方法，POST一般是增加数据，这种需要知道成功了没有，也就是可以针对http status code和 data.code来弹出提示框。
+
+GET请求一般是查询数据，重点是处理data.data，所以可以直接忽略 message信息，也就是不用弹出data.message提示框信息，但是要处理http status code 信息，比如获取失败啥的还是需要弹出个框。
 
 https://github.com/umijs/umi-request/blob/master/README_zh-CN.md
+
+
