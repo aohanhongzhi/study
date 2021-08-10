@@ -944,3 +944,7 @@ Kryo 是一种快速，高效的序列化的Java框架。
 
 Dubbo、Twitter、Groupon、 Yahoo以及多个著名开源项目（如Hive、Storm）中广泛的使用
 
+#### fastjson
+
+序列化是基于get方法的，如果没有get方法，只有字段，那么还是建议使用gson。
+
