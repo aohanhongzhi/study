@@ -32,3 +32,4 @@
 1. [vue-vben-admin](https://github.com/anncwb/vue-vben-admin),IBM mentor carol在泰康选用了这个
 1. [vben-admin-thin-next精简版](https://github.com/anncwb/vben-admin-thin-next)
 1. [vue-okay-admin](https://gitee.com/ejlchina-zhxu/vue-okay-admin)
+1. [vue-next-admin](https://gitee.com/lyt-top/vue-next-admin)
