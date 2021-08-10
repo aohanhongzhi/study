@@ -298,9 +298,17 @@ https://gitee.com/fastdfs100/fastdfs
 
 ##### id生成器 
 
+分布式id
+
 https://gitee.com/didiopensource/tinyid
      
 不建议使用uuid这种无序的来生成id，会导致数据库的索引重排序，浪费数据库的性能。
+
+###### 美团的分布式id
+
+https://github.com/Meituan-Dianping/Leaf
+
+https://tech.meituan.com/2017/04/21/mt-leaf.html
 
 
 ##### 分布式MySQL工具集Vitess
