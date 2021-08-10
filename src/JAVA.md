@@ -933,3 +933,14 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 ### java8新特性
 
 1. [JAVA8 StringJoiner，String.join和StringBuffer 拼接字符串](https://blog.csdn.net/shuaiyuanshuai/article/details/80680559)
+
+
+### 序列化
+
+
+https://github.com/EsotericSoftware/kryo
+
+Kryo 是一种快速，高效的序列化的Java框架。
+
+Dubbo、Twitter、Groupon、 Yahoo以及多个著名开源项目（如Hive、Storm）中广泛的使用
+
