@@ -4,6 +4,12 @@
 
 https://snailclimb.gitee.io/
 
+https://github.com/doocs/source-code-hunter
+
+https://github.com/doocs/jvm
+
+
+
 ## 简历
 
 https://github.com/hua1995116/react-resume-site
@@ -27,7 +33,7 @@ https://resume.mdedit.online/editor/#/
 线程是共享内存的。进程之间没必要加锁了。
 
 熟悉了linux常用命令,grep sed.cut,head,xargs,awk
- 
+
 
 ### 常见面试题目
 
@@ -120,6 +126,7 @@ https://resume.mdedit.online/editor/#/
 1. 成长方式
 1. 应聘的岗位角色定位，是骨干挑大梁，还是拧螺丝
 1. 你觉得自己团队日常管理的亮点在哪？团队管理的方式很重要。漂亮的团队管理就是把人当做工具，成为一个合格的工具人，然后还强调不要成为一个工具人，就很奇葩。
+1. leader的管理风格提问，例如，项目线上出了事故，有比较严重的资损怎么办？主要看这个领导风格是解决事情型，还是问责型。
 
 
 
