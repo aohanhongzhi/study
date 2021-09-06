@@ -211,6 +211,12 @@ https://github.com/onblog/JavaMonitor
 
 <http://n9e.didiyun.com/>
 
+#### bistoury
+
+Bistoury是去哪儿网的java应用生产问题诊断工具，提供了一站式的问题诊断方案
+
+https://github.com/qunarcorp/bistoury
+
 ### 运维
 
 http://ansible.com.cn/docs/intro.html
