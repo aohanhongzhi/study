@@ -8,6 +8,7 @@
 1. https://github.com/TheAlgorithms/Java
 1. https://github.com/TheAlgorithms/Go
 1. https://github.com/yuanguangxin/LeetCode
+1. https://programmercarl.com/
 
 ### 一致性Hash算法
 
