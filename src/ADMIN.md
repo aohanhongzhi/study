@@ -33,6 +33,7 @@
 1. [vben-admin-thin-next精简版](https://github.com/anncwb/vben-admin-thin-next)
 1. [vue-okay-admin](https://gitee.com/ejlchina-zhxu/vue-okay-admin)
 1. [vue-next-admin](https://gitee.com/lyt-top/vue-next-admin)
+1. [Vue3.0+TypeScript+Vite2.0+Element-Plus编写的一套后台管理系统](https://github.com/xiaoxian521/vue-pure-admin)
 
 ## 兼容移动端的后台管理系统
 
