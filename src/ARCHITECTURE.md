@@ -40,10 +40,10 @@
 1. 服务治理框架
 1. 各种开源框架的二次开发与封装
 1. 代码开发规范,GitFlow
-1. 代码检查和日编译
+1. 代码检查和热编译
 1. 模块化，分层，Maven规范和治理，也就是项目构建工具的管理，不限于maven，还有gradle等
 1. 各种定制的中间件
-1. 数据表的设计
+1. 数据表的设计，数据库优化
 1. 数据逻辑库的拆分 
 
 #### 基础架构
@@ -104,6 +104,8 @@ https://gitee.com/smartboot/smart-http
 
 ### 容器
 
+#### k8s
+
 #### Docker
 
 容器化部署，智能运维，几万个节点的部署。
@@ -119,6 +121,10 @@ https://yeasy.gitbooks.io/docker_practice/
 
 分布式系统中有一个非常著名的CAP定理，C表示数据一致性，A表示服务可用性，P表示服务对网络分区故障的容错性。这三个特性在任何分布式系统中都不能同时满足，最多只能满足两个。本质上ZooKeeper是一个CP实现，而Eureka是一个AP实现。
 
+CAP关注的粒度是数据，而不是整个系统。CAP不是针对一个整个系统而言的，而是针对部分而言的。一个系统里面，不同的模块是允许采用不同的组合。
+
+例如一个电商系统的财务部分需要使用CP，而里面的物流部分只要是AP即可。
+
 #### ZooKeeper
 
 非常优秀的服务发现与注册中间件。由于其CP实现形式，被一大批生态软件采用。
@@ -128,6 +134,8 @@ https://yeasy.gitbooks.io/docker_practice/
 AP实现，采用Peer2Peer对等通信方式，去中心化的方式，无Master/Slaver区分，每一个Peer都是对等的。
 
 Eureka作为服务发现与注册中心，即使整个Eureka集群宕机，消费者还是可以通过自己之前的缓存获取注册表的！也就是每一个消费者并不是简单的获取自己想要的信息，而是所有信息。这也就解释了服务端的负载均衡与Eureka端的负载均衡。因为都是有完整的注册表的（缓存，即使Eureka宕机，也是可以的），所以知道怎么负载均衡！
+
+Eureka的一个缺点就是可视化的面板几乎没有任何管理操作，例如上下线等。只有查看的功能。
 
  **总结**
 
@@ -152,6 +160,7 @@ https://spring.io/projects/spring-cloud-consul
 https://nacos.io/zh-cn/
 
 一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。说白了就是相当于eureka+Apollo，这个是阿里巴巴开源的，使用的公司还是很多的（国内居多，因为有幺蛾子表示Eureka2.+胎死腹中，存在闭源风险。然而这种下一版本停止的太多了）。
+
 登录首页
 http://localhost:8848/nacos/index.html#/login
 默认的用户名和密码都是nacos
@@ -195,11 +204,23 @@ CAT 是基于 Java 开发的实时应用监控平台，为美团点评提供了�
 https://github.com/dianping/cat
 
 
+
+#### Cubic
+
+一站式问题分析解决平台
+
+https://cubic.jiagoujishu.com/
+
+
+
+
 #### WGCLOUD
 
 https://www.wgstart.com/
 
 https://gitee.com/wanghouhou/wgcloud
+
+
 
 #### 夜莺
 
@@ -292,6 +313,22 @@ https://gitee.com/xuxueli0323/xxl-conf
 分布式事务中间件
 
 https://www.oschina.net/p/seata
+
+#### Hmily
+
+Hmily是一款高性能，零侵入，金融级分布式事务解决方案，目前主要提供柔性事务的支持，包含 `TCC`, `TAC`(自动生成回滚SQL) 方案，未来还会支持 `XA` 等方案。
+
+https://dromara.org/projects/hmily/overview/
+
+
+
+#### Raincat
+
+强一致性分布式事务，是基于二阶段提交+本地事务补偿机制来实现。
+
+https://dromara.org/zh/projects/raincat/overview/
+
+
 
 
 ### 分布式文件存储
@@ -429,13 +466,21 @@ Oceanus 服务治理致力于提供统一的自动化、智能化路由的解决
 
 
 
-#### Zuul
+#### SpringGateway(Zuul)
 
 SpringCloud家族，智能网关。性能不输Nginx。Zuul的核心是一系列的Filter。
 
-####  Soul
 
-https://gitee.com/dromara/soul
+
+####  Shenyu (原Soul)
+
+现在是Apache的顶级项目了。
+
+https://shenyu.apache.org/
+
+https://github.com/apache/incubator-shenyu
+
+
 
 JAVA语言中高性能，可插拔，响应式API网关
 
@@ -549,7 +594,7 @@ memory | 超轻量级 Java 持久化工具 | https://gitee.com/bitprince/memory
 weed3 | | https://gitee.com/noear/weed3 
 liteBatch | 一个超轻量级，高性能的快速批插工具，可以和mybatis，hibernate任何orm框架结合使用| https://gitee.com/bryan31/liteBatch
 
-个人推荐使用mybatis-plus比较好，既可以使用注解，也可以使用xml文件配置，还可以直接继承BaseMapper接口。Service实现ServiceImpl等类，Model也可以直接操作。灵活也不失自动化。
+个人推荐使用**mybatis-plus**比较好，既可以使用注解，也可以使用xml文件配置，还可以直接继承BaseMapper接口。Service实现ServiceImpl等类，Model也可以直接操作。灵活也不失自动化。
 
 
 ### 常用中间件
@@ -587,7 +632,7 @@ zip4j | 压缩文件处理 | https://github.com/srikanth-lingala/zip4j
 技术 | 说明 | 官网
 ----|----|----
 Spring Boot | JavaBean容器 | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot)
-SpringWeb | MVC框架 |  
+SpringWeb | MVC框架 |
 Spring Security | 认证和授权框架 | [https://spring.io/projects/spring-security](https://spring.io/projects/spring-security)
 Shiro |授权与认证 |
 MyBatis | ORM框架  | [http://www.mybatis.org/mybatis-3/zh/index.html](http://www.mybatis.org/mybatis-3/zh/index.html)
@@ -619,9 +664,9 @@ shardingsphere | 分布式数据库解决方案 | https://shardingsphere.apache.
 Koala （Golang）| 通用频率控制规则引擎系统 | https://github.com/heiyeluren/koala
 asyncTool | 多线程排列组合框架 | https://gitee.com/jd-platform-opensource/asyncTool
 liteFlow | 轻量，快速，稳定，可编排的组件式流程引擎 | https://gitee.com/dromara/liteFlow
-Spring-Retry | | 
+Spring-Retry | 重试 |https://github.com/spring-projects/spring-retry
 easy-retry| 一种存储介质可扩展的持久化重试方案  | https://github.com/alibaba/easy-retry
-
+amon |	一个注解解决方法级限流难题 | 	https://gitee.com/lyhome_admin/amon
 ---
 
 ### SpringCloud家族
@@ -686,7 +731,6 @@ Takin | 全链路压测 | https://github.com/shulieTech/Takin
 基于RPC的微服务框架，适合大型企业的开发。
 1. 接口需要做鉴权
 2. 服务面向接口 Service和ServiceImpl不能写在同一个包里面。因为Service的包api是作为服务依赖被业务方使用。所以是分离的。
-3. 
 
 
 ### RPC 框架
@@ -742,6 +786,16 @@ ORM | [blade-anima](https://github.com/biezhi/anima)| 无需手写sql，直接�
 
 https://gitee.com/noear/solon
 
+
+
+### oxygen
+
+和blade有点类似，比较小而全面。
+
+https://gitee.com/justlive1/oxygen
+
+
+
 ### JODD
 
 感觉还挺完善的，但是看起来比blade复杂啊。blade更像SpringBoot。
@@ -757,11 +811,6 @@ https://javalin.io/
 A simple web framework for Java and Kotlin
 
 
-### oxygen
-
-和blade有点类似，比较小而全面。
-
-https://gitee.com/justlive1/oxygen
 
 
 ## Python
@@ -787,6 +836,10 @@ https://www.bilibili.com/video/BV18441117Hd
 官网 https://fastapi.tiangolo.com/zh
 
 非常优秀的框架，采用携程性能可以与Go比肩。实际使用的时候，发现集成peewee的时候发现这个与controller接口的时候有问题，不能使用同一个类对象来处理参数反序列化和数据库存储。所以很麻烦。 **不建议使用**
+
+## 如何选择一门语言或者框架
+
+![](./img/select-framework.png)
 
 
 
