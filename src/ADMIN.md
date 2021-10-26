@@ -32,13 +32,13 @@
 1. [vue-vben-admin](https://github.com/anncwb/vue-vben-admin),IBM mentor carol在泰康选用了这个
 1. [vben-admin-thin-next精简版](https://github.com/anncwb/vben-admin-thin-next)
 1. [vue-okay-admin](https://gitee.com/ejlchina-zhxu/vue-okay-admin)
-1. [vue-next-admin](https://gitee.com/lyt-top/vue-next-admin)
+
 1. [Vue3.0+TypeScript+Vite2.0+Element-Plus编写的一套后台管理系统](https://github.com/xiaoxian521/vue-pure-admin)
 
 ## 兼容移动端的后台管理系统
 
 1. [基于Vue + ElementUI 的web项目工程框架](https://gitee.com/newgateway/xdh-web)
-
+1. [vue-next-admin](https://gitee.com/lyt-top/vue-next-admin) ，仔细研究了下这个还是很不错的。
 
 ## 移动端
 
