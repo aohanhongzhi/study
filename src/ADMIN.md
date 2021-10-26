@@ -44,5 +44,5 @@
 ## 移动端
 
 1. http://www.easybui.com/
-1. https://docs.cool-js.com/
-1. [一个很酷的后台快速开发框架](https://www.cool-admin.com/)
+1. https://docs.cool-js.com/ 不是开源的，要购买源码。
+1. [一个很酷的后台快速开发框架](https://www.cool-admin.com/) 不是开源的，要购买源码。
