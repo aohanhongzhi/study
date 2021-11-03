@@ -1,13 +1,29 @@
-dumi版本
+学习啊
 ====
 
-安装依赖
+## Java
 
-```shell
-$ npm i dumi -D
-```
+- [Java基础学习](src/JAVA.md)
+- [JDK](src/JDK.md)
+- [SpringBoot](src/SpringBoot.md)
+- [JVM分析](src/jvm分析/JVM.md)
 
-然后执行 `npx dumi dev`，文档将会呈现在你眼前：
-![](src/img/DUMI.png)
+## Golang
 
-dumi官网:https://d.umijs.org/zh-CN/
+- [Golang](src/Go.md)
+
+## 架构师
+
+- [ARCHITECTURE](src/ARCHITECTURE.md)
+
+
+## Devops
+
+- [Docker](src/DOCKER.md)
+
+
+## Admin后台框架集合
+
+- [Admin前端](src/ADMIN.md)
+
+
