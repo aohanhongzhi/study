@@ -111,6 +111,8 @@ https://gitee.com/smartboot/smart-http
 容器化部署，智能运维，几万个节点的部署。
 https://yeasy.gitbooks.io/docker_practice/
 
+[Jib无痛构建Docker镜像不影响第二天上班](https://docs.qq.com/doc/DSHlZdWZ5dVhiZ0NW)
+
 #### Rancher
 
 容器编排工具
