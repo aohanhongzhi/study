@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>侯小益的博客</title>
+  <title>侯小益的博客--微信公众号：尖斌卡</title>
   <link rel="icon" href="https://cdn.jsdelivr.net/gh/wugenqiang/StaticRepo/images/favicon.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="referrer" content="no-referrer" />
@@ -109,17 +109,17 @@
 
     /*以上调侧边栏*/
 
-    /*h1 span{
+    h1 span{
       display:inline-block;
       background: rgb(66, 185, 131);
       color:#ffffff;
       padding:  10px  16px;
       border-radius:5px;
       box-shadow: 1px 1px 3px black;
-    }*/
-    #main h2 span{ color:#18b566 !important; }
-    #main h3 span{ color:#089acc !important; }
-    #main h4 span{ color:#FF9700 !important; }
+    }
+    /* #main h2 span{ color:#18b566 !important; } */
+    /* #main h3 span{ color:#089acc !important; } */
+    /* #main h4 span{ color:#FF9700 !important; } */
 
     /*代码块背景*/
     p code{
@@ -343,6 +343,7 @@
     <div class="advertisement">
       <div class="Tencent_code">
         <h4>微信公众号</h4>
+        <p style="font-size: 12px;">尖斌卡</p>
         <img src="./img/weichat.jpg"/>
       </div>
     </div>
@@ -350,7 +351,7 @@
 
   <script>
     window.$docsify = {
-      name: "<p>目录</p>",
+      name: "<p> 🌈 目录</p>",
       nameLink: '#/README',
       //repo: 'wugenqiang/NoteBook',
       themeColor: '#007be8', // 主题颜色
@@ -376,7 +377,9 @@
       },//添加搜索框
 
       footer: {
-        copy: '反正山高水长，还有一生可以嚣张！ —— <a href="http://houxiaoyi.cn" target="_blank">侯小益</a><br/><br/>',
+        // copy: '反正山高水长，还有一生可以嚣张！ —— <a href="http://houxiaoyi.cn" target="_blank">侯小益</a><br/><br/>',
+        copy: '<div class = "over" >完结</div><br/><span>我能想到最浪漫的事，就是我喝咖啡你付钱~😆😏 ❤️ 打赏地址：<a href="https://wugenqiang.js.org/sponsor/" target="_blank">https://wugenqiang.js.org/sponsor/</a></span><iframe src="https://wugenqiang.js.org/sponsor/" style="overflow-x:hidden;overflow-y:hidden; min-height:240px; width:100%;"  frameborder="0" scrolling="no"></iframe><br/><span id="sitetime"></span><br/><span>Copyright &copy; 2019 - 至今</span>',
+        auth: ' <a href="https://wugenqiang.github.io/" target="_blank">🏷️ EnjoyToShare Blog</a> <span> 一个人可以走的很快，但一群人才能走的更远！</span>',
         pre: '<hr/>',
         style: 'text-align: left;',
       },//添加页脚
@@ -486,6 +489,63 @@
   <script src="https://cdn.jsdelivr.net/gh/wugenqiang/StaticRepo/src/js/prism-go.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/wugenqiang/StaticRepo/src/js/prism-matlab.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1/dist/docsify-tabs.min.js"></script>
+
+     <!--使用 Gitter 实现一个 IM 即时通讯聊天室功能-->
+     <script>
+      ((window.gitter = {}).chat = {}).options = {
+        room: 'enjoytoshare/community'
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/sidecar.v1.js" async defer></script>
+  
+    <!-- mouse click -->
+    <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/click_heart.js"></script>
+  
+    <!-- 复制提醒 -->
+    <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/sweetalert.min.js"></script>
+    <script>
+      document.body.oncopy = function () {
+       swal("复制成功 🎉",
+               "若要转载或引用请务必保留原文链接，并申明来源。如果你觉得本仓库不错，那就来 GitHub 给个 Star 吧 😊   - by 吴跟强",
+               "success"); };
+    </script>
+
+       <!-- 添加网站运行时间统计 -->
+   <script language=javascript>
+    function siteTime() {
+       window.setTimeout("siteTime()", 1000);
+       var seconds = 1000;
+       var minutes = seconds * 60;
+       var hours = minutes * 60;
+       var days = hours * 24;
+       var years = days * 365;
+       var today = new Date();
+       var todayYear = today.getFullYear();
+       var todayMonth = today.getMonth() + 1;
+       var todayDate = today.getDate();
+       var todayHour = today.getHours();
+       var todayMinute = today.getMinutes();
+       var todaySecond = today.getSeconds();
+       /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+       year - 作为date对象的年份，为4位年份值
+       month - 0-11之间的整数，做为date对象的月份
+       day - 1-31之间的整数，做为date对象的天数
+       hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+       minutes - 0-59之间的整数，做为date对象的分钟数
+       seconds - 0-59之间的整数，做为date对象的秒数
+       microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+       var t1 = Date.UTC(2019, 06, 21, 22, 22, 22); //北京时间2019-06-21 22:22:22 //计划考研的日子，6月20日毕业典礼结束后，人生需要继续努力，加油，看到这句话的朋友们！
+       var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+       var diff = t2 - t1;
+       var diffYears = Math.floor(diff / years);
+       var diffDays = Math.floor((diff / days) - diffYears * 365);
+       var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+       var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+       var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
+       document.getElementById("sitetime").innerHTML = " 本站已安全运行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分 " + diffSeconds + " 秒 ";
+    }
+    siteTime();
+</script>
 
   <!-- 添加页脚 -->
   <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/docsify-footer-enh.min.js"></script>
