@@ -661,6 +661,7 @@ RabbitMQ | 消息队列 | [https://www.rabbitmq.com/](https://www.rabbitmq.com/)
 Redis | 分布式缓存 | [https://redis.io/](https://redis.io/)
 MongoDb | NoSql数据库，日志文档存储 | [https://www.mongodb.com/](https://www.mongodb.com/)
 Docker | 应用容器引擎 | [https://www.docker.com/](https://www.docker.com/)
+jib | Java应用打包成Docker镜像 | https://github.com/GoogleContainerTools/jib
 Druid | 数据库连接池 | [https://github.com/alibaba/druid](https://github.com/alibaba/druid)
 OSS | 对象存储 | [https://github.com/aliyun/aliyun-oss-java-sdk](https://github.com/aliyun/aliyun-oss-java-sdk)
 JWT | JWT登录支持 | [https://github.com/jwtk/jjwt](https://github.com/jwtk/jjwt)
@@ -682,6 +683,7 @@ liteFlow | 轻量，快速，稳定，可编排的组件式流程引擎 | https:
 Spring-Retry | 重试 |https://github.com/spring-projects/spring-retry
 easy-retry| 一种存储介质可扩展的持久化重试方案  | https://github.com/alibaba/easy-retry
 amon |	一个注解解决方法级限流难题 | 	https://gitee.com/lyhome_admin/amon
+
 ---
 
 ### SpringCloud家族
