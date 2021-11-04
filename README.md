@@ -1,7 +1,8 @@
-学习啊
+侯小益的博客
 ====
 
-## Java
+# 🍵 编程语言
+##  ☕️ Java
 
 - [Java基础学习](src/JAVA.md)
 - [JDK](src/JDK.md)
@@ -12,9 +13,34 @@
 
 - [Golang](src/Go.md)
 
-## 架构师
+## 🐍 Python
+
+* [👒 欢迎进入 Python 王国](Python/) >> Python 编程练习推荐平台：[https://python123.io](https://python123.io) 提供在线编程实践。
+
+# 🥼 前端学习
+
+## VUE
+
+- [VUE基础学习]()
+
+
+# 🚀 计算机基础
+
+## ⏳ 算法与数据结构
+
+ - [算法](./src/ALGORITHM.md)
+
+## 📜 数据库
+
+ - [Mysql](./src/MYSQL.md)
+
+# 架构师
 
 - [ARCHITECTURE](src/ARCHITECTURE.md)
+
+## 中间件
+
+- [Azure Blob](src/中间件/AzureBlob.md)
 
 
 ## Devops
@@ -27,3 +53,4 @@
 - [Admin前端](src/ADMIN.md)
 
 
+# 🔨 工具 CooL
