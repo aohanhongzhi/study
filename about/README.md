@@ -1,6 +1,6 @@
 # 🎉 关于本站
 
-本站源码以及全部内容： [https://github.com/bytesfly/blog](https://github.com/bytesfly/blog)
+本站源码以及全部内容： [https://gitee.com/aohanhongzhi/study](https://gitee.com/aohanhongzhi/study)
 
 <img src="https://img.shields.io/github/stars/bytesfly/blog" data-origin="https://img.shields.io/github/stars/bytesfly/blog" alt=""> 
 <img src="https://img.shields.io/github/forks/bytesfly/blog" data-origin="https://img.shields.io/github/forks/bytesfly/blog" alt="">
@@ -37,7 +37,7 @@
 
 ## 🐼 Me
 
-2018年本科毕业于某211大学软件工程专业，在上海工作两年半时间，回家乡合肥工作至今。  
+2019年本科毕业于中国石油大学（北京）。 先后在IBM，中国电信研究院，美团，博世中国工作过。
 
 本人涉及的技术栈有点杂：  
 - [x] 后端
@@ -47,27 +47,27 @@
 
 接触过的编程语言：  
 - [x] Java
+- [x] Golang
 - [x] Python
 - [x] Scala
-- [x] Golang
 
-当然，目前用得最顺手的编程语言还是Java。
+当然，目前用得最顺手的编程语言还是Java。一般大型企业级项目使用Java，中等项目使用Go，小型项目使用Python。
 
 
 
 ## 💌 联系
 
-- **Email：** bytesfly@foxmail.com
+- **主页：** [http://houxiaoyi.cn](http://houxiaoyi.cn)
 
-- **GitHub：** [https://github.com/bytesfly](https://github.com/bytesfly)
+- **Email：** aohanhongzhi@gmail.com
 
-- **博客园：** [https://www.cnblogs.com/bytesfly](https://www.cnblogs.com/bytesfly)
+- **Gitee：** [https://gitee.com/aohanhongzhi/](https://gitee.com/aohanhongzhi/)
 
-- **微信公众号：** 字节飞扬（扫码关注我呀）
+- **微信公众号：** 尖斌卡（扫码关注我呀）
 
-  <div ><img src="https://img2020.cnblogs.com/blog/1546632/202109/1546632-20210923090812528-762106506.png" width="200" height="200" /></div>
+  <div ><img src="http://aohanhongzhi.gitee.io/picturebed/qrcode_for_gh_d4d0ac58b10e_258.jpg" width="200" height="200" /></div>
 
-博客内容仅是个人的笔记与总结，有错误之处还请多多指正，欢迎来 [博客园](https://www.cnblogs.com/bytesfly) 讨论！
+博客内容仅是个人的笔记与总结，有错误之处还请多多指正，欢迎来 [公众号]() 讨论！
 
 ## 🍋 致谢
 
