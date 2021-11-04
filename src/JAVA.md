@@ -87,8 +87,9 @@ HashMap有下面几个重要的属性：
 5. HashMap的最大容量是2的30次方
    1. ```java 
         // 最大容量（必须是2的幂且小于2的30次方，传入容量过大将被这个值替换）
-        static final int MAXIMUM_CAPACITY = 1 << 30;```
-        ```
+        static final int MAXIMUM_CAPACITY = 1 << 30;
+      ```
+      
     2. 为什么是30？而不是31？
 
     答： 首先：JAVA规定了该static final 类型的静态变量为int类型，至于为什么不是byte、long等类型，原因是由于考虑到HashMap的性能问题而作的折中处理！
