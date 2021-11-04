@@ -466,6 +466,7 @@ https://gitee.com/fujieid/jap
 
 ### 网关API
 
+[一个简单可参考的API网关架构设计](https://www.cnblogs.com/kaleidoscope/p/9648004.html)
 
 #### OpenResty 
 
