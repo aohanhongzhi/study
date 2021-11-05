@@ -39,3 +39,8 @@ https://gitee.com/kailing/mysql-tx-lock-tests
 ## 拓展
 
 Mysql满足不了的时候可能会用Doris，hive啥的。
+
+
+深入浅出数据库存储：数据库理论、关系型数据库、文档型数据库、键值型数据库、New SQL、搜索引擎、数据仓库与 OLAP、大数据与数据中台
+https://github.com/wx-chevalier/Database-Series
+
