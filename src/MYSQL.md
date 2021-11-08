@@ -25,6 +25,9 @@ https://gitee.com/kailing/mysql-tx-lock-tests
 1. [mysql删除操作其实是假删除](https://zhuanlan.zhihu.com/p/66336976)
 1. [InnoDB怎么解决幻读的？](https://blog.csdn.net/qq_33330687/article/details/89004462)
 
+### 引擎
+
+[MyISAM与InnoDB 的区别（9个不同点）](https://blog.csdn.net/qq_35642036/article/details/82820178)
 
 ### 高可用
 1. [MySQL 同步复制及高可用方案总结](https://segmentfault.com/a/1190000022313462)
