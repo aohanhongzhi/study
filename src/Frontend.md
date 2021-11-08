@@ -41,3 +41,7 @@ GET请求一般是查询数据，重点是处理data.data，所以可以直接�
 https://github.com/umijs/umi-request/blob/master/README_zh-CN.md
 
 
+## 代码混淆工具
+
+https://github.com/javascript-obfuscator/javascript-obfuscator
+
