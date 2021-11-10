@@ -139,3 +139,10 @@ https://pyre-check.org/
 
 * [官方文档](http://docs.peewee-orm.com/en/latest/)
 * [中文文档](https://www.osgeo.cn/peewee/index.html)
+
+
+#### fakker
+
+数据造假
+
+https://faker.readthedocs.io/en/master/
