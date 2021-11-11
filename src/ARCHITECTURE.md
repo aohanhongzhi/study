@@ -425,6 +425,13 @@ https://github.com/alibaba/tair
 https://github.com/alibaba/MongoShake
 
 
+### 文件存储
+
+#### 小文件存储
+
+https://gitee.com/suzhou-mopdila-information/ruyuan-dfs
+
+
 ### 大数据
 
 #### mdrill
