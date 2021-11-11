@@ -244,6 +244,13 @@ https://github.com/qunarcorp/bistoury
 
 http://ansible.com.cn/docs/intro.html
 
+
+#### 流量录制
+
+录制线上流量请求，然后回放。
+
+https://github.com/buger/goreplay/
+
 #### log-pilot
 
 
