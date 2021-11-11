@@ -167,6 +167,12 @@ https://nacos.io/zh-cn/
 http://localhost:8848/nacos/index.html#/login
 默认的用户名和密码都是nacos
 
+
+#### Etcd
+
+https://github.com/etcd-io/etcd
+
+
 ### 日志
 
 #### ELK
@@ -252,6 +258,10 @@ http://ansible.com.cn/docs/intro.html
 https://github.com/buger/goreplay/
 
 > https://blog.csdn.net/CleverCode/article/details/101423570
+
+timeout 60 gor --input-raw :80 --output-file basepost.gor
+
+timeout 60 gor --input-raw :8000 --output-file /Data/logs/gor/basepost.gor > /dev/null 2>&1 &
 
 
 #### log-pilot
@@ -487,11 +497,21 @@ https://gitee.com/fujieid/jap
 
 [一个简单可参考的API网关架构设计](https://www.cnblogs.com/kaleidoscope/p/9648004.html)
 
+
+#### apisix
+
+目前国内比较流行。
+
+https://gitee.com/iresty/apisix/
+
 #### OpenResty 
 
 基于Nginx与Lua的高性能网关，性能稳定，API丰富。
 
 https://openresty.org/en/
+
+https://github.com/openresty/
+
 
 美团基于这个开发了一个 Oceanus 是面向美团 TPU 序列所有同学的 HTTP 服务治理平台及七层负载均衡网关服务。
 Oceanus 服务治理致力于提供统一的自动化、智能化路由的解决方案，支持服务注册与发现、动态负载均衡、可视化管理、定制化路由、Session复用、熔断降级、一键截流和性能统计等功能。
