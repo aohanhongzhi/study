@@ -40,6 +40,7 @@
 1. [vben-admin-thin-next精简版](https://github.com/anncwb/vben-admin-thin-next)
 1. [基于Vue + ElementUI 的web项目工程框架](https://gitee.com/newgateway/xdh-web) ， 登录界面有点简陋之外，都挺好的。
 1. [vue-next-admin](https://gitee.com/lyt-top/vue-next-admin) ，仔细研究了下这个还是很不错的。
+1. [OneKeyAdmin是基于Thinkphp6+Element编写的一套后台管理系统](https://gitee.com/keheying/onekeyadmin)
 
 ## 移动端
 
