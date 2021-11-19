@@ -625,6 +625,16 @@ https://blog.csdn.net/topdeveloperr/article/details/84337956
 
 #### Buildr
 
+
+
+### 系统管理工具
+
+#### 进程服务管理
+
+[有点类似nohup的作用，但是功能更加强大。](https://www.jianshu.com/p/0b9054b33db3)
+http://supervisord.org/
+
+
 ---
 ## Java技术栈
 
