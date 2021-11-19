@@ -65,6 +65,13 @@ IService的基本使用
 ### XML或注解配置方式
 如果没有上述的BaseMapper和IService都没有直接解决需求,那还可以配置XML配置或者注解的方式.一般来说多个表查询,可以新建与之相关的数据库
 
+### Mybatis的接口是支持重载的
+
+[https://blog.csdn.net/qq_36658706/article/details/109582557](Mybatis中mapper接口里方法重载的实现)
+[https://github.com/Snailclimb/JavaGuide/issues/1122](Dao 接口里的方法可以重载，但是Mybatis的XML里面的ID不允许重复！)
+
+> 动手时间了下，确实是这个情况。[easyprint工程里面有这个](https://gitee.com/cupb-print/easyprint-user-server/commit/f2775676952fb0247deb9446adf10cc00fca88b5)
+
 ## 总结
 基本上mybatis-plus对大部分数据库操作的情况都考虑到了,如果要是有啥没有考虑到那就直接去修改源代码实现吧.相比较JPA而言,我特地测试了下update这个方法,之前JPA竟然会更新null值覆盖数据库存在的值,这个让我彻底放弃了JPA,回到了mybatis,并且使用mybatis-plus增强了下.既有JPA的简单,又有Mybatis的灵活性(可以写xml实现动态SQL语句等).
 
