@@ -24,6 +24,8 @@
 
 1. [生成在线数据库文档的小工具](https://github.com/viodo/db-doc)
 
+1. [maven插件生成数据库文档](https://gitee.com/leshalv/screw)
+
 
 ## software
 
