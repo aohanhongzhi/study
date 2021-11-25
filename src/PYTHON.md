@@ -1,5 +1,18 @@
 Python
 ===
+## IDE
+
+## Pycharm
+
+## Thonny
+
+## vscode
+
+## Jupter
+
+## pyzo
+
+https://pyzo.org/index.html
 
 ## 常用框架
 
