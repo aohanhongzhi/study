@@ -22,6 +22,23 @@ https://pyzo.org/index.html
 
 https://docs.python-requests.org/zh_CN/latest/
 
+```
+
+'''
+Created on 2018年7月26日
+
+@author: aohanhongzhi
+'''
+#!/usr/bin/env python
+#coding=utf-8
+import requests
+r = requests.get("http://www.baidu.com/")
+r.encoding = "utf-8"
+print(r.text)
+
+
+```
+
 #### httpx 
 
 https://www.python-httpx.org/
