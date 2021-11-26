@@ -6,6 +6,13 @@
 
 ## 基础知识
 
+### 类加载机制
+
+家宴准姐出
+
+加载->验证->准备->解析->初始化
+
+
 [你写的Java对象究竟占多少内存？](https://mp.weixin.qq.com/s/RJrfOO4ruSrBzU7V5LDI9g)
 
 1. 元注解
@@ -761,6 +768,16 @@ uniqueInstance 采用 volatile 关键字修饰也是很有必要的， uniqueIns
 
 [总结一下guava常用并发库的用法](https://www.jianshu.com/p/b94a57bd5eb9)
 
+####  List分批
+对于List需要插入数据库的时候，发现一次性插入太多，导致数据库传输的包太大直接失败，所以需要分批插入。Guava提供了一个方法，可以将一个很大的list拆分成多个小的List，然后再传输或者插入数据库。
+```java
+List<Model> bigList = 
+List<List<Model>> smallLists = com.google.common.collect.Lists.partition(bigList, BATCH_NUM);
+for (List<Model> smallList:smallLists){
+   // smallList 就比较适合分批插入了。
+}
+ 
+```
 
 #### 限速器的使用，控制速率
 
@@ -773,7 +790,8 @@ https://ifeve.com/guava-ratelimiter/
 ### json库
 
 #### fastjson
-国内比较优秀的，性能更好。但是更加推荐使用jackson
+国内比较优秀的，性能更好。但是更加推荐使用jackson。美团直接禁止使用fastjson，因为安全性太低，基本上每一期都有漏洞。
+
 #### jackson
 SpringBoot默认的json中间件，更加规范
 
@@ -790,6 +808,8 @@ SpringBoot默认的json中间件，更加规范
 ### 重试框架
 
 #### SpringRetry
+
+
 
 #### retrieval
 
@@ -924,11 +944,13 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 1. mybatis-plus的逻辑删除
 
 
-### 使用方面
+### 工程开发方面
 
-1. IDEA的restful插件
+1. IDEA的restfultool插件
 2. logf设置模板
 3. 导入包的*设置99
+4. 禁止拖拽移动代码(及其容易误操作)
+![](./img/move-drag.png)
 
 
 ### java8新特性
