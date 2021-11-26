@@ -8,6 +8,10 @@ SpringBoot
 
 https://zhuanlan.zhihu.com/p/346711149
 
+[通过代理方式，也可以解决构造器的循环依赖！！！谁说构造器方式注入的依赖不能解决循环依赖](https://blog.csdn.net/qq271859852/article/details/105181422)
+
+
+
 ### SpringBoot AutoConfiguration
 
 https://www.jianshu.com/p/1ed18eebb299
