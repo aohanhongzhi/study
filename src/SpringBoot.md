@@ -16,8 +16,9 @@ https://zhuanlan.zhihu.com/p/346711149
 
 https://www.jianshu.com/p/1ed18eebb299
 
-
 ### 事务
+
+[Spring事务机制研究](https://gitee.com/eric-tutorial/SpringCloud-multiple-gradle/blob/master/TRANSACTION.md)
 
 Spring的事务就是ThreadLocal里面装了Connection，数据库连接池。
 
@@ -26,13 +27,26 @@ Spring的事务就是ThreadLocal里面装了Connection，数据库连接池。
 #### 什么是事务？
 指作为单个逻辑工作单元执行的一系列操作，要么完全地执行，要么完全地不执行。 简单的说，事务就是并发控制的单位，是用户定义的一个操作序列。
 
+[详解事务的7种传播行为](https://blog.csdn.net/qq_34115899/article/details/115602002)
+
+![](https://img-blog.csdnimg.cn/20210411170246163.png)
+
 
 ### 多线程中事务的处理
 
 1. [解决多线程批量插入中的事物一致性问题](https://blog.csdn.net/weixin_42324471/article/details/106279460)
 1. [Java 多线程事务回滚 ——多线程插入数据库时事务控制](https://blog.csdn.net/shehuinidaye/article/details/89385200)
 
+
+
+### 序列化
+
+[ SpringBoot+Mybatisplus中枚举正反序列化的实际应用](https://gitee.com/eric-tutorial/SpringCloud-multiple-gradle/blob/master/SERIALIZE.md)
+
+
+
 ## 启动程序
+
 1. 环境变量配置
     * logback-prod.xml
     * application-prod.yml
