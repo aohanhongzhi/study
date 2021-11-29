@@ -100,3 +100,4 @@ mybatis-plus的功能很丰富,可以参考官网.
 ![](./img/sqlPage.png)
 
 
+[springboot+mybatis一级缓存启用/禁用问题](https://blog.csdn.net/NongYeting/article/details/106408985)
