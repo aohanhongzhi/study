@@ -10,6 +10,12 @@
 1. https://github.com/yuanguangxin/LeetCode
 1. https://programmercarl.com/
 
+### LRU 内存淘汰算法
+
+[漫画：什么是LRU算法？](https://zhuanlan.zhihu.com/p/52196637)
+
+[自定义LRUSet解决OOM问题](https://www.jianshu.com/p/d7c3185dcb5f)
+
 ### 一致性Hash算法
 
 在数据库分库分表的时候，使用hash取模的方式分表，那么后期数据迁移的时候，可能需要重新hash迁移数据，这时候就很麻烦了，如果使用一致性Hash算法就可以避免这个问题。在分片的时候这个数字尽量的大， 不然又要改分片逻辑又要改机器，此外这个数字
