@@ -287,6 +287,7 @@ http://www.taillog.cn/
 参考：<https://www.cnblogs.com/clsn/p/7885990.html>
 
 ### 配置中心
+
 在功能架构上，一个优秀的配置中心应该包括以下功能点。
 
 * 高可用
@@ -298,6 +299,8 @@ http://www.taillog.cn/
 * 低侵入式接入
 * 易维护
 * 安全
+
+> [配置中心有一个非常好的应用就是开关编程](https://mp.weixin.qq.com/s/0oPvo1GwzO4O45iRKLsfUA)
 
 
 #### Apollo (推荐)
