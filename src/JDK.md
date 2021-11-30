@@ -106,7 +106,7 @@ java.lang.ClassLoader.getResource(String name)
 
 '-Dspring.profiles.active=prod'   －执行springboot项目使用配置 application-prod.yml；可选
 
-'-Dfile.encoding=utf-8'  - 如果有下载文件代码，不加此句容易出现中文乱码；可选
+'-Dfile.encoding=utf-8'  - 如果有下载文件代码，不加此句容易出现中文乱码；强烈推荐！
 
 '-Duser.timezone=GMT+08'  - Java获取时间与系统时间相差8小时的解决方法；可选
 ————————————————
@@ -122,3 +122,5 @@ java.lang.ClassLoader.getResource(String name)
 
 https://blog.csdn.net/mofeizhi/article/details/106816026
 https://blog.csdn.net/weixin_45702700/article/details/114188435
+
+### 内存抖动

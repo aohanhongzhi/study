@@ -37,3 +37,10 @@ top -pid $pid
 https://curlie.io/
 
 https://github.com/rs/curlie
+
+
+### htop
+
+### cgit
+
+### zsh
