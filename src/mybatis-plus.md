@@ -1,9 +1,12 @@
 mybatis-plus学习
-===
+================
+
 ## 官网
+
 [https://mybatis.plus/](https://mybatis.plus/)
 
 ### 码云
+
 [https://gitee.com/baomidou/mybatis-plus](https://gitee.com/baomidou/mybatis-plus)
 
 ### 我写的公众号文章
@@ -11,13 +14,16 @@ mybatis-plus学习
 https://mp.weixin.qq.com/s/ci4taJx0nOu3rLp8dwHUng
 
 ## 基本配置,导入依赖
+
 ### SpringBoot下:
+
 ```groovy
 compile 'com.baomidou:mybatis-plus-boot-starter:3.4.2'
 runtimeOnly 'mysql:mysql-connector-java:8.0.16'
 ```
 
 ### yaml配置
+
 ```
 mybatis-plus:
   mapper-locations: classpath:mapper/*.xml
@@ -35,17 +41,21 @@ mybatis-plus:
 ```
 
 ## 配置Mapper,Model,Service,注解,XML
+
 ### 所有Model应该继承mybatis-plus的Mode
+
 作用就是将Java的对象Model与数据库的表对应起来.也就是对象关系映射,这也是ORM框架的本质与作用.
 [![Model](https://s2.ax1x.com/2020/02/22/3QL9eA.md.png)](https://imgchr.com/i/3QL9eA)
 
 ### 所有Mapper应该继承mybatis-plus的BaseMapper
+
 继承mybatis-plus的BaseMapper的作用就是可以直接使用父接口的所有方法,而不需要再写很多的数据库查询操作方法.例如 selectById等.具体可以参考BaseMapper
 [![BaseMapper的方法](https://s2.ax1x.com/2020/02/22/3QL76g.png)](https://imgchr.com/i/3QL76g)
 BaseMapper的基本使用
 [![BaseMapper的使用](https://s2.ax1x.com/2020/02/22/3QOBHs.md.png)](https://imgchr.com/i/3QOBHs)
 
 ### 相关的Service应该继承mybatis-plus的IService
+
 官网:[IService参考](https://mybatis.plus/guide/crud-interface.html#service-crud-%E6%8E%A5%E5%8F%A3)
 
 虽然上面已经有了BaseMapper已经差不多够了,但是有些特殊的要求,例如不存在的就插入,存在的就更新这种.就需要用到IService了.IService有很多对BaseMapper扩展的逻辑.例如saveOrUpdate().具体可以参考IService.
@@ -60,9 +70,8 @@ IService的基本使用
 
 [![IService的单元测试](https://s2.ax1x.com/2020/02/22/3QXfRf.md.png)](https://imgchr.com/i/3QXfRf)
 
-
-
 ### XML或注解配置方式
+
 如果没有上述的BaseMapper和IService都没有直接解决需求,那还可以配置XML配置或者注解的方式.一般来说多个表查询,可以新建与之相关的数据库
 
 ### Mybatis的接口是支持重载的
@@ -73,6 +82,7 @@ IService的基本使用
 > 动手时间了下，确实是这个情况。[easyprint工程里面有这个](https://gitee.com/cupb-print/easyprint-user-server/commit/f2775676952fb0247deb9446adf10cc00fca88b5)
 
 ## 总结
+
 基本上mybatis-plus对大部分数据库操作的情况都考虑到了,如果要是有啥没有考虑到那就直接去修改源代码实现吧.相比较JPA而言,我特地测试了下update这个方法,之前JPA竟然会更新null值覆盖数据库存在的值,这个让我彻底放弃了JPA,回到了mybatis,并且使用mybatis-plus增强了下.既有JPA的简单,又有Mybatis的灵活性(可以写xml实现动态SQL语句等).
 
 mybatis-plus的功能很丰富,可以参考官网.
@@ -99,5 +109,8 @@ mybatis-plus的功能很丰富,可以参考官网.
 
 ![](./img/sqlPage.png)
 
-
 [springboot+mybatis一级缓存启用/禁用问题](https://blog.csdn.net/NongYeting/article/details/106408985)
+
+
+
+![](assets/20211202_114306_image.png)
