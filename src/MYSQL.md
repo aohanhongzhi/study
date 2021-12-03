@@ -1,5 +1,8 @@
 Mysql
 ===
+
+https://dev.mysql.com/doc/refman/8.0/en/
+
 mysql的三个重点关注范围
 
 ## 索引
