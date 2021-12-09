@@ -3,6 +3,8 @@
 由于Java基础知识比较多，代码编写套路多，因此独立成一个md文件。
 
 1. https://github.com/zhonghuasheng/Tutorial
+2. https://gitee.com/SnailClimb/awesome-java
+
 
 ## 基础知识
 
