@@ -397,7 +397,8 @@ outube出品的开源分布式MySQL工具集Vitess，自动分片存储MySQL数�
 目前8.+，性能是5.7的两倍，而且增加了很多新特性。MySQL有很多的版本，如果集群部署的话，可以考虑使用cluster版本。可以参考mycat中间件。
 
 
-阿里巴巴 MySQL binlog 增量订阅&消费组件
+阿里巴巴 MySQL binlog 增量订阅&消费组件 数据同步
+
 https://github.com/alibaba/canal
 
 #### MariaDB
