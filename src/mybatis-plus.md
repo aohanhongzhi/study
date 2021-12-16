@@ -114,3 +114,8 @@ mybatis-plus的功能很丰富,可以参考官网.
 
 
 ![](assets/20211202_114306_image.png)
+
+
+## 问题
+
+[MyBatis批量插入几千条数据，请慎用foreach](https://mp.weixin.qq.com/s/i30hwIzXnOp0RhPElvdNrQ)
