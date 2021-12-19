@@ -804,7 +804,8 @@ Takin | 全链路压测 | https://github.com/shulieTech/Takin
 
 ### Dubbox + ZooKeeper
 
-基于RPC的微服务框架，适合大型企业的开发。
+基于RPC的微服务框架，适合大型企业的开发。这个框架的社区活跃度和生态并不是很好，建议一般还是使用SpringCloud生态体系比较好。
+
 1. 接口需要做鉴权
 2. 服务面向接口 Service和ServiceImpl不能写在同一个包里面。因为Service的包api是作为服务依赖被业务方使用。所以是分离的。
 
@@ -855,6 +856,15 @@ ORM层| [rexdb](http://db.rex-soft.org/)|高效灵活简单
 前端与服务|[balde](https://github.com/lets-blade/blade)| 与SpringBoot类似的路由方式与控制翻转和依赖注入
 ORM | [blade-anima](https://github.com/biezhi/anima)| 无需手写sql，直接方法操作数据库
 
+
+### JMagician
+
+https://github.com/JMagician
+
+官方文档：
+https://magician-io.com/
+
+和[Blade](https://github.com/lets-blade/blade)差不多一个水平，也许更加优秀，社区活跃度比较高。
 
 ### Solon
 
