@@ -866,6 +866,11 @@ https://magician-io.com/
 
 和[Blade](https://github.com/lets-blade/blade)差不多一个水平，也许更加优秀，社区活跃度比较高。
 
+这个框架还有一个Golang的版本。
+
+https://beeruscc.com/
+https://github.com/yuyenews/Beerus
+
 ### Solon
 
 感觉和[Blade](https://github.com/lets-blade/blade)一个水平，相对来说比较完善。
