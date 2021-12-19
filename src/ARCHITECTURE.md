@@ -864,7 +864,7 @@ https://github.com/JMagician
 官方文档：
 https://magician-io.com/
 
-和[Blade](https://github.com/lets-blade/blade)差不多一个水平，也许更加优秀，社区活跃度比较高。
+和[Blade](https://github.com/lets-blade/blade)差不多一个水平，也许更加优秀，社区活跃度比较高。也是国人开发的。
 
 这个框架还有一个Golang的版本。
 
