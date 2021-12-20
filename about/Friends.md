@@ -28,10 +28,10 @@ PS：排名不分先后，友情第一，链接第二 ~~
 
 ## 📃 友链申请
 
-与我 [ 联系 ](https://bytesfly.github.io/blog/#/about/?id=💌-联系) 或者 去 [博客园](https://www.cnblogs.com/bytesfly/p/awesome-blogs.html) 评论 或者 [github](https://gitee.com/aohanhongzhi/study/blob/master/about/Friends.md) 提`issues`or`pull requests`都行，格式大致如下：
+与我  联系  或者 [github](https://gitee.com/aohanhongzhi/study/blob/master/about/Friends.md) 提`issues`or`pull requests`都行，格式大致如下：
 
-> * 昵称：字节飞扬
-> * 头像：https://img2020.cnblogs.com/blog/1546632/202109/1546632-20210916125244772-353101483.png
-> * 主页：[https://www.cnblogs.com/bytesfly/](https://www.cnblogs.com/bytesfly/)
-> * 说明：互联网是有记忆的，我想留下一些成长的脚印。
+> * 昵称：捕风的逍遥侯
+> * 头像：https://gitee.com/aohanhongzhi/PictureBed/raw/master/avatar.png
+> * 主页：[https://houxiaoyi.cn/](https://houxiaoyi.cn/)
+> * 说明：反正山高水从，还有一生可以嚣张。
 
