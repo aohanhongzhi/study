@@ -8,7 +8,7 @@
 1. [uni-app](https://gitee.com/dcloud/uni-app) 是一个使用 Vue.js 开发小程序、H5、App的统一前端框架。
 1. [element-plus](https://gitee.com/element-plus/element-plus)
 1. [vxe-table](https://gitee.com/xuliangzhan_admin/vxe-table)
-
+1. [avuejs  element-ui extension](https://avuejs.com/)
 ## 技巧
 1. [本地调试线上代码](https://tech.youzan.chttps://ant-design.gitee.io/index-cnom/zan-proxy/)
 
