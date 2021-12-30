@@ -1,6 +1,8 @@
 Git 在团队中的最佳实践--如何正确使用Git Flow
 ===
 
+其他拓展，[微服务中的代码管理 Git Subtree](http://www.javaboy.org/2020/0526/springcloud-maven.html)
+
 原文：https://www.cnblogs.com/cnblogsfans/p/5075073.html
 
 本篇文章讲一下为什么使用Git, 以及如何在团队中正确使用。
