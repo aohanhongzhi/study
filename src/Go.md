@@ -40,3 +40,11 @@ https://gorm.io/
 这个框架应该还是比较流行的。非常优秀的数据库操作框架，基本上够用了。
 
 ### XORM
+
+
+
+## GUI开发
+
+###  wails
+
+https://wails.io/zh-Hans/
