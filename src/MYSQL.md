@@ -19,6 +19,16 @@ https://blog.csdn.net/qq_38829280/article/details/115087764
 https://gitee.com/kailing/mysql-tx-lock-tests
 
 
+
+`select ... for update` 是锁表还是锁行？
+
+如果查询使用到了索引那么就是锁行，如果查询没有使用到索引，那就是锁表。
+
+
+
+
+
+
 ## 事务
 
 1. [数据库教程](https://github.com/dunwu/db-tutorial):[https://github.com/dunwu/db-tutorial](https://github.com/dunwu/db-tutorial)
