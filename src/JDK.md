@@ -124,3 +124,16 @@ https://blog.csdn.net/mofeizhi/article/details/106816026
 https://blog.csdn.net/weixin_45702700/article/details/114188435
 
 ### 内存抖动
+
+
+
+
+## JNI
+
+java native interface
+
+凡是一种语言，都希望是纯。比如解决某一个方案都喜欢就单单这个语言来写即可。Java平台有个用户和本地C代码进行互操作的API，称为Java Native Interface (Java本地接口)。
+
+Java的跨平台的底层就是使用JNI来调用系统提供的接口实现的。
+
+[Java中Native关键字的作用](https://www.cnblogs.com/KingIceMou/p/7239668.html)
