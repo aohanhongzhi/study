@@ -137,3 +137,5 @@ java native interface
 Java的跨平台的底层就是使用JNI来调用系统提供的接口实现的。
 
 [Java中Native关键字的作用](https://www.cnblogs.com/KingIceMou/p/7239668.html)
+
+做云打印的时候，就有打印控制器，通过[jacob](https://github.com/freemansoft/jacob-project)来调用windows的office接口来实现word转成pdf的功能。这里的jacob底层实现原理就是jni.
