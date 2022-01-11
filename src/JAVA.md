@@ -305,6 +305,9 @@ List转Set
 ```java
    Set<String> collect = teamAppModelList.stream().map(dto -> dto.getAppId()).collect(Collectors.toSet());
 ```
+
+
+
 #### 收集某个元素
 ```
 new ContentVideoCoverDTO()
@@ -374,6 +377,20 @@ sort()
 单字段排序，根据id排序list.sort(Comparator.comparing(Obj::getItem));
 
 多字段排序，根据id，年龄排序list.sort(Comparator.comparing(Obj::getItem).thenComparing(Obj::getItem));
+
+
+List按照对象的某个字段进行排序
+
+升序
+```java
+list.stream().sorted(Comparator.comparing(Obj::getId)).collect(Collectors.toList());
+```
+降序
+
+```java
+list.stream().sorted(Comparator.comparing(Obj::getId).reversed()).collect(Collectors.toList());
+```
+
 
 6.去重
 
