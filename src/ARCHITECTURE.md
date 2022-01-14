@@ -133,6 +133,8 @@ CAP关注的粒度是数据，而不是整个系统。CAP不是针对一个整�
 
 #### SpringCloud Eureka
 
+https://github.com/Netflix/eureka
+
 AP实现，采用Peer2Peer对等通信方式，去中心化的方式，无Master/Slaver区分，每一个Peer都是对等的。
 
 Eureka作为服务发现与注册中心，即使整个Eureka集群宕机，消费者还是可以通过自己之前的缓存获取注册表的！也就是每一个消费者并不是简单的获取自己想要的信息，而是所有信息。这也就解释了服务端的负载均衡与Eureka端的负载均衡。因为都是有完整的注册表的（缓存，即使Eureka宕机，也是可以的），所以知道怎么负载均衡！
@@ -259,7 +261,7 @@ http://ansible.com.cn/docs/intro.html
 #### 流量录制
 
 录制线上流量请求，然后回放。
-
+https://goreplay.org/
 https://github.com/buger/goreplay/
 
 > https://blog.csdn.net/CleverCode/article/details/101423570
@@ -529,6 +531,10 @@ Oceanus 服务治理致力于提供统一的自动化、智能化路由的解决
 
 #### SpringGateway(Zuul)
 
+https://github.com/spring-cloud/spring-cloud-gateway
+
+https://github.com/Netflix/zuul
+
 SpringCloud家族，智能网关。性能不输Nginx。Zuul的核心是一系列的Filter。
 
 
@@ -592,6 +598,8 @@ HAProxy提供了L4(TCP)和L7(HTTP)两种负载均衡能力，具备丰富的功�
 ### 分布式技术栈
 
 #### Sentinel
+
+https://github.com/alibaba/Sentinel
 
 Sentinel是阿里巴巴开源的限流器熔断器，并且带有可视化操作界面。功能比较简单使用,但是满足特定场景还是需要定制化开发.非高并发的项目,可能达不到系统负载的限额,那么这种流量防护并没有什么实际意义.
 
@@ -743,7 +751,17 @@ easy-retry| 一种存储介质可扩展的持久化重试方案  | https://githu
 amon |	一个注解解决方法级限流难题 | 	https://gitee.com/lyhome_admin/amon
  mykit-delay |  延迟消息队列框架 | https://github.com/sunshinelyz/mykit-delay
  testable-mock| 单元测试框架 | http://freyrlin.gitee.io/testable-mock/#/
+ [arthas](https://arthas.aliyun.com/zh-cn/) | Java诊断利器 | https://github.com/alibaba/arthas
+ RedisShake| redis同步工具 |https://github.com/alibaba/RedisShake
+ asyncload | 阿里巴巴异步并行加载工具(依赖字节码技术) | https://github.com/alibaba/asyncload
+ Appactive | 一款标准通用且功能强大的构建应用多活架构的开源中间件 | https://github.com/alibaba/Appactive
 ---
+
+#### 面向测试运维类
+技术 | 说明 | 官网
+----|----|----
+jvm-sandbox-repeater | 基于JVM-Sandbox的录制/回放通用解决方案 |https://github.com/alibaba/jvm-sandbox-repeater
+
 
 ### SpringCloud家族
 
@@ -757,7 +775,7 @@ amon |	一个注解解决方法级限流难题 | 	https://gitee.com/lyhome_admin
 ---|---|---
 Eureka|服务注册与发现中心 | 
 Admin|应用监控| https://github.com/codecentric/spring-boot-admin
-Zuul|网关|
+Zuul|网关|https://github.com/Netflix/zuul
 Zipkin| 链路数据分析组件，Sleuth收集信息 |
 
 ##### 配角应用
@@ -768,7 +786,7 @@ Zipkin| 链路数据分析组件，Sleuth收集信息 |
 ---|---|---
 Feign|服务之间的调用|
 Ribbon|负载均衡，大多数 组件都默认集成了|
-HyStrix|熔断降级|
+HyStrix|熔断降级|https://github.com/Netflix/Hystrix
 Sleuth|信息收集，将信息发送给Zipkin|
 
 ##### 专业应用
@@ -786,7 +804,7 @@ Spring家族官网：https://spring.io/
 
 SpringCloud官网：https://spring.io/projects/spring-cloud
 
-据了解SpringCloud官网提供了80多种中间件集成的starter。
+据了解SpringCloud官网提供了100多种中间件集成的starter。
 
 ##### 等待研究的中间件
 
@@ -797,7 +815,7 @@ Spring Vault | 数据库动态密码管理，敏感配置信息管理，需要�
 Vault |动态密码Server |https://www.hashicorp.com/products/vault/
 spring-boot-starter-jersey |Restful Web服务，类似SpringMVC |https://blog.csdn.net/github_38395241/article/details/70265379
 Consul | 注册中心,建议放弃使用,企业版受美国法律限制|https://spring.io/projects/spring-cloud-consul
-Nacos | 阿里开源的注册中心 | https://nacos.io/
+[Nacos](https://github.com/alibaba/nacos) | 阿里开源的注册中心 | https://nacos.io/
 smart-framework | 基础原理学习 | https://gitee.com/huangyong/smart-framework
 Takin | 全链路压测 | https://github.com/shulieTech/Takin
 ---
@@ -949,6 +967,12 @@ MeterSphere 的优势
 持续测试：能将测试融入持续交付和 DevOps 体系；无缝对接 Bug 管理工具和持续集成工具等；支持团队协作和资产沉淀。
 
 https://github.com/metersphere/metersphere
+
+
+
+换种思路写Mock，让单元测试更简单。
+
+https://github.com/alibaba/testable-mock
 
 
 
