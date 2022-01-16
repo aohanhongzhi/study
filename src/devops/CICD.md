@@ -23,6 +23,22 @@ jenkins是非常老牌的自动化部署工具了，与gitlab集成非常好。
 
 单元测试可以由jenkins定时（每天凌晨两点开始）触发，或者gitlab的事件出发jenkins去执行即可。
 
+
+
+全链路压测
+
+https://github.com/shulieTech/Takin
+
+
+
+jmeter性能测试
+
+https://jmeter.apache.org/
+
+
+
+
+
 # 自动化代码质量检查
 
 jenkins集成是sonarqube即可。项目里集成chekstyle等插件。[](Android.md)

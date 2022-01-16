@@ -548,7 +548,7 @@ https://gitee.com/fujieid/jap
 
 #### apisix
 
-目前国内比较流行。
+目前国内比较流行。我的理解：这个应该是一个增强版的nginx的定位。
 
 https://gitee.com/iresty/apisix/
 
@@ -698,10 +698,10 @@ http://supervisord.org/
 
 框架名 | 说明 | 官网
 --- | --- | ---
-mybatis |半自动化的ORM，灵活性更高 | 
+mybatis |半自动化的ORM，灵活性更高 |
 mybatis-plus| mybatis的增强，全自动化。既有hibernate，jpa的自动化又有mybatis的灵活性 |https://mybatis.plus/
 rexdb| 手写sql，https://gitee.com/rexsoft/rexdb |http://db.rex-soft.org/
-hibernate | 全自动化 |
+hibernate | 全自动化，SSH框架基本上废了。 |
 J2Cache | Java 两级缓存框架，可以让应用支持两级缓存框架 ehcache(Caffeine) + redis 。避免完全使用独立缓存系统所带来的网络IO开销问题 |<https://gitee.com/ld/J2Cache>
 加密运行jar包 | Spring Boot JAR 安全加密运行工具，同时支持的原生JAR。 基于对JAR包内资源的加密以及拓展ClassLoader来构建的一套程序加密启动，动态解密运行的方案，避免源码泄露或反编译。 |<https://gitee.com/core-lib/xjar>
 kisso | java 基于 Cookie 的 SSO 中间件 kisso |<https://gitee.com/baomidou/kisso>
@@ -725,8 +725,9 @@ Caffeine|本地缓存，应用内存| <http://www.mydlq.club/article/56/>
 JWT | JWT登录支持 | [https://github.com/jwtk/jjwt](https://github.com/jwtk/jjwt)
 MongoDb | NoSql数据库 | [https://www.mongodb.com/](https://www.mongodb.com/)
 Docker | 应用容器引擎 | [https://www.docker.com/](https://www.docker.com/)
+podman | 下一代兼容docker的容器 | https://podman.io/ 
 Druid | 数据库连接池 | [https://github.com/alibaba/druid](https://github.com/alibaba/druid)
-HikariCP|SpringBoot2.+默认数据库连接池，性能非常优秀 | https://github.com/brettwooldridge/HikariCP
+HikariCP|SpringBoot2.+默认数据库连接池，性能非常优秀，区分jdk版本的 | https://github.com/brettwooldridge/HikariCP
 oh-my-email|Java 邮件发送库了，支持抄送、附件、模板 | <https://github.com/biezhi/oh-my-email> 
 RabbitMq | 消息队列 | [https://www.rabbitmq.com/](https://www.rabbitmq.com/)
 sso |java 基于 Cookie 的 SSO 中间件 kisso | [https://gitee.com/baomidou/kisso](https://gitee.com/baomidou/kisso)
