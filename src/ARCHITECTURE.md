@@ -90,9 +90,15 @@ https://gitee.com/smartboot/smart-socket
 
 #### Tomcat
 
+使用比较广
+
 #### Undertow
 
+性能比较好
+
 #### Netty
+
+响应式
 
 
 #### Jetty
@@ -169,8 +175,9 @@ https://nacos.io/zh-cn/
 http://localhost:8848/nacos/index.html#/login
 默认的用户名和密码都是nacos
 
-
 #### Etcd
+
+go语言编写的，软件易于安装与使用，非常小
 
 https://github.com/etcd-io/etcd
 
@@ -203,7 +210,7 @@ SOFATracer 是一个用于分布式系统调用跟踪的组件，通过统一的
 
 https://gitee.com/sofastack/sofa-tracer
 
-### 监控
+### 监控 APM
 
 #### Cat
 
@@ -252,6 +259,36 @@ https://github.com/onblog/JavaMonitor
 Bistoury是去哪儿网的java应用生产问题诊断工具，提供了一站式的问题诊断方案
 
 https://github.com/qunarcorp/bistoury
+
+#### Pinpoint
+
+这个代码侵入性应该比CAT更好。
+
+特点:
+● 低侵入性 不用改一行业务代码
+● 低性能影响(大约3%资源增长)
+
+APM, (Application Performance Management) tool for large-scale distributed systems. Pinpoint also supports application written in PHP, Python.
+
+使用参考：https://www.cnblogs.com/softidea/p/10855904.html
+
+可以有效的监控到所有链路的调用情况，全局观察。
+
+![image-20220116163529590](img/Pinpoint-total.png)
+
+还可以直观的选择某个请求，查看整个链路的详细情况。
+
+![image-20220116163251284](img/Pinpoint-detail.png)
+
+https://github.com/pinpoint-apm/pinpoint
+
+https://pinpoint-apm.gitbook.io/pinpoint/
+
+演示
+
+http://125.209.240.10:10123/
+
+
 
 ### 运维
 
