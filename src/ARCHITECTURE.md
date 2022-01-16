@@ -881,13 +881,29 @@ https://micronaut.io/
 
 * Grails团队新宠；
 * 可以用 Java、Groovy 和 Kotlin 编写的基于微服务的应用程序；
-* 相比Spring Boot已经比较全面；
+* 相比Spring Boot已经比较全面（缺点就是不支持mybatis）；
 * 性能较优，编码方式与Spring Boot比较类似；
 * 启动时间和内存消耗方面比其他框架更高效；
 * 多语言；
 * 依赖注入；
 * 内置多种云本地功能；
 * 很新，刚发布1.0.0
+
+
+
+目前是3.2.6 版本，发布比较快。生态不是很完善，数据库层没有找到合适的框架。貌似支持jpa，但是不支持mybatis。
+
+https://micronaut.io/launch/
+
+https://gitee.com/framework-collection/micronaut-study
+
+
+
+### Vertx
+
+Eclipse Vert.x™ Reactive applications on the JVM
+
+https://vertx.io/
 
 ---
 
@@ -962,6 +978,20 @@ A simple web framework for Java and Kotlin
 
 ## Python
 
+### Django
+
+*Django makes it easier to build better web apps more quickly and with less code.*
+
+https://www.djangoproject.com/
+
+
+
+https://github.com/django/django
+
+61.8k star
+
+
+
 ### flask
 
 flask
@@ -974,15 +1004,45 @@ flask
 
 <https://flask.palletsprojects.com/>
 
+
+
+https://github.com/pallets/flask
+
+57.7k star
+
+
+
 学习视频
 
 https://www.bilibili.com/video/BV18441117Hd
+
+
 
 ### FastAPI
 
 官网 https://fastapi.tiangolo.com/zh
 
-非常优秀的框架，采用携程性能可以与Go比肩。实际使用的时候，发现集成peewee的时候发现这个与controller接口的时候有问题，不能使用同一个类对象来处理参数反序列化和数据库存储。所以很麻烦。 **不建议使用**
+https://github.com/tiangolo/fastapi
+
+40.6k star
+
+非常优秀的框架，采用携程性能可以与Go比肩。实际使用的时候，发现集成peewee的时候发现这个与controller接口的时候有问题，不能使用同一个类对象来处理参数反序列化和数据库存储。所以很麻烦。 **可以尝试使用**
+
+
+
+### Tornado
+
+[Tornado](https://www.tornadoweb.org/) is a Python web framework and asynchronous networking library.
+
+non-blocking network I/O
+
+
+
+https://www.tornadoweb.org/en/stable/
+
+https://github.com/tornadoweb/tornado
+
+20.4k star
 
 ## 如何选择一门语言或者框架
 
