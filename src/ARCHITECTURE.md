@@ -690,6 +690,10 @@ https://blog.csdn.net/topdeveloperr/article/details/84337956
 [有点类似nohup的作用，但是功能更加强大。](https://www.jianshu.com/p/0b9054b33db3)
 http://supervisord.org/
 
+https://github.com/ochinchina/supervisord
+
+[Python的tornado框架部署就是建议使用这个supervisor](https://www.tornadoweb.org/en/stable/guide/running.html#)
+
 
 ---
 ## Java技术栈
