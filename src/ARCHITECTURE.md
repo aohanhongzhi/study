@@ -978,6 +978,11 @@ A simple web framework for Java and Kotlin
 
 ## Python
 
+下面这个框架可以用Apache服务器托管任意的Python框架
+
+https://modwsgi.readthedocs.io/en/develop/
+
+
 ### Django
 
 *Django makes it easier to build better web apps more quickly and with less code.*
