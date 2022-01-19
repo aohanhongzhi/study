@@ -1016,6 +1016,9 @@ https://github.com/pallets/flask
 
 https://www.bilibili.com/video/BV18441117Hd
 
+#### flask生产部署
+
+https://gunicorn.org/
 
 
 ### FastAPI
