@@ -1041,6 +1041,12 @@ https://github.com/tiangolo/fastapi
 非常优秀的框架，采用携程性能可以与Go比肩。实际使用的时候，发现集成peewee的时候发现这个与controller接口的时候有问题，不能使用同一个类对象来处理参数反序列化和数据库存储。所以很麻烦。 **可以尝试使用**
 
 
+### sanic
+
+https://sanic.readthedocs.io/en/stable/
+
+https://github.com/sanic-org/sanic/
+
 
 ### Tornado
 
