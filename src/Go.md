@@ -21,7 +21,16 @@ Eureka作为微服务的注册中心，使用的是http通信，意味着跨语�
 
 ### gin
 
+```
+https://github.com/gin-gonic/gin
+```
+
+java和python的fastapi都要4-6秒处理3000请求。
+
+go语言只要1秒处理3000请求。
+
 练手项目 
+
 * https://github.com/olongfen/gorm-gin-admin
 * https://github.com/olongfen/user_admin
 
@@ -41,6 +50,25 @@ https://gorm.io/
 
 ### XORM
 
+## 日志框架
+
+### logrus
+
+https://github.com/sirupsen/logrus
+
+## 开发框架
+
+### 热部署框架
+
+#### air
+
+https://github.com/cosmtrek/air
+
+##### air安装
+
+```
+go get -u github.com/cosmtrek/air
+```
 
 
 ## GUI开发
