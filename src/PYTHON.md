@@ -128,9 +128,21 @@ Asynchronous HTTP Client/Server for asyncio and Python.
 
 https://docs.aiohttp.org/en/stable/
 
+https://github.com/aio-libs/aiohttp
+
+12.1k
+
+
+
 #### vibora
 
+这个框架的活跃度非常低，代码更新还是2019年的。
+
 https://github.com/vibora-io/vibora
+
+
+
+下面这个框架测试方案值得参考下
 
 https://github.com/vibora-io/benchmarks
 
@@ -149,13 +161,17 @@ https://github.com/vibora-io/benchmarks
 
 哈罗单车就是选用这个框架的，这个框架的速度非常优秀。
 
+https://sanic.dev/en/
+
 https://sanic.readthedocs.io/en/latest/
 
 https://sanic.readthedocs.io/en/stable/
 
 https://sanicframework.org/zh/guide/
 
-https://github.com/sanic-org/sanic/
+https://github.com/sanic-org/sanic/ 15.8k
+
+
 
 https://www.jianshu.com/p/636833c71c2a
 
