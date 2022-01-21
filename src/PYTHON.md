@@ -2,15 +2,23 @@ Python
 ===
 ## IDE
 
-## Pycharm
+### Pycharm
 
-## Thonny
+https://www.jetbrains.com/pycharm/
 
-## vscode
+### Thonny
 
-## Jupter
+https://thonny.org/
 
-## pyzo
+### vscode
+
+https://code.visualstudio.com/
+
+### Jupter
+
+https://jupyter.org/
+
+### pyzo
 
 https://pyzo.org/index.html
 
@@ -49,24 +57,93 @@ https://docs.aiohttp.org/en/stable/
 
 ### web框架
 
+
+
+下面这个框架可以用Apache服务器托管任意的Python框架
+
+https://modwsgi.readthedocs.io/en/develop/
+
+
+
+#### Django
+
+*Django makes it easier to build better web apps more quickly and with less code.*
+
+https://www.djangoproject.com/
+
+
+
+https://github.com/django/django
+
+61.8k star
+
+
+#### flask
+
+中文文档：
+
+<http://docs.jinkan.org/docs/flask/>
+
+英文文档：
+
+<https://flask.palletsprojects.com/>
+
+1. python的flask使用gunicorn部署，docker应用部署python flask
+
+2. flask 的MVC模型构建
+
+3. yaml配置文件设置
+
+   
+
+https://github.com/pallets/flask
+
+57.7k star
+
+
+学习视频
+
+https://www.bilibili.com/video/BV18441117Hd
+
+##### flask生产部署
+
+https://gunicorn.org/
+
 #### fastapi
 
-> https://fastapi.tiangolo.com/zh/
+官网 https://fastapi.tiangolo.com/zh
+
+
+https://github.com/tiangolo/fastapi
+
+40.6k star
+
+非常优秀的框架，采用携程性能可以与Go比肩。实际使用的时候，发现集成peewee的时候发现这个与controller接口的时候有问题，不能使用同一个类对象来处理参数反序列化和数据库存储。所以很麻烦。 **可以尝试使用**
 
 有基于对象的反序列化参数接收，和序列化的json返回给前端。不建议折腾，在序列化方面处理不是很好，用起来很麻烦。
 
-####  PyWebIO
+#### aiohttp
 
-交互式web应用，很适合少儿编程的入门
+Asynchronous HTTP Client/Server for asyncio and Python.
 
-https://github.com/wang0618/PyWebIO
-
-
-https://pywebio.readthedocs.io/zh_CN/latest/
+https://docs.aiohttp.org/en/stable/
 
 #### vibora
 
-> https://vibora.io/
+https://github.com/vibora-io/vibora
+
+https://github.com/vibora-io/benchmarks
+
+##### Performance (Infamous Hello World benchmark)
+
+| Frameworks | Requests/Sec | Version |
+| ---------- | ------------ | ------- |
+| Tornado    | 14,197       | 5.0.2   |
+| Django     | 22,823       | 2.0.6   |
+| Flask      | 37,487       | 1.0.2   |
+| Aiohttp    | 61,252       | 3.3.2   |
+| Sanic      | 119,764      | 0.7.0   |
+| Vibora     | 368,456      | 0.0.6   |
 
 #### sanic
 
@@ -74,9 +151,14 @@ https://pywebio.readthedocs.io/zh_CN/latest/
 
 https://sanic.readthedocs.io/en/latest/
 
+https://sanic.readthedocs.io/en/stable/
+
 https://sanicframework.org/zh/guide/
 
+https://github.com/sanic-org/sanic/
+
 https://www.jianshu.com/p/636833c71c2a
+
 
 基于sanic搭建微服务体系。
 主要采用sanic + 服务注册 consul + fabio
@@ -87,19 +169,38 @@ https://www.jianshu.com/p/c3e34228f4fa
 https://gitee.com/eric-tutorial/sanic_demo
 
 
+
 ####  moltenframework
 
 > https://moltenframework.com/
 
-#### flask
 
-1. python的flask使用gunicorn部署，docker应用部署python flask
-2. flask 的MVC模型构建
-3. yaml配置文件设置
 
-#### django
 
-https://www.djangoproject.com/
+#### Tornado
+
+[Tornado](https://www.tornadoweb.org/) is a Python web framework and asynchronous networking library.
+
+non-blocking network I/O
+
+
+
+https://www.tornadoweb.org/en/stable/
+
+https://github.com/tornadoweb/tornado
+
+20.4k star
+
+
+#### PyWebIO
+
+交互式web应用，很适合少儿编程的入门
+
+https://github.com/wang0618/PyWebIO
+
+
+https://pywebio.readthedocs.io/zh_CN/latest/
+
 
 ## ORM 数据库操作框架
 
