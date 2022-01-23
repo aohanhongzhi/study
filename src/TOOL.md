@@ -2,6 +2,8 @@
 
 1. [arthas](https://gitee.com/arthas/arthas) 阿里巴巴出品的虚拟机查看工具，可以用来查看线上的入参与返回值
 
+1. IBM Thread and Monitor Dump Analyzer for Java。打印出jstack文件之后，可以分析下。
+
 1. [dumpclass](https://github.com/hengyunabc/dumpclass)Dump classes from running JVM process.Edit Manage topics
 
 1. [Rancher](https://www.rancher.cn/)是一个为DevOps团队提供的完整的Kubernetes与容器管理解决方案。它解决了多Kubernetes集群管理、操作和安全的难题，同时为DevOps团队提供了运行容器化工作负载的管理工具。

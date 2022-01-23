@@ -139,3 +139,16 @@ Java的跨平台的底层就是使用JNI来调用系统提供的接口实现的�
 [Java中Native关键字的作用](https://www.cnblogs.com/KingIceMou/p/7239668.html)
 
 做云打印的时候，就有打印控制器，通过[jacob](https://github.com/freemansoft/jacob-project)来调用windows的office接口来实现word转成pdf的功能。这里的jacob底层实现原理就是jni.
+
+
+## 服务器可以跑多少个线程
+
+-Xss ThreadStackSize 线程栈大小。64位操作系统一般是1MB
+
+
+线程数量 = (机器本身可用内存-JVM分配的堆内存)/Xss的值
+
+比如服务器内存大小为8GB,堆大小是4GB（4096MB），可以得出最大线程数量是4096个。
+
+结论1：JVM堆越大，系统创建的线程数量越少。
+结论2：-Xss的值越小，可生成线程数量越多。
