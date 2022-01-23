@@ -41,5 +41,24 @@ https://jmeter.apache.org/
 
 # 自动化代码质量检查
 
-jenkins集成是sonarqube即可。项目里集成chekstyle等插件。[](Android.md)
+jenkins集成是sonarqube即可。项目里集成chekstyle等插件。
+
+# 监控
+
+
+## 系统监控
+
+带宽，CPU,内存，硬盘，I/O等硬件资源的监控
+
+Nagios 
+
+Cacti
+
+Canglia
+
+### OpenFalcon 小米开源的
+
+初衷就是因为zabbix满足不了现有需求。
+
+https://book.open-falcon.org/zh/
 

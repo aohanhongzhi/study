@@ -1,6 +1,12 @@
 ARCHITECTURE
 ===
 
+# 软件开发的核心原则
+
+- Don't Repeat Youself：这是软件开发的一个基础原则，即不要做重复性劳动。
+- Keep it simple stupid：KISS原则
+
+
 # 微服务架构
 
 微服务 = 分布式开发(业务部分) + 服务治理(管理调度)
@@ -954,7 +960,11 @@ https://micronaut.io/launch/
 
 https://gitee.com/framework-collection/micronaut-study
 
+### quarkus
 
+https://quarkus.io/
+
+https://gitee.com/aohanhongzhi/quarkus-demo
 
 ### Vertx
 
@@ -1065,6 +1075,10 @@ https://github.com/airlift/airlift
 开始文档
 
 https://github.com/airlift/airlift/blob/master/docs/getting_started.md
+
+### dropwizard
+
+https://www.dropwizard.io/en/latest/
 
 # 最快的web框架
 

@@ -2,6 +2,10 @@
 
 1. [arthas](https://gitee.com/arthas/arthas) 阿里巴巴出品的虚拟机查看工具，可以用来查看线上的入参与返回值
 
+1. [Btrace](https://github.com/btraceio/btrace) 是一款非常强大的在线问题动态排查工具，能够无需重启Java进程即可动态地插入一些代码逻辑，从而拦截代码执行逻辑打印日志并排查问题。
+
+1. [Byteman](https://byteman.jboss.org/) Byteman由JBoss出品，JBoss大家应该都熟悉，顶顶大名的应用服务器JBoss也出自其手。Byteman的代码插入能力相比BTrace而言更强，似乎可以在代码中任意的位置插入我们的跟踪代码
+
 1. IBM Thread and Monitor Dump Analyzer for Java。打印出jstack文件之后，可以分析下。
 
 1. [dumpclass](https://github.com/hengyunabc/dumpclass)Dump classes from running JVM process.Edit Manage topics
