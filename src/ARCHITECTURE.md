@@ -997,6 +997,20 @@ A simple web framework for Java and Kotlin
 
 
 
+### activej
+
+https://activej.io/
+
+Java framework for modern web, cloud, high-load, and microservices solutions
+
+
+
+# 最快的web框架
+
+https://github.com/the-benchmarker/web-frameworks
+
+
+
 
 
 ## 如何选择一门语言或者框架
