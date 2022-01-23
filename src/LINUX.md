@@ -28,6 +28,12 @@ top -pid $pid
 
 
 
+setsid
+
+nohup
+
+
+
 ## 优秀的命令工具
 
 ### curlie 

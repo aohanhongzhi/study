@@ -1,6 +1,6 @@
 # Java
 
-由于Java基础知识比较多，代码编写套路多，因此独立成一个md文件。
+
 
 1. https://github.com/zhonghuasheng/Tutorial
 2. https://gitee.com/SnailClimb/awesome-java
@@ -64,7 +64,7 @@ HashMap有下面几个重要的属性：
     ```
 
     > 这只是一个概念，HashMap中没有这个成员变量，有相关的局部变量。
-     
+    
     在resize()方法中有old Capacity概念。
 
     ```

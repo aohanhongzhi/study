@@ -130,12 +130,20 @@ https://gitee.com/smartboot/smart-http
 
 #### k8s
 
+https://kubernetes.io/
+
 #### Docker
 
 容器化部署，智能运维，几万个节点的部署。
 https://yeasy.gitbooks.io/docker_practice/
 
 [Jib无痛构建Docker镜像不影响第二天上班](https://docs.qq.com/doc/DSHlZdWZ5dVhiZ0NW)
+
+
+
+#### podman
+
+  https://podman.io/
 
 #### Rancher
 
@@ -313,7 +321,7 @@ http://125.209.240.10:10123/
 http://ansible.com.cn/docs/intro.html
 
 
-#### 流量录制
+#### 流量录制 
 
 录制线上流量请求，然后回放。
 https://goreplay.org/
@@ -345,6 +353,8 @@ http://www.taillog.cn/
 
 ### 配置中心
 
+有一个新的概念，把微服务注册中心和配置中心合并的东西叫做元数据中心，就像nacos.
+
 在功能架构上，一个优秀的配置中心应该包括以下功能点。
 
 * 高可用
@@ -370,7 +380,7 @@ Java客户端不依赖任何框架，能够运行于所有Java运行时环境，
 > 在日常编码中，可以使用配置中心来弄一个Boolean变量作为新旧功能的开关。一旦上线的功能有问题，可以修改下配置及时解决服务问题。
 
 #### Spring Cloud Config + Git (小型系统推荐)
-没有管理界面
+没有管理界面，这种其实操作很不方便，修改很麻烦的。
 
 #### 其他的配置中心
 
@@ -510,8 +520,17 @@ https://github.com/alibaba/tair
 
 https://github.com/alibaba/MongoShake
 
-
 ### 文件存储
+
+#### 阿里云oos服务
+
+[阿里对象存储 OSS ](https://github.com/aliyun/aliyun-oss-java-sdk)
+
+
+
+#### 微软 Azure Blob
+
+
 
 #### 小文件存储
 
@@ -909,11 +928,13 @@ https://micronaut.io/
 * 多语言；
 * 依赖注入；
 * 内置多种云本地功能；
-* 很新，刚发布1.0.0
+* ~~很新，刚发布1.0.0~~
 
 
 
-目前是3.2.6 版本，发布比较快。生态不是很完善，数据库层没有找到合适的框架。貌似支持jpa，但是不支持mybatis。
+目前是3.2.6 版本，发布比较快。~~生态不是很完善，数据库层没有找到合适的框架。~~貌似支持jpa，但是不支持mybatis。
+
+可以尝试下r2dbc。
 
 https://micronaut.io/launch/
 
@@ -1003,6 +1024,8 @@ https://activej.io/
 
 Java framework for modern web, cloud, high-load, and microservices solutions
 
+https://github.com/activej/activej
+
 
 
 # 最快的web框架
@@ -1017,29 +1040,7 @@ https://github.com/the-benchmarker/web-frameworks
 
 ![](./img/select-framework.png)
 
-## 测试
 
-MeterSphere 是一站式开源持续测试平台，涵盖测试跟踪、接口测试、性能测试、团队协作等功能，兼容JMeter 等开源标准，有效助力开发和测试团队充分利用云弹性进行高度可扩展的自动化测试，加速高质量软件的交付。
-
-MeterSphere 的功能
-
-测试跟踪: 远超 TestLink 的使用体验，覆盖从编写用例到生成测试报告的完整流程；
-接口测试: 集 Postman 的易用与 JMeter 的灵活于一体，接口管理、接口 Mock、多协议支持、场景自动化，你想要的全都有；
-性能测试: 兼容 JMeter，支持 Kubernetes 和云环境，轻松支持高并发、分布式的性能测试；
-团队协作: 用户管理、租户管理、权限管理、资源管理，无论团队规模如何，总有适合的落地方式。
-MeterSphere 的优势
-
-开源：基于开源、兼容开源；按月发布新版本、日均下载安装超过100次、被大量客户验证；
-一站式：一个产品全面涵盖测试跟踪、接口测试、性能测试等功能并形成联动：其中用例管理是底座需求、接口自动化测试是高频需求、性能测试是专家服务为主工具为辅；一个产品全满足从测试计划、测试执行到测试报告分析的全生命周期需求；
-持续测试：能将测试融入持续交付和 DevOps 体系；无缝对接 Bug 管理工具和持续集成工具等；支持团队协作和资产沉淀。
-
-https://github.com/metersphere/metersphere
-
-
-
-换种思路写Mock，让单元测试更简单。
-
-https://github.com/alibaba/testable-mock
 
 
 
