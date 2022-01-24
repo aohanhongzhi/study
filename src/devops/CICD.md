@@ -11,6 +11,9 @@ https://kubesphere.com.cn/
 
 
 ## Zadig
+
+有公司支持
+
 Zadig 是一款面向开发者设计的云原生持续交付(Continuous Delivery)产品，具备高可用 CI/CD 能力，提供云原生运行环境，支持开发者本地联调、微服务并行构建和部署、集成测试等
 
 https://koderover.com/
@@ -28,9 +31,30 @@ gitlab使用非常广，与其他软件的集成就非常不错。
 
 # 自动部署
 
+
+## jenkins
+
 jenkins是非常老牌的自动化部署工具了，与gitlab集成非常好。
 
+https://www.jenkins.io/
 
+## jpom
+
+一款简而轻的低侵入式在线构建、自动部署、日常运维、项目监控软件
+
+https://jpom.io/
+
+
+## walle-web
+
+http://walle-web.io/
+
+https://gitee.com/wushuiyong/walle-web
+
+
+## openspug
+
+https://gitee.com/openspug/spug
 
 # 自动测试
 
