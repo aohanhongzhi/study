@@ -50,3 +50,8 @@ https://github.com/umijs/umi-request/blob/master/README_zh-CN.md
 
 https://github.com/javascript-obfuscator/javascript-obfuscator
 
+
+
+分块上传
+https://github.com/simple-uploader/Uploader/blob/develop/README_zh-CN.md
+
