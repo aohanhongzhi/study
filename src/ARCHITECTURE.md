@@ -854,6 +854,7 @@ amon |	一个注解解决方法级限流难题 | 	https://gitee.com/lyhome_admin
  RedisShake| redis同步工具 |https://github.com/alibaba/RedisShake
  asyncload | 阿里巴巴异步并行加载工具(依赖字节码技术) | https://github.com/alibaba/asyncload
  Appactive | 一款标准通用且功能强大的构建应用多活架构的开源中间件 | https://github.com/alibaba/Appactive
+ easy-es |SpringBoot操作ES  | https://gitee.com/easy-es/easy-es
 ---
 
 #### 面向测试运维类
