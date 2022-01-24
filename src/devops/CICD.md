@@ -3,6 +3,21 @@ CICD
 
 持续集成与持续部署
 
+# 云原生部署
+
+## kubesphere
+
+https://kubesphere.com.cn/
+
+
+## Zadig
+Zadig 是一款面向开发者设计的云原生持续交付(Continuous Delivery)产品，具备高可用 CI/CD 能力，提供云原生运行环境，支持开发者本地联调、微服务并行构建和部署、集成测试等
+
+https://koderover.com/
+
+
+https://gitee.com/koderover/zadig
+
 
 
 # 代码管理
@@ -61,4 +76,6 @@ Canglia
 初衷就是因为zabbix满足不了现有需求。
 
 https://book.open-falcon.org/zh/
+
+
 
