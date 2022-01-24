@@ -24,6 +24,7 @@ https://pyzo.org/index.html
 
 ## Python基础语法
 
+[线程池](https://mp.weixin.qq.com/s/C6k8hkVzYo4LXgqKFKjvVw)
 
 
 
