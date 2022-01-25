@@ -30,6 +30,8 @@
 
 1. [生成在线数据库文档的小工具](https://github.com/viodo/db-doc)
 
+1. [简洁好用的数据库表结构文档工具，支持MySQL/MariaDB/SqlServer/Oracle/PostgreSQL/TIDB/CacheDB 数据库](https://gitee.com/leshalv/screw)
+
 1. [maven插件生成数据库文档](https://gitee.com/leshalv/screw)
 
 1. [命令行画图工具](https://asciiflow.cn/)：https://asciiflow.com/
