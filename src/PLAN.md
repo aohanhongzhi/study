@@ -28,7 +28,7 @@
 1. [Apollo携程开源配置中心](https://github.com/ctripcorp/apollo/wiki/Quick-Start)
 1. [中国优秀的开源软件](https://www.oschina.net/project/top_cn_2019?utm_source=gitee_ad)
 1. OpenResty 基于Nginx与Lua的高性能网关，性能稳定，API丰富。
-1.  ~~flask微服务开发探索 ~ 没必要，不建议折腾了。~~
+1.  ~~flask微服务开发探索 。~~  [详细demo](https://gitee.com/framework-collection/flask-study)
 1. MySQL主从部署，数据一致性实战！一般这种强一致性走主库，弱的走从库。 BASE。 
 1. Redis一主二从三哨兵实战
 1. [istio调研-下一代Service Mesh](https://istio.io/zh/)
@@ -39,7 +39,7 @@
 1. [bootshiro项目的shiro研究](https://gitee.com/tomsun28/bootshiro)
 1. [专注于稳定、性能和分布式事务的MySQL数据库中间件](https://gitee.com/wangbin579/cetus)
 1. [beetlsql](https://gitee.com/xiandafu/beetlsql)
-1. [Porter](https://gitee.com/sxfad/porter)
+1. 
 1. [SpringBoot 整合 MyCat 实现读写分离](https://docs.qq.com/doc/DSERTSWFSWlpYbFFk):https://www.cnblogs.com/muycode/p/12603037.html
     * https://muycode.cn/article/mycat20200312.html
     * https://blog.csdn.net/zyx7653296/article/details/88555718
