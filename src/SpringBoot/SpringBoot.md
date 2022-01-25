@@ -163,6 +163,9 @@ https://gitee.com/zhaoqg/spring-boot-mybatis
 ### springboot-guide
 https://github.com/Snailclimb/springboot-guide
 
+https://github.com/ipipman/JavaSpringBootSamples
+
+
 ### jackson
 > github https://github.com/FasterXML/jackson-databind/
 
