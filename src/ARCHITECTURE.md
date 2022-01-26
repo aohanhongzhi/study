@@ -872,8 +872,9 @@ https://gitee.com/dromara/koalas-rpc
 
 ---
 
-### Micronaut新一代的微服务框架
+### 新一代的微服务框架
 
+#### Micronaut
 https://micronaut.io/
 
 * Grails团队新宠；
@@ -894,13 +895,13 @@ https://micronaut.io/launch/
 
 https://gitee.com/framework-collection/micronaut-study
 
-### quarkus
+#### quarkus
 
 https://quarkus.io/
 
 https://gitee.com/aohanhongzhi/quarkus-demo
 
-### helidon
+#### helidon
 
 Helidon是由Oracle在2018年9月份推出的轻量级微服务框架。
 
@@ -913,7 +914,7 @@ https://helidon.io/
 
 https://gitee.com/framework-collection/helidon-quickstart-se
 
-### Vertx
+#### Vertx
 
 Eclipse Vert.x™ Reactive applications on the JVM
 
@@ -929,9 +930,10 @@ https://vertx.io/
 | 应用层次   | 框架名                                                                                  | 推荐理由           |
 | ------------ | ----------------------------------------------------------------------------------------- | -------------------- |
 | 前端交互   | [Sparkjava](http://sparkjava.com/)                                                      | 更加简单的url-方法 |
-| 服务层     | [Spring-context](https://mvnrepository.com/artifact/org.springframework/spring-context) | 控制翻转，Bean注入 |
 | ORM层      | [rexdb](http://db.rex-soft.org/)                                                        | 高效灵活简单       |
 | 关系数据库 | [postgresql](https://www.postgresql.org/)                                               | 开源自由           |
+
+> sparkjava是一个编程式的micro框架，所以不建议和Spring这种声明式的容器相结合。
 
 ---
 
@@ -942,6 +944,8 @@ https://vertx.io/
 | ------------ | ------------------------------------------------ | ------------------------------------------------ |
 | 前端与服务 | [balde](https://github.com/lets-blade/blade)   | 与SpringBoot类似的路由方式与控制翻转和依赖注入 |
 | ORM        | [blade-anima](https://github.com/biezhi/anima) | 无需手写sql，直接方法操作数据库                |
+
+> balde 是一个类似SpringBoot的声明式的框架，相对来说比较轻量级。
 
 ### JMagician
 
@@ -959,9 +963,12 @@ https://github.com/yuyenews/Beerus
 
 ### Solon
 
-感觉和[Blade](https://github.com/lets-blade/blade)一个水平，相对来说比较完善。
+
+感觉和[Blade](https://github.com/lets-blade/blade)一个水平，相对来说比较完善，代码比较活跃！
 
 https://gitee.com/noear/solon
+
+http://solon.noear.org/
 
 ### oxygen
 
