@@ -604,6 +604,12 @@ https://gitee.com/raoxy/kong-plugins-canary
 
 单线程高性能网关。nignx可以在一次访问请求状态为500的时候，直接访问另一台服务器。做到热迁，参考 https://blog.csdn.net/wy0123/article/details/88551915
 
+##### nginx-admin-plus
+
+Java开发的nginx管理界面系统
+
+https://github.com/alibaba/nginx-admin-plus
+
 #### tengine
 
 http://tengine.taobao.org/
