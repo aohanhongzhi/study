@@ -28,7 +28,7 @@ https://pydantic-docs.helpmanual.io/
 
 [线程池](https://mp.weixin.qq.com/s/C6k8hkVzYo4LXgqKFKjvVw)
 
-
+[google的Python编码规范](https://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/contents/):https://github.com/zh-google-styleguide/zh-google-styleguide
 
 
 ## Python基础操作
