@@ -50,6 +50,7 @@
 1. Ctrl + Y > 删除当前行 
 
 #### 插件
+
 1. codota https://www.codota.com/
 2. TabNine https://www.tabnine.com/
 
