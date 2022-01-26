@@ -688,17 +688,15 @@ https://github.com/ochinchina/supervisord
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------- |
 | mybatis       | 半自动化的ORM，灵活性更高                                                                                                                                                                                  |                                                                      |
 | mybatis-plus  | mybatis的增强，全自动化。既有hibernate，jpa的自动化又有mybatis的灵活性                                                                                                                                     | https://mybatis.plus/                                                |
-| rexdb         | 手写sql，https://gitee.com/rexsoft/rexdb                                                                                                                                                                   | http://db.rex-soft.org/                                              |
+| rexdb         | 手写sql，https://gitee.com/rexsoft/rexdb  ,这个框架后期基本上没有维护了。                                                                                                                                                               | http://db.rex-soft.org/                                              |
 | hibernate     | 全自动化，SSH框架基本上废了。                                                                                                                                                                              |                                                                      |
-| J2Cache       | Java 两级缓存框架，可以让应用支持两级缓存框架 ehcache(Caffeine) + redis 。避免完全使用独立缓存系统所带来的网络IO开销问题                                                                                   | [https://gitee.com/ld/J2Cache](https://gitee.com/ld/J2Cache)         |
-| 加密运行jar包 | Spring Boot JAR 安全加密运行工具，同时支持的原生JAR。 基于对JAR包内资源的加密以及拓展ClassLoader来构建的一套程序加密启动，动态解密运行的方案，避免源码泄露或反编译。                                       | [https://gitee.com/core-lib/xjar](https://gitee.com/core-lib/xjar)   |
-| kisso         | java 基于 Cookie 的 SSO 中间件 kisso                                                                                                                                                                       | [https://gitee.com/baomidou/kisso](https://gitee.com/baomidou/kisso) |
 | jpa           | SpringBoot常用的，个人体验不是很好                                                                                                                                                                         |                                                                      |
 | anima         | blade框架作者杰作，无需sql                                                                                                                                                                                 | https://github.com/biezhi/anima                                      |
 | BeetlSQL      | 全功能DAO工具， 同时具有Hibernate 优点 & Mybatis优点功能，适用于承认以SQL为中心，同时又需求工具能自动能生成大量常用的SQL的应用。[https://gitee.com/xiandafu/beetlsql](https://gitee.com/xiandafu/beetlsql) | [http://ibeetl.com/](http://ibeetl.com/)                             |
 | memory        | 超轻量级 Java 持久化工具                                                                                                                                                                                   | https://gitee.com/bitprince/memory                                   |
 | weed3         |                                                                                                                                                                                                            | https://gitee.com/noear/weed3                                        |
 | liteBatch     | 一个超轻量级，高性能的快速批插工具，可以和mybatis，hibernate任何orm框架结合使用                                                                                                                            | https://gitee.com/bryan31/liteBatch                                  |
+| bee| Bee，互联网新时代的Java ORM框架，更快、更简单、更自动，开发速度快，运行快，更智能！  |https://gitee.com/automvc/bee
 
 个人推荐使用**mybatis-plus**比较好，既可以使用注解，也可以使用xml文件配置，还可以直接继承BaseMapper接口。Service实现ServiceImpl等类，Model也可以直接操作。灵活也不失自动化。
 
@@ -732,7 +730,9 @@ https://github.com/ochinchina/supervisord
 | sa-token       | 可能是史上功能最全的Java权限认证框架                                          | https://gitee.com/dromara/sa-token                                                                               |
 | image-combiner | 一个专门用于Java服务端图片合成的工具                                          | https://gitee.com/dromara/image-combiner                                                                         |
 | zip4j          | 压缩文件处理                                                                  | https://github.com/srikanth-lingala/zip4j                                                                        |
-
+| J2Cache       | Java 两级缓存框架，可以让应用支持两级缓存框架 ehcache(Caffeine) + redis 。避免完全使用独立缓存系统所带来的网络IO开销问题                                                                                   | [https://gitee.com/ld/J2Cache](https://gitee.com/ld/J2Cache)         |
+| 加密运行jar包 | Spring Boot JAR 安全加密运行工具，同时支持的原生JAR。 基于对JAR包内资源的加密以及拓展ClassLoader来构建的一套程序加密启动，动态解密运行的方案，避免源码泄露或反编译。                                       | [https://gitee.com/core-lib/xjar](https://gitee.com/core-lib/xjar)   |
+| kisso         | java 基于 Cookie 的 SSO 中间件 kisso                                                                                                                                                                       | [https://gitee.com/baomidou/kisso](https://gitee.com/baomidou/kisso) |
 ---
 
 ### 企业级应用开发技术栈
