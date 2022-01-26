@@ -995,6 +995,10 @@ https://github.com/tipsy/javalin 5.2k
 
 A simple web framework for Java and Kotlin
 
+尝试与rexdb结合。结合的时候应该注意编程式与声明式的风格。由于javalin是编程式的框架，所以并不适合与声明式的框架结合。
+
+https://github.com/aohanhongzhi/JavalinDemo
+
 ### activej
 
 https://activej.io/
@@ -1026,6 +1030,8 @@ https://www.dropwizard.io/en/latest/
 https://github.com/the-benchmarker/web-frameworks
 
 ## 如何选择一门语言或者框架
+
+后台硬是一个很重要的指标！如果是企业级生产开发，那么切记慎重选择个人开发者开发的框架。
 
 ![](./img/select-framework.png)
 
