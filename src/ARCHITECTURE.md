@@ -726,6 +726,7 @@ https://github.com/ochinchina/supervisord
 | okhttps        | 基于okhttp封装                                                                | https://gitee.com/ejlchina-zhxu/okhttps                                                                          |
 | forest         | 更轻量、更简单实用的HTTP客户端框架                                            | https://gitee.com/dromara/forest                                                                                 |
 | 验证码         | 基于 SpringBoot Google Kaptcha 验证码 快速启动器                              | [https://gitee.com/baomidou/kaptcha-spring-boot-starter](https://gitee.com/baomidou/kaptcha-spring-boot-starter) |
+| 滑块验证码  | 非常不错的开源滑块验证码 |  https://gitee.com/tianai/tianai-captcha
 | tlog           | 轻量级的分布式日志标记追踪神器                                                | http://bryan31.gitee.io/tlog-website/                                                                            |
 | aspect-log     | 能给你的每条日志打上自定义业务标签，方便进行日志的分析和寻错                  | https://gitee.com/bryan31/aspect-log                                                                             |
 | mzt-biz-log    | 一个注解，搞定 SpringBoot 操作日志                                            | https://github.com/mouzt/mzt-biz-log                                                                             |
