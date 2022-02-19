@@ -1,5 +1,18 @@
 JDK
 ===
+
+# JDK发行版
+
+## azul jerbrain自动下载的
+
+性能应该很不错
+
+https://www.azul.com/downloads/
+
+## openjdk
+
+
+
 面试重点
 
 https://github.com/doocs/jvm
