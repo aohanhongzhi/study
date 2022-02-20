@@ -8,6 +8,8 @@ MybatisPlus数据库加解密
 
 # KeyCenterUtils：加解密工具类
 
+推荐使用AES加密，效果不错。RSA加密的长度有点过长。
+
 ```java
 
 import java.util.Base64;
