@@ -87,6 +87,13 @@ ARCHITECTURE
 
 # 企业开发技术
 
+
+### Discovery【探索】云原生微服务解决方案
+
+http://nepxion.com/
+
+https://github.com/Nepxion/DiscoveryGuide
+
 ### 关于RPC和HTTP的选型区别。
 
 一般来说小型企业，比较适合使用http的，大型企业适合RPC的。协议上RPC可能更加高效一点，但是http比较适合哪种信息孤岛的现象，就像电信集团有很多子公司，大家各自为政，但是又得互相融合。这时候就比较适合使用http通信了。就不需要有统一的注册中心来注册RPC的服务。
