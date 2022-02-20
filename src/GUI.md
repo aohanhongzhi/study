@@ -31,3 +31,9 @@ jetpack compose 应该是kotlin编写的，可能java也是可以的。
 ## PYQT
 
 # Flutter
+
+# Go
+
+## wails
+
+https://wails.io/
