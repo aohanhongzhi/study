@@ -492,6 +492,9 @@ https://www.jianshu.com/p/7c7a5df5bda6?ref=myread
 1. [FutureTask 会 “吞掉“ 异常是怎么回事？需要注意些什么？](https://blog.csdn.net/u014240299/article/details/108849457)
  > 实际开发中一脸懵逼，抛出了异常，指示出来是NPE，但是不知道爆发点在哪里。NPE异常经过了封装，失去了原本地方。
 
+#### JDK1.8新特性CompletableFuture总结
+
+https://blog.csdn.net/finalheart/article/details/87615546
 
 
 ### 接口
