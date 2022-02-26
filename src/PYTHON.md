@@ -1,5 +1,8 @@
 Python
 ===
+
+Python比较合适做小型微服务的语言。或者比较适合给Python算法做工程化。
+
 ## IDE
 
 ### Pycharm
@@ -33,13 +36,7 @@ https://pydantic-docs.helpmanual.io/
 
 ## Python基础操作
 
-
-
 [Python将自己代码封装成库（whl）](https://blog.csdn.net/congcong_i/article/details/118908474)
-
-
-
-
 
 ## 常用框架
 
