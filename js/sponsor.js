@@ -3,9 +3,9 @@ const qbox = bd.querySelector('#QRBox')
 const mbox = bd.querySelector('#MainBox')
 const dbox = bd.querySelector('#donateBox')
 
-const qqr = './img/wechat-pay.jpg'
-const aqr = './img/wechat-pay.jpg'
-const wqr = './img/wechat-pay.jpg'
+const qqr = './img/wechat-pay.png'
+const aqr = './img/wechat-pay.png'
+const wqr = './img/wechat-pay.png'
 
 const showQR = (QR) => {
 	if (QR) mbox.style.backgroundImage = `url(${ QR })`
