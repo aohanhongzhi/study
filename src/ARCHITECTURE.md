@@ -634,6 +634,15 @@ HAProxy提供了L4(TCP)和L7(HTTP)两种负载均衡能力，具备丰富的功�
 来源：简书
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
+#### caddy
+
+Caddy is an extensible server platform that uses TLS by default.
+
+https://caddyserver.com/
+
+https://github.com/caddyserver/caddy
+
+
 ### 分布式技术栈
 
 #### Sentinel
