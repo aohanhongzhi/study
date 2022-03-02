@@ -807,7 +807,7 @@ https://github.com/ochinchina/supervisord
 | asyncload                                  | 阿里巴巴异步并行加载工具(依赖字节码技术)             | https://github.com/alibaba/asyncload                                                                         |
 | Appactive                                  | 一款标准通用且功能强大的构建应用多活架构的开源中间件 | https://github.com/alibaba/Appactive                                                                         |
 | easy-es                                    | SpringBoot操作ES                                     | https://gitee.com/easy-es/easy-es                                                                            |
-
+| 基于Servlet的代理 | 用Java程序本身做代理去访问其他程序 | https://github.com/mitre/HTTP-Proxy-Servlet
 ---
 
 #### 面向测试运维类
