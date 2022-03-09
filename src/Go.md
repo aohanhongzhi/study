@@ -5,6 +5,9 @@ Go
 
 [【腾讯文档】go语言基础学习](https://docs.qq.com/doc/DSHZTaGZsTWpCVnN0)
 
+go就是基于CSP原理实现的并发模型呀
+
+CSP ，全称:Communicating Sequential Process ，翻译成中文是，通信顺序进程，最初于Tony Hoare的1977年的论文中被描述，影响了许多编程语言的设计。用于描述两个的ulinix并发的实体通过共享的通讯管道（channel)进行通信的 并发模型。在该模型中，channel 是比较重要的对象，它并不关注发送消息的实体，而只关心与发送消息时实体使用的channel
 
 rosedb 是一个高性能、快速、内嵌的 k-v 数据库，支持多种数据结构，包含 String、List、Hash、Set、Sorted Set，接口名称风格和 Redis 类似。
 https://github.com/roseduan/rosedb
