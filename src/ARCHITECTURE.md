@@ -756,6 +756,9 @@ https://github.com/ochinchina/supervisord
 | J2Cache       | Java 两级缓存框架，可以让应用支持两级缓存框架 ehcache(Caffeine) + redis 。避免完全使用独立缓存系统所带来的网络IO开销问题                                                                                   | [https://gitee.com/ld/J2Cache](https://gitee.com/ld/J2Cache)         |
 | 加密运行jar包 | Spring Boot JAR 安全加密运行工具，同时支持的原生JAR。 基于对JAR包内资源的加密以及拓展ClassLoader来构建的一套程序加密启动，动态解密运行的方案，避免源码泄露或反编译。                                       | [https://gitee.com/core-lib/xjar](https://gitee.com/core-lib/xjar)   |
 | kisso         | java 基于 Cookie 的 SSO 中间件 kisso                                                                                                                                                                       | [https://gitee.com/baomidou/kisso](https://gitee.com/baomidou/kisso) |
+| simple-java-mail| 轻量级邮箱发送| https://github.com/bbottema/simple-java-mail
+
+
 ---
 
 ### 企业级应用开发技术栈
