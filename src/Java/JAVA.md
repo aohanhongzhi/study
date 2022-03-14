@@ -39,6 +39,9 @@ volatile关键字的主要作用就是保证变量的可见性然后还有一个
 
 [【腾讯文档】volatile指定重排证明](https://docs.qq.com/doc/DSFRjU3lpdUdOSFpp)
 
+#### 原子性
+
+#### 内存可见性00
 
 ### synchronized
 
@@ -232,6 +235,19 @@ new HashMap(1<<11);
 1. 为啥
 
 ### ConcurrentHashMap
+
+#### 写（重点）
+
+
+
+
+#### 读
+多线程的读不存在安全性问题，重点是理解读的过程，基本上与HashMap应该一致。先是通过hashcode计算出数组的索引位置，然后再遍历这个索引处由于解决冲突搞出来的链表或者红黑数，通过equals来判断key是否相等找到key相等的value。
+
+
+#### 性能问题
+
+在处理大量数据的时候，由于没有及时clear，导致OOM发生。数据量太大的时候容易出现问题。
 
 
 ### List
