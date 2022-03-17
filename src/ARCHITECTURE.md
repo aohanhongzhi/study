@@ -173,6 +173,9 @@ CAP关注的粒度是数据，而不是整个系统。CAP不是针对一个整�
 
 非常优秀的服务发现与注册中间件。由于其CP实现形式，被一大批生态软件采用。
 
+https://zookeeper.apache.org/
+
+
 #### SpringCloud Eureka
 
 https://github.com/Netflix/eureka
