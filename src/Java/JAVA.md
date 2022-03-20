@@ -55,7 +55,7 @@ volatile关键字的主要作用就是保证变量的可见性然后还有一个
 
 #### 原子性
 
-#### 内存可见性00
+#### 内存可见性
 
 ### synchronized
 
@@ -284,7 +284,7 @@ ArrayList和LinkedList的增加需要看情况而定。最好还是熟悉源代�
 
 #### CopyOnWriteArrayList
 
-#### 
+
 
 ### Stream
 
