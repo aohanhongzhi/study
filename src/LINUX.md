@@ -1,5 +1,14 @@
 # LINUX
 
+
+## 发行版本
+
+### almalinux
+
+AMD加入支持这个发行版
+
+https://almalinux.org/
+
 ## 服务器
 
 https://github.com/EZLippi/Tinyhttpd
