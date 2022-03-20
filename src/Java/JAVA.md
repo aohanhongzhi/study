@@ -1,7 +1,21 @@
 # Java
 
+## 作为Java开发工程师需要掌握哪些与Java强相关的知识点呢？
 
+1. Java的内置集合底层实现与原理，使用场景。
+1. 内存模型，JMM，线程安全性问题，单个线程内存分配大小
+1. 锁
+1. 并发，线程池的底层实现与基础原理，使用场景理解。
+1. Spring的IOC与AOP，DI等
+1. SpringBoot的自动装配
+1. Spring事务的底层实现与基础原理，编程式和声明式。
+1. Java反射，ORM框架底层实现，数据库连接池
+1. JVM相关的垃圾回收fullgc，性能优化火焰图分析，dump堆分析，死锁分析
+1. [IO模型](./Tomcat.md)
 
+## 优秀总结资料
+
+1. https://javaguide.cn/
 1. https://github.com/zhonghuasheng/Tutorial
 2. https://gitee.com/SnailClimb/awesome-java
 
