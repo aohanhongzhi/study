@@ -138,8 +138,7 @@ https://blog.csdn.net/weixin_45702700/article/details/114188435
 
 ### 内存抖动
 
-
-
+https://www.bilibili.com/video/BV1xf4y127Ur
 
 ## JNI
 
@@ -165,3 +164,5 @@ Java的跨平台的底层就是使用JNI来调用系统提供的接口实现的�
 
 结论1：JVM堆越大，系统创建的线程数量越少。
 结论2：-Xss的值越小，可生成线程数量越多。
+
+> 这个也涉及到线程池创建的时候阻塞队列的大小设置。要看看部署机器内存大小

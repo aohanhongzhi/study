@@ -1,10 +1,10 @@
 # 🍵 编程语言
 ##  ☕️ Java
 
-- [Java基础学习](src/JAVA.md)
-- [JDK](src/JDK.md)
-- [SpringBoot](src/SpringBoot.md)
-- [SpringCloud](src/SpringCloud.md)
+- [Java基础学习](src/Java/JAVA.md)
+- [JDK](src/Java/JDK.md)
+- [SpringBoot](src/SpringBoot/SpringBoot.md)
+- [SpringCloud](src/SpringBoot/SpringCloud.md)
 - [JVM分析](src/jvm分析/JVM.md)
 - [Mybatis-plus](src/mybatis-plus.md)
 - [多线程并发](src/并发/线程优化.md)
@@ -13,10 +13,10 @@
 
 ## Golang
 
-- [Golang](src/Go.md)
+- [Golang](src/Go/Go.md)
 
 ## 🐍 Python
-- [Python](src/PYTHON.md)
+- [Python](src/Python/PYTHON.md)
 * [👒 欢迎进入 Python 王国](Python/) >> Python 编程练习推荐平台：[https://python123.io](https://python123.io) 提供在线编程实践。
 
 # 🥼 前端学习
