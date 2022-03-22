@@ -93,3 +93,7 @@
    直到拦截器链前进到底调用target目标类的对应方法(jdk反射获取method调用)。
 
    初始化拦截器链是通过遍历之前IOC容器getBean获取到advisor链中的Advisor，通过AdvisorAdapterRegistry当中设置的3种adapter(before,afterreturning,throws)的supportsAdvice判断是否支持该advisor，如果支持就将advisor中的advice注册成不同的AdviceInterceptor列表(一个advisor可以被多个adapter支持，因为只要自己写的通知类实现多种advice接口即可)都加入到拦截器链。
+
+# AOP
+
+[spring aop 不能对静态方法进行增强解决](https://www.jianshu.com/p/ad741b33ce06)
