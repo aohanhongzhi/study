@@ -7,6 +7,11 @@ GUI程序开发
 
 直接打包，不需要任何的额外的运行库。
 
+https://gitee.com/aohanhongzhi/cpp-qt-study
+
+https://gitee.com/aohanhongzhi/clion-cpp-qt
+
+
 # Java
 
 ## Javafx
@@ -15,7 +20,7 @@ GUI程序开发
 
 javafx支持Java，Kotlin和Groory编写。
 
-
+https://gitee.com/lilixiaoyi/javafx-demo
 
 # Kotlin
 
@@ -31,6 +36,8 @@ jetpack compose 应该是kotlin编写的，可能java也是可以的。
 ## PYQT
 
 https://github.com/pyqt
+
+PYQT商用貌似是要购买的。
 
 # Flutter
 
