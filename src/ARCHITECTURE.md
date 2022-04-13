@@ -629,6 +629,16 @@ https://github.com/alibaba/nginx-admin-plus
 
 http://tengine.taobao.org/
 
+#### Caddy
+
+Caddy 2 is a powerful, enterprise-ready(企业级), open source web server with automatic HTTPS written in Go
+
+https://caddyserver.com/
+
+https://github.com/caddyserver/Caddy
+
+https://mp.weixin.qq.com/s/UuRPbFKWQVksZ0QwfzDeTg
+
 #### HAProxy
 
 HAProxy是一个免费的负载均衡软件，可以运行于大部分主流的Linux操作系统上。
